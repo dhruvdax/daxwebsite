@@ -10,7 +10,7 @@ import { NAV_LINKS } from '@/lib/content';
 import Image from 'next/image';
 
 const DaxLogo = () => (
-    <svg width="140" height="70" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="80%" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fillRule="evenodd" clipRule="evenodd" d="M34.669 46.2465H20.8617L9.64697 62.2553H42.4412L64.0207 30.575L42.7811 0.916382H10.1569L21.7115 16.5884H34.2856L44.4806 30.7434L34.669 46.2465Z" fill="hsl(var(--primary))"></path>
         <path fillRule="evenodd" clipRule="evenodd" d="M135.014 63.0394H154.789L111.278 0.421592L91.0228 0.264893L47.5115 62.8825H67.2871L101.095 14.8801L135.014 63.0394Z" fill="hsl(var(--foreground))"></path>
         <path fillRule="evenodd" clipRule="evenodd" d="M110.798 63.0395H91.0223L134.533 0.421631L154.789 0.578591L110.798 63.0395Z" fill="hsl(var(--primary))"></path>
