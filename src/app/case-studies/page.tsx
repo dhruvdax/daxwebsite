@@ -15,7 +15,7 @@ export default function CaseStudiesPage() {
       <div className="container mx-auto px-4 py-12 md:py-24">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl font-headline">
-            Success Stories
+            Recent Articles
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
             Discover how we've partnered with clients to overcome challenges and achieve remarkable results.
@@ -41,27 +41,7 @@ export default function CaseStudiesPage() {
                 <div className="md:col-span-3 p-6">
                   <Badge variant="secondary">{study.client}</Badge>
                   <h2 className="mt-4 text-2xl font-bold font-headline">{study.title}</h2>
-                  <div className="mt-6 grid gap-6 text-sm">
-                    <div>
-                      <h3 className="font-semibold text-foreground/80">The Challenge</h3>
-                      <p className="mt-1 text-muted-foreground">{study.challenge}</p>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground/80">The Solution</h3>
-                      <p className="mt-1 text-muted-foreground">{study.solution}</p>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground/80">The Outcome</h3>
-                      <p className="mt-1 text-muted-foreground">{study.outcome}</p>
-                    </div>
-                  </div>
-                  <div className="mt-6 flex items-center space-x-4">
-                    {study.icons.map((Icon, index) => (
-                      <div key={index} className="flex items-center space-x-2 text-muted-foreground">
-                        <Icon className="h-5 w-5 text-primary" />
-                      </div>
-                    ))}
-                  </div>
+                   <p className="mt-4 text-muted-foreground">{study.summary}</p>
                 </div>
               </div>
             </Card>

@@ -2,45 +2,33 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Business meeting with professionals discussing a project.",
-      "imageUrl": "https://images.unsplash.com/photo-1686771416282-3888ddaf249b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzY0MjU4ODEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business meeting"
+      "description": "Two businessmen looking at a laptop screen with a positive expression.",
+      "imageUrl": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMHBlb3BsZSUyMGxhcHRvcHxlbnwwfHx8fDE3MjE4MzY3MTB8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "business people laptop"
     },
     {
       "id": "case-study-1",
-      "description": "A chart showing upward growth.",
-      "imageUrl": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjQzMjM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "growth chart"
+      "description": "A person using a laptop with a Dynamics 365 logo visible, in an office setting.",
+      "imageUrl": "https://picsum.photos/seed/cs1/600/400",
+      "imageHint": "Dynamics 365"
     },
     {
       "id": "case-study-2",
-      "description": "Team collaboration in a modern office.",
-      "imageUrl": "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjQyOTk4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "team collaboration"
+      "description": "An illustration comparing on-premise servers in a server room to a cloud icon in the sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1694490620837-a37989749e61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbG91ZCUyMG9uLXByZW1pc2V8ZW58MHx8fHwxNzY0MzIzOTc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cloud on-premise"
     },
     {
       "id": "case-study-3",
-      "description": "A person analyzing data on a computer screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1599658880436-c61792e70672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXRhJTIwYW5hbHlzaXN8ZW58MHx8fHwxNzY0Mjg4Njk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data analysis"
+      "description": "A dashboard on a computer screen showing Power BI analytics and charts related to Dynamics 365.",
+      "imageUrl": "https://images.unsplash.com/photo-1663769599443-26f307ef0ba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8UG93ZXIlMjBCSSUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NjQzMjM5Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Power BI dashboard"
     },
     {
       "id": "case-study-4",
-      "description": "Digital transformation concept with abstract graphics.",
-      "imageUrl": "https://images.unsplash.com/photo-1649406458887-2b6561c36a4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaWdpdGFsJTIwdHJhbnNmb3JtYXRpb258ZW58MHx8fHwxNzY0MjM1OTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "digital transformation"
-    },
-    {
-      "id": "case-study-5",
-      "description": "Supply chain and logistics optimization.",
-      "imageUrl": "https://images.unsplash.com/photo-1587903318972-9ca74ba4579c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsb2dpc3RpY3MlMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzY0MzIzNjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logistics optimization"
-    },
-    {
-      "id": "case-study-6",
-      "description": "Customer experience enhancement strategy.",
-      "imageUrl": "https://images.unsplash.com/photo-1613963931023-5dc59437c8a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjdXN0b21lciUyMGV4cGVyaWVuY2V8ZW58MHx8fHwxNzY0Mjc0MDkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "customer experience"
+      "description": "A diverse group of business professionals shaking hands and collaborating in a meeting.",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMHRlYW18ZW58MHx8fHwxNzIxODM3OTUwfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "business team"
     },
     {
       "id": "team-member-1",
@@ -65,30 +53,6 @@
       "description": "Portrait of an experienced consultant.",
       "imageUrl": "https://images.unsplash.com/photo-1713857600361-146f62e4d90e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxleHBlcmllbmNlZCUyMGNvbnN1bHRhbnR8ZW58MHx8fHwxNzY0MzIzNjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "experienced consultant"
-    },
-    {
-      "id": "team-member-5",
-      "description": "Portrait of a data analyst.",
-      "imageUrl": "https://images.unsplash.com/photo-1599658880436-c61792e70672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkYXRhJTIwYW5hbHlzdHxlbnwwfHx8fDE3NjQzMjM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data analyst"
-    },
-    {
-      "id": "team-member-6",
-      "description": "Portrait of a marketing strategist.",
-      "imageUrl": "https://images.unsplash.com/photo-1532615470080-39f17172bc1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYXJrZXRpbmclMjBzdHJhdGVnaXN0fGVufDB8fHx8MTc2NDMyMzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "marketing strategist"
-    },
-    {
-      "id": "team-member-7",
-      "description": "Portrait of a project manager.",
-      "imageUrl": "https://images.unsplash.com/photo-1627634777217-c864268db30c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9qZWN0JTIwbWFuYWdlcnxlbnwwfHx8fDE3NjQzMjM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "project manager"
-    },
-    {
-      "id": "team-member-8",
-      "description": "Portrait of a business developer.",
-      "imageUrl": "https://images.unsplash.com/photo-1573166364266-356ef04ae798?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxidXNpbmVzcyUyMGRldmVsb3BlcnxlbnwwfHx8fDE3NjQzMjM2NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business developer"
     }
   ]
 }

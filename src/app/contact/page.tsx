@@ -1,7 +1,7 @@
 "use client";
 
 import { useFormState, useFormStatus } from 'react-dom';
-import { Mail, Phone, MapPin, Building } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -77,19 +77,15 @@ export default function ContactPage() {
                     <div className="space-y-4 text-muted-foreground">
                         <div className="flex items-start space-x-3">
                             <MapPin className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                            <span>123 Innovation Drive, Suite 456, Metropolis, 78910</span>
+                            <span>123 Queensmouth Ave, New York, Washington DC, 20037</span>
                         </div>
                         <div className="flex items-start space-x-3">
                             <Mail className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                            <a href="mailto:contact@consultfast.com" className="hover:text-primary">contact@consultfast.com</a>
+                            <a href="mailto:contact@dax.com" className="hover:text-primary">contact@dax.com</a>
                         </div>
                         <div className="flex items-start space-x-3">
                             <Phone className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                            <a href="tel:+1234567890" className="hover:text-primary">(123) 456-7890</a>
-                        </div>
-                         <div className="flex items-start space-x-3">
-                            <Building className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                            <span>Open Mon-Fri, 9am - 5pm</span>
+                            <a href="tel:+18889994444" className="hover:text-primary">+1 (888) 999 4444</a>
                         </div>
                     </div>
                 </CardContent>

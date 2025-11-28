@@ -4,20 +4,20 @@
 
 @layer base {
   :root {
-    --background: 200 100% 95.1%;
+    --background: 200 100% 98%; /* Lighter blue-white */
     --foreground: 203 100% 13.5%;
     --card: 0 0% 100%;
     --card-foreground: 203 100% 13.5%;
     --popover: 0 0% 100%;
     --popover-foreground: 203 100% 13.5%;
-    --primary: 199 100% 50%;
-    --primary-foreground: 203 100% 13.5%;
+    --primary: 199 100% 50%; /* Bright Blue: #00B5FF */
+    --primary-foreground: 0 0% 100%;
     --secondary: 200 60% 90%;
     --secondary-foreground: 203 100% 13.5%;
     --muted: 200 60% 90%;
     --muted-foreground: 203 60% 40%;
-    --accent: 200 100% 90%;
-    --accent-foreground: 203 100% 13.5%;
+    --accent: 203 100% 13.5%; /* Deep Navy: #002A45 */
+    --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 200 60% 85%;
@@ -31,24 +31,24 @@
     --radius: 0.5rem;
   }
   .dark {
-    --background: 203 100% 13.5%;
-    --foreground: 200 100% 95.1%;
-    --card: 203 100% 16%;
-    --card-foreground: 200 100% 95.1%;
-    --popover: 203 100% 13.5%;
-    --popover-foreground: 200 100% 95.1%;
+    --background: 203 100% 4%; /* Darker navy for dark mode */
+    --foreground: 200 100% 98%;
+    --card: 203 100% 8%;
+    --card-foreground: 200 100% 98%;
+    --popover: 203 100% 4%;
+    --popover-foreground: 200 100% 98%;
     --primary: 199 100% 50%;
-    --primary-foreground: 203 100% 13.5%;
-    --secondary: 203 100% 20%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 203 100% 12%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 203 100% 20%;
+    --muted: 203 100% 12%;
     --muted-foreground: 200 60% 70%;
-    --accent: 203 100% 20%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 200 100% 98%;
+    --accent-foreground: 203 100% 13.5%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 203 100% 20%;
-    --input: 203 100% 20%;
+    --border: 203 100% 12%;
+    --input: 203 100% 12%;
     --ring: 199 100% 50%;
     --chart-1: 199 100% 50%;
     --chart-2: 200 100% 80%;

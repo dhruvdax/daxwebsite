@@ -1,184 +1,150 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { SERVICES, TEAM_MEMBERS, CASE_STUDIES } from '@/lib/content';
-import { AiSuggester } from '@/components/ai-suggester';
+import { CASE_STUDIES, METRICS } from '@/lib/content';
 import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero');
   const caseStudyImages = CASE_STUDIES.map(cs => ({
     ...cs,
     image: PlaceHolderImages.find(img => img.id === cs.imageId)
   }));
-  const teamImages = TEAM_MEMBERS.map(tm => ({
-    ...tm,
-    image: PlaceHolderImages.find(img => img.id === tm.imageId)
-  }));
+  const featuredImage = PlaceHolderImages.find(img => img.id === 'case-study-4');
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-background">
       {/* Hero Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-white dark:bg-card">
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+      <section className="relative w-full py-24 md:py-32 lg:py-48 bg-white dark:bg-card overflow-hidden">
+        <div className="absolute inset-0">
+            <Image
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMHBlb3BsZSUyMGxhcHRvcHxlbnwwfHx8fDE3MjE4MzY3MTB8MA&ixlib=rb-4.0.3&q=80&w=1080"
+                alt="Business people with laptop"
+                fill
+                className="object-cover"
+                data-ai-hint="business people laptop"
+            />
+            <div className="absolute inset-0 bg-white/70 dark:bg-black/50"></div>
+        </div>
+        <div className="container px-4 md:px-6 relative">
+          <div className="grid gap-6 lg:grid-cols-2">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Accelerate Your Business Growth with ConsultFast
+                <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-accent dark:text-white">
+                  The <span className="text-primary">Empathetic</span> ERP Partner - Prioritizing <span className="text-primary">People</span> over Technology
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  We provide expert consulting services to help you overcome challenges, innovate, and achieve your strategic objectives.
-                </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button asChild size="lg">
-                  <Link href="/contact">Get Started</Link>
-                </Button>
-                <Button asChild variant="secondary" size="lg">
-                  <Link href="/services">Learn More</Link>
+                  <Link href="/contact">QUICK FIX PACKAGES</Link>
                 </Button>
               </div>
+              <p className="text-lg text-gray-600 dark:text-gray-300">We're listening!</p>
             </div>
-            {heroImage && (
-              <Image
-                src={heroImage.imageUrl}
-                alt={heroImage.description}
-                data-ai-hint={heroImage.imageHint}
-                width={600}
-                height={400}
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-              />
-            )}
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="w-full py-12 md:py-24 lg:py-32">
+       {/* Why should I do it? Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container px-4 md:px-6 text-center">
+            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-accent dark:text-white">Why should I do it?</h2>
+            <p className="max-w-3xl mx-auto mt-4 text-muted-foreground md:text-xl">
+            ERP is expensive, time-consuming and ERP vendors are arrogant. As Empathetic ERP Partners, we redefine the narrative. With your dedicated ERP implementation experts and trusted support, our approach turns ERP from a burden into a strategic asset. We don't just fix problems; we empower people who drive business success.
+            </p>
+        </div>
+       </section>
+      
+       {/* Metrics Section */}
+      <section className="w-full pb-12 md:pb-24 lg:pb-32">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">Our Services</div>
-              <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">What We Offer</h2>
-              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Our expert consultants provide a range of services to help your business thrive.
-              </p>
+            <div className="text-center mb-12">
+                <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-accent dark:text-white">Why should I do it with DAX?</h2>
+                <p className="max-w-2xl mx-auto mt-4 text-muted-foreground md:text-lg">
+                Success happens when your ERP partner is collaborative, a good listener, and has the skill you need in Microsoft Dynamics Solutions.
+                </p>
             </div>
-          </div>
-          <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-2 md:gap-12 lg:grid-cols-2 xl:grid-cols-4 mt-12">
-            {SERVICES.map((service) => (
-              <Card key={service.title} className="text-center h-full flex flex-col">
-                <CardHeader>
-                  <div className="mx-auto bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center">
-                    <service.icon className="w-6 h-6" />
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <h3 className="text-lg font-bold font-headline">{service.title}</h3>
-                  <p className="text-sm text-muted-foreground">{service.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+            <div className="mx-auto grid max-w-5xl items-stretch gap-8 sm:grid-cols-2 md:grid-cols-3">
+                {METRICS.map((metric) => (
+                    <Card key={metric.label} className="text-center h-full flex flex-col justify-center p-6 shadow-lg hover:shadow-xl transition-shadow rounded-2xl border-t-4 border-primary">
+                        <CardHeader className="p-0">
+                        <div className="mx-auto text-primary rounded-full w-16 h-16 flex items-center justify-center">
+                            <metric.icon className="w-10 h-10" />
+                        </div>
+                        </CardHeader>
+                        <CardContent className="p-0 mt-4">
+                        <p className="text-4xl font-bold font-headline text-accent dark:text-white">{metric.value}</p>
+                        <p className="text-sm text-muted-foreground mt-2">{metric.label}</p>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
         </div>
       </section>
 
-      {/* AI Suggester Section */}
-      <section id="ai-suggester" className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-card">
-        <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                <div className="space-y-2">
-                    <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Not Sure Where to Start?</h2>
-                    <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                        Let our AI assistant guide you. Describe your business challenge and get instant service recommendations.
-                    </p>
+      {/* Featured ERP Section */}
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-accent">
+          <div className="container px-4 md:px-6">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                {featuredImage && (
+                    <Image 
+                        src={featuredImage.imageUrl}
+                        alt={featuredImage.description}
+                        data-ai-hint={featuredImage.imageHint}
+                        width={500}
+                        height={350}
+                        className="rounded-lg shadow-2xl"
+                    />
+                )}
+                <div className="text-accent-foreground">
+                    <p className="text-sm font-bold tracking-widest text-primary">FEATURED PAGE</p>
+                    <h2 className="font-headline text-3xl font-bold mt-2">EMPATHETIC ERP</h2>
+                    <p className="mt-4 text-lg">The Key to Successful Implementations and Lasting Partnerships: Projects led by empathetic partnerships demonstrate a 30% improvement in on-time delivery.</p>
+                    <Button asChild variant="secondary" className="mt-6 bg-primary text-primary-foreground hover:bg-primary/90">
+                        <Link href="#">READ MORE <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    </Button>
                 </div>
-            </div>
-            <div className="mx-auto max-w-3xl mt-12">
-                <AiSuggester />
-            </div>
-        </div>
+              </div>
+          </div>
       </section>
 
-      {/* Case Studies Section */}
+      {/* Recent Articles Section */}
       <section id="case-studies" className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">Success Stories</div>
-              <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Our Proven Track Record</h2>
-              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Explore how we've helped businesses like yours achieve remarkable results.
-              </p>
+              <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Recent articles</h2>
             </div>
           </div>
           <div className="mx-auto grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12">
             {caseStudyImages.map((study) => (
-              <Card key={study.title} className="overflow-hidden">
+              <Card key={study.title} className="overflow-hidden group">
+                <div className="overflow-hidden">
                 {study.image && (
                   <Image
                     src={study.image.imageUrl}
                     alt={study.image.description}
                     data-ai-hint={study.image.imageHint}
                     width={600}
-                    height={400}
-                    className="aspect-video w-full object-cover"
+                    height={340}
+                    className="aspect-video w-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 )}
+                </div>
                 <CardHeader>
-                  <CardTitle className="font-headline">{study.title}</CardTitle>
-                  <CardDescription>{study.client}</CardDescription>
+                  <p className="text-xs text-primary font-semibold">{study.client.toUpperCase()}</p>
+                  <CardTitle className="font-headline text-lg mt-1">{study.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">{study.summary}</p>
+                  <p className="text-sm text-muted-foreground line-clamp-3">{study.summary}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
            <div className="text-center mt-12">
               <Button asChild variant="outline">
-                <Link href="/case-studies">View All Case Studies <ArrowRight className="ml-2 h-4 w-4" /></Link>
-              </Button>
-            </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section id="team" className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-card">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">Our Experts</div>
-              <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Meet the Team</h2>
-              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                The brilliant minds behind our success.
-              </p>
-            </div>
-          </div>
-          <div className="mx-auto grid max-w-5xl grid-cols-2 gap-8 py-12 sm:grid-cols-2 md:grid-cols-4">
-            {teamImages.map((member) => (
-              <div key={member.name} className="flex flex-col items-center space-y-2">
-                <Avatar className="h-24 w-24">
-                  {member.image && (
-                    <AvatarImage src={member.image.imageUrl} alt={member.name} data-ai-hint={member.image.imageHint} />
-                  )}
-                  <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
-                </Avatar>
-                <div className="text-center">
-                  <h3 className="text-lg font-bold font-headline">{member.name}</h3>
-                  <p className="text-sm text-muted-foreground">{member.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-           <div className="text-center mt-4">
-              <Button asChild>
-                <Link href="/team">More About Us <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <Link href="/case-studies">View All Articles <ArrowRight className="ml-2 h-4 w-4" /></Link>
               </Button>
             </div>
         </div>
@@ -192,7 +158,7 @@ export default function Home() {
               Ready to Transform Your Business?
             </h2>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Let's talk about how ConsultFast can help you achieve your goals. Schedule a free consultation today.
+              Let's talk about how we can help you achieve your goals. Schedule a free consultation today.
             </p>
           </div>
           <div className="mx-auto w-full max-w-sm space-y-2">
