@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Facebook, Linkedin, Twitter } from 'lucide-react';
 
 const DaxLogo = () => (
-    <svg height="60px" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg height="50px" viewBox="0 0 160 80" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fillRule="evenodd" clipRule="evenodd" d="M34.669 46.2465H20.8617L9.64697 62.2553H42.4412L64.0207 30.575L42.7811 0.916382H10.1569L21.7115 16.5884H34.2856L44.4806 30.7434L34.669 46.2465Z" fill="hsl(var(--primary))"></path>
         <path fillRule="evenodd" clipRule="evenodd" d="M135.014 63.0394H154.789L111.278 0.421592L91.0228 0.264893L47.5115 62.8825H67.2871L101.095 14.8801L135.014 63.0394Z" fill="hsl(var(--accent-foreground))"></path>
         <path fillRule="evenodd" clipRule="evenodd" d="M110.798 63.0395H91.0223L134.533 0.421631L154.789 0.578591L110.798 63.0395Z" fill="hsl(var(--primary))"></path>
@@ -68,32 +68,28 @@ export default function Footer() {
               <ul className="mt-4 space-y-2 text-sm text-gray-400">
                 <li><Link href="#" className="hover:text-white">Microsoft Dynamics 365</Link></li>
                 <li><Link href="#" className="hover:text-white">Application Managed Services</Link></li>
-                <li><Link href="#" className="hover:text-white">Performance Tuning</Link></li>
-                <li><Link href="#" className="hover:text-white">Dynamics 365 On-Premise Control</Link></li>
+                <li><Link href="#" className="hover:text-white">Quick-Fix Packages</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-medium font-headline">Quick Links</h4>
+              <h4 className="font-medium font-headline">Company</h4>
               <ul className="mt-4 space-y-2 text-sm text-gray-400">
-                <li><Link href="/about" className="hover:text-white">About Us</Link></li>
-                <li><Link href="/team" className="hover:text-white">Our Team</Link></li>
-                <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
+                {NAV_LINKS.map((link) => (
+                    <li key={link.href}>
+                        <Link href={link.href} className="hover:text-white">{link.label}</Link>
+                    </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} DAX Software Solutions</p>
-          <div className="flex items-center gap-4 mt-4 md:mt-0">
-            <Link href="#" className="hover:text-white">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white">Terms of Use</Link>
-            <Link href="#" className="hover:text-white">Cookie Policy</Link>
-          </div>
-          <div className="flex gap-4 mt-4 md:mt-0">
-            <Link href="#" className="hover:text-white"><Facebook size={20} /></Link>
-            <Link href="#" className="hover:text-white"><Twitter size={20} /></Link>
-            <Link href="#" className="hover:text-white"><Linkedin size={20} /></Link>
-          </div>
+        <div className="mt-8 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm text-gray-500">&copy; {new Date().getFullYear()} Dax Software Solutions. All rights reserved.</p>
+            <div className="flex space-x-4 mt-4 md:mt-0">
+                <Link href="#" className="text-gray-500 hover:text-white"><Facebook size={20} /></Link>
+                <Link href="#" className="text-gray-500 hover:text-white"><Twitter size={20} /></Link>
+                <Link href="#" className="text-gray-500 hover:text-white"><Linkedin size={20} /></Link>
+            </div>
         </div>
       </div>
     </footer>
