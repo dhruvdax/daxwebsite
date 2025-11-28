@@ -46,13 +46,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white dark:bg-zinc-900/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-zinc-900/60">
       <div className="container mx-auto flex h-[108px] items-center justify-between">
         <div className="flex items-center gap-6">
-          <div className="hidden md:flex items-center gap-2">
-            <Image src="/ms-logo.png" alt="Microsoft Solutions Partner" width={140} height={16} />
-          </div>
-          <div className="h-8 border-l border-gray-300 hidden md:block"></div>
           <Link href="/" className="flex items-center space-x-2">
             <DaxLogo />
           </Link>
+          <div className="h-8 border-l border-gray-300 hidden md:block"></div>
+          <div className="hidden md:flex items-center gap-2">
+            <Image src="/ms-logo.png" alt="Microsoft Solutions Partner" width={140} height={16} />
+          </div>
         </div>
 
         {/* Desktop Menu */}
