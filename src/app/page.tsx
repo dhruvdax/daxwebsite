@@ -25,13 +25,13 @@ export default function Home() {
                 className="object-cover"
                 data-ai-hint="business people laptop"
             />
-            <div className="absolute inset-0 bg-white/70 dark:bg-black/50"></div>
+            <div className="absolute inset-0 bg-black/50"></div>
         </div>
         <div className="container mx-auto px-4 md:px-6 relative">
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-accent dark:text-white">
+                <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none text-white">
                   The <span className="text-primary">Empathetic</span> ERP Partner - Prioritizing <span className="text-primary">People</span> over Technology
                 </h1>
               </div>
@@ -40,7 +40,7 @@ export default function Home() {
                   <Link href="/contact">QUICK FIX PACKAGES</Link>
                 </Button>
               </div>
-              <p className="text-lg text-gray-600 dark:text-gray-300">We're listening!</p>
+              <p className="text-lg text-gray-300">We're listening!</p>
             </div>
           </div>
         </div>
