@@ -44,19 +44,19 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-      <div className="container mx-auto flex h-[108px] items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-[108px] items-center justify-between px-4 lg:px-6">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center space-x-2">
             <DaxLogo />
           </Link>
-          <div className="h-8 border-l border-gray-300 hidden md:block"></div>
-          <div className="hidden md:flex items-center gap-2">
+          <div className="h-8 border-l border-gray-300 hidden lg:block"></div>
+          <div className="hidden lg:flex items-center gap-2">
             <Image src="/ms-logo.png" alt="Microsoft Solutions Partner" width={140} height={16} />
           </div>
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
             <nav className="flex items-center gap-4 text-sm font-medium">
                 {NAV_LINKS.map((link) => (
                 <Link
@@ -78,7 +78,7 @@ export default function Header() {
 
 
         {/* Mobile Menu */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
                 <SheetTrigger asChild>
                     <Button variant="ghost" size="icon">
