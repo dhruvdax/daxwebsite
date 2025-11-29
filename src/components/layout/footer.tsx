@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { NAV_LINKS } from '@/lib/content';
 import Image from 'next/image';
 import { Facebook, Linkedin, Twitter } from 'lucide-react';
-import DaxLogo from '../icons/dax-logo';
+import DaxLogoWhite from '../icons/dax-logo-white';
 
 export default function Footer() {
   return (
@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-12">
           <div className="space-y-4 md:col-span-3">
             <Link href="/" className="flex items-center space-x-2">
-              <DaxLogo className="fill-white" />
+              <DaxLogoWhite className="fill-white" />
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 md:col-span-9 md:grid-cols-4">
