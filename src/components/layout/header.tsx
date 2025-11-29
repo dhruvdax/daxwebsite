@@ -66,6 +66,10 @@ export default function Header() {
                                 <DaxLogo />
                             </Link>
                         </div>
+                         <div className="flex flex-col items-start gap-2 mt-4">
+                            <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
+                            <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
+                        </div>
                         <nav className="flex flex-col gap-4 mt-8">
                             {NAV_LINKS.map((link) => (
                             <Link
