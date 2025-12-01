@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className="bg-accent text-accent-foreground">
       <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-12">
-          <div className="space-y-4 md:col-span-3">
+          <div className="space-y-8 md:col-span-3">
             <Link href="/" className="flex items-center space-x-2">
               <DaxLogoWhite />
             </Link>
