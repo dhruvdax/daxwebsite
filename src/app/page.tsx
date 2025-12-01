@@ -71,8 +71,8 @@ export default function Home() {
                 {METRICS.map((metric) => (
                     <Card key={metric.label} className="text-center h-full flex flex-col justify-center p-6 shadow-lg hover:shadow-xl transition-shadow rounded-2xl border-t-4 border-primary">
                         <CardHeader className="p-0">
-                        <div className="mx-auto text-primary rounded-full w-16 h-16 flex items-center justify-center">
-                            <metric.icon className="w-10 h-10" />
+                        <div className="mx-auto text-primary rounded-full w-20 h-20 flex items-center justify-center">
+                            <metric.icon className="w-12 h-12" />
                         </div>
                         </CardHeader>
                         <CardContent className="p-0 mt-4">
