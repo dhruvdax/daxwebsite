@@ -39,7 +39,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button asChild size="lg">
-                  <Link href="/contact">QUICK FIX PACKAGES</Link>
+                  <Link href="/contact">QUICK FIX PACKAGES<ArrowRight /></Link>
                 </Button>
               </div>
               <p className="text-lg text-gray-300">We're listening!</p>
@@ -106,7 +106,7 @@ export default function Home() {
                     <h2 className="font-headline text-3xl font-bold mt-2">EMPATHETIC ERP</h2>
                     <p className="mt-4 text-lg">The Key to Successful Implementations and Lasting Partnerships: Projects led by empathetic partnerships demonstrate a 30% improvement in on-time delivery.</p>
                     <Button asChild variant="secondary" className="mt-6 bg-primary text-primary-foreground hover:bg-primary/90">
-                        <Link href="#">READ MORE <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                        <Link href="#">READ MORE <ArrowRight /></Link>
                     </Button>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
           <div className="mx-auto w-full max-w-sm space-y-2">
             <Button asChild size="lg" className="w-full">
-              <Link href="/contact">Contact Us</Link>
+              <Link href="/contact">Contact Us<ArrowRight /></Link>
             </Button>
           </div>
         </div>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { Menu } from 'lucide-react';
+import { ArrowRight, Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { NAV_LINKS } from '@/lib/content';
 import Image from 'next/image';
@@ -32,10 +32,10 @@ export default function Header() {
         <div className="hidden lg:flex flex-col items-end gap-2">
             <div className="flex items-center gap-2">
                 <Button asChild size="sm">
-                    <Link href="/case-studies">CASE STUDIES</Link>
+                    <Link href="/case-studies">CASE STUDIES<ArrowRight /></Link>
                 </Button>
                 <Button asChild size="sm">
-                    <Link href="/contact">QUICK FIX PACKAGES</Link>
+                    <Link href="/contact">QUICK FIX PACKAGES<ArrowRight /></Link>
                 </Button>
             </div>
             <nav className="flex items-center gap-4 text-sm font-medium">
@@ -92,10 +92,10 @@ export default function Header() {
                         </nav>
                          <div className="mt-auto pt-4 flex flex-col gap-2">
                              <Button asChild className="w-full">
-                                <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)}>CASE STUDIES</Link>
+                                <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)}>CASE STUDIES<ArrowRight /></Link>
                             </Button>
                             <Button asChild className="w-full">
-                                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>QUICK FIX PACKAGES</Link>
+                                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>QUICK FIX PACKAGES<ArrowRight /></Link>
                             </Button>
                         </div>
                     </div>
