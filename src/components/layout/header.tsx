@@ -32,7 +32,7 @@ export default function Header() {
         <div className="hidden lg:flex flex-col items-end gap-2">
             <div className="flex items-center gap-2">
                 <Button asChild size="sm" variant="outline">
-                    <Link href="/case-studies">Case Studies</Link>
+                    <Link href="/case-studies">CASE STUDIES</Link>
                 </Button>
                 <Button asChild size="sm">
                     <Link href="/contact">QUICK FIX PACKAGES</Link>
@@ -92,7 +92,7 @@ export default function Header() {
                         </nav>
                          <div className="mt-auto pt-4 flex flex-col gap-2">
                              <Button asChild className="w-full" variant="outline">
-                                <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)}>Case Studies</Link>
+                                <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)}>CASE STUDIES</Link>
                             </Button>
                             <Button asChild className="w-full">
                                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>QUICK FIX PACKAGES</Link>
