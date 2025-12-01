@@ -23,8 +23,8 @@ export default function Header() {
               <DaxLogo className="h-[25px] lg:h-[50px]" />
             </Link>
             <div className="lg:hidden flex items-start gap-2">
-                <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
-                <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
+                <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={70} height={8} />
+                <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={70} height={8} />
             </div>
           </div>
           <div className="h-8 border-l border-gray-300 hidden lg:block"></div>
