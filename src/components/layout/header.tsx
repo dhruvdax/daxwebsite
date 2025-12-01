@@ -20,15 +20,15 @@ export default function Header() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center space-x-2">
-              <DaxLogo className="h-[25px] sm:h-[32.5px] lg:h-[50px]" />
+              <DaxLogo className="h-[25px] sm:h-[32.5px] md:h-[50px]" />
             </Link>
-            <div className="lg:hidden flex items-start gap-2">
-                <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={70} height={8} className="sm:w-[91px] sm:h-[10px]" />
-                <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={70} height={8} className="sm:w-[91px] sm:h-[10px]" />
+            <div className="lg:hidden flex flex-col items-start gap-2">
+                <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={70} height={8} className="h-auto w-[70px] sm:w-[91px] md:hidden" />
+                <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={70} height={8} className="h-auto w-[70px] sm:w-[91px] md:hidden" />
             </div>
           </div>
           <div className="h-8 border-l border-gray-300 hidden lg:block"></div>
-          <div className="hidden lg:flex items-start gap-2">
+          <div className="hidden md:flex items-start gap-2">
             <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
             <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
           </div>
