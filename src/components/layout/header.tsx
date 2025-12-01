@@ -30,9 +30,14 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex flex-col items-end gap-2">
-            <Button asChild size="sm">
-                <Link href="/contact">QUICK FIX PACKAGES</Link>
-            </Button>
+            <div className="flex items-center gap-2">
+                <Button asChild size="sm" variant="outline">
+                    <Link href="/case-studies">Case Studies</Link>
+                </Button>
+                <Button asChild size="sm">
+                    <Link href="/contact">QUICK FIX PACKAGES</Link>
+                </Button>
+            </div>
             <nav className="flex items-center gap-4 text-sm font-medium">
                 {NAV_LINKS.map((link) => (
                 <Link
@@ -85,7 +90,10 @@ export default function Header() {
                             </Link>
                             ))}
                         </nav>
-                         <div className="mt-auto pt-4">
+                         <div className="mt-auto pt-4 flex flex-col gap-2">
+                             <Button asChild className="w-full" variant="outline">
+                                <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)}>Case Studies</Link>
+                            </Button>
                             <Button asChild className="w-full">
                                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>QUICK FIX PACKAGES</Link>
                             </Button>
