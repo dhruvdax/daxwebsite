@@ -31,6 +31,90 @@
       "imageHint": "business team"
     },
     {
+      "id": "case-study-5",
+      "description": "Cityscape at dusk.",
+      "imageUrl": "https://images.unsplash.com/photo-1623263947330-0feb3ee7f53c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaXR5c2NhcGUlMjBkdXNrfGVufDB8fHx8MTc2NDU1ODM1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cityscape dusk"
+    },
+    {
+      "id": "case-study-6",
+      "description": "Close-up of a hand interacting with a futuristic digital interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1545231159-36d9938c3b0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkaWdpdGFsJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDUwMjc0MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital interface"
+    },
+    {
+      "id": "case-study-7",
+      "description": "A person's hand drawing a business process flow chart on a glass board.",
+      "imageUrl": "https://images.unsplash.com/photo-1758873272648-baed343cdc8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9jZXNzJTIwZmxvd2NoYXJ0fGVufDB8fHx8MTc2NDUwMTc1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "process flowchart"
+    },
+    {
+      "id": "case-study-8",
+      "description": "A scientist in a lab coat looking at a holographic interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1645210355325-e0dd9b90e91d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY2llbnRpc3QlMjBob2xvZ3JhbXxlbnwwfHx8fDE3NjQ1NjkzNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scientist hologram"
+    },
+    {
+      "id": "case-study-9",
+      "description": "A group of volunteers packing boxes with supplies.",
+      "imageUrl": "https://images.unsplash.com/photo-1720038561037-430fe0f20224?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dm9sdW50ZWVycyUyMHBhY2tpbmd8ZW58MHx8fHwxNzY0NTY5MzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "volunteers packing"
+    },
+    {
+      "id": "case-study-10",
+      "description": "A teacher helping students in a classroom with computers.",
+      "imageUrl": "https://images.unsplash.com/photo-1660351174962-e2a1fbb9af09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFjaGVyJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzY0NTE3Mzg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teacher students"
+    },
+    {
+      "id": "case-study-11",
+      "description": "Close up of cannabis leaves and oil.",
+      "imageUrl": "https://images.unsplash.com/photo-1617101814530-fbc023773e73?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjYW5uYWJpcyUyMG9pbHxlbnwwfHx8fDE3NjQ1NDIxNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cannabis oil"
+    },
+    {
+      "id": "case-study-12",
+      "description": "Abstract image representing finance and data with glowing lines.",
+      "imageUrl": "https://images.unsplash.com/photo-1744782211816-c5224434614f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwZGF0YXxlbnwwfHx8fDE3NjQ0OTAwNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance data"
+    },
+    {
+      "id": "case-study-13",
+      "description": "A business meeting in a modern office.",
+      "imageUrl": "https://images.unsplash.com/photo-1686771416282-3888ddaf249b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzY0NDg3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business meeting"
+    },
+    {
+      "id": "case-study-14",
+      "description": "Abstract image of interconnected nodes and data streams.",
+      "imageUrl": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb258ZW58MHx8fHwxNzY0NTY5MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data integration"
+    },
+    {
+      "id": "case-study-15",
+      "description": "A person touching a screen with a network of user icons.",
+      "imageUrl": "https://images.unsplash.com/photo-1758179762184-56f01a206ddc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx1c2VyJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ1NjkzNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "user network"
+    },
+    {
+      "id": "case-study-16",
+      "description": "A person interacting with a secure data interface on a tablet.",
+      "imageUrl": "https://images.unsplash.com/photo-1667372283536-a832e74401c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZWN1cmUlMjBkYXRhfGVufDB8fHx8MTc2NDUzMjAzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "secure data"
+    },
+    {
+      "id": "case-study-17",
+      "description": "A person interacting with a complex robotic arm interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1701120285820-976b36f4e5a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyb2JvdGljJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDU2OTM2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robotic interface"
+    },
+    {
+      "id": "case-study-18",
+      "description": "A person's hands on a futuristic foldable keyboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1718241905696-cb34c2c07bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMGtleWJvYXJkfGVufDB8fHx8MTc2NDQ4NTM2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "futuristic keyboard"
+    },
+    {
       "id": "team-member-1",
       "description": "Portrait of a professional woman.",
       "imageUrl": "https://images.unsplash.com/photo-1573496527892-904f897eb744?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwd29tYW58ZW58MHx8fHwxNzY0MjE2NjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",

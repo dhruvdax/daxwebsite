@@ -83,6 +83,90 @@ export const CASE_STUDIES = [
         outcome: 'Reduced average delivery times by 30%. Cut fuel costs by 15% through optimized routing. Eliminated 95% of manual dispatching errors.',
         icons: [Bot, Rocket, Zap]
     },
+    {
+        title: 'D365 PSA Managed Support Services for a Leading Aviation Company',
+        client: 'Aviation Leader',
+        imageId: 'case-study-5',
+        summary: 'Explore how we provided D365 PSA managed support services, ensuring smooth operations for a leading aviation company.',
+    },
+    {
+        title: 'D365 Field Service Implementation & D365 Transformation for a Global OEM',
+        client: 'Global OEM',
+        imageId: 'case-study-6',
+        summary: 'Learn about our D365 Field Service implementation and transformation for a global original equipment manufacturer.',
+    },
+    {
+        title: 'Implementation of Dynamics 365 Business Central',
+        client: 'Mid-Sized Retailer',
+        imageId: 'case-study-7',
+        summary: 'Discover our successful implementation of Dynamics 365 Business Central for a mid-sized retail company, improving their efficiency.',
+    },
+    {
+        title: 'D365 Field Service Implementation & D365 Transformation for a Drug-testing Service Provider',
+        client: 'Service Provider',
+        imageId: 'case-study-8',
+        summary: 'A case study on our D365 Field Service implementation for a leading drug-testing service provider, enhancing their field operations.',
+    },
+    {
+        title: 'Power Apps & Portal for an LA-based Non-Profit Organization',
+        client: 'LA Non-Profit',
+        imageId: 'case-study-9',
+        summary: 'See how we utilized Power Apps and Portal to create a solution for a Los Angeles-based non-profit organization.',
+    },
+    {
+        title: 'Detailed Assessment, Functional & Technical Fit Gap for K-12 school district',
+        client: 'K-12 School District',
+        imageId: 'case-study-10',
+        summary: 'An in-depth assessment and analysis for a K-12 school district to ensure a perfect fit with their new system.',
+    },
+     {
+        title: 'AX 2012 to D365 F&O implementation for an import and distribution food ingredients company',
+        client: 'Food Ingredients Co.',
+        imageId: 'case-study-11',
+        summary: 'Upgrading from AX 2012 to Dynamics 365 Finance & Operations for a food ingredients import and distribution company.',
+    },
+    {
+        title: 'CFO-approved tool to address Incurred Cost Submission (ICE) for Government Contractors',
+        client: 'Government Contractor',
+        imageId: 'case-study-12',
+        summary: 'A CFO-approved tool for Incurred Cost Submission, tailored for government contractors to ensure compliance and accuracy.',
+    },
+     {
+        title: 'D365 Implementation solution for a leading IT Services Company',
+        client: 'IT Services Leader',
+        imageId: 'case-study-13',
+        summary: 'Our comprehensive D365 implementation solution for a leading IT services company, streamlining their business processes.',
+    },
+    {
+        title: 'End-to-End Business Integration',
+        client: 'Manufacturing Inc.',
+        imageId: 'case-study-14',
+        summary: 'A complete end-to-end business integration solution for a manufacturing company, connecting all their critical systems.',
+    },
+    {
+        title: 'Seamless implementation and integrations with Dynamics 365',
+        client: 'Tech Innovator',
+        imageId: 'case-study-15',
+        summary: 'We provided a seamless implementation and integration of Dynamics 365 for a tech innovator, enhancing their capabilities.',
+    },
+    {
+        title: 'Strategic planning & process standardization for a multi-billion-dollar enterprise',
+        client: 'Global Enterprise',
+        imageId: 'case-study-16',
+        summary: 'Our strategic planning and process standardization helped a multi-billion-dollar enterprise achieve new levels of efficiency.',
+    },
+    {
+        title: 'AX 2012 to D365 F&O migration for a leading furniture management company',
+        client: 'Furniture Co.',
+        imageId: 'case-study-17',
+        summary: 'Migrating a leading furniture management company from AX 2012 to Dynamics 365 Finance & Operations.',
+    },
+    {
+        title: 'Streamlining existing D365 Finance and Operations',
+        client: 'Financial Firm',
+        imageId: 'case-study-18',
+        summary: 'How we streamlined and optimized the existing Dynamics 365 Finance and Operations for a major financial firm.',
+    }
 ];
 
 export const METRICS = [
