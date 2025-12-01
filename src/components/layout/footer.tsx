@@ -67,7 +67,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-white">
+      </div>
+      <div className="border-t border-gray-800">
+        <div className="container mx-auto py-8 flex flex-col md:flex-row justify-between items-center text-white">
             <p className="text-sm">&copy; {new Date().getFullYear()} Dax Software Solutions. All rights reserved.</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
                 <Link href="#" className="hover:opacity-80"><Facebook size={20} /></Link>
