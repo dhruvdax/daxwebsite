@@ -7,7 +7,7 @@ import DaxLogoWhite from '../icons/dax-logo-white';
 export default function Footer() {
   return (
     <footer className="bg-accent text-accent-foreground">
-      <div className="container mx-auto py-12">
+      <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-12">
           <div className="space-y-4 md:col-span-3">
             <Link href="/" className="flex items-center space-x-2">
@@ -69,9 +69,9 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-gray-800">
-        <div className="container mx-auto py-8 flex flex-col md:flex-row justify-between items-center text-white">
+        <div className="container mx-auto flex flex-col items-center justify-between px-4 py-8 text-white md:flex-row md:px-6">
             <p className="text-sm">&copy; {new Date().getFullYear()} Dax Software Solutions. All rights reserved.</p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
+            <div className="mt-4 flex space-x-4 md:mt-0">
                 <Link href="#" className="hover:opacity-80"><Facebook size={20} /></Link>
                 <Link href="#" className="hover:opacity-80"><Twitter size={20} /></Link>
                 <Link href="#" className="hover:opacity-80"><Linkedin size={20} /></Link>
