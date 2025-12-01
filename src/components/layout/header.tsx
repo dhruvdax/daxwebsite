@@ -20,7 +20,7 @@ export default function Header() {
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center space-x-2">
-              <DaxLogo />
+              <DaxLogo className="h-[25px] lg:h-[50px]" />
             </Link>
             <div className="lg:hidden flex items-start gap-2">
                 <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
@@ -38,10 +38,10 @@ export default function Header() {
         <div className="hidden lg:flex flex-col items-end gap-2">
             <div className="flex items-center gap-2">
                 <Button asChild size="sm">
-                    <Link href="/case-studies">CASE STUDIES<ArrowRight /></Link>
+                    <Link href="/case-studies">CASE STUDIES</Link>
                 </Button>
                 <Button asChild size="sm">
-                    <Link href="/contact">QUICK FIX PACKAGES<ArrowRight /></Link>
+                    <Link href="/contact">QUICK FIX PACKAGES</Link>
                 </Button>
             </div>
             <nav className="flex items-center gap-4 text-sm font-medium">
