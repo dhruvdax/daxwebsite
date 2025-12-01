@@ -9,11 +9,11 @@ export default function Footer() {
     <footer className="bg-accent text-accent-foreground">
       <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-12">
-          <div className="space-y-8 md:col-span-3">
+          <div className="space-y-4 md:col-span-3">
             <Link href="/" className="flex items-center space-x-2">
               <DaxLogoWhite />
             </Link>
-            <div className="flex flex-col items-start gap-8 pt-4">
+            <div className="flex flex-col items-start gap-4 pt-4">
                 <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
                 <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
             </div>
