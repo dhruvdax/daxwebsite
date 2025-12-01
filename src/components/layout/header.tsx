@@ -28,10 +28,16 @@ export default function Header() {
           </div>
         </div>
 
+        {/* Desktop and Mobile Badges */}
+        <div className="lg:hidden flex flex-col items-start gap-2">
+            <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
+            <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
+        </div>
+        
         {/* Desktop Menu */}
         <div className="hidden lg:flex flex-col items-end gap-2">
             <div className="flex items-center gap-2">
-                <Button asChild size="sm">
+                <Button asChild size="sm" variant="outline">
                     <Link href="/case-studies">CASE STUDIES<ArrowRight /></Link>
                 </Button>
                 <Button asChild size="sm">
@@ -70,10 +76,6 @@ export default function Header() {
                              <Link href="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
                                 <DaxLogo />
                             </Link>
-                        </div>
-                         <div className="flex flex-col items-start gap-2 mt-4">
-                            <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
-                            <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
                         </div>
                         <nav className="flex flex-col gap-4 mt-8">
                             {NAV_LINKS.map((link) => (
