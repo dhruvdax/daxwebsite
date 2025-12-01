@@ -77,15 +77,19 @@ export default function ContactPage() {
                     <div className="space-y-4 text-muted-foreground">
                         <div className="flex items-start space-x-3">
                             <MapPin className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                            <span>123 Queensmouth Ave, New York, Washington DC, 20037</span>
+                            <span>6303 Owensmouth Ave, 10th floor, Woodland Hills, CA 91367</span>
                         </div>
                         <div className="flex items-start space-x-3">
                             <Mail className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                            <a href="mailto:contact@dax.com" className="hover:text-primary">contact@dax.com</a>
+                            <a href="mailto:contact@daxsws.com" className="hover:text-primary">contact@daxsws.com</a>
                         </div>
                         <div className="flex items-start space-x-3">
                             <Phone className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                            <a href="tel:+18889994444" className="hover:text-primary">+1 (888) 999 4444</a>
+                            <a href="tel:+1.818.568.6460" className="hover:text-primary">+1.818.568.6460</a>
+                        </div>
+                         <div className="flex items-start space-x-3">
+                            <Phone className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                            <a href="tel:+1.949.351.2404" className="hover:text-primary">+1.949.351.2404</a>
                         </div>
                     </div>
                 </CardContent>

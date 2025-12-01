@@ -18,11 +18,12 @@ export default function Footer() {
             <div>
               <h4 className="font-medium font-headline">Contact Information</h4>
               <ul className="mt-4 space-y-2 text-sm text-gray-400">
-                <li><p>Dax Software Solutions</p></li>
-                <li><p>123 Queensmouth aVe, New York</p></li>
-                <li><p>Washington DC, 20037</p></li>
-                <li><a href="tel:+18889994444" className="hover:text-white">+1(888) 999 4444</a></li>
-                <li><a href="mailto:contact@dax.com" className="hover:text-white">contact@dax.com</a></li>
+                <li><p>DAX Software Solutions Inc.</p></li>
+                <li><p>6303 Owensmouth Ave, 10th floor</p></li>
+                <li><p>Woodland Hills, CA 91367</p></li>
+                <li><a href="tel:+1.818.568.6460" className="hover:text-white">+1.818.568.6460</a></li>
+                <li><a href="tel:+1.949.351.2404" className="hover:text-white">+1.949.351.2404</a></li>
+                <li><a href="mailto:contact@daxsws.com" className="hover:text-white">contact@daxsws.com</a></li>
               </ul>
             </div>
             <div>
@@ -53,8 +54,8 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm">&copy; {new Date().getFullYear()} Dax Software Solutions. All rights reserved.</p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
+            <p className="text-sm text-white">&copy; {new Date().getFullYear()} Dax Software Solutions. All rights reserved.</p>
+            <div className="flex space-x-4 mt-4 md:mt-0 text-white">
                 <Link href="#" className="hover:opacity-80"><Facebook size={20} /></Link>
                 <Link href="#" className="hover:opacity-80"><Twitter size={20} /></Link>
                 <Link href="#" className="hover:opacity-80"><Linkedin size={20} /></Link>
