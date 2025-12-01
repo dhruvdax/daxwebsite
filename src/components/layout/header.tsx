@@ -18,11 +18,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container mx-auto flex h-[108px] items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-6">
-          <div className="flex flex-col gap-2">
+          <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center space-x-2">
               <DaxLogo />
             </Link>
-            <div className="lg:hidden flex items-start gap-2">
+            <div className="lg:hidden flex items-center gap-2">
                 <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
                 <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
             </div>
