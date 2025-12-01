@@ -2,10 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { CASE_STUDIES } from "@/lib/content";
-import { cn } from "@/lib/utils";
 
 export default function CaseStudiesPage() {
     const caseStudyImages = CASE_STUDIES.map(cs => ({
@@ -27,29 +26,25 @@ export default function CaseStudiesPage() {
       </section>
 
       <div className="container mx-auto px-4 py-12 md:py-24">
-        <div className="grid gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {caseStudyImages.map((study, index) => (
-            <Card key={study.title} className="overflow-hidden shadow-lg transition-shadow hover:shadow-xl dark:bg-card">
-              <div className={cn(
-                  "grid md:grid-cols-2 items-center",
-                  index % 2 !== 0 && "md:grid-flow-col-dense"
-                  )}>
+            <Card key={study.title} className="overflow-hidden shadow-lg transition-shadow hover:shadow-xl dark:bg-card p-4 rounded-[24px]">
+              <div className="flex flex-col h-full">
                 {study.image && (
-                    <div className={cn(index % 2 !== 0 && "md:col-start-2")}>
+                    <div className="relative h-48 w-full">
                         <Image
                             src={study.image.imageUrl}
                             alt={study.image.description}
                             data-ai-hint={study.image.imageHint}
-                            width={600}
-                            height={400}
-                            className="aspect-video w-full object-cover"
+                            fill
+                            className="object-cover rounded-xl"
                         />
                     </div>
                 )}
-                <div className={cn("p-8", index % 2 !== 0 && "md:col-start-1")}>
-                  <h2 className="text-2xl font-bold font-headline">{study.title}</h2>
-                   <p className="mt-4 text-muted-foreground">{study.summary}</p>
-                   <Button asChild className="mt-6">
+                <div className="pt-6 flex flex-col flex-grow">
+                  <h2 className="text-xl font-bold font-headline">{study.title}</h2>
+                   <p className="mt-4 text-muted-foreground flex-grow">{study.summary}</p>
+                   <Button asChild className="mt-6 self-start">
                         <Link href="#">READ MORE<ArrowRight /></Link>
                     </Button>
                 </div>
