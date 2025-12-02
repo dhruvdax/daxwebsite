@@ -38,11 +38,11 @@ export default function Header() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex flex-col items-end gap-2">
             <div className="flex items-center gap-2">
-                <Button asChild size="sm">
+                <Button asChild size="sm" variant="default">
                     <Link href="/case-studies">CASE STUDIES<ArrowRight /></Link>
                 </Button>
-                <Button asChild size="sm">
-                    <Link href="/empathetic-erp">EMPATHETIC ERP<ArrowRight /></Link>
+                <Button asChild size="sm" variant="default">
+                    <Link href="/pricing">QUICK FIX PACKAGES<ArrowRight /></Link>
                 </Button>
             </div>
             <nav className="flex items-center gap-4 text-sm font-medium">
