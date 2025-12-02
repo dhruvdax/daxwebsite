@@ -39,7 +39,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button asChild size="lg">
-                  <Link href="/empathetic-erp">EMPATHETIC ERP<ArrowRight /></Link>
+                  <Link href="/pricing">QUICK FIX PACKAGES<ArrowRight /></Link>
                 </Button>
               </div>
               <p className="text-lg text-gray-300">We're listening!</p>
