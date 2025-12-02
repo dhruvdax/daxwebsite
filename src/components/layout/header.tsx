@@ -29,7 +29,7 @@ export default function Header() {
             </div>
           </div>
           <div className="h-8 border-l border-gray-300 hidden lg:block"></div>
-          <div className="hidden md:flex items-center gap-2">
+          <div className="hidden md:flex items-start gap-2">
             <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
             <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
           </div>
