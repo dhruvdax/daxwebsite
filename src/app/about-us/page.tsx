@@ -52,7 +52,7 @@ export default function AboutUsPage() {
     useEffect(() => {
         const observerOptions = {
             root: null,
-            rootMargin: '-110px 0px -50% 0px', // Adjust top margin to account for sticky header
+            rootMargin: '-100px 0px -50% 0px', // Adjust top margin to account for sticky header
             threshold: 0,
         };
 
@@ -109,7 +109,12 @@ export default function AboutUsPage() {
                         key={key}
                         onClick={() => {
                             setActiveTab(key);
-                            document.getElementById(key)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            const element = document.getElementById(key);
+                            if (element) {
+                                const yOffset = -100; // a little space from top
+                                const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                window.scrollTo({top: y, behavior: 'smooth'});
+                            }
                         }}
                         className={`py-4 px-2 sm:px-6 text-center font-medium text-sm sm:text-base border-b-4 transition-colors ${
                             activeTab === key
@@ -244,3 +249,5 @@ export default function AboutUsPage() {
     </div>
   );
 }
+
+    
