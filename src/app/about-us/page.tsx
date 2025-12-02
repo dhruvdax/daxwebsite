@@ -212,7 +212,10 @@ export default function AboutUsPage() {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Meet Our Leadership</h2>
-                     <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground italic">"A leader is one who knows the way, goes the way, and shows the way." — John C. Maxwell</p>
+                     <blockquote className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground italic">
+                        <p>"A leader is one who knows the way, goes the way, and shows the way."</p>
+                        <footer className="mt-2 not-italic text-right">— John C. Maxwell</footer>
+                    </blockquote>
                 </div>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
                     {leadershipImages.map((member) => (
@@ -249,5 +252,7 @@ export default function AboutUsPage() {
     </div>
   );
 }
+
+    
 
     
