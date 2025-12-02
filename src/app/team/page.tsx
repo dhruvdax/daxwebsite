@@ -15,7 +15,7 @@ export default function TeamPage() {
 
   return (
     <div className="bg-background">
-      <section className="w-full py-12 md:py-20 lg:py-24 bg-accent text-accent-foreground">
+      <section className="w-full py-12 md:py-20 lg:py-24 bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 md:px-6 text-center">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl font-headline">
                 Our Team
