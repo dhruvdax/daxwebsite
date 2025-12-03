@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
-import { ArrowRight, Menu } from 'lucide-react';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { ArrowRight, Menu, X } from 'lucide-react';
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { NAV_LINKS } from '@/lib/content';
 import Image from 'next/image';
 import DaxLogo from '../icons/dax-logo';
@@ -67,29 +67,35 @@ export default function Header() {
                         <span className="sr-only">Open Menu</span>
                     </Button>
                 </SheetTrigger>
-                <SheetContent side="right">
+                <SheetContent side="right" className="p-0">
                     <div className="flex flex-col h-full">
-                        <div className="flex items-center justify-between pb-2">
+                        <div className="flex items-center justify-between p-6">
                             <Link href="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
-                                <DaxLogo className="h-8" />
+                                <DaxLogo className="h-6" />
                             </Link>
+                             <SheetClose className="rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
+                                <X className="h-6 w-6" />
+                                <span className="sr-only">Close</span>
+                            </SheetClose>
                         </div>
-                        <nav className="flex flex-col gap-4 mt-8">
-                            {NAV_LINKS.map((link) => (
-                            <Link
-                                key={link.href}
-                                href={link.href}
-                                onClick={() => setMobileMenuOpen(false)}
-                                className={cn(
-                                'text-lg font-medium transition-colors hover:text-primary capitalize',
-                                pathname === link.href ? 'text-primary' : 'text-foreground'
-                                )}
-                            >
-                                {link.label}
-                            </Link>
-                            ))}
-                        </nav>
-                         <div className="mt-auto pt-4 flex flex-col gap-2">
+                        <div className="p-6">
+                            <nav className="flex flex-col gap-4">
+                                {NAV_LINKS.map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className={cn(
+                                    'text-lg font-medium transition-colors hover:text-primary capitalize',
+                                    pathname === link.href ? 'text-primary' : 'text-foreground'
+                                    )}
+                                >
+                                    {link.label}
+                                </Link>
+                                ))}
+                            </nav>
+                        </div>
+                         <div className="mt-auto p-6 flex flex-col gap-2">
                              <Button asChild className="w-full" variant="primary-outline">
                                 <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)}>CASE STUDIES<ArrowRight /></Link>
                             </Button>
