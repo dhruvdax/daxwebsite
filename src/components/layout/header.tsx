@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Button } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { ArrowRight, Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -38,12 +38,8 @@ export default function Header() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex flex-col items-end gap-2">
             <div className="flex items-center gap-2">
-                <Button asChild size="sm" variant="primary-outline">
-                    <Link href="/case-studies">CASE STUDIES<ArrowRight /></Link>
-                </Button>
-                <Button asChild size="sm" variant="primary-outline">
-                    <Link href="/empathetic-erp">EMPATHETIC ERP<ArrowRight /></Link>
-                </Button>
+                <Link href="/case-studies" className={cn(buttonVariants({ size: 'sm', variant: 'primary-outline' }))}>CASE STUDIES<ArrowRight /></Link>
+                <Link href="/empathetic-erp" className={cn(buttonVariants({ size: 'sm', variant: 'primary-outline' }))}>EMPATHETIC ERP<ArrowRight /></Link>
             </div>
             <nav className="flex items-center gap-4 text-sm font-medium">
                 {NAV_LINKS.map((link) => (
@@ -73,9 +69,11 @@ export default function Header() {
                 </SheetTrigger>
                 <SheetContent side="right">
                     <div className="flex flex-col h-full">
-                        <Link href="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
-                            <DaxLogo />
-                        </Link>
+                        <div className="flex items-center justify-between pb-2">
+                            <Link href="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
+                                <DaxLogo className="h-8" />
+                            </Link>
+                        </div>
                         <nav className="flex flex-col gap-4 mt-8">
                             {NAV_LINKS.map((link) => (
                             <Link
@@ -92,7 +90,7 @@ export default function Header() {
                             ))}
                         </nav>
                          <div className="mt-auto pt-4 flex flex-col gap-2">
-                             <Button asChild className="w-full">
+                             <Button asChild className="w-full" variant="primary-outline">
                                 <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)}>CASE STUDIES<ArrowRight /></Link>
                             </Button>
                             <Button asChild className="w-full" variant="primary-outline">
