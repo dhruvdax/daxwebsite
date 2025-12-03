@@ -38,10 +38,10 @@ export default function Header() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex flex-col items-end gap-2">
             <div className="flex items-center gap-2">
-                <Button asChild size="sm" variant="default">
+                <Button asChild size="sm" variant="primary-outline">
                     <Link href="/case-studies">CASE STUDIES<ArrowRight /></Link>
                 </Button>
-                <Button asChild size="sm" variant="default">
+                <Button asChild size="sm" variant="primary-outline">
                     <Link href="/pricing">QUICK FIX PACKAGES<ArrowRight /></Link>
                 </Button>
             </div>
@@ -97,8 +97,8 @@ export default function Header() {
                              <Button asChild className="w-full">
                                 <Link href="/case-studies" onClick={() => setMobileMenuOpen(false)}>CASE STUDIES<ArrowRight /></Link>
                             </Button>
-                            <Button asChild className="w-full">
-                                <Link href="/empathetic-erp" onClick={() => setMobileMenuOpen(false)}>EMPATHETIC ERP<ArrowRight /></Link>
+                            <Button asChild className="w-full" variant="primary-outline">
+                                <Link href="/pricing" onClick={() => setMobileMenuOpen(false)}>QUICK FIX PACKAGES<ArrowRight /></Link>
                             </Button>
                         </div>
                     </div>
