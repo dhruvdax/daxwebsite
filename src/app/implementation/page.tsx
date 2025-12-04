@@ -151,12 +151,8 @@ export default function ImplementationPage() {
               ))}
             </TabsList>
              {IMPLEMENTATION_PHASES.map((phase) => (
-                <TabsContent key={phase.id} value={phase.id}>
-                    <Card className="mt-6">
-                        <CardContent className="p-6">
-                             <p className="text-muted-foreground text-center">{phase.description}</p>
-                        </CardContent>
-                    </Card>
+                <TabsContent key={phase.id} value={phase.id} className="py-6">
+                  <p className="text-muted-foreground text-center max-w-3xl mx-auto">{phase.description}</p>
                 </TabsContent>
             ))}
           </Tabs>
