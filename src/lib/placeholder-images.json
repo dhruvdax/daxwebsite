@@ -257,6 +257,12 @@
       "description": "Abstract image representing data integration and networks.",
       "imageUrl": "https://images.unsplash.com/photo-1633355444131-2900f6890d23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb24lMjBuZXR3b3JrfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data integration network"
+    },
+    {
+      "id": "government-overview",
+      "description": "An illustration of business people interacting with an ERP chart in front of a government building.",
+      "imageUrl": "https://images.unsplash.com/photo-1709228807355-3ce39f997637?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxFUlAlMjBnb3Zlcm5tZW50fGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ERP government"
     }
   ]
 }
