@@ -133,6 +133,12 @@
       "imageHint": "professional man"
     },
     {
+      "id": "team-member-4",
+      "description": "Portrait of Puneet Nasa",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDcyMjI0OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional man smiling"
+    },
+    {
       "id": "team-member-5",
       "description": "Portrait of Anuj Rastogi",
       "imageUrl": "https://images.unsplash.com/photo-1624561172888-ac93c690e8ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0MjkyNDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -191,6 +197,36 @@
       "description": "A diverse group of colleagues holding up a sign with a world map on it.",
       "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxnbG9iYWwlMjB0ZWFtfGVufDB8fHx8MTc2NDcyMzE1OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "global team"
+    },
+    {
+      "id": "empathetic-erp",
+      "description": "A business person holding a glowing orb of interconnected people icons.",
+      "imageUrl": "https://images.unsplash.com/photo-1707533604085-7809938a169b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZW9wbGUlMjBuZXR3b3JrJTIwZ2xvYmV8ZW58MHx8fHwxNzY1MzU5NzE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people network globe"
+    },
+    {
+      "id": "greenfield-implementation",
+      "description": "A person holding a tablet with a glowing ERP logo on it.",
+      "imageUrl": "https://images.unsplash.com/photo-1708920194814-de8f553f1911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxFUlAlMjBsb2dvfGVufDB8fHx8MTc2NTM1OTcyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ERP logo"
+    },
+    {
+      "id": "broken-implementation",
+      "description": "A frustrated businessman looking at a broken computer.",
+      "imageUrl": "https://images.unsplash.com/photo-1579548122221-c61d56a33f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicm9rZW4lMjBjb21wdXRlcnxlbnwwfHx8fDE3NjUzNTk3MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "broken computer"
+    },
+    {
+      "id": "rollouts",
+      "description": "A person interacting with a holographic world map showing connected locations.",
+      "imageUrl": "https://images.unsplash.com/photo-1639893993223-954c225023c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBuZXR3b3JrJTIwaG9sb2dyYW18ZW58MHx8fHwxNzY1MzU5NzIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "global network hologram"
+    },
+    {
+      "id": "upgrades-enhancement",
+      "description": "A person drawing an upward-trending graph on a glass board.",
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjUzNTk3MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "growth chart"
     }
   ]
 }

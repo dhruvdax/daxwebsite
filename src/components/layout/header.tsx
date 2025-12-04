@@ -71,11 +71,11 @@ export default function Header() {
                     <div className="flex flex-col h-full">
                         <div className="flex items-center justify-between p-6">
                             <Link href="/" className="flex items-center space-x-2" onClick={() => setMobileMenuOpen(false)}>
-                                <DaxLogo className="h-6" />
+                                <DaxLogo className="h-8" />
                             </Link>
-                             <SheetClose className="rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
-                                <X className="h-6 w-6" />
-                                <span className="sr-only">Close</span>
+                             <SheetClose className="rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary text-xl">
+                                {/* <X className="h-6 w-6" /> */}
+                                {/* <span className="sr-only">Close</span> */}
                             </SheetClose>
                         </div>
                         <div className="p-6">
