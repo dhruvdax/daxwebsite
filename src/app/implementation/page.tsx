@@ -152,8 +152,8 @@ export default function ImplementationPage() {
               ))}
             </TabsList>
              {IMPLEMENTATION_PHASES.map((phase) => (
-                <TabsContent key={phase.id} value={phase.id} className="py-6">
-                  <p className="text-muted-foreground text-center max-w-3xl mx-auto">{phase.description}</p>
+                <TabsContent key={phase.id} value={phase.id}>
+                    <p className="text-muted-foreground text-center max-w-3xl mx-auto pt-6">{phase.description}</p>
                 </TabsContent>
             ))}
           </Tabs>
@@ -177,23 +177,25 @@ export default function ImplementationPage() {
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Which Dynamics 365 Solution is Right for You?</h2>
               </div>
               <div className="flex flex-col gap-8 max-w-4xl mx-auto">
-                  {implementationImages.map(option => (
-                      <Card key={option.title} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col md:flex-row">
-                          {option.image && 
-                            <div className="relative h-56 w-full md:w-1/3 flex-shrink-0">
-                                <Image
-                                    src={option.image.imageUrl}
-                                    alt={option.image.description}
-                                    data-ai-hint={option.image.imageHint}
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                          }
-                          <CardContent className="p-6 flex flex-col justify-center">
-                              <h3 className="text-xl font-bold font-headline">{option.title}</h3>
-                              <p className="mt-2 text-muted-foreground">{option.description}</p>
-                          </CardContent>
+                  {implementationImages.map((option, index) => (
+                      <Card key={option.title} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                        <div className={`md:flex items-center ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
+                            {option.image && 
+                                <div className="relative h-56 w-full md:w-1/3 flex-shrink-0">
+                                    <Image
+                                        src={option.image.imageUrl}
+                                        alt={option.image.description}
+                                        data-ai-hint={option.image.imageHint}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            }
+                            <CardContent className="p-6 flex flex-col justify-center">
+                                <h3 className="text-xl font-bold font-headline">{option.title}</h3>
+                                <p className="mt-2 text-muted-foreground">{option.description}</p>
+                            </CardContent>
+                        </div>
                       </Card>
                   ))}
               </div>
@@ -249,3 +251,6 @@ export default function ImplementationPage() {
   );
 }
 
+
+
+    
