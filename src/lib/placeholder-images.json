@@ -87,7 +87,7 @@
     {
       "id": "case-study-14",
       "description": "Abstract image of interconnected nodes and data streams.",
-      "imageUrl": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb258ZW58MHx8fHwxNzY0NTY5MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb258ZW58MHx8fHwxNzY0NTY5MzYyfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "data integration"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "case-study-16",
       "description": "A person interacting with a secure data interface on a tablet.",
-      "imageUrl": "https://images.unsplash.com/photo-1667372283536-a832e74401c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZWN1cmUlMjBkYXRhfGVufDB8fHx8MTc2NDUzMjAzNnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1667372283536-a832e74401c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZWN1cmUlMjBkYXRhfGVufDB8fHx8MTc2NDUzMjAzNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "secure data"
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "case-study-18",
       "description": "A person's hands on a futuristic foldable keyboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1718241905696-cb34c2c07bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMGtleWJvYXJkfGVufDB8fHx8MTc2NDQ4NTM2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1718241905696-cb34c2c07bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMGtleWJvYXJkfGVufDB8fHx8MTc2NDQ4NTM2Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic keyboard"
     },
     {
@@ -135,7 +135,7 @@
     {
       "id": "team-member-4",
       "description": "Portrait of Puneet Nasa",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDcyMjI0OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDcyMjI0OHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man smiling"
     },
     {
@@ -171,7 +171,7 @@
     {
       "id": "team-member-10",
       "description": "Portrait of Ashish Srivastava",
-      "imageUrl": "https://images.unsplash.com/photo-1520479225224-bdda1d3b23e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1520479225224-bdda1d3b23e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
@@ -267,55 +267,55 @@
     {
       "id": "guide-download",
       "description": "Stylized image of a generic guide book.",
-      "imageUrl": "https://storage.googleapis.com/stey-tmp-images/dax-common-guide.png",
+      "imageUrl": "/books/common.png",
       "imageHint": "guide book"
     },
     {
       "id": "guide-chapter-1",
       "description": "Stylized image of a guide book for Chapter 1: Understanding User Needs.",
-      "imageUrl": "https://storage.googleapis.com/stey-tmp-images/dax-chapter-1-guide.png",
+      "imageUrl": "/books/chapter-1.png",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-2",
       "description": "Stylized image of a guide book for Chapter 2: Stakeholder Engagement.",
-      "imageUrl": "https://storage.googleapis.com/stey-tmp-images/dax-chapter-2-guide.png",
+      "imageUrl": "/books/chapter-2.png",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-3",
       "description": "Stylized image of a guide book for Chapter 3: Communication.",
-      "imageUrl": "https://storage.googleapis.com/stey-tmp-images/dax-chapter-3-guide.png",
+      "imageUrl": "/books/chapter-3.png",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-4",
       "description": "Stylized image of a guide book for Chapter 4: Change Management.",
-      "imageUrl": "https://storage.googleapis.com/stey-tmp-images/dax-chapter-4-guide.png",
+      "imageUrl": "/books/chapter-4.png",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-5",
       "description": "Stylized image of a guide book for Chapter 5: User Adoption.",
-      "imageUrl": "https://storage.googleapis.com/stey-tmp-images/dax-chapter-5-guide.png",
+      "imageUrl": "/books/chapter-5.png",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-6",
       "description": "Stylized image of a guide book for Chapter 6: Problem Solving.",
-      "imageUrl": "https://storage.googleapis.com/stey-tmp-images/dax-chapter-6-guide.png",
+      "imageUrl": "/books/chapter-6.png",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-7",
       "description": "Stylized image of a guide book for Chapter 7: Feedback and Continuous Improvement.",
-      "imageUrl": "https://storage.googleapis.com/stey-tmp-images/dax-chapter-7-guide.png",
+      "imageUrl": "/books/chapter-7.png",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-8",
       "description": "Stylized image of a guide book for Chapter 8: Reduced Resistance.",
-      "imageUrl": "https://storage.googleapis.com/stey-tmp-images/dax-reduced-resistance-guide.png",
+      "imageUrl": "/books/chapter-8.png",
       "imageHint": "guide book chapter"
     }
   ]
