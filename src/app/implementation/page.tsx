@@ -134,26 +134,26 @@ export default function ImplementationPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-secondary/50">
+      <section className="py-16 md:py-24 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Working with Us</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
                 Our structured 5-phase approach ensures a seamless and successful Dynamics 365 implementation from start to finish.
             </p>
           </div>
           <Tabs defaultValue={IMPLEMENTATION_PHASES[0].id} className="w-full">
             <TabsList className="grid w-full grid-cols-2 md:grid-cols-5 h-auto">
               {IMPLEMENTATION_PHASES.map((phase, index) => (
-                <TabsTrigger key={phase.id} value={phase.id} className="flex flex-col gap-2 p-3 whitespace-normal">
-                    <span className="text-sm font-semibold text-primary">PHASE {index + 1}</span>
+                <TabsTrigger key={phase.id} value={phase.id} className="flex flex-col gap-2 p-3 whitespace-normal text-gray-300 data-[state=active]:text-primary">
+                    <span className="text-sm font-semibold">PHASE {index + 1}</span>
                     <span className="font-headline text-base">{phase.title}</span>
                 </TabsTrigger>
               ))}
             </TabsList>
              {IMPLEMENTATION_PHASES.map((phase) => (
                 <TabsContent key={phase.id} value={phase.id}>
-                    <p className="text-muted-foreground text-center max-w-3xl mx-auto pt-6">{phase.description}</p>
+                    <p className="text-gray-300 text-center max-w-3xl mx-auto pt-6">{phase.description}</p>
                 </TabsContent>
             ))}
           </Tabs>
@@ -250,9 +250,3 @@ export default function ImplementationPage() {
     </div>
   );
 }
-
-
-
-    
-
-    
