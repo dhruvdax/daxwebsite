@@ -3,8 +3,7 @@
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { useParams, notFound } from 'next/navigation';
-import React from 'react';
-import Script from 'next/script';
+import React, { useEffect } from 'react';
 
 const CHAPTER_DATA = [
     { 
@@ -71,6 +70,21 @@ export default function DownloadGuidePage() {
   const chapter = CHAPTER_DATA.find((c) => c.id === slug);
   const image = PlaceHolderImages.find(img => img.id === chapter?.imageId);
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js';
+    script.async = true;
+    script.onload = () => {
+        // The script is loaded, you can now safely assume the form loader is available.
+    };
+    document.body.appendChild(script);
+
+    return () => {
+      // Clean up the script when the component unmounts
+      document.body.removeChild(script);
+    };
+  }, []);
+
   if (!chapter) {
     notFound();
   }
@@ -102,7 +116,6 @@ export default function DownloadGuidePage() {
                 data-form-api-url="https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms"
                 data-cached-form-url={chapter.cachedFormUrl}
               ></div>
-              <Script src="https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js"></Script>
             </div>
           </div>
         </div>
