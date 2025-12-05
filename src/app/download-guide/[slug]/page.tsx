@@ -3,7 +3,7 @@
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { useParams, notFound } from 'next/navigation';
-import React, { useEffect } from 'react';
+import React, { useEffect, use } from 'react';
 
 const CHAPTER_DATA = [
     { 
@@ -72,40 +72,32 @@ export default function DownloadGuidePage() {
 
   useEffect(() => {
     const scriptId = 'dynamics-form-loader';
-    if (document.getElementById(scriptId)) {
-        // @ts-ignore
-        window.MsCrmMkt?.MsCrmFormLoader?.on(
-            'afterFormLoad',
-            function () {
-                // The form is loaded, safe to interact
-            }
-        );
-        return;
-    }
-
-    const script = document.createElement('script');
-    script.id = scriptId;
-    script.src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js';
-    script.async = true;
-    script.onload = () => {
+    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
+  
+    const loadForm = () => {
+       // @ts-ignore
+      if (window.MsCrmMkt && typeof window.MsCrmMkt.MsCrmFormLoader === 'object') {
          // @ts-ignore
-        window.MsCrmMkt?.MsCrmFormLoader?.on(
-            'afterFormLoad',
-            function () {
-                // The form is loaded, safe to interact
-            }
-        );
-    };
-    document.body.appendChild(script);
-
-    return () => {
-      const existingScript = document.getElementById(scriptId);
-      if (existingScript) {
-        // Clean up the script when the component unmounts
-        // document.body.removeChild(existingScript);
+        window.MsCrmMkt.MsCrmFormLoader.on('afterFormLoad', () => {
+          // Form is loaded
+        });
       }
     };
-  }, []);
+  
+    if (!script) {
+      script = document.createElement('script');
+      script.id = scriptId;
+      script.src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js';
+      script.async = true;
+      script.onload = loadForm;
+      document.body.appendChild(script);
+    } else {
+        loadForm();
+    }
+    
+    // The cleanup function is now intentionally left empty to prevent script removal
+    return () => {};
+  }, [slug]);
 
   if (!chapter) {
     notFound();
@@ -114,13 +106,13 @@ export default function DownloadGuidePage() {
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 py-12 md:py-24">
-        <div className="grid md:grid-cols-12 gap-12 items-center max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-12 gap-12 items-start max-w-7xl mx-auto">
           <div className="md:col-span-8">
             <p className="text-lg text-muted-foreground">Get your Empathetic ERP Guide for</p>
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline mb-8">
               <span className="text-primary">{chapter.title}</span>
             </h1>
-            <div>
+            <div id="dax-form-wrapper">
               <div
                 data-form-id={chapter.formId}
                 data-form-api-url="https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms"
@@ -145,3 +137,4 @@ export default function DownloadGuidePage() {
     </div>
   );
 }
+
