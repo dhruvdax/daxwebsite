@@ -42,7 +42,7 @@ export default function CaseStudiesPage() {
                         />
                     </div>
                 )}
-                <div className="md:col-span-8 p-4 flex flex-col flex-grow">
+                <div className="md:col-span-8 p-12 flex flex-col flex-grow">
                   <h2 className="text-xl font-bold font-headline">{study.title}</h2>
                    <p className="mt-4 text-muted-foreground flex-grow">{study.summary}</p>
                    <Button asChild className="mt-6 self-start">
