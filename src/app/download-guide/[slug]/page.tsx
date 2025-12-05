@@ -71,17 +71,39 @@ export default function DownloadGuidePage() {
   const image = PlaceHolderImages.find(img => img.id === chapter?.imageId);
 
   useEffect(() => {
+    const scriptId = 'dynamics-form-loader';
+    if (document.getElementById(scriptId)) {
+        // @ts-ignore
+        window.MsCrmMkt?.MsCrmFormLoader?.on(
+            'afterFormLoad',
+            function () {
+                // The form is loaded, safe to interact
+            }
+        );
+        return;
+    }
+
     const script = document.createElement('script');
+    script.id = scriptId;
     script.src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js';
     script.async = true;
     script.onload = () => {
-        // The script is loaded, you can now safely assume the form loader is available.
+         // @ts-ignore
+        window.MsCrmMkt?.MsCrmFormLoader?.on(
+            'afterFormLoad',
+            function () {
+                // The form is loaded, safe to interact
+            }
+        );
     };
     document.body.appendChild(script);
 
     return () => {
-      // Clean up the script when the component unmounts
-      document.body.removeChild(script);
+      const existingScript = document.getElementById(scriptId);
+      if (existingScript) {
+        // Clean up the script when the component unmounts
+        // document.body.removeChild(existingScript);
+      }
     };
   }, []);
 
@@ -92,20 +114,8 @@ export default function DownloadGuidePage() {
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 py-12 md:py-24">
-        <div className="grid md:grid-cols-1 gap-12 items-center max-w-4xl mx-auto">
-          <div className="flex items-center justify-center">
-             {image && (
-                <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    width={500}
-                    height={500}
-                    className="object-contain"
-                    data-ai-hint={image.imageHint}
-                />
-             )}
-          </div>
-          <div className="text-center">
+        <div className="grid md:grid-cols-12 gap-12 items-center max-w-7xl mx-auto">
+          <div className="md:col-span-8">
             <p className="text-lg text-muted-foreground">Get your Empathetic ERP Guide for</p>
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline mb-8">
               <span className="text-primary">{chapter.title}</span>
@@ -117,6 +127,18 @@ export default function DownloadGuidePage() {
                 data-cached-form-url={chapter.cachedFormUrl}
               ></div>
             </div>
+          </div>
+          <div className="md:col-span-4 flex items-center justify-center">
+             {image && (
+                <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    width={500}
+                    height={500}
+                    className="object-contain"
+                    data-ai-hint={image.imageHint}
+                />
+             )}
           </div>
         </div>
       </div>
