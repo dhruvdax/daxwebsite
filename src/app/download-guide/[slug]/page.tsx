@@ -127,7 +127,7 @@ export default function DownloadGuidePage() {
                     alt={image.description}
                     width={500}
                     height={500}
-                    className="object-contain"
+                    className="object-contain mt-4"
                     data-ai-hint={image.imageHint}
                 />
              )}
@@ -137,4 +137,3 @@ export default function DownloadGuidePage() {
     </div>
   );
 }
-
