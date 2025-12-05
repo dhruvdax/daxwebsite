@@ -125,12 +125,6 @@ export default function EmpatheticErpPage() {
             
             <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
-                    <div className="max-w-3xl mx-auto text-center mb-16">
-                        <p className="text-lg text-muted-foreground">
-                            DAX Software Solutions’ <strong>Empathetic ERP</strong> guide explains how an empathy‑driven approach to ERP implementation yields long‑term success. It positions the company as a <em>partner</em> rather than a vendor, stressing the importance of understanding people, effective communication, change management and continuous improvement. Below are the main points from each chapter of the guide and the concluding call to action.
-                        </p>
-                    </div>
-
                     <div className="grid md:grid-cols-[1fr_300px] gap-12">
                         <div className="space-y-12">
                             {CHAPTERS.map((chapter, index) => (
