@@ -1,10 +1,10 @@
 
+'use client';
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import React from "react";
 
 const CHAPTERS = [
     { id: 'chapter-1', title: 'Understanding User Needs' },
@@ -23,12 +23,24 @@ export default function DownloadGuideLandingPage() {
     return (
         <div className="bg-background">
             <div className="container mx-auto px-4 py-12 md:py-24">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="grid md:grid-cols-1 gap-12 items-center max-w-4xl mx-auto">
+                    <div className="flex items-center justify-center">
+                        {image && (
+                            <Image
+                                src={image.imageUrl}
+                                alt={image.description}
+                                width={500}
+                                height={500}
+                                className="object-contain"
+                                data-ai-hint={image.imageHint}
+                            />
+                        )}
+                    </div>
                     <div>
-                        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline mb-8">
+                        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline mb-8 text-center">
                             Get your Empathetic ERP Guide
                         </h1>
-                        <p className="mb-4 text-muted-foreground">Select the eBook of your choice.</p>
+                        <p className="mb-4 text-muted-foreground text-center">Select the eBook of your choice.</p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {CHAPTERS.map(chapter => (
                                 <Button key={chapter.id} asChild variant="primary-outline" size="lg" className="text-center h-auto py-4">
@@ -45,21 +57,8 @@ export default function DownloadGuideLandingPage() {
                             ))}
                         </div>
                     </div>
-                    <div className="hidden md:flex items-center justify-center">
-                        {image && (
-                            <Image
-                                src={image.imageUrl}
-                                alt={image.description}
-                                width={500}
-                                height={500}
-                                className="object-contain"
-                                data-ai-hint={image.imageHint}
-                            />
-                        )}
-                    </div>
                 </div>
             </div>
         </div>
     );
 }
-

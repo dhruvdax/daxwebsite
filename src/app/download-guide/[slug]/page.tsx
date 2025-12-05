@@ -78,8 +78,20 @@ export default function DownloadGuidePage() {
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 py-12 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="grid md:grid-cols-1 gap-12 items-center max-w-4xl mx-auto">
+          <div className="flex items-center justify-center">
+             {image && (
+                <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    width={500}
+                    height={500}
+                    className="object-contain"
+                    data-ai-hint={image.imageHint}
+                />
+             )}
+          </div>
+          <div className="text-center">
             <p className="text-lg text-muted-foreground">Get your Empathetic ERP Guide for</p>
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline mb-8">
               <span className="text-primary">{chapter.title}</span>
@@ -92,18 +104,6 @@ export default function DownloadGuidePage() {
               ></div>
               <Script src="https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js"></Script>
             </div>
-          </div>
-          <div className="hidden md:flex items-center justify-center">
-             {image && (
-                <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    width={500}
-                    height={500}
-                    className="object-contain"
-                    data-ai-hint={image.imageHint}
-                />
-             )}
           </div>
         </div>
       </div>
