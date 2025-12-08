@@ -203,7 +203,7 @@ Dax meticulously worked to integrate Microsoft’s OCR functionality into its so
 - Imposition of penalties for non-compliance.
 [E-INVOICE-PROCESS-FLOW-IMAGE]
 ## Business Pain Points
-- Based on the IRB, the requirements, seller to send sales data via E-invoice and buyer to secure copy through IRB’s portal
+Based on the IRB, the requirements, seller to send sales data via E-invoice and buyer to secure copy through IRB’s portal
 - Identifying transactions which for which E-Invoice or Self-Billing is to be processed
 - B2B sales to sales and foreign customers through lead ERP
 - Self-Billing to foreign and domestic purchases through lead ERP
