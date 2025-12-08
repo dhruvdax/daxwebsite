@@ -211,7 +211,8 @@ Based on the IRB, the requirements, seller to send sales data via E-invoice and 
 - POS sales from Company owned stores though POS application.
 #### For submission of data
 - Method to issue E-invoice and collect buyer details
-- For Self -billing - If buyers provide E-invoice, then “Self-Billing” is not required.
+- For Self -billing - If buyers provide E-invoice, then “Self-Billing” is not
+required.
 #### Data submission timelines
 - Real time or within 72 hours
 - Validation of invoice on Government portal in real time
@@ -222,11 +223,13 @@ Based on the IRB, the requirements, seller to send sales data via E-invoice and 
 - Customer stakeholders have decided to not share mode of payment and other payment details as these are “optional information”
 ## Solution
 ### Validation from ERP to Middleware
-- Along with working on day-to-day issues implemented enhancements which were on hold since long with in short period which helped to increase work efficiency.
+- Along with working on day-to-day issues implemented enhancements which were on hold since
+long with in short period which helped to increase work efficiency.
 - Customer and Vendor - contact details
 - Tax registration details - validity as on date of transactions
 - Buyer Identification details - BRN, SST and MSIC numbers
-- Transaction details - Currency, Item, quantity, sales prices, tax, transaction date and document number, tax types, classification codes
+- Transaction details - Currency, Item, quantity, sales prices, tax, transaction date and
+document number, tax types, classification codes
 ### Validation from Middleware to Government Portal
 - Customer/Vendor - TIN number validation
 - E-invoice and Consolidation status check
@@ -242,15 +245,23 @@ Based on the IRB, the requirements, seller to send sales data via E-invoice and 
 - For non-Purchase Order - Invoice Journals
 #### Data transfer to Middle ware
 - Medium of data transfer was using the API of Middleware
-- Handshake between middleware and lead ERP - based on connection tokens provided by the middleware, both system were connected and connection was tested by transferring limited set of data.
-- Trigger of data transfer was posting of Transaction in D365 Finance and Operation
-- For e.g. - On posting of sales order invoice or free text invoice or Accounts Payable invoice Journal
+- Handshake between middleware and lead ERP - based on connection tokens
+provided by the middleware, both system were connected and connection was
+tested by transferring limited set of data.
+- Trigger of data transfer was posting of Transaction in D365 Finance and
+Operation
+- For e.g. - On posting of sales order invoice or free text
+invoice or Accounts Payable invoice Journal
 #### Format of data which in which it is transferred to Middleware
 - Every API has specific template or list of fields
-- Before developing the data set for API, data mapping activity between API fields and fields on transaction and master data in the lead ERP was carried out
-- Data Header - eg contains Customer/Vendor information, document ID, contact information
+- Before developing the data set for API, data mapping activity
+between API fields and fields on transaction and master data in the
+lead ERP was carried out
+- Data Header - eg contains Customer/Vendor information, document ID,
+contact information
 - Lines - contains Item, quantity, price, tax etc
-- Payload Request - On posting of transaction, payload request is generated which transfers data to D365FO
+- Payload Request - On posting of transaction, payload request is
+generated which transfers data to D365FO
 - Response
 #### Monitoring of data
 - Creation of Repository - Log form was created in Accounts Receivable and Accounts Payable module
@@ -272,7 +283,8 @@ Based on the IRB, the requirements, seller to send sales data via E-invoice and 
 - Frequent changes in government guidelines/regulation
 - Potential penalties for non-compliance
 - Open Items which were not closed before securing sign off by stakeholders
-- Potential Delays in receiving in API from Government Portal which in turn was impacting receiving API from
+- Potential Delays in receiving in API from Government Portal which in turn was impacting
+receiving API from
 `,
         imageId: 'ocr-case-study'
     }
