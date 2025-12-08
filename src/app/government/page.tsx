@@ -1,3 +1,4 @@
+
 'use client';
 import Image from "next/image";
 import Link from "next/link";
@@ -242,7 +243,7 @@ export default function GovernmentPage() {
       <main className="bg-secondary/20">
         <section id="overview" className="py-16 md:py-24 bg-card">
             <div className="container mx-auto px-4">
-                <Card>
+                <Card className="border-0 shadow-none">
                     <CardContent className="p-8 md:p-12">
                        <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div className="space-y-6">
