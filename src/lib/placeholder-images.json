@@ -9,7 +9,7 @@
     {
       "id": "case-study-1",
       "description": "A person using a laptop with a Dynamics 365 logo visible, in an office setting.",
-      "imageUrl": "public/case-studies/electronic-invoicing-case-study.png",
+      "imageUrl": "/case-studies/electronic-invoicing-case-study.png",
       "imageHint": "Dynamics 365"
     },
     {
@@ -21,7 +21,7 @@
     {
       "id": "case-study-3",
       "description": "A dashboard on a computer screen showing Power BI analytics and charts related to Dynamics 365.",
-      "imageUrl": "https://images.unsplash.com/photo-1663769599443-26f307ef0ba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8UG93ZXIlMjBCSSUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NjQzMjM5Nzh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1663769599443-26f307ef0ba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8UG93ZXIlMjBCSSUyMGRhc2hib2FyZHxlbnwwfHx8fDE3NjQzMjM5Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Power BI dashboard"
     },
     {
@@ -39,13 +39,13 @@
     {
       "id": "case-study-6",
       "description": "Close-up of a hand interacting with a futuristic digital interface.",
-      "imageUrl": "https://images.unsplash.com/photo-1545231159-36d9938c3b0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkaWdpdGFsJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDUwMjc0MXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1545231159-36d9938c3b0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkaWdpdGFsJTIwaW50ZXJmYWNlfGVufDB8fHx8MTc2NDUwMjc0MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "digital interface"
     },
     {
       "id": "case-study-7",
       "description": "A person's hand drawing a business process flow chart on a glass board.",
-      "imageUrl": "https://images.unsplash.com/photo-1758873272648-baed343cdc8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9jZXNzJTIwZmxvd2NoYXJ0fGVufDB8fHx8MTc2NDUwMTc1NHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758873272648-baed343cdc8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9jZXNzJTIwZmxvd2NoYXJ0fGVufDB8fHx8MTc2NDUwMTc1NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "process flowchart"
     },
     {
@@ -57,13 +57,13 @@
     {
       "id": "case-study-9",
       "description": "A group of volunteers packing boxes with supplies.",
-      "imageUrl": "https://images.unsplash.com/photo-1720038561037-430fe0f20224?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dm9sdW50ZWVycyUyMHBhY2tpbmd8ZW58MHx8fHwxNzY0NTY5MzYzfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1720038561037-430fe0f20224?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dm9sdW50ZWVycyUyMHBhY2tpbmd8ZW58MHx8fHwxNzY0NTY5MzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "volunteers packing"
     },
     {
       "id": "case-study-10",
       "description": "A teacher helping students in a classroom with computers.",
-      "imageUrl": "https://images.unsplash.com/photo-1660351174962-e2a1fbb9af09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFjaGVyJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzY0NTE3Mzg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1660351174962-e2a1fbb9af09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFjaGVyJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzY0NTE3Mzg5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teacher students"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "ocr-case-study",
       "description": "An image for the OCR case study.",
-      "imageUrl": "public/case-studies/electronic-invoicing-case-study.png",
+      "imageUrl": "/case-studies/electronic-invoicing-case-study.png",
       "imageHint": "person using phone"
     },
     {
@@ -129,13 +129,13 @@
     {
       "id": "leadership-2",
       "description": "Portrait of Munish Sethi",
-      "imageUrl": "https://images.unsplash.com/photo-1566753323558-f4e0952af115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBnbGFzc2VzfGVufDB8fHx8MTc2NDcyMjI0OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1566753323558-f4e0952af115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBnbGFzc2VzfGVufDB8fHx8MTc2NDcyMjI0OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man glasses"
     },
     {
       "id": "leadership-3",
       "description": "Portrait of Puneet Nasa",
-      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0MjkyNDgzfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0MjkyNDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
@@ -147,7 +147,7 @@
     {
       "id": "team-member-5",
       "description": "Portrait of Anuj Rastogi",
-      "imageUrl": "https://images.unsplash.com/photo-1624561172888-ac93c690e8ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0MjkyNDgzfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624561172888-ac93c690e8ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0MjkyNDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
@@ -165,7 +165,7 @@
     {
       "id": "team-member-8",
       "description": "Portrait of Vikas Mehta",
-      "imageUrl": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0MjkyNDgzfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0MjkyNDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
@@ -183,7 +183,7 @@
     {
       "id": "team-member-11",
       "description": "Portrait of Tamil Magal Radhakrishnan",
-      "imageUrl": "https://images.unsplash.com/photo-1542596594-649ed6e668a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NjQyMTY2MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542596594-649ed6e668a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjB3b21hbnxlbnwwfHx8fDE3NjQyMTY2MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional woman"
     },
     {
@@ -201,13 +201,13 @@
     {
       "id": "global-team",
       "description": "A diverse group of colleagues holding up a sign with a world map on it.",
-      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxnbG9iYWwlMjB0ZWFtfGVufDB8fHx8MTc2NDcyMzE1OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxnbG9iYWwlMjB0ZWFtfGVufDB8fHx8MTc2NDcyMzE1OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "global team"
     },
     {
       "id": "empathetic-erp",
       "description": "A business person holding a glowing orb of interconnected people icons.",
-      "imageUrl": "https://images.unsplash.com/photo-1707533604085-7809938a169b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZW9wbGUlMjBuZXR3b3JrJTIwZ2xvYmV8ZW58MHx8fHwxNzY1MzU5NzE5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1707533604085-7809938a169b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZW9wbGUlMjBuZXR3b3JrJTIwZ2xvYmV8ZW58MHx8fHwxNzY1MzU5NzE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "people network globe"
     },
     {
@@ -231,7 +231,7 @@
     {
       "id": "upgrades-enhancement",
       "description": "A person drawing an upward-trending graph on a glass board.",
-      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjUzNTk3MjF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjUzNTk3MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "growth chart"
     },
     {
@@ -333,7 +333,7 @@
     {
       "id": "ocr-solution-image",
       "description": "Diagram of the OCR solution flow.",
-      "imageUrl": "/case-studies/ocr-flow.png",
+      "imageUrl": "/case-studies/optical-character-recognition-flow.png",
       "imageHint": "flow diagram"
     }
   ]
