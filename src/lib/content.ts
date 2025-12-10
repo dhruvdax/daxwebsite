@@ -71,6 +71,7 @@ Recognizing the value of innovative technologies, Dax made a strategic decision 
 [OCR-OVERVIEW-IMAGE]
 ### Business Pain Points
 hello baby
+Prior to implementing OCR, business faced several key challenges:
 - Manual Data Entry Overload: Excessive manual data entry consumed valuable time and resources, hindering productivity, and creating room for errors.
 - Inefficient Paper-Based Processes: Traditional paper interactions and document handling slowed down operations, leading to delays and decreased efficiency.
 - Data Inaccuracy and Integrity Concerns: Transcription errors and inconsistencies compromised data integrity, impacting decision-making and jeopardizing business outcomes.
