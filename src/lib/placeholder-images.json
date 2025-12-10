@@ -14,9 +14,9 @@
     },
     {
       "id": "case-study-2",
-      "description": "An illustration comparing on-premise servers in a server room to a cloud icon in the sky.",
-      "imageUrl": "https://images.unsplash.com/photo-1694490620837-a37989749e61?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbG91ZCUyMG9uLXByZW1pc2V8ZW58MHx8fHwxNzY0MzIzOTc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cloud on-premise"
+      "description": "Coffee beans being roasted in a large machine.",
+      "imageUrl": "https://images.unsplash.com/photo-1589188045232-262174a16223?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNjk5ODV8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjByb2FzdGluZ3xlbnwwfHx8fDE3MjE5Mjc3MDF8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "coffee roasting"
     },
     {
       "id": "case-study-3",
@@ -51,7 +51,7 @@
     {
       "id": "case-study-8",
       "description": "A scientist in a lab coat looking at a holographic interface.",
-      "imageUrl": "https://images.unsplash.com/photo-1645210355325-e0dd9b90e91d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY2llbnRpc3QlMjBob2xvZ3JhbXxlbnwwfHx8fDE3NjQ1NjkzNjJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1645210355325-e0dd9b90e91d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzY2llbnRpc3QlMjBob2xvZ3JhbXxlbnwwfHx8fDE3NjQ1NjkzNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scientist hologram"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "case-study-10",
       "description": "A teacher helping students in a classroom with computers.",
-      "imageUrl": "https://images.unsplash.com/photo-1660351174962-e2a1fbb9af09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFjaGVyJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzY0NTE3Mzg5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1660351174962-e2a1fbb9af09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFjaGVyJTIwc3R1ZGVudHN8ZW58MHx8fHwxNzY0NTE3Mzg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teacher students"
     },
     {
@@ -81,25 +81,25 @@
     {
       "id": "case-study-13",
       "description": "A business meeting in a modern office.",
-      "imageUrl": "https://images.unsplash.com/photo-1686771416282-3888ddaf249b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzY0NDg3Mzk0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1686771416282-3888ddaf249b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzY0NDg3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "business meeting"
     },
     {
       "id": "case-study-14",
       "description": "Abstract image of interconnected nodes and data streams.",
-      "imageUrl": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb258ZW58MHx8fHwxNzY0NTY5MzYyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb258ZW58MHx8fHwxNzY0NTY5MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data integration"
     },
     {
       "id": "case-study-15",
       "description": "A person touching a screen with a network of user icons.",
-      "imageUrl": "https://images.unsplash.com/photo-1758179762184-56f01a206ddc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx1c2VyJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ1NjkzNjJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758179762184-56f01a206ddc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx1c2VyJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ1NjkzNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "user network"
     },
     {
       "id": "case-study-16",
       "description": "A person interacting with a secure data interface on a tablet.",
-      "imageUrl": "https://images.unsplash.com/photo-1667372283536-a832e74401c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZWN1cmUlMjBkYXRhfGVufDB8fHx8MTc2NDUzMjAzNnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1667372283536-a832e74401c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZWN1cmUlMjBkYXRhfGVufDB8fHx8MTc2NDUzMjAzNnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "secure data"
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "case-study-18",
       "description": "A person's hands on a futuristic foldable keyboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1718241905696-cb34c2c07bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMGtleWJvYXJkfGVufDB8fHx8MTc2NDQ4NTM2Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1718241905696-cb34c2c07bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMGtleWJvYXJkfGVufDB8fHx8MTc2NDQ4NTM2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic keyboard"
     },
     {
@@ -141,7 +141,7 @@
     {
       "id": "team-member-4",
       "description": "Portrait of Puneet Nasa",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDcyMjI0OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDcyMjI0OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man smiling"
     },
     {
@@ -153,13 +153,13 @@
     {
       "id": "team-member-6",
       "description": "Portrait of Vijaya Bhaskar Sanyela",
-      "imageUrl": "https://images.unsplash.com/photo-1556157382-97eda2d62296?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0NTgxMDMyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556157382-97eda2d62296?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0NTgxMDMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-7",
       "description": "Portrait of Gajendiran Govindraj",
-      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0MjkyNDgzfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590086782792-42dd2350140d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBtYW58ZW58MHx8fHwxNzY0MjkyNDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
@@ -171,13 +171,13 @@
     {
       "id": "team-member-9",
       "description": "Portrait of Mohit Khanna",
-      "imageUrl": "https://images.unsplash.com/photo-1639747280804-dd2d6b3d883e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639747280804-dd2d6b3d883e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-10",
       "description": "Portrait of Ashish Srivastava",
-      "imageUrl": "https://images.unsplash.com/photo-1520479225224-bdda1d3b23e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1520479225224-bdda1d3b23e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
@@ -189,13 +189,13 @@
     {
       "id": "team-member-12",
       "description": "Portrait of Raghu Ram",
-      "imageUrl": "https://images.unsplash.com/photo-1605499923819-65a8b03ea131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605499923819-65a8b03ea131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-13",
       "description": "Portrait of Hung Phan",
-      "imageUrl": "https://images.unsplash.com/photo-1556157382-97eda2d62296?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1556157382-97eda2d62296?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fHx8MTc2NDI5MjQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man"
     },
     {
@@ -213,19 +213,19 @@
     {
       "id": "greenfield-implementation",
       "description": "A person holding a tablet with a glowing ERP logo on it.",
-      "imageUrl": "https://images.unsplash.com/photo-1708920194814-de8f553f1911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxFUlAlMjBsb2dvfGVufDB8fHx8MTc2NTM1OTcyMHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708920194814-de8f553f1911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxFUlAlMjBsb2dvfGVufDB8fHx8MTc2NTM1OTcyMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ERP logo"
     },
     {
       "id": "broken-implementation",
       "description": "A frustrated businessman looking at a broken computer.",
-      "imageUrl": "https://images.unsplash.com/photo-1579548122221-c61d56a33f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicm9rZW4lMjBjb21wdXRlcnxlbnwwfHx8fDE3NjUzNTk3MjB8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579548122221-c61d56a33f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicm9rZW4lMjBjb21wdXRlcnxlbnwwfHx8fDE3NjUzNTk3MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "broken computer"
     },
     {
       "id": "rollouts",
       "description": "A person interacting with a holographic world map showing connected locations.",
-      "imageUrl": "https://images.unsplash.com/photo-1639893993223-954c225023c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBuZXR3b3JrJTIwaG9sb2dyYW18ZW58MHx8fHwxNzY1MzU5NzIxZww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639893993223-954c225023c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBuZXR3b3JrJTIwaG9sb2dyYW18ZW58MHx8fHwxNzY1MzU5NzIxZww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "global network hologram"
     },
     {
@@ -237,13 +237,13 @@
     {
       "id": "power-apps-integration",
       "description": "Power Apps logo on a digital background.",
-      "imageUrl": "https://images.unsplash.com/photo-1650080539199-3178224097e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQb3dlciUyMEFwcHMlMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650080539199-3178224097e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQb3dlciUyMEFwcHMlMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Power Apps logo"
     },
     {
       "id": "dell-boomi-integration",
       "description": "A hand holding a glowing Dell Boomi logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1700684074003-247963717282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxEZWxsJTIwQm9vbWklMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1700684074003-247963717282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxEZWxsJTIwQm9vbWklMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Dell Boomi logo"
     },
     {
@@ -255,19 +255,19 @@
     {
       "id": "micro-services-integration",
       "description": "A person pointing at a microservices architecture diagram.",
-      "imageUrl": "https://images.unsplash.com/photo-1629904853716-f0bc64219491?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWNybyUyMHNlcnZpY2VzJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629904853716-f0bc64219491?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWNybyUyMHNlcnZpY2VzJTIwYXJjaGl0ZWN0dXJlfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "microservices architecture"
     },
     {
       "id": "dell-boomi-case-study",
       "description": "Abstract image representing data integration and networks.",
-      "imageUrl": "https://images.unsplash.com/photo-1633355444131-2900f6890d23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb24lMjBuZXR3b3JrfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633355444131-2900f6890d23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb24lMjBuZXR3b3JrfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data integration network"
     },
     {
       "id": "government-overview",
       "description": "An illustration of business people interacting with an ERP chart in front of a government building.",
-      "imageUrl": "https://images.unsplash.com/photo-1709228807355-3ce39f997637?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxFUlAlMjBnb3Zlcm5tZW50fGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1709228807355-3ce39f997637?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxFUlAlMjBnb3Zlcm5tZW50fGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ERP government"
     },
     {

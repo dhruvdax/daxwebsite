@@ -70,7 +70,6 @@ export const CASE_STUDIES = [
 Recognizing the value of innovative technologies, Dax made a strategic decision to integrate Microsoft’s OCR (Optical Character Recognition) functionality into its existing suite of business applications. This move aimed to simplify document processing, automate data extraction, and drive digital transformation for its clients.
 [OCR-OVERVIEW-IMAGE]
 ### Business Pain Points
-hello baby
 Prior to implementing OCR, business faced several key challenges:
 - Manual Data Entry Overload: Excessive manual data entry consumed valuable time and resources, hindering productivity, and creating room for errors.
 - Inefficient Paper-Based Processes: Traditional paper interactions and document handling slowed down operations, leading to delays and decreased efficiency.
@@ -89,10 +88,37 @@ Dax meticulously worked to integrate Microsoft’s OCR functionality into its so
         imageId: 'case-study-1'
     },
     {
-        title: 'D365 F&O Implementation/Manages Support for a leading Fast Food Manufacturer and Retail Company',
+        title: 'D365 F&O Implementation/Managed Support for a leading Fast Food Manufacturer and Retail Company',
         slug: 'd365-fo-fast-food',
         summary: 'D365 F&O offers a comprehensive suite of features for managing all aspects of a retail business, including finance, supply chain management, manufacturing, project management, and customer relationship management (CRM).',
-        details: 'For a leading fast-food manufacturer, we deployed a full-scale D365 Finance & Operations solution. This project covered everything from supply chain management and manufacturing to retail operations and financial reporting. The integrated system provides real-time visibility into their entire business, enabling better decision-making and operational agility.',
+        details: `### Overview
+The company is one of the biggest Manufacture and Retail companies that produces Coffee beans and sells Coffee and Tea through its retail stores in the United States, Malaysia, and Singapore.
+### Business Pain Points
+- Global franchising involving bulk movement and recording of fixed assets.
+- Asset depreciation entries not coinciding with asset's actual utilization.
+- ERP global template roll-out affecting project deadlines.
+- Global delivery Issues, Slow resolution of Support issues.
+- Month end closing issues, Cross company toll Manufacturing issues.
+[CTA-BLOCK]
+### Solution
+- Customize to Facilitate bulk transfer and disposal of asset
+- Quantitative information of assets on hand to enable intelligent decision making
+- Amendment to depreciation functionality to consider asset utilization
+- Auto generation of vendor payments for Singapore and Malaysia
+- Devised functionality to facilitate recording of Store Transactions
+- Toll manufacturing solution using combination of out of box functionalities
+#### Modules
+- Microsoft Dynamics 365 F&O
+- Fixed Assets
+- GL, AP & AR
+- Product Information Management
+- Manufacturing
+- Warehouse Management
+### Benefits
+- With implementation of functionality - the customer had successful roll out of fixed asset module to its group company in Asia.
+- Made new product for Fixed assets which was very successful.
+- Smooth migration of Companies in ERP system after M&A (Review).
+- Significant man hours saving and reduction of redundancy in processes.`,
         imageId: 'case-study-2'
     },
     {
