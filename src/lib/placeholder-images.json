@@ -9,7 +9,7 @@
     {
       "id": "case-study-1",
       "description": "Person using a phone to scan a document.",
-      "imageUrl": "/case-studies/ocr.jpeg",
+      "imageUrl": "/case-studies/electronic-invoicing-case-study.png",
       "imageHint": "phone scan document"
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "case-study-7",
       "description": "A person's hand drawing a business process flow chart on a glass board.",
-      "imageUrl": "https://images.unsplash.com/photo-1758873272648-baed343cdc8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwcm9jZXNzJTIwZmxvd2NoYXJ0fGVufDB8fHx8MTc2NDUwMTc1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/case-studies/implementation-for-security-system.jpeg",
       "imageHint": "process flowchart"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "ocr-case-study",
       "description": "A person using a laptop with a Dynamics 365 logo visible, in an office setting.",
-      "imageUrl": "/case-studies/electronic-invoicing-case-study.png",
+      "imageUrl": "/case-studies/ocr.jpeg",
       "imageHint": "Dynamics 365"
     },
     {
