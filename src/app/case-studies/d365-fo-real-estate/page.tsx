@@ -1,3 +1,4 @@
+
 'use client';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -35,14 +36,6 @@ export default function CaseStudyPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="prose prose-lg max-w-none dark:prose-invert prose-headings:font-headline prose-h2:text-accent dark:prose-h2:text-white prose-h3:text-accent dark:prose-h3:text-white prose-h3:text-2xl prose-h3:mb-4 space-y-6">
             <p className="text-muted-foreground">{study.details}</p>
-          </div>
-          <div className="mt-12 text-center">
-            <Button asChild variant="outline">
-              <Link href="/case-studies">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Case Studies
-              </Link>
-            </Button>
           </div>
         </div>
       </main>

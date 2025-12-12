@@ -1,3 +1,4 @@
+
 'use client';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -154,15 +155,6 @@ export default function CaseStudyPage() {
               <li className="flex items-start gap-3"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span className="text-muted-foreground text-base">Open Items which were not closed before securing sign off by stakeholders</span></li>
               <li className="flex items-start gap-3"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span className="text-muted-foreground text-base">Potential Delays in receiving in API from Government Portal which in turn was impacting receiving API from</span></li>
             </ul>
-          </div>
-
-           <div className="mt-12 text-center">
-            <Button asChild variant="outline">
-              <Link href="/case-studies">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Case Studies
-              </Link>
-            </Button>
           </div>
         </div>
       </main>

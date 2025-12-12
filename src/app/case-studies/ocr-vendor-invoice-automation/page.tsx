@@ -1,3 +1,4 @@
+
 'use client';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -117,14 +118,6 @@ export default function CaseStudyPage() {
                     <Button asChild size="lg" className="mt-4">
                       <Link href="/contact">Contact Us</Link>
                   </Button>
-              </div>
-               <div className="mt-12 text-center">
-                <Button asChild variant="outline">
-                  <Link href="/case-studies">
-                    <ArrowLeft className="mr-2 h-4 w-4" />
-                    Back to Case Studies
-                  </Link>
-                </Button>
               </div>
           </div>
       </main>
