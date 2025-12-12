@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowLeft, Check } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import CaseStudyCTA from '@/components/case-study-cta';
 
 export default function CaseStudyPage() {
   const slug = 'd365-field-service-integrator';
@@ -35,8 +36,98 @@ export default function CaseStudyPage() {
       <main className="py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="prose prose-lg max-w-none dark:prose-invert prose-headings:font-headline prose-h2:text-accent dark:prose-h2:text-white prose-h3:text-accent dark:prose-h3:text-white prose-h3:text-2xl prose-h3:mb-4 space-y-6">
-            <p className="text-muted-foreground">{study.details}</p>
+            
+            <div className="grid md:grid-cols-2 gap-12 items-center not-prose">
+                <div className="space-y-4">
+                    <h3 className="text-2xl font-bold font-headline mt-8 mb-4 prose">Overview</h3>
+                    <p className="text-muted-foreground">The customer is a global systems integrator that works alongside a global network of partners and manufacturers to design, install and service security, fire alarm, life safety, audio-visual, and building automation solutions for enterprise customers.</p>
+                </div>
+                {image && (
+                    <div className="relative h-64 w-full">
+                        <Image 
+                            src={image.imageUrl}
+                            alt={image.description}
+                            data-ai-hint={image.imageHint}
+                            fill
+                            className="rounded-lg shadow-lg object-cover"
+                        />
+                    </div>
+                )}
+            </div>
+            
+            <h3 className="text-2xl font-bold font-headline mt-8 mb-4">Business Pain Points</h3>
+            <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">No real-time information regarding work orders to provide support.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">No application access over Mobile and other hand-held devices for Field Service Support technicians thus leading to lack of updates for Service Requests.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">Lack of segregation of duties for various Roles in the organization such as Field Service Administrators and Field Technicians.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">Lack of consolidation of financial matrices regarding revenue and pipeline.</span>
+                </li>
+            </ul>
+
+            <Card className="bg-secondary/50 my-12 not-prose">
+                <CardContent className="p-8 md:p-12 text-center">
+                    <h3 className="text-2xl font-bold font-headline text-accent dark:text-white">Looking for support with D365 Field Service integration or implementation?</h3>
+                    <p className="mt-2 text-lg text-muted-foreground">With 20+ years of industry experience in ERP and CRM, DAX is proficient in crafting tailored solutions to meet the needs of businesses.</p>
+                    <Button asChild size="lg" className="mt-6">
+                        <Link href="/contact">Contact Us</Link>
+                    </Button>
+                </CardContent>
+            </Card>
+
+            <h3 className="text-2xl font-bold font-headline mt-8 mb-4">Solution</h3>
+             <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">Implemented Field Service Module of Dynamics 365 CE integrated with Finance and Supply Chain Modules of D365 F&O.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">Enabled organization to capture end-to-end process flow including Customer Onboarding, Maintaining Product Catalogue, Creation and Action and Closure of Work Orders.</span>
+                </li>
+                 <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">Integration with other applications to capture Customer Profile & Time sheets etc. helped get a comprehensive view of the Business.</span>
+                </li>
+            </ul>
+
+            <h4 className="text-xl font-bold font-headline mt-6 mb-2">Modules:</h4>
+            <ul className="space-y-3">
+                <li className="flex items-start gap-3"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span className="text-muted-foreground text-base">Microsoft Dynamics CRM</span></li>
+                <li className="flex items-start gap-3 ml-4"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span className="text-muted-foreground text-base">Field Service</span></li>
+                <li className="flex items-start gap-3 ml-4"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span className="text-muted-foreground text-base">Field marketing</span></li>
+                <li className="flex items-start gap-3 ml-4"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span className="text-muted-foreground text-base">Sales & Marketing</span></li>
+                <li className="flex items-start gap-3 ml-4"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span className="text-muted-foreground text-base">Customer care</span></li>
+            </ul>
+
+
+            <h3 className="text-2xl font-bold font-headline mt-8 mb-4">Benefits</h3>
+            <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">Significant improvement in productivity for the Field Service workforce and real time tracking of Service Requests hence leading to an improvement in Customer experience and higher Customer Satisfaction.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">An integrated application to Track real time Inventory, Availability of Field Technicians and Requests requiring service enabling quicker action and better service Levels.</span>
+                </li>
+                 <li className="flex items-start gap-3">
+                    <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
+                    <span className="text-muted-foreground text-base">Availability of Real time Service and Financial Information thus improving the various fiscal parameters.</span>
+                </li>
+            </ul>
           </div>
+          <CaseStudyCTA />
         </div>
       </main>
     </div>
