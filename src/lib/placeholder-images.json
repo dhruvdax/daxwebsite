@@ -8,9 +8,9 @@
     },
     {
       "id": "case-study-1",
-      "description": "Person using a phone to scan a document.",
-      "imageUrl": "/case-studies/ocr.jpeg",
-      "imageHint": "phone scan document"
+      "description": "A person using a laptop with a Dynamics 365 logo visible, in an office setting.",
+      "imageUrl": "/case-studies/electronic-invoicing-case-study.png",
+      "imageHint": "Dynamics 365"
     },
     {
       "id": "case-study-2",
@@ -103,22 +103,10 @@
       "imageHint": "secure data"
     },
     {
-      "id": "e-invoice-process-flow",
-      "description": "E-Invoice Process Flow Diagram",
-      "imageUrl": "/case-studies/electronic-invoicing-process-flow.png",
-      "imageHint": "process flow"
-    },
-    {
       "id": "case-study-18",
       "description": "A person's hands on a futuristic foldable keyboard.",
       "imageUrl": "https://images.unsplash.com/photo-1718241905696-cb34c2c07bed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnV0dXJpc3RpYyUyMGtleWJvYXJkfGVufDB8fHx8MTc2NDQ4NTM2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "futuristic keyboard"
-    },
-    {
-      "id": "case-study-19",
-      "description": "A person using a laptop with a Dynamics 365 logo visible, in an office setting.",
-      "imageUrl": "/case-studies/electronic-invoicing-case-study.png",
-      "imageHint": "Dynamics 365"
     },
     {
       "id": "leadership-1",
@@ -213,7 +201,7 @@
     {
       "id": "greenfield-implementation",
       "description": "A person holding a tablet with a glowing ERP logo on it.",
-      "imageUrl": "https://images.unsplash.com/photo-1708920194814-de8f5b553f1911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxFUlAlMjBsb2dvfGVufDB8fHx8MTc2NTM1OTcyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1708920194814-de8f5b553f1911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxFUlAlMjBsb2dvfGVufDB8fHx8MTc2NTM1OTcyMHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "ERP logo"
     },
     {
@@ -225,25 +213,25 @@
     {
       "id": "rollouts",
       "description": "A person interacting with a holographic world map showing connected locations.",
-      "imageUrl": "https://images.unsplash.com/photo-1639893993223-954c225023c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBuZXR3b3JrJTIwaG9sb2dyYW18ZW58MHx8fHwxNzY1MzU5NzIxZww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639893993223-954c225023c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBuZXR3b3JrJTIwaG9sb2dyYW18ZW58MHx8fHwxNzY1MzU5NzIxZww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "global network hologram"
     },
     {
       "id": "upgrades-enhancement",
       "description": "A person drawing an upward-trending graph on a glass board.",
-      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjUzNTk3MjF8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjUzNTk3MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "growth chart"
     },
     {
       "id": "power-apps-integration",
       "description": "Power Apps logo on a digital background.",
-      "imageUrl": "https://images.unsplash.com/photo-1650080539199-3178224097e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQb3dlciUyMEFwcHMlMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1650080539199-3178224097e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQb3dlciUyMEFwcHMlMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Power Apps logo"
     },
     {
       "id": "dell-boomi-integration",
       "description": "A hand holding a glowing Dell Boomi logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1700684074003-247963717282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxEZWxsJTIwQm9vbWklMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1700684074003-247963717282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxEZWxsJTIwQm9vbWklMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Dell Boomi logo"
     },
     {
@@ -261,7 +249,7 @@
     {
       "id": "dell-boomi-case-study",
       "description": "Abstract image representing data integration and networks.",
-      "imageUrl": "https://images.unsplash.com/photo-1633355444131-2900f6890d23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb24lMjBuZXR3b3JrfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633355444131-2900f6890d23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwaW50ZWdyYXRpb24lMjBuZXR3b3JrfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data integration network"
     },
     {
@@ -325,7 +313,7 @@
       "imageHint": "guide book chapter"
     },
     {
-      "id": "ocr-overview-image",
+      "id": "ocr-case-study",
       "description": "Person using a phone to scan a document.",
       "imageUrl": "/case-studies/ocr.jpeg",
       "imageHint": "phone scan document"

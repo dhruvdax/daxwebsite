@@ -67,7 +67,7 @@ export const CASE_STUDIES = [
         slug: 'ocr-vendor-invoice-automation',
         summary: 'Research shows that companies using OCR for automated data entry from invoices process 25-60% more invoices than companies using manual data entry.',
         details: 'For a leading retail client, we implemented an OCR solution to automate their vendor invoice processing. This eliminated manual data entry, reduced errors, and accelerated their procure-to-pay cycle significantly.',
-        imageId: 'case-study-1'
+        imageId: 'ocr-case-study'
     },
     {
         title: 'D365 F&O Implementation/Managed Support for a leading Fast Food Manufacturer and Retail Company',
@@ -179,7 +179,7 @@ export const CASE_STUDIES = [
         slug: 'electronic-invoicing-d365',
         summary: 'Optimize your billing process with Electronic Invoicing in D365 Finance and Operations, ensuring automation, compliance, and efficiency.',
         details: `We implemented an end-to-end electronic invoicing solution within D365 F&O for a large enterprise, ensuring compliance with government mandates. The solution automated the generation, submission, and monitoring of e-invoices, drastically reducing manual effort and eliminating penalties for non-compliance.`,
-        imageId: 'case-study-19'
+        imageId: 'case-study-1'
     }
 ];
 
