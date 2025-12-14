@@ -451,9 +451,9 @@ export default function Microsoft365Page() {
                 <h3 className="text-center text-3xl font-bold font-headline mb-12">Research findings from early Copilot users <sup>3</sup></h3>
                  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                      {RESEARCH_FINDINGS.map(finding => (
-                        <Card key={finding.description} className="p-6">
-                            <CardContent className="p-0 flex items-start gap-4">
-                                <Image src={finding.icon} alt="" width={60} height={60} className="flex-shrink-0" />
+                        <Card key={finding.description} className="p-6 text-center">
+                            <CardContent className="p-0 flex flex-col items-center gap-4">
+                                <Image src={finding.icon} alt="" width={60} height={60} />
                                 <div>
                                     <p className="text-4xl font-bold font-headline text-primary">{finding.value}</p>
                                     <p className="text-muted-foreground mt-1">{finding.description}</p>
@@ -496,5 +496,3 @@ export default function Microsoft365Page() {
     </div>
   );
 }
-
-    
