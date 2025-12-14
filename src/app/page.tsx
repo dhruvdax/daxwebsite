@@ -106,7 +106,7 @@ export default function Home() {
                     <h2 className="font-headline text-3xl font-bold mt-2">EMPATHETIC ERP</h2>
                     <p className="mt-4 text-lg">The Key to Successful Implementations and Lasting Partnerships: Projects led by empathetic partnerships demonstrate a 30% improvement in on-time delivery.</p>
                     <Button asChild className="mt-6">
-                        <Link href="#">READ MORE<ArrowRight /></Link>
+                        <Link href="/empathetic-erp">READ MORE<ArrowRight /></Link>
                     </Button>
                 </div>
               </div>
