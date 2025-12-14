@@ -40,9 +40,9 @@ const CORE_VALUES = [
 ];
 
 const LEADERSHIP = [
-    { name: 'Sanjeev Munjal', role: 'Founder & Managing Partner', imageId: 'leadership-1' },
-    { name: 'Munish Sethi', role: 'Founder & Managing Partner', imageId: 'leadership-2' },
-    { name: 'Puneet Nasa', role: 'Managing Partner', imageId: 'leadership-3' },
+    { name: 'Sanjeev Munjal', role: 'Founder & Managing Partner', imageId: 'sanjeev' },
+    { name: 'Munish Sethi', role: 'Founder & Managing Partner', imageId: 'munish' },
+    { name: 'Puneet Nasa', role: 'Managing Partner', imageId: 'puneet' },
 ];
 
 export default function AboutUsPage() {
@@ -80,11 +80,6 @@ export default function AboutUsPage() {
             });
         };
     }, []);
-
-    const leadershipImages = LEADERSHIP.map(l => ({
-        ...l,
-        image: PlaceHolderImages.find(img => img.id === l.imageId)
-    }));
 
     const globalTeamImage = PlaceHolderImages.find(img => img.id === 'global-team');
 
@@ -218,14 +213,15 @@ export default function AboutUsPage() {
                     </blockquote>
                 </div>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-                    {leadershipImages.map((member) => (
+                    {LEADERSHIP.map((member) => (
                         <div key={member.name} className="text-center flex flex-col items-center">
-                            <Avatar className="h-40 w-40 border-4 border-primary/20 mb-4">
-                                {member.image && (
-                                    <AvatarImage src={member.image.imageUrl} alt={member.name} data-ai-hint={member.image.imageHint} />
-                                )}
-                                <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                            </Avatar>
+                             <Image
+                                src={`/${member.imageId}.png`}
+                                alt={member.name}
+                                width={144}
+                                height={144}
+                                className="rounded-full mb-4 border-4 border-primary/20 object-cover w-36 h-36"
+                            />
                             <h3 className="text-xl font-bold font-headline">{member.name}</h3>
                             <p className="text-md text-primary">{member.role}</p>
                         </div>
@@ -252,7 +248,3 @@ export default function AboutUsPage() {
     </div>
   );
 }
-
-    
-
-    
