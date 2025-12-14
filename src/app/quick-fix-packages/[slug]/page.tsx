@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useParams, notFound } from 'next/navigation';
@@ -95,7 +96,7 @@ export default function QuickFixPackageRequestPage() {
     return (
         <div className="bg-background">
             <section className="container mx-auto px-4 py-12 md:py-24">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="max-w-4xl mx-auto text-center">
                     <div>
                         <p className="text-lg text-muted-foreground">Request more details about quick-fix package related to</p>
                         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline mb-8 text-primary">
@@ -106,15 +107,6 @@ export default function QuickFixPackageRequestPage() {
                             data-form-api-url='https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms'
                             data-cached-form-url={pkg.cachedFormUrl}
                         ></div>
-                    </div>
-                    <div className="flex items-center justify-center">
-                         <Image
-                            src="/assets/images/quick-fix-packages.svg"
-                            alt="Quick Fix Packages"
-                            width={500}
-                            height={500}
-                            className="object-contain"
-                        />
                     </div>
                 </div>
             </section>
