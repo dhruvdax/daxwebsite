@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,7 +30,7 @@ export default function TeamPage() {
                         width="100" 
                         height="100" 
                         className="rounded-full mb-4" 
-                        src={`/assets/images/${member.imageId}.png`}
+                        src={`/${member.imageId}.png`}
                         alt={member.name} 
                     />
                     <h4 className="text-xl font-bold font-headline">{member.name}</h4>
