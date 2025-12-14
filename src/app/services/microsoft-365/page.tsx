@@ -1,5 +1,6 @@
+
 'use client';
-import { useFormState } from 'react-dom';
+import { useActionState, useEffect, useRef } from 'react';
 import { useFormStatus } from 'react-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -7,7 +8,6 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { getM365LicensingInquiry } from '@/app/actions';
-import { useEffect, useRef } from 'react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Check, MailCheck, HardHat, Rocket, Zap, HeartHandshake, Bot, BarChart } from 'lucide-react';
 import Image from 'next/image';
@@ -28,16 +28,16 @@ const PLANS = [
       'Optional add-on: Microsoft 365 Copilot',
     ],
     services: [
-      { name: 'Teams', icon: '/icons/m365/teams.svg' },
-      { name: 'OneDrive', icon: '/icons/m365/onedrive.svg' },
-      { name: 'SharePoint', icon: '/icons/m365/sharepoint.svg' },
-      { name: 'Exchange', icon: '/icons/m365/exchange.svg' },
+      { name: 'Teams', icon: '/m365-icons/teams.svg' },
+      { name: 'OneDrive', icon: '/m365-icons/onedrive.svg' },
+      { name: 'SharePoint', icon: '/m365-icons/sharepoint.svg' },
+      { name: 'Exchange', icon: '/m365-icons/exchange.svg' },
     ],
     apps: [
-      { name: 'Word', icon: '/icons/m365/word.svg' },
-      { name: 'Excel', icon: '/icons/m365/excel.svg' },
-      { name: 'PowerPoint', icon: '/icons/m365/powerpoint.svg' },
-      { name: 'Outlook', icon: '/icons/m365/outlook.svg' },
+      { name: 'Word', icon: '/m365-icons/word.svg' },
+      { name: 'Excel', icon: '/m365-icons/excel.svg' },
+      { name: 'PowerPoint', icon: '/m365-icons/powerpoint.svg' },
+      { name: 'Outlook', icon: '/m365-icons/outlook.svg' },
     ],
     appsLabel: 'Web and mobile apps only:',
   },
@@ -52,16 +52,16 @@ const PLANS = [
       'Optional add-on: Microsoft 365 Copilot',
     ],
     services: [
-        { name: 'Word', icon: '/icons/m365/word.svg' },
-        { name: 'Excel', icon: '/icons/m365/excel.svg' },
-        { name: 'PowerPoint', icon: '/icons/m365/powerpoint.svg' },
-        { name: 'Outlook', icon: '/icons/m365/outlook.svg' },
-        { name: 'Teams', icon: '/icons/m365/teams.svg' },
-        { name: 'OneDrive', icon: '/icons/m365/onedrive.svg' },
-        { name: 'SharePoint', icon: '/icons/m365/sharepoint.svg' },
-        { name: 'Exchange', icon: '/icons/m365/exchange.svg' },
-        { name: 'Clipchamp', icon: '/icons/m365/clipchamp.svg' },
-        { name: 'Loop', icon: '/icons/m365/loop.svg' },
+        { name: 'Word', icon: '/m365-icons/word.svg' },
+        { name: 'Excel', icon: '/m365-icons/excel.svg' },
+        { name: 'PowerPoint', icon: '/m365-icons/powerpoint.svg' },
+        { name: 'Outlook', icon: '/m365-icons/outlook.svg' },
+        { name: 'Teams', icon: '/m365-icons/teams.svg' },
+        { name: 'OneDrive', icon: '/m365-icons/onedrive.svg' },
+        { name: 'SharePoint', icon: '/m365-icons/sharepoint.svg' },
+        { name: 'Exchange', icon: '/m365-icons/exchange.svg' },
+        { name: 'Clipchamp', icon: '/m365-icons/clipchamp.svg' },
+        { name: 'Loop', icon: '/m365-icons/loop.svg' },
     ],
     apps: [],
     appsLabel: 'Desktop, web, and mobile apps and secure cloud services:',
@@ -80,20 +80,20 @@ const PLANS = [
         'Optional add-on: Microsoft 365 Copilot',
     ],
     services: [
-        { name: 'Word', icon: '/icons/m365/word.svg' },
-        { name: 'Excel', icon: '/icons/m365/excel.svg' },
-        { name: 'PowerPoint', icon: '/icons/m365/powerpoint.svg' },
-        { name: 'Outlook', icon: '/icons/m365/outlook.svg' },
-        { name: 'Teams', icon: '/icons/m365/teams.svg' },
-        { name: 'OneDrive', icon: '/icons/m365/onedrive.svg' },
-        { name: 'SharePoint', icon: '/icons/m365/sharepoint.svg' },
-        { name: 'Exchange', icon: '/icons/m365/exchange.svg' },
-        { name: 'Clipchamp', icon: '/icons/m365/clipchamp.svg' },
-        { name: 'Loop', icon: '/icons/m365/loop.svg' },
-        { name: 'Entra ID', icon: '/icons/m365/entra-id.svg' },
-        { name: 'Intune', icon: '/icons/m365/intune.svg' },
-        { name: 'Defender', icon: '/icons/m365/defender.svg' },
-        { name: 'Purview', icon: '/icons/m365/purview.svg' },
+        { name: 'Word', icon: '/m365-icons/word.svg' },
+        { name: 'Excel', icon: '/m365-icons/excel.svg' },
+        { name: 'PowerPoint', icon: '/m365-icons/powerpoint.svg' },
+        { name: 'Outlook', icon: '/m365-icons/outlook.svg' },
+        { name: 'Teams', icon: '/m365-icons/teams.svg' },
+        { name: 'OneDrive', icon: '/m365-icons/onedrive.svg' },
+        { name: 'SharePoint', icon: '/m365-icons/sharepoint.svg' },
+        { name: 'Exchange', icon: '/m365-icons/exchange.svg' },
+        { name: 'Clipchamp', icon: '/m365-icons/clipchamp.svg' },
+        { name: 'Loop', icon: '/m365-icons/loop.svg' },
+        { name: 'Entra ID', icon: '/m365-icons/entra-id.svg' },
+        { name: 'Intune', icon: '/m365-icons/intune.svg' },
+        { name: 'Defender', icon: '/m365-icons/defender.svg' },
+        { name: 'Purview', icon: '/m365-icons/purview.svg' },
     ],
     apps: [],
     appsLabel: 'Desktop, web, and mobile apps and secure cloud services:',
@@ -108,11 +108,11 @@ const PLANS = [
         'Optional add-on: Microsoft 365 Copilot, offering advanced productivity tools',
     ],
     services: [
-        { name: 'Word', icon: '/icons/m365/word.svg' },
-        { name: 'Excel', icon: '/icons/m365/excel.svg' },
-        { name: 'PowerPoint', icon: '/icons/m365/powerpoint.svg' },
-        { name: 'Outlook', icon: '/icons/m365/outlook.svg' },
-        { name: 'OneDrive', icon: '/icons/m365/onedrive.svg' },
+        { name: 'Word', icon: '/m365-icons/word.svg' },
+        { name: 'Excel', icon: '/m365-icons/excel.svg' },
+        { name: 'PowerPoint', icon: '/m365-icons/powerpoint.svg' },
+        { name: 'Outlook', icon: '/m365-icons/outlook.svg' },
+        { name: 'OneDrive', icon: '/m365-icons/onedrive.svg' },
     ],
     apps: [],
     appsLabel: 'Desktop, web, and mobile apps and secure cloud services:',
@@ -186,10 +186,10 @@ const COPILOT_BENEFITS = [
 ];
 
 const RESEARCH_FINDINGS = [
-    { value: '70%', description: 'Said they were more productive', icon: '/icons/m365/productivity.svg' },
-    { value: '4x', description: 'Nearly 4x faster catching up on a missed meeting', icon: '/icons/m365/speed.svg' },
-    { value: '29%', description: 'Faster overall in a series of tasks (searching, writing, and summarizing)', icon: '/icons/m365/fast-task.svg' },
-    { value: '77%', description: 'Said they didn’t want to give it up', icon: '/icons/m365/utilization.svg' }
+    { value: '70%', description: 'Said they were more productive', icon: '/m365-icons/productivity.svg' },
+    { value: '4x', description: 'Nearly 4x faster catching up on a missed meeting', icon: '/m365-icons/speed.svg' },
+    { value: '29%', description: 'Faster overall in a series of tasks (searching, writing, and summarizing)', icon: '/m365-icons/fast-task.svg' },
+    { value: '77%', description: 'Said they didn’t want to give it up', icon: '/m365-icons/utilization.svg' }
 ];
 
 const FAQS = [
@@ -204,7 +204,7 @@ const FAQS = [
     {
         question: "What are the differences between monthly and annual payment options?",
         answer: `Discover the flexibility in payment plans that match your needs:<br/><br/>
-        <ul>
+        <ul class="list-disc pl-5">
             <li class="mb-2"><strong>Monthly payment option:</strong> Pay on a month-to-month basis with the freedom to cancel anytime.</li>
             <li><strong>Annual commitment payment:</strong> Opt for a discounted rate with a one-year commitment. Easily switch from monthly to annual billing through the Microsoft 365 admin center after your initial purchase.</li>
         </ul>
@@ -229,7 +229,7 @@ const FAQS = [
     {
         question: "How many participants can join online meetings and video calls on Microsoft Teams?",
         answer: `Experience seamless collaboration with Microsoft Teams: <br/><br/>
-        <ul>
+        <ul class="list-disc pl-5">
             <li class="mb-2">For Microsoft 365 Business Basic, Business Standard, and Business Premium subscriptions that include Microsoft Teams licenses, meetings and video calls can host up to 300 participants.</li>
             <li>Subscriptions such as Microsoft 365 E3 and E5, A3 and A5, or Government G3 and G5 expand this capacity, allowing meetings to accommodate up to 1,000 participants.</li>
         </ul>`
@@ -255,7 +255,7 @@ function SubmitButton() {
 }
 
 export default function Microsoft365Page() {
-  const [state, formAction] = useFormState(
+  const [state, formAction] = useActionState(
     getM365LicensingInquiry,
     initialState
   );
@@ -270,7 +270,7 @@ export default function Microsoft365Page() {
 
   return (
     <div className="bg-background">
-      <section className="relative bg-accent text-accent-foreground py-16 md:py-24">
+      <section id="form-section" className="relative bg-accent text-accent-foreground py-16 md:py-24">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
@@ -281,45 +281,45 @@ export default function Microsoft365Page() {
                 Discover the ideal Microsoft 365 subscription suited for your business needs with competitive pricing from DAX.
               </p>
               <div className="mt-8">
-                <Button variant="primary-outline" size="lg" onClick={() => document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' })}>
+                <Button variant="primary-outline" size="lg" onClick={() => document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>
                   Compare plans and pricing
                 </Button>
               </div>
             </div>
             <div>
-              <Card className="p-8 shadow-2xl">
+              <Card className="p-8 shadow-2xl bg-card text-card-foreground">
                 <CardContent className="p-0">
                   <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
                   <form action={formAction} ref={formRef} className="space-y-4">
                     <div>
                       <Label htmlFor="fname">First Name</Label>
                       <Input id="fname" name="fname" required />
-                      {state?.errors?.fname && <p className="text-red-500 text-sm mt-1">{state.errors.fname}</p>}
+                      {state?.errors?.fname && <p className="text-destructive text-sm mt-1">{state.errors.fname}</p>}
                     </div>
                     <div>
                       <Label htmlFor="lname">Last Name</Label>
                       <Input id="lname" name="lname" required />
-                       {state?.errors?.lname && <p className="text-red-500 text-sm mt-1">{state.errors.lname}</p>}
+                       {state?.errors?.lname && <p className="text-destructive text-sm mt-1">{state.errors.lname}</p>}
                     </div>
                     <div>
                       <Label htmlFor="email">Email</Label>
                       <Input id="email" name="email" type="email" required />
-                       {state?.errors?.email && <p className="text-red-500 text-sm mt-1">{state.errors.email}</p>}
+                       {state?.errors?.email && <p className="text-destructive text-sm mt-1">{state.errors.email}</p>}
                     </div>
                     <div>
                         <Label htmlFor="phone">Phone</Label>
                         <Input id="phone" name="phone" required />
-                        {state?.errors?.phone && <p className="text-red-500 text-sm mt-1">{state.errors.phone}</p>}
+                        {state?.errors?.phone && <p className="text-destructive text-sm mt-1">{state.errors.phone}</p>}
                     </div>
                     <div>
                         <Label htmlFor="company">Company</Label>
                         <Input id="company" name="company" required />
-                        {state?.errors?.company && <p className="text-red-500 text-sm mt-1">{state.errors.company}</p>}
+                        {state?.errors?.company && <p className="text-destructive text-sm mt-1">{state.errors.company}</p>}
                     </div>
                     <div>
                       <Label htmlFor="requirements">Requirements</Label>
                       <Textarea id="requirements" name="requirements" required />
-                      {state?.errors?.requirements && <p className="text-red-500 text-sm mt-1">{state.errors.requirements}</p>}
+                      {state?.errors?.requirements && <p className="text-destructive text-sm mt-1">{state.errors.requirements}</p>}
                     </div>
                     <SubmitButton />
                      {state?.message && (
@@ -366,7 +366,7 @@ export default function Microsoft365Page() {
                     <>
                     <hr className="my-6" />
                     <p className="text-center text-sm font-semibold">{plan.appsLabel}</p>
-                    <div className="grid grid-cols-3 gap-4 mt-4">
+                    <div className="grid grid-cols-4 gap-4 mt-4">
                         {plan.services.map(app => (
                         <div key={app.name} className="flex flex-col items-center gap-1">
                             <Image src={app.icon} alt={app.name} width={24} height={24} />
@@ -471,9 +471,9 @@ export default function Microsoft365Page() {
                  <Accordion type="single" collapsible>
                     {FAQS.map((faq, index) => (
                         <AccordionItem value={`item-${index}`} key={index}>
-                            <AccordionTrigger>{faq.question}</AccordionTrigger>
+                            <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
                             <AccordionContent>
-                                <div className="prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                                <div className="prose prose-sm max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                             </AccordionContent>
                         </AccordionItem>
                     ))}
