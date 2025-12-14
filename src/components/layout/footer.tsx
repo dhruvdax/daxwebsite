@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { RESOURCE_CENTER_LINKS } from '@/lib/content';
 import Image from 'next/image';
-import { Facebook, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Linkedin, Twitter, Instagram } from 'lucide-react';
 import DaxLogoWhite from '../icons/dax-logo-white';
 
 export default function Footer() {
@@ -81,9 +81,10 @@ export default function Footer() {
                 <Link href="#" className="hover:text-white">Cookie Policy</Link>
             </div>
             <div className="flex space-x-4">
-                <Link href="#" className="text-gray-400 hover:text-white"><Facebook size={20} /></Link>
-                <Link href="#" className="text-gray-400 hover:text-white"><Twitter size={20} /></Link>
-                <Link href="#" className="text-gray-400 hover:text-white"><Linkedin size={20} /></Link>
+                <Link href="https://www.facebook.com/Daxsws/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><Facebook size={20} /></Link>
+                <Link href="https://x.com/DaxSoftware" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><Twitter size={20} /></Link>
+                <Link href="https://www.linkedin.com/company/daxsoftware/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><Linkedin size={20} /></Link>
+                <Link href="https://www.instagram.com/daxsoftware/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><Instagram size={20} /></Link>
             </div>
         </div>
       </div>
