@@ -37,8 +37,8 @@ export default function Footer() {
                 <li><Link href="/about-us" className="hover:text-white">About Us</Link></li>
                 <li><Link href="/team" className="hover:text-white">Our Team</Link></li>
                 <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
-                <li><Link href="#" className="hover:text-white">Careers</Link></li>
-                <li><Link href="#" className="hover:text-white">Our Core Values</Link></li>
+                <li><Link href="/careers" className="hover:text-white">Careers</Link></li>
+                <li><Link href="/about-us#core-values" className="hover:text-white">Our Core Values</Link></li>
                 <li><Link href="/sitemap" className="hover:text-white">Sitemap</Link></li>
                 <li><Link href="https://ess.pockethrms.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white">Employee Login</Link></li>
               </ul>
@@ -46,13 +46,13 @@ export default function Footer() {
              <div>
               <h4 className="font-medium font-headline">Dynamics 365 Expertise</h4>
               <ul className="mt-4 space-y-2 text-sm text-gray-400">
-                <li><Link href="#" className="hover:text-white">Microsoft Dynamics 365</Link></li>
-                <li><Link href="#" className="hover:text-white">Application Managed Services</Link></li>
-                <li><Link href="#" className="hover:text-white">Performance Tuning</Link></li>
-                <li><Link href="#" className="hover:text-white">AX 2012 to Dynamics 365 Upgrade Services</Link></li>
-                <li><Link href="#" className="hover:text-white">System Optimization</Link></li>
-                <li><Link href="#" className="hover:text-white">Continuous Enhancements</Link></li>
-                <li><Link href="#" className="hover:text-white">Microsoft Dynamics 365 Business Central</Link></li>
+                <li><Link href="/services/microsoft-dynamics-365" className="hover:text-white">Microsoft Dynamics 365</Link></li>
+                <li><Link href="/services/application-managed-services" className="hover:text-white">Application Managed Services</Link></li>
+                <li><Link href="/services/performance-tuning" className="hover:text-white">Performance Tuning</Link></li>
+                <li><Link href="/services/ax-2012-to-d365-upgrade" className="hover:text-white">AX 2012 to Dynamics 365 Upgrade Services</Link></li>
+                <li><Link href="/services/system-optimization" className="hover:text-white">System Optimization</Link></li>
+                <li><Link href="/services/continuous-enhancements" className="hover:text-white">Continuous Enhancements</Link></li>
+                <li><Link href="/services/microsoft-dynamics-365-business-central" className="hover:text-white">Microsoft Dynamics 365 Business Central</Link></li>
               </ul>
             </div>
             <div>
@@ -66,8 +66,8 @@ export default function Footer() {
               </ul>
               <h4 className="font-medium font-headline mt-6">Subscription Services</h4>
                <ul className="mt-4 space-y-2 text-sm text-gray-400">
-                <li><Link href="#" className="hover:text-white">Microsoft 365</Link></li>
-                <li><Link href="#" className="hover:text-white">Microsoft Copilot</Link></li>
+                <li><Link href="/services/microsoft-365" className="hover:text-white">Microsoft 365</Link></li>
+                <li><Link href="/services/microsoft-copilot" className="hover:text-white">Microsoft Copilot</Link></li>
               </ul>
             </div>
           </div>
@@ -77,9 +77,9 @@ export default function Footer() {
         <div className="container mx-auto flex flex-col items-center justify-between px-4 py-4 text-white md:flex-row md:px-6">
             <p className="text-xs text-gray-400">&copy; Copyright {new Date().getFullYear()} DAX Software Solutions</p>
             <div className="flex gap-4 items-center text-xs text-gray-400">
-                <Link href="#" className="hover:text-white">Privacy Policy</Link>
-                <Link href="#" className="hover:text-white">Terms of Use</Link>
-                <Link href="#" className="hover:text-white">Cookie Policy</Link>
+                <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
+                <Link href="/terms-of-use" className="hover:text-white">Terms of Use</Link>
+                <Link href="/cookie-policy" className="hover:text-white">Cookie Policy</Link>
             </div>
             <div className="flex space-x-4">
                 <Link href="https://www.facebook.com/Daxsws/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white"><Facebook size={20} /></Link>
