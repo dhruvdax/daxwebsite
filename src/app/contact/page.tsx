@@ -67,8 +67,8 @@ export default function ContactPage() {
 
       <div className="container mx-auto px-4 py-12 md:py-24">
         <Card className="p-8 md:p-12 shadow-xl">
-            <div className="grid md:grid-cols-12 gap-12">
-                <div className="space-y-8 md:col-span-4">
+            <div className="flex flex-col gap-12">
+                <div className="space-y-8">
                      <h2 className="text-3xl font-bold font-headline text-accent dark:text-white">How can we help you</h2>
                      <ContactInfoItem icon={MapPin} title="Our Location">
                         <p>DAX Software Solutions Inc. 6303 Owensmouth Ave, 10th floor, Woodland Hills, CA 91367</p>
@@ -81,7 +81,7 @@ export default function ContactPage() {
                         <a href="tel:+1.949.351.2404" className="hover:text-primary transition-colors block">+1.949.351.2404</a>
                     </ContactInfoItem>
                 </div>
-                <div className="md:col-span-8">
+                <div>
                     <h2 className="text-3xl font-bold font-headline text-accent dark:text-white mb-8">Get in Touch</h2>
                     <div
                         data-form-id='2dda0781-9fc6-f011-bbd3-6045bd020834'
