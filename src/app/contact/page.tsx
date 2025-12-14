@@ -2,7 +2,7 @@
 "use client";
 
 import { Mail, Phone, MapPin } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { useEffect } from 'react';
 
 const ContactInfoItem = ({ icon: Icon, title, children }: { icon: React.ElementType, title: string, children: React.ReactNode }) => (
@@ -68,8 +68,8 @@ export default function ContactPage() {
       <div className="container mx-auto px-4 py-12 md:py-24">
         <Card className="p-8 md:p-12 shadow-xl">
             <div className="grid md:grid-cols-12 gap-12">
-                <div className="space-y-8 md:col-span-3">
-                     <h2 className="text-3xl font-bold font-headline text-accent dark:text-white pb-2">How can we help you</h2>
+                <div className="space-y-8 md:col-span-4">
+                     <h2 className="text-3xl font-bold font-headline text-accent dark:text-white">How can we help you</h2>
                      <ContactInfoItem icon={MapPin} title="Our Location">
                         <p>DAX Software Solutions Inc. 6303 Owensmouth Ave, 10th floor, Woodland Hills, CA 91367</p>
                     </ContactInfoItem>
@@ -81,8 +81,8 @@ export default function ContactPage() {
                         <a href="tel:+1.949.351.2404" className="hover:text-primary transition-colors block">+1.949.351.2404</a>
                     </ContactInfoItem>
                 </div>
-                <div className="md:col-span-9">
-                    <h2 className="text-3xl font-bold font-headline text-accent dark:text-white pb-2 mb-8">Get in Touch</h2>
+                <div className="md:col-span-8">
+                    <h2 className="text-3xl font-bold font-headline text-accent dark:text-white mb-8">Get in Touch</h2>
                     <div
                         data-form-id='2dda0781-9fc6-f011-bbd3-6045bd020834'
                         data-form-api-url='https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms'
