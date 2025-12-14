@@ -47,7 +47,7 @@ export default function Footer() {
               <ul className="mt-4 space-y-2 text-sm text-gray-400">
                 <li><Link href="#" className="hover:text-white">Microsoft Dynamics 365</Link></li>
                 <li><Link href="#" className="hover:text-white">Application Managed Services</Link></li>
-                <li><Link href="#" className="hover:text-white">Performance Tuning</Link></li>
+                <li><Link href="#" className="hover-text-white">Performance Tuning</Link></li>
                 <li><Link href="#" className="hover:text-white">AX 2012 to Dynamics 365 Upgrade Services</Link></li>
                 <li><Link href="#" className="hover:text-white">System Optimization</Link></li>
                 <li><Link href="#" className="hover:text-white">Continuous Enhancements</Link></li>
@@ -73,12 +73,17 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-gray-800">
-        <div className="container mx-auto flex flex-col items-center justify-between px-4 py-8 text-white md:flex-row md:px-6">
-            <p className="text-sm">&copy; {new Date().getFullYear()} Dax Software Solutions. All rights reserved.</p>
-            <div className="mt-4 flex space-x-4 md:mt-0">
-                <Link href="#" className="hover:opacity-80"><Facebook size={20} /></Link>
-                <Link href="#" className="hover:opacity-80"><Twitter size={20} /></Link>
-                <Link href="#" className="hover:opacity-80"><Linkedin size={20} /></Link>
+        <div className="container mx-auto flex flex-col items-center justify-between px-4 py-4 text-white md:flex-row md:px-6">
+            <p className="text-xs text-gray-400">&copy; Copyright {new Date().getFullYear()} DAX Software Solutions</p>
+            <div className="flex gap-4 items-center text-xs text-gray-400">
+                <Link href="#" className="hover:text-white">Privacy Policy</Link>
+                <Link href="#" className="hover:text-white">Terms of Use</Link>
+                <Link href="#" className="hover:text-white">Cookie Policy</Link>
+            </div>
+            <div className="flex space-x-4">
+                <Link href="#" className="text-gray-400 hover:text-white"><Facebook size={20} /></Link>
+                <Link href="#" className="text-gray-400 hover:text-white"><Twitter size={20} /></Link>
+                <Link href="#" className="text-gray-400 hover:text-white"><Linkedin size={20} /></Link>
             </div>
         </div>
       </div>
