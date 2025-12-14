@@ -1,43 +1,40 @@
+
 "use client";
 
-import { useFormState, useFormStatus } from 'react-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { submitContactForm } from '@/app/actions';
-import { useEffect } from 'react';
-import { useToast } from '@/hooks/use-toast';
 import { Card, CardContent } from '@/components/ui/card';
-
-const initialState = {
-  success: false,
-  message: '',
-};
-
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  return (
-    <Button type="submit" className="w-full" disabled={pending}>
-      {pending ? 'Sending...' : 'Send Message'}
-    </Button>
-  );
-}
+import { useEffect } from 'react';
 
 export default function ContactPage() {
-    const [state, formAction] = useFormState(submitContactForm, initialState);
-    const { toast } = useToast();
 
     useEffect(() => {
-        if (state.message) {
-            toast({
-                title: state.success ? 'Success!' : 'Error',
-                description: state.message,
-                variant: state.success ? 'default' : 'destructive',
+        const scriptId = 'dynamics-form-loader';
+        let script = document.getElementById(scriptId) as HTMLScriptElement | null;
+    
+        const loadForm = () => {
+           // @ts-ignore
+          if (window.MsCrmMkt && typeof window.MsCrmMkt.MsCrmFormLoader === 'object') {
+             // @ts-ignore
+            window.MsCrmMkt.MsCrmFormLoader.on('afterFormLoad', () => {
+              // Form is loaded
             });
+          }
+        };
+    
+        if (!script) {
+          script = document.createElement('script');
+          script.id = scriptId;
+          script.src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js';
+          script.async = true;
+          script.onload = loadForm;
+          document.body.appendChild(script);
+        } else {
+            loadForm();
         }
-    }, [state, toast]);
+        
+        return () => {};
+      }, []);
+
 
   return (
     <div className="container mx-auto px-4 py-12 md:py-24">
@@ -53,21 +50,11 @@ export default function ContactPage() {
       <div className="mt-16 grid gap-12 md:grid-cols-2">
         <Card className="p-8">
           <h2 className="text-2xl font-bold mb-6 font-headline">Contact Form</h2>
-          <form action={formAction} className="space-y-6">
-            <div className="space-y-2">
-              <Label htmlFor="name">Full Name</Label>
-              <Input id="name" name="name" placeholder="John Doe" required />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="email">Email Address</Label>
-              <Input id="email" name="email" type="email" placeholder="john@example.com" required />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="message">Message</Label>
-              <Textarea id="message" name="message" placeholder="How can we help you?" rows={6} required />
-            </div>
-            <SubmitButton />
-          </form>
+            <div
+                data-form-id='2dda0781-9fc6-f011-bbd3-6045bd020834'
+                data-form-api-url='https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms'
+                data-cached-form-url='https://assets1-usa.mkt.dynamics.com/0f5b728c-83ca-ed11-aece-000d3a323719/digitalassets/forms/2dda0781-9fc6-f011-bbd3-6045bd020834'
+            ></div>
         </Card>
 
         <div className="space-y-8">
