@@ -69,17 +69,19 @@ export default function ContactPage() {
         <Card className="p-8 md:p-12 shadow-xl">
             <div className="flex flex-col gap-12">
                 <div className="space-y-8">
-                     <h2 className="text-3xl font-bold font-headline text-accent dark:text-white">How can we help you</h2>
-                     <ContactInfoItem icon={MapPin} title="Our Location">
-                        <p>DAX Software Solutions Inc. 6303 Owensmouth Ave, 10th floor, Woodland Hills, CA 91367</p>
-                    </ContactInfoItem>
-                     <ContactInfoItem icon={Mail} title="Email Us">
-                        <a href="mailto:contact@daxsws.com" className="hover:text-primary transition-colors">contact@daxsws.com</a>
-                    </ContactInfoItem>
-                     <ContactInfoItem icon={Phone} title="Call Us On">
-                        <a href="tel:+1.818.568.6460" className="hover:text-primary transition-colors block">+1.818.568.6460</a>
-                        <a href="tel:+1.949.351.2404" className="hover:text-primary transition-colors block">+1.949.351.2404</a>
-                    </ContactInfoItem>
+                     <h2 className="text-3xl font-bold font-headline text-accent dark:text-white mb-8">How can we help you</h2>
+                     <div className="grid md:grid-cols-3 gap-8">
+                        <ContactInfoItem icon={MapPin} title="Our Location">
+                            <p>DAX Software Solutions Inc. 6303 Owensmouth Ave, 10th floor, Woodland Hills, CA 91367</p>
+                        </ContactInfoItem>
+                        <ContactInfoItem icon={Mail} title="Email Us">
+                            <a href="mailto:contact@daxsws.com" className="hover:text-primary transition-colors">contact@daxsws.com</a>
+                        </ContactInfoItem>
+                        <ContactInfoItem icon={Phone} title="Call Us On">
+                            <a href="tel:+1.818.568.6460" className="hover:text-primary transition-colors block">+1.818.568.6460</a>
+                            <a href="tel:+1.949.351.2404" className="hover:text-primary transition-colors block">+1.949.351.2404</a>
+                        </ContactInfoItem>
+                     </div>
                 </div>
                 <div>
                     <h2 className="text-3xl font-bold font-headline text-accent dark:text-white mb-8">Get in Touch</h2>
