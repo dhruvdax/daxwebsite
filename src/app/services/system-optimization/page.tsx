@@ -59,7 +59,7 @@ export default function SystemOptimizationPage() {
     setActiveSection(id);
     const element = document.getElementById(id);
     if (element) {
-        const yOffset = -120; // to account for sticky header
+        const yOffset = -200; 
         const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
@@ -68,7 +68,7 @@ export default function SystemOptimizationPage() {
   useEffect(() => {
     const observerOptions = {
         root: null,
-        rootMargin: '-120px 0px -50% 0px',
+        rootMargin: '-200px 0px -50% 0px',
         threshold: 0,
     };
 
@@ -120,50 +120,50 @@ export default function SystemOptimizationPage() {
 
       <section className="sticky top-[108px] z-30 bg-card-foreground/5 backdrop-blur-lg py-4 shadow-md">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center gap-2">
-            <div className="flex justify-center gap-2 flex-wrap">
-              {OPTIMIZATION_SECTIONS.slice(0, 4).map(section => (
-                <Button 
-                    key={section.id} 
-                    variant="primary-outline"
-                    size="sm" 
-                    onClick={(e) => handleLinkClick(section.id, e)}
-                    className={cn(
-                        "text-xs h-auto py-2 transition-all",
-                        activeSection === section.id 
-                            ? "bg-primary text-primary-foreground" 
-                            : "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
-                    )}
-                >
-                    {section.title}
-                </Button>
-              ))}
+            <div className="flex flex-col items-center gap-2">
+                <div className="flex justify-center gap-2 flex-wrap">
+                    {OPTIMIZATION_SECTIONS.slice(0, 4).map(section => (
+                        <Button 
+                            key={section.id} 
+                            variant="primary-outline"
+                            size="sm" 
+                            onClick={(e) => handleLinkClick(section.id, e)}
+                             className={cn(
+                                "text-xs h-auto py-2 transition-all",
+                                activeSection === section.id 
+                                    ? "bg-primary text-primary-foreground" 
+                                    : "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
+                            )}
+                        >
+                            {section.title}
+                        </Button>
+                    ))}
+                </div>
+                <div className="flex justify-center gap-2 flex-wrap">
+                    {OPTIMIZATION_SECTIONS.slice(4).map(section => (
+                        <Button 
+                            key={section.id} 
+                            variant="primary-outline"
+                            size="sm" 
+                            onClick={(e) => handleLinkClick(section.id, e)}
+                           className={cn(
+                                "text-xs h-auto py-2 transition-all",
+                                activeSection === section.id 
+                                    ? "bg-primary text-primary-foreground" 
+                                    : "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
+                            )}
+                        >
+                            {section.title}
+                        </Button>
+                    ))}
+                </div>
             </div>
-            <div className="flex justify-center gap-2 flex-wrap">
-              {OPTIMIZATION_SECTIONS.slice(4).map(section => (
-                <Button 
-                    key={section.id} 
-                    variant="primary-outline"
-                    size="sm" 
-                    onClick={(e) => handleLinkClick(section.id, e)}
-                    className={cn(
-                        "text-xs h-auto py-2 transition-all",
-                        activeSection === section.id 
-                            ? "bg-primary text-primary-foreground" 
-                            : "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
-                    )}
-                >
-                    {section.title}
-                </Button>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
-      <section className="py-12 md:py-16">
+      <section className="py-12 md:py-16 bg-secondary">
         <div className="container mx-auto px-4 text-center">
-            <h2 className="text-xl font-semibold">Experiencing issues with a broken or failed implementation?</h2>
+            <h2 className="text-xl font-semibold text-accent">Experiencing issues with a broken or failed implementation?</h2>
             <Button asChild className="mt-4">
                 <Link href="/quick-fix-packages">Quick-Fix Packages</Link>
             </Button>
