@@ -38,7 +38,7 @@ export default function Footer() {
                 <li><Link href="/team" className="hover:text-white">Our Team</Link></li>
                 <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
                 <li><Link href="/careers" className="hover:text-white">Careers</Link></li>
-                <li><Link href="/about-us#core-values" className="hover:text-white">Our Core Values</Link></li>
+                <li><Link href="/our-core-values" className="hover:text-white">Our Core Values</Link></li>
                 <li><Link href="/sitemap" className="hover:text-white">Sitemap</Link></li>
                 <li><Link href="https://ess.pockethrms.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white">Employee Login</Link></li>
               </ul>
