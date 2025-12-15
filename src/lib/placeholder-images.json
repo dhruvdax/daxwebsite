@@ -341,6 +341,30 @@
       "description": "Illustration of Application Managed Services process",
       "imageUrl": "/services/application-managed-services.png",
       "imageHint": "managed services process"
+    },
+    {
+      "id": "performance-tuning-system-optimization",
+      "description": "Hand holding a glowing gear icon.",
+      "imageUrl": "https://images.unsplash.com/photo-1616587896588-96d55a695126?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzeXN0ZW0lMjBvcHRpbWl6YXRpb258ZW58MHx8fHwxNzY1NjgxNjA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "system optimization"
+    },
+    {
+      "id": "performance-tuning-seamless-operations",
+      "description": "Man pointing at a large screen with graphs.",
+      "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb2ludGluZyUyMGdyYXBoJTIwc2NyZWVufGVufDB8fHx8MTc2NTY4MTYwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man pointing graph"
+    },
+    {
+      "id": "performance-tuning-productivity-enhancement",
+      "description": "Hand interacting with a holographic chart.",
+      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kJTIwaW50ZXJhY3RpbmclMjBjaGFydHxlbnwwfHx8fDE3NjU2ODE2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hand interacting chart"
+    },
+    {
+      "id": "performance-tuning-system-stabilization",
+      "description": "Man in a suit looking at a complex data interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1642052551394-43479a9f73a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBsb29raW5nJTIwZGF0YSUyMHNlcnZlcnxlbnwwfHx8fDE3NjU2ODE2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man data server"
     }
   ]
 }
