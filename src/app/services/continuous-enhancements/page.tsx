@@ -1,13 +1,15 @@
+
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CASE_STUDIES } from '@/lib/content';
 import { useState, useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
+import React from 'react';
 
 const ENHANCEMENT_SECTIONS = [
   {
@@ -127,22 +129,30 @@ export default function ContinuousEnhancementsPage() {
                         size="sm" 
                         onClick={(e) => handleLinkClick(section.id, e)}
                          className={cn(
-                            "text-xs h-auto py-2 transition-all",
+                            "text-xs h-auto py-2 transition-all flex-1 basis-auto",
                             activeSection === section.id 
                                 ? "bg-primary text-primary-foreground" 
                                 : "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
                         )}
                     >
-                        {section.title}
+                        <span className="flex-wrap whitespace-normal">
+                          {section.title.split(' ').map((word, i, arr) => (
+                              <React.Fragment key={i}>
+                                  {word}
+                                  {arr.length > 2 && i === Math.floor(arr.length / 2) -1 && <br />}
+                                  {i < arr.length - 1 && ' '}
+                              </React.Fragment>
+                          ))}
+                        </span>
                     </Button>
                 ))}
             </div>
         </div>
       </section>
 
-      <section className="py-12 md:py-16 bg-secondary">
+      <section className="py-12 md:py-16 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4 text-center">
-            <h2 className="text-xl font-semibold text-accent">Experiencing issues with a broken or failed implementation?</h2>
+            <h2 className="text-xl font-semibold text-white">Experiencing issues with a broken or failed implementation?</h2>
             <Button asChild className="mt-4">
                 <Link href="/quick-fix-packages">Quick-Fix Packages</Link>
             </Button>
@@ -178,7 +188,7 @@ export default function ContinuousEnhancementsPage() {
       </section>
       
        {caseStudy && caseStudyImage && (
-        <section className="w-full py-16 md:py-24 bg-accent">
+        <section className="w-full py-16 md:py-24 bg-secondary">
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <Image 
@@ -189,13 +199,13 @@ export default function ContinuousEnhancementsPage() {
                         height={350}
                         className="rounded-lg shadow-2xl mx-auto"
                     />
-                  <div className="text-accent-foreground">
+                  <div className="text-secondary-foreground">
                       <p className="text-sm font-bold tracking-widest text-primary uppercase">Featured Case Study</p>
-                      <h2 className="font-headline text-3xl font-bold mt-2">{caseStudy.title}</h2>
+                      <h2 className="font-headline text-3xl font-bold mt-2 text-accent">{caseStudy.title}</h2>
                       <p className="mt-4 text-lg">
                           {caseStudy.summary}
                       </p>
-                      <Button asChild variant="primary-outline" className="mt-6">
+                      <Button asChild variant="default" className="mt-6">
                           <Link href={`/case-studies/${caseStudy.slug}`}>READ MORE<ArrowRight /></Link>
                       </Button>
                   </div>
