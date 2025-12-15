@@ -156,7 +156,7 @@ export default function AX2012ToD365UpgradePage() {
              <section className="py-16 md:py-24">
                 <div className="container mx-auto px-4">
                     <h2 className="text-center text-3xl font-bold font-headline mb-12">How to upgrade from Dynamics AX to Dynamics 365 F&O?</h2>
-                    <div className="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
                         {UPGRADE_PROCESS.map((step, index) => (
                             <Card key={step.title} className="p-6 text-center">
                                 <CardContent className="p-0">
