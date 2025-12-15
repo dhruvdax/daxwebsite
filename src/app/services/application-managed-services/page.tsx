@@ -139,17 +139,19 @@ export default function ApplicationManagedServicesPage() {
 
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
-                {SUPPORT_PROCESS.map((step, index) => (
-                    <div key={step.title} className="flex flex-col items-center text-center">
-                        <div className="flex items-center justify-center h-16 w-16 rounded-full bg-primary text-primary-foreground font-bold text-2xl mb-4">
-                            {index + 1}
-                        </div>
-                        <h3 className="text-lg font-bold font-headline mb-2">{step.title}</h3>
-                        <p className="text-muted-foreground text-sm">{step.description}</p>
-                    </div>
-                ))}
-            </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {SUPPORT_PROCESS.map((step, index) => (
+              <Card key={step.title} className="flex flex-col text-center p-6 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-0 flex-grow flex flex-col items-center">
+                  <div className="flex items-center justify-center h-16 w-16 rounded-full bg-primary text-primary-foreground font-bold text-2xl mb-4">
+                    {index + 1}
+                  </div>
+                  <h3 className="text-lg font-bold font-headline mb-2">{step.title}</h3>
+                  <p className="text-muted-foreground text-sm flex-grow">{step.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
