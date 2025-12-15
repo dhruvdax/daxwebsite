@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { ArrowRight, CheckCircle, Shield, Handshake, Clock, Users, Wrench, Package, Award } from 'lucide-react';
+import { ArrowRight, CheckCircle, Shield, Handshake, Clock, Users, Wrench, Package, Award, BrainCircuit, Recycle, ServerCog, Zap } from 'lucide-react';
 import {
   Briefcase,
   GitCommit,
@@ -14,10 +14,6 @@ import {
   Timer,
   Rocket,
   Settings,
-  BrainCircuit,
-  Recycle,
-  ServerCog,
-  Zap,
 } from 'lucide-react';
 
 const D365_SERVICES = [
@@ -102,11 +98,6 @@ export default function MicrosoftDynamics365Page() {
     <div className="bg-background">
       <section className="bg-accent text-accent-foreground py-16 md:py-24">
         <div className="container mx-auto px-4 text-center">
-            <div className="flex justify-center items-center gap-4 mb-4">
-                <Image src="/dax-logo-white.svg" alt="DAX Logo" width={100} height={50} />
-                <Image src="/home/microsoft-badge.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
-                <Image src="/home/microsoft-badge-2.svg" alt="Microsoft Solutions Partner" width={140} height={16} />
-            </div>
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">
             Microsoft Dynamics 365
           </h1>
@@ -120,7 +111,7 @@ export default function MicrosoftDynamics365Page() {
         <div className="container mx-auto px-4">
             <Card className="p-8 md:p-12 max-w-4xl mx-auto shadow-xl">
                 <p className="text-lg text-center text-muted-foreground">
-                    As seasoned ERP implementation experts and your trusted ERP support team, we&apos;re here to simplify your journey. Our focus is on delivering tailored services to boost your business and foster steady growth. Count on us for seamless ERP implementations and ongoing support, ensuring your experience in the ERP and CRM space is smooth and successful.
+                    As seasoned ERP implementation experts and your trusted ERP support team, we're here to simplify your journey. Our focus is on delivering tailored services to boost your business and foster steady growth. Count on us for seamless ERP implementations and ongoing support, ensuring your experience in the ERP and CRM space is smooth and successful.
                 </p>
                 <div className="mt-8 text-center">
                     <p className="text-sm font-semibold text-muted-foreground mb-2">Our Partner:</p>
