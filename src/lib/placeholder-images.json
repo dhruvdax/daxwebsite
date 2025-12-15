@@ -369,7 +369,7 @@
     {
       "id": "d365-upgrade-hero",
       "description": "Visual comparison between Dynamics AX and Dynamics 365 interfaces.",
-      "imageUrl": "/services/upgrade-d365.png",
+      "imageUrl": "/ax2012-to-d365-upgrade-service.png",
       "imageHint": "ERP interface comparison"
     }
   ]
