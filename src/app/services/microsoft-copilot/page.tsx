@@ -82,7 +82,7 @@ const SECURITY_FEATURES = [
 
 const APP_INTEGRATIONS = [
     {
-        icon: '/microsoft-copilot.svg',
+        icon: '/Microsoft_365_Copilot_Icon.svg',
         name: 'Microsoft Copilot',
         description: 'Turbo Speed Task Execution'
     },
