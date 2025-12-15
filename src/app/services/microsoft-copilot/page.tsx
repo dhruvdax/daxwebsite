@@ -1,3 +1,4 @@
+
 'use client';
 import { useActionState, useEffect, useRef } from 'react';
 import { useFormStatus } from 'react-dom';
@@ -254,7 +255,7 @@ export default function MicrosoftCopilotPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-8">
              {SECURITY_FEATURES.map((feature) => (
-              <Card key={feature.title} className="p-6 text-center bg-secondary/50">
+              <Card key={feature.title} className="p-6 text-center">
                 <CardContent className="p-0 flex flex-col items-center gap-4">
                   <div className="bg-primary/10 rounded-full p-3">
                     <feature.icon className="w-8 h-8 text-primary" />
