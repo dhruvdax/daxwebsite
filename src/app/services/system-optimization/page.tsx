@@ -127,7 +127,7 @@ export default function SystemOptimizationPage() {
                         onClick={() => scrollToSection(section.id)} 
                         className={cn(
                             "text-xs h-auto py-2 transition-all",
-                            activeSection !== section.id && "bg-white text-primary border-primary hover:bg-primary/10"
+                            activeSection !== section.id && "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
                         )}
                     >
                         {section.title}
