@@ -6,7 +6,6 @@ export const NAV_LINKS = [
   { href: '/integration', label: 'Integration' },
   { href: '/government', label: 'Government' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/services/microsoft-copilot', label: 'Copilot' },
 ];
 
 export const RESOURCE_CENTER_LINKS = [
