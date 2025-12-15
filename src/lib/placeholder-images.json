@@ -335,6 +335,12 @@
       "description": "Business people in a meeting with digital overlays.",
       "imageUrl": "/cta-home-primary.jpg",
       "imageHint": "business meeting"
+    },
+    {
+      "id": "application-managed-services",
+      "description": "Illustration of Application Managed Services process",
+      "imageUrl": "/services/application-managed-services.png",
+      "imageHint": "managed services process"
     }
   ]
 }
