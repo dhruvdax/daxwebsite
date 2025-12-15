@@ -116,7 +116,7 @@ export default function MicrosoftDynamics365Page() {
                 <div className="mt-8 text-center">
                     <p className="text-sm font-semibold text-muted-foreground mb-2">Our Partner:</p>
                     <div className="flex justify-center">
-                      <Image src="/logo-laac.png" alt="Los Angeles Area Chamber of Commerce" width={200} height={50} />
+                      <Image src="/logo-laac.png" alt="Los Angeles Area Chamber of Commerce" width={300} height={75} />
                     </div>
                 </div>
             </Card>
