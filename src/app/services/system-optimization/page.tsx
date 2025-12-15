@@ -120,22 +120,44 @@ export default function SystemOptimizationPage() {
 
       <section className="sticky top-[108px] z-30 bg-card-foreground/5 backdrop-blur-lg py-4 shadow-md">
         <div className="container mx-auto px-4">
-            <div className="grid grid-cols-3 sm:grid-cols-6 justify-center gap-2">
-                {OPTIMIZATION_SECTIONS.map(section => (
-                    <Button 
-                        key={section.id} 
-                        variant={activeSection === section.id ? 'default' : 'primary-outline'}
-                        size="sm" 
-                        onClick={(e) => handleLinkClick(section.id, e)}
-                        className={cn(
-                            "text-xs h-auto py-2 transition-all",
-                            activeSection !== section.id && "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
-                        )}
-                    >
-                        {section.title}
-                    </Button>
-                ))}
+          <div className="flex flex-col items-center gap-2">
+            <div className="flex justify-center gap-2 flex-wrap">
+              {OPTIMIZATION_SECTIONS.slice(0, 4).map(section => (
+                <Button 
+                    key={section.id} 
+                    variant="primary-outline"
+                    size="sm" 
+                    onClick={(e) => handleLinkClick(section.id, e)}
+                    className={cn(
+                        "text-xs h-auto py-2 transition-all",
+                        activeSection === section.id 
+                            ? "bg-primary text-primary-foreground" 
+                            : "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
+                    )}
+                >
+                    {section.title}
+                </Button>
+              ))}
             </div>
+            <div className="flex justify-center gap-2 flex-wrap">
+              {OPTIMIZATION_SECTIONS.slice(4).map(section => (
+                <Button 
+                    key={section.id} 
+                    variant="primary-outline"
+                    size="sm" 
+                    onClick={(e) => handleLinkClick(section.id, e)}
+                    className={cn(
+                        "text-xs h-auto py-2 transition-all",
+                        activeSection === section.id 
+                            ? "bg-primary text-primary-foreground" 
+                            : "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
+                    )}
+                >
+                    {section.title}
+                </Button>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
