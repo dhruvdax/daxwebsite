@@ -119,17 +119,17 @@ export default function ContinuousEnhancementsPage() {
         </div>
       </section>
 
-      <section className="sticky top-[108px] z-30 bg-card-foreground/5 backdrop-blur-lg py-4 shadow-md">
+       <section className="sticky top-[108px] z-30 bg-card-foreground/5 backdrop-blur-lg py-4 shadow-md">
         <div className="container mx-auto px-4">
-            <div className="flex justify-center gap-2">
+            <div className="flex justify-center gap-2 flex-wrap">
                 {ENHANCEMENT_SECTIONS.map(section => (
                     <Button 
                         key={section.id} 
                         variant="primary-outline"
                         size="sm" 
                         onClick={(e) => handleLinkClick(section.id, e)}
-                         className={cn(
-                            "text-xs h-auto py-2 transition-all flex-1 basis-auto",
+                        className={cn(
+                            "text-xs h-auto py-2 transition-all basis-auto",
                             activeSection === section.id 
                                 ? "bg-primary text-primary-foreground" 
                                 : "bg-white text-primary border-primary hover:bg-white hover:text-accent hover:border-accent"
