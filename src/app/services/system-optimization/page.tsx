@@ -7,6 +7,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CASE_STUDIES } from '@/lib/content';
+import { useState, useEffect, useRef } from 'react';
+import { cn } from '@/lib/utils';
 
 const OPTIMIZATION_SECTIONS = [
   {
@@ -47,16 +49,53 @@ const OPTIMIZATION_SECTIONS = [
   },
 ];
 
-const scrollToSection = (id: string) => {
+
+export default function SystemOptimizationPage() {
+  const [activeSection, setActiveSection] = useState(OPTIMIZATION_SECTIONS[0].id);
+  const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
+
+  const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
         const yOffset = -120;
         const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
         window.scrollTo({ top: y, behavior: 'smooth' });
     }
-}
+  };
 
-export default function SystemOptimizationPage() {
+  useEffect(() => {
+    const observerOptions = {
+        root: null,
+        rootMargin: '-120px 0px -50% 0px',
+        threshold: 0,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setActiveSection(entry.target.id);
+            }
+        });
+    }, observerOptions);
+
+    OPTIMIZATION_SECTIONS.forEach(section => {
+        const el = document.getElementById(section.id);
+        if(el) {
+            sectionRefs.current[section.id] = el;
+            observer.observe(el);
+        }
+    });
+    
+    return () => {
+         Object.values(sectionRefs.current).forEach(el => {
+            if (el) {
+                observer.unobserve(el);
+            }
+        });
+    };
+  }, []);
+
+
   const sectionImages = OPTIMIZATION_SECTIONS.map(section => ({
     ...section,
     image: PlaceHolderImages.find(img => img.id === section.imageId)
@@ -81,7 +120,16 @@ export default function SystemOptimizationPage() {
         <div className="container mx-auto px-4">
             <div className="grid grid-cols-3 justify-center gap-2">
                 {OPTIMIZATION_SECTIONS.map(section => (
-                    <Button key={section.id} variant="secondary" size="sm" onClick={() => scrollToSection(section.id)} className="text-xs h-auto py-2">
+                    <Button 
+                        key={section.id} 
+                        variant={activeSection === section.id ? 'default' : 'primary-outline'}
+                        size="sm" 
+                        onClick={() => scrollToSection(section.id)} 
+                        className={cn(
+                            "text-xs h-auto py-2 transition-all",
+                            activeSection !== section.id && "bg-transparent text-primary border-primary hover:bg-primary/10"
+                        )}
+                    >
                         {section.title}
                     </Button>
                 ))}
