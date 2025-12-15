@@ -129,7 +129,7 @@
     {
       "id": "team-member-4",
       "description": "Portrait of Puneet Nasa",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2NDcyMjI0OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8fDE3NjQ3MjIyNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional man smiling"
     },
     {
@@ -355,12 +355,6 @@
       "imageHint": "man pointing graph"
     },
     {
-      "id": "performance-tuning-productivity-enhancement",
-      "description": "Hand interacting with a holographic chart.",
-      "imageUrl": "/per-tun-3.jpg",
-      "imageHint": "hand interacting chart"
-    },
-    {
       "id": "performance-tuning-system-stabilization",
       "description": "Man in a suit looking at a complex data interface.",
       "imageUrl": "/per-tun-4.jpg",
@@ -399,14 +393,20 @@
     {
       "id": "optimization-legacy-code",
       "description": "A software developer looking at a computer screen with lines of code, holding a cup of coffee.",
-      "imageUrl": "https://images.unsplash.com/photo-1517694712202-1428bc383569?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2RlJTIwZGV2ZWxvcGVyfGVufDB8fHx8fDE3MjE4OTc2MDd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "/complex-legacy-code.jpg",
       "imageHint": "code developer"
     },
     {
       "id": "optimization-erp-adoption",
       "description": "A group of professionals in a training session, listening to a speaker in front of a presentation screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHRyYWluaW5nfGVufDB8fHx8fDE3MjE4OTc2NDN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHRyYWluaW5nfGVufDB8fHx8fDE3MjE4OTc2NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "business training"
+    },
+    {
+      "id": "performance-tuning-productivity-enhancement",
+      "description": "Hand interacting with a holographic chart.",
+      "imageUrl": "/per-tun-3.jpg",
+      "imageHint": "hand interacting chart"
     }
   ]
 }
