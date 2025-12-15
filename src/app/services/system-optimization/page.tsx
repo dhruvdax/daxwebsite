@@ -79,8 +79,7 @@ export default function SystemOptimizationPage() {
 
       <section className="sticky top-[108px] z-30 bg-card-foreground/5 backdrop-blur-lg py-4 shadow-md">
         <div className="container mx-auto px-4">
-            <p className="text-center text-sm font-semibold mb-2 text-muted-foreground">Go to Section</p>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 max-w-2xl mx-auto">
+            <div className="grid grid-cols-3 gap-2 max-w-2xl mx-auto">
                 {OPTIMIZATION_SECTIONS.map(section => (
                     <Button key={section.id} variant="secondary" size="sm" onClick={() => scrollToSection(section.id)} className="text-xs h-auto py-2">
                         {section.title}
