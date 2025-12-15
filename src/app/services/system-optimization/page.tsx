@@ -79,7 +79,7 @@ export default function SystemOptimizationPage() {
 
       <section className="sticky top-[108px] z-30 bg-card-foreground/5 backdrop-blur-lg py-4 shadow-md">
         <div className="container mx-auto px-4">
-            <div className="flex justify-center gap-2 overflow-x-auto pb-2">
+            <div className="flex justify-center gap-2 flex-wrap">
                 {OPTIMIZATION_SECTIONS.map(section => (
                     <Button key={section.id} variant="secondary" size="sm" onClick={() => scrollToSection(section.id)} className="text-xs h-auto py-2 whitespace-nowrap">
                         {section.title}
