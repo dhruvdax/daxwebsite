@@ -351,19 +351,19 @@
     {
       "id": "performance-tuning-seamless-operations",
       "description": "Man pointing at a large screen with graphs.",
-      "imageUrl": "https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBwb2ludGluZyUyMGdyYXBoJTIwc2NyZWVufGVufDB8fHx8MTc2NTY4MTYwNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1659355751133-763bd796eeb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb2ludGluZyUyMGdyYXBofGVufDB8fHx8MTc2NTc4Mzc1NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man pointing graph"
     },
     {
       "id": "performance-tuning-productivity-enhancement",
       "description": "Hand interacting with a holographic chart.",
-      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kJTIwaW50ZXJhY3RpbmclMjBjaGFydHxlbnwwfHx8fDE3NjU2ODE2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1549706844-5ca4f36b20a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoYW5kJTIwaW50ZXJhY3RpbmclMjBjaGFydHxlbnwwfHx8fDE3NjU3ODM3NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hand interacting chart"
     },
     {
       "id": "performance-tuning-system-stabilization",
       "description": "Man in a suit looking at a complex data interface.",
-      "imageUrl": "https://images.unsplash.com/photo-1642052551394-43479a9f73a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW4lMjBsb29raW5nJTIwZGF0YSUyMHNlcnZlcnxlbnwwfHx8fDE3NjU2ODE2MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBkYXRhJTIwc2VydmVyfGVufDB8fHx8MTc2NTc4Mzc1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man data server"
     }
   ]
