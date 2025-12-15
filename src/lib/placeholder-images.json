@@ -386,9 +386,9 @@
     },
     {
       "id": "optimization-performance-tuning",
-      "description": "A businessman in a suit holding out his hands, with a holographic checkmark icon floating between them.",
-      "imageUrl": "https://images.unsplash.com/photo-1634919739501-8e3f6568c0f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW5kcyUyMGhvbGRpbmclMjBob2xvZ3JhbXxlbnwwfHx8fDE3MjE4OTc1MzR8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "hands hologram"
+      "description": "A high-performance race car on a track, symbolizing speed and efficiency.",
+      "imageUrl": "/performance-tuning.jpg",
+      "imageHint": "race car"
     },
     {
       "id": "optimization-data-cleanup",
