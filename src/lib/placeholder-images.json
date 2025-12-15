@@ -337,10 +337,10 @@
       "imageHint": "business meeting"
     },
     {
-      "id": "application-managed-services-hero",
-      "description": "Illustration of Application Managed Services process",
+      "id": "ams-hero",
+      "description": "Application Managed Services Diagram",
       "imageUrl": "/services/application-managed-services.png",
-      "imageHint": "managed services process"
+      "imageHint": "managed services diagram"
     },
     {
       "id": "performance-tuning-system-optimization",
@@ -365,6 +365,12 @@
       "description": "Man in a suit looking at a complex data interface.",
       "imageUrl": "/per-tun-4.jpg",
       "imageHint": "man data server"
+    },
+    {
+      "id": "d365-upgrade-hero",
+      "description": "Visual comparison between Dynamics AX and Dynamics 365 interfaces.",
+      "imageUrl": "/services/upgrade-d365.png",
+      "imageHint": "ERP interface comparison"
     }
   ]
 }
