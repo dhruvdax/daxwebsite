@@ -121,7 +121,7 @@ export default function CareersPage() {
 
       <section className="py-16 md:py-24 transform -translate-y-20">
         <div className="container mx-auto">
-            <Card className="shadow-xl max-w-4xl mx-auto">
+            <Card className="shadow-xl max-w-7xl mx-auto">
                 <CardContent className="p-8 md:p-12">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         {METRICS.map((metric) => (
@@ -150,12 +150,12 @@ export default function CareersPage() {
                 </div>
             </div>
              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="relative h-72 w-full">
-                    <Image src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2xsYWJvcmF0aXZlJTIwdGVhbXxlbnwwfHx8fDE3NjkyNzM3ODV8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Diverse team working together at a table" fill className="rounded-lg object-cover shadow-lg" data-ai-hint="diverse team working" />
-                </div>
                 <div className="space-y-4">
                     <h2 className="text-3xl font-bold font-headline text-accent">We don't just want Dax to be a fantastic place for you to work.</h2>
                     <p className="text-muted-foreground">While our goal is to create an environment where your skills are valued, your contributions are recognized, and your career finds purpose. Here, you're not just an employee; you're an integral part of a collaborative and innovative team.</p>
+                </div>
+                 <div className="relative h-72 w-full">
+                    <Image src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2xsYWJvcmF0aXZlJTIwdGVhbXxlbnwwfHx8fDE3NjkyNzM3ODV8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Diverse team working together at a table" fill className="rounded-lg object-cover shadow-lg" data-ai-hint="diverse team working" />
                 </div>
             </div>
         </div>
