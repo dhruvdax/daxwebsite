@@ -123,7 +123,7 @@ export default function CareersPage() {
         <div className="container mx-auto">
             <Card className="shadow-xl">
                 <CardContent className="p-8 md:p-12">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         {METRICS.map((metric) => (
                             <div key={metric.label}>
                                 <p className="text-5xl font-bold font-headline text-primary">
