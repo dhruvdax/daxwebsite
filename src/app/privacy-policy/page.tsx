@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
 
       <main className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-            <div className="prose prose-lg max-w-4xl mx-auto dark:prose-invert prose-headings:font-headline prose-h2:text-accent dark:prose-h2:text-white prose-h2:text-2xl prose-h2:mb-4 prose-h3:font-headline prose-h3:text-xl prose-p:text-muted-foreground prose-li:text-muted-foreground prose-p:mb-6 prose-ul:mb-6 prose-h2:mt-12 prose-h2:first:mt-0 prose-h3:mt-8">
+            <div className="prose prose-lg max-w-4xl mx-auto dark:prose-invert prose-headings:font-headline prose-headings:font-light prose-h2:text-accent dark:prose-h2:text-white prose-h2:text-2xl prose-h2:mb-6 prose-h3:font-headline prose-h3:text-xl prose-h3:font-light prose-h4:text-lg prose-h4:font-light prose-p:text-muted-foreground prose-p:mb-6 prose-p:text-base prose-li:text-muted-foreground prose-li:mb-2.5 prose-strong:font-semibold prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
                 
                 <h2>Purpose</h2>
                 <p>This Privacy Policy applies to the information Dax Software Solutions, Inc. and its subsidiaries (collectively, “Dax Software Solutions,” “we,” “us,” or “our”) collects, including through our website or other online products and services (“Site”).</p>
@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
                 
                 <h2>Cookies</h2>
                 <p>We use “cookies” on our Site. A “cookie” is a piece of information stored on a Site visitor’s hard drive to help us improve your access to our Site and identify repeat visitors. Cookies enable us to track and target the interests of our Site users to enhance their experience on our Site. It is possible to switch off cookies by setting your browser preferences. Turning cookies off may result in a loss of functionality when using our Site.</p>
-                <p>To learn more and for a detailed cookie policy, <Link href="/cookie-policy" className="text-primary hover:underline">click here</Link>.</p>
+                <p>To learn more and for a detailed cookie policy, <Link href="/cookie-policy">click here</Link>.</p>
                 
                 <h2>Security</h2>
                 <p>We employ commercially reasonable security methods and technologies to help secure the Personal Information we collect and store, and to protect this information from loss, misuse and unauthorized access, disclosure, alteration and destruction. We cannot, however, fully eliminate security risks associated with the storage and transmission of Personal Information.</p>
@@ -77,7 +77,7 @@ export default function PrivacyPolicyPage() {
                 <p>Dax Software Solutions takes commercially reasonable security measures to attempt to prevent unauthorized access, disclosure, modification, or unauthorized destruction of Personal Information.</p>
                 <p>Personal Information processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In some cases, Personal Information may be accessible to certain types of persons in charge, involved with the operation of this Site (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by Dax Software Solutions. The updated list of these parties may be requested from Dax Software Solutions at any time.</p>
 
-                <h3>Legal Basis of Processing</h3>
+                <h2>Legal Basis of Processing</h2>
                 <p>Dax Software Solutions is committed to cooperating with the EU data protection authorities (DPAs) and the Swiss Federal Data Protection and Information Commissioner (FDPIC) and complying with the advice given by such authorities with regard to human resources and non-human resources data transferred from the EU and Switzerland as required by applicable law.</p>
                 <p>We will only process Personal Information subject to th GDPR as it is described in this Privacy Policy if we have a lawful basis for doing so, including those listed below. Under some legislation, Dax Software Solutions may be allowed to process Personal Information until you affirmatively object to such processing (“opt-out”), without having to rely on consent or any other of the following legal bases:</p>
                 <ul>
@@ -89,19 +89,19 @@ export default function PrivacyPolicyPage() {
                 <p>If your affirmative consent is required for certain processing of any Personal Information subject to the GDPR, we will obtain your consent before so processing such information.</p>
                 <p>In any case, we can help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Information subject to the GDPR is a statutory or contractual requirement, or a requirement necessary to enter into a contract.</p>
 
-                <h3>Place</h3>
+                <h2>Place</h2>
                 <p>Personal Information is processed at Dax software solutions’ operating offices and in any other places where the parties involved in the processing are located. Depending on your location, data transfers may involve transferring the Personal Information to a country other than the one in which the data subject resides.</p>
                 <p>If broader protection standards are applicable, you are also entitled to learn about the legal basis of Data transfers to a country outside the European Union or to any international organization governed by public international law or set up by two or more countries, such as the UN, and about the security measures taken by the Owner to safeguard their Data.</p>
                 <p>If any such transfer takes place, you can find out more by checking the relevant sections of this document or inquire with the Owner using the information provided in the contact section.</p>
 
-                <h3>Information Transfer and Consent</h3>
+                <h2>Information Transfer and Consent</h2>
                 <p>With respect to personal data received or transferred pursuant to the Privacy Shield Framework, Dax software solutions is subject to the regulatory enforcement powers of the U.S. Federal Trade Commission. In certain situations, Dax software solutions may be required to disclose personal data in response to lawful requests by public authorities, including to meet national security or law enforcement requirements.</p>
                 <p>Your Personal Information may be transferred to and stored the United States, and may be processed and accessed by us, our affiliates and our unaffiliated service providers in the United States and in other jurisdictions where we or they operate. We comply with the EU-U.S. Privacy Shield Framework and Swiss-U.S. Privacy Shield Framework as set forth by the U.S. Department of Commerce regarding the collection, use, and retention of Personal Information transferred from the European Union and Switzerland to the United States.</p>
                 <p>Dax software solutions is responsible for the processing of personal data it receives under the Privacy Shield Framework and subsequently transfers to a third party acting as an agent on its behalf. Dax software solutions complies with the Privacy Shield Principles for all onward transfers of personal data from the EU and Switzerland, including the onward transfer liability provisions.</p>
-                <p>In compliance with the Privacy Shield Principles, Dax software solutions commits to resolve complaints about our collection or use of your Personal Information. EU and Swiss individuals with inquiries or complaints regarding our Privacy Shield policy should first contact Dax software solutions at: <a href="mailto:contact@daxsws.com" className="text-primary hover:underline">contact@daxsws.com</a>.</p>
+                <p>In compliance with the Privacy Shield Principles, Dax software solutions commits to resolve complaints about our collection or use of your Personal Information. EU and Swiss individuals with inquiries or complaints regarding our Privacy Shield policy should first contact Dax software solutions at: <a href="mailto:contact@daxsws.com">contact@daxsws.com</a>.</p>
                 <p>By using the Services, you consent to this transfer, processing, storage and access of your Personal Information in and/or outside of the jurisdiction in which you reside. Courts and other authorities in these jurisdictions may, in certain circumstances, be entitled to access your Personal Information. We will transfer your Personal Information subject to suitable safeguards, including in accordance with Privacy Shield Principles and/or standard contractual clauses where appropriate.</p>
 
-                <h3>Access to Information and Your Rights</h3>
+                <h2>Access to Information and Your Rights</h2>
                 <p>You have certain rights relating to your Personal Information, subject to local data protection laws. These rights may include:</p>
                 <ul>
                     <li>To access your Personal Information held by us (right to access);</li>
@@ -114,28 +114,28 @@ export default function PrivacyPolicyPage() {
                     <li>To the extent we base the collection, processing, and sharing of your Personal Information on your consent, to withdraw your consent at any time, without affecting the lawfulness of the processing based on such consent before its withdrawal.</li>
                 </ul>
                 <p>To exercise these rights, please submit your specific request to exercise these rights by using the information in the “Dax Software Solutions Contact Information” section below.</p>
-
-                <h3>Timeframe for Responding to Requests</h3>
+                
+                <h2>Timeframe for Responding to Requests</h2>
                 <p>Dax Software Solutions will respond to your request within thirty (30) days of receipt.</p>
                 <p>The period of response may be extended to forty-five (45) or sixty (60) days if more time is required. In that event, we will inform you of the reason and extension period in writing.</p>
-
-                <h3>Fee</h3>
+                
+                <h2>Fee</h2>
                 <p>We do not charge a fee to process or respond to your verifiable consumer request unless it is excessive, repetitive, or manifestly unfounded.</p>
                 
                 <h2>Your California Privacy Rights</h2>
                 <p>If you are a California resident, California law may provide you with additional rights regarding our use of your Personal Information. To learn more about your California privacy rights with respect to your Personal Information that we may collect via the Site, visit the Privacy Notice for California Residents.</p>
-
+                
                 <h2>Links to Other Sites</h2>
                 <p>We may offer links to sites that are not operated by us. If you visit one of these linked sites, you should review their privacy and other policies. We are not responsible for the policies and practices of others.</p>
                 
                 <h2>Changes to Privacy Policy</h2>
-                <p>From time to time, we may change this Privacy Policy with or without notice. Any changes will be effective immediately upon the posting of the revised Privacy Policy unless otherwise specified. Your continued use of our Site constitutes your acceptance of such changes.</p>
+                <p>From time to time, we may change this Privacy Policy with or without notice. Any changes will be effective <strong>immediately</strong> upon the posting of the revised Privacy Policy unless otherwise specified. Your continued use of our Site constitutes your acceptance of such changes.</p>
                 
                 <h2>Dax Software Solutions Contact Information</h2>
                 <p>If you have any questions about the Privacy Policy or our privacy practices, please contact us at:</p>
                 <p>
                     <strong>Name:</strong> Privacy Officer<br/>
-                    <strong>Email Address:</strong> <a href="mailto:contact@daxsws.com" className="text-primary hover:underline">contact@daxsws.com</a><br/>
+                    <strong>Email Address:</strong> <a href="mailto:contact@daxsws.com">contact@daxsws.com</a><br/>
                     <strong>Address:</strong> DAX Software Solutions Inc. 6303 Owensmouth Ave, 10th floor, Woodland Hills, CA 91367
                 </p>
 
