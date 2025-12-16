@@ -3,8 +3,6 @@
 import { suggestConsultingServices } from '@/ai/flows/suggest-consulting-services';
 import { z } from 'zod';
 import { getFirebaseAdmin } from '@/firebase/admin';
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
-import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { v4 as uuidv4 } from 'uuid';
 
 // AI Suggester Action
@@ -144,7 +142,7 @@ export async function submitJobApplication(prevState: JobApplicationState, formD
         };
     }
     
-    const { firebaseApp, firestore, storage } = getFirebaseAdmin();
+    const { firestore, storage } = getFirebaseAdmin();
     const { jobPostingId, jobTitle, applicantName, applicantEmail, coverLetter, resume } = validatedFields.data;
 
     try {
@@ -161,10 +159,7 @@ export async function submitJobApplication(prevState: JobApplicationState, formD
             },
         });
         
-        const [resumeUrl] = await file.getSignedUrl({
-            action: 'read',
-            expires: '03-09-2491', // Far-future expiration date
-        });
+        const resumeUrl = file.publicUrl();
 
         const applicationData = {
             id: uuidv4(),
