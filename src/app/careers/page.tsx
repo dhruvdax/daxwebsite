@@ -119,7 +119,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 transform -translate-y-20">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto">
             <Card className="shadow-xl max-w-7xl mx-auto">
                 <CardContent className="p-8 md:p-12">
@@ -138,10 +138,10 @@ export default function CareersPage() {
         </div>
       </section>
 
-      <section className="pb-16 md:pb-24 -mt-16">
+      <section className="pb-16 md:pb-24">
         <div className="container mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16 max-w-7xl mx-auto">
-                 <div className="relative h-72 w-full md:order-last">
+                <div className="relative h-72 w-full md:order-first">
                     <Image src="/career-img-1.jpg" alt="Team collaborating in an office" fill className="rounded-lg object-cover shadow-lg" data-ai-hint="team collaboration office" />
                 </div>
                 <div className="space-y-4">
@@ -227,4 +227,5 @@ export default function CareersPage() {
   );
 }
 
+    
     
