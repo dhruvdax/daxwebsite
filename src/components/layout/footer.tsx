@@ -58,7 +58,7 @@ export default function Footer() {
             <div>
               <h4 className="font-medium font-headline">Resource Center</h4>
               <ul className="mt-4 space-y-2 text-sm text-gray-400">
-                {RESOURCE_CENTER_LINKS.filter(link => link.href !== '/resource-center').map((link) => (
+                {RESOURCE_CENTER_LINKS.map((link) => (
                     <li key={link.href}>
                         <Link href={link.href} className="hover:text-white">{link.label}</Link>
                     </li>
