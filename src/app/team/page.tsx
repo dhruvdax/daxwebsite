@@ -50,7 +50,7 @@ export default function TeamPage() {
                 </div>
                 <div className="mx-auto w-full max-w-sm space-y-2">
                     <Button asChild size="lg" className="w-full">
-                        <Link href="#">EXPLORE OPPORTUNITIES <ArrowRight /></Link>
+                        <Link href="/contact-us">EXPLORE OPPORTUNITIES <ArrowRight /></Link>
                     </Button>
                 </div>
             </div>

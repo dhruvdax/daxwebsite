@@ -212,7 +212,7 @@ export default function CareersPage() {
                                 </div>
                                 <div className="md:text-right">
                                     <Button asChild>
-                                        <Link href="/contact">Apply</Link>
+                                        <Link href="/contact-us">Apply</Link>
                                     </Button>
                                 </div>
                             </div>

@@ -126,7 +126,7 @@ export default function Home() {
           </div>
           <div className="mx-auto w-full max-w-sm space-y-2">
             <Button asChild size="lg" className="w-full">
-              <Link href="/contact">Contact Us<ArrowRight /></Link>
+              <Link href="/contact-us">Contact Us<ArrowRight /></Link>
             </Button>
           </div>
         </div>

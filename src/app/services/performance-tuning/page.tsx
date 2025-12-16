@@ -83,7 +83,7 @@ export default function PerformanceTuningPage() {
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
                 <Button asChild size="lg" variant="default">
-                    <Link href="/contact">Contact Us</Link>
+                    <Link href="/contact-us">Contact Us</Link>
                 </Button>
             </div>
         </div>

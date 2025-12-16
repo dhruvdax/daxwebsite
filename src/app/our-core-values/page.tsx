@@ -86,7 +86,7 @@ export default function CoreValuesPage() {
                 </div>
                 <div className="mx-auto w-full max-w-sm space-y-2">
                     <Button asChild size="lg">
-                        <Link href="/contact">Let’s Connect</Link>
+                        <Link href="/contact-us">Let’s Connect</Link>
                     </Button>
                 </div>
             </div>

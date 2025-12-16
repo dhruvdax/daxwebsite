@@ -104,7 +104,7 @@ export default function AX2012ToD365UpgradePage() {
                     <h2 className="text-2xl font-bold font-headline">Looking for experts to help you with AX 2012 to D365 upgrade?</h2>
                     <p className="mt-2 text-lg text-gray-300">With 20+ years of industry experience in ERP and CRM, DAX is proficient in crafting tailored solutions to meet the needs of businesses.</p>
                     <Button asChild size="lg" variant="primary-outline" className="mt-6">
-                        <Link href="/contact">CONTACT US</Link>
+                        <Link href="/contact-us">CONTACT US</Link>
                     </Button>
                 </div>
             </section>
@@ -183,7 +183,7 @@ export default function AX2012ToD365UpgradePage() {
                 <div className="container mx-auto text-center">
                      <h2 className="text-2xl font-bold font-headline">Ready to upgrade to Dynamics 365 F&O? - Get expert consultation</h2>
                      <Button asChild size="lg" className="mt-6">
-                        <Link href="/contact">Schedule a call</Link>
+                        <Link href="/contact-us">Schedule a call</Link>
                      </Button>
                 </div>
             </section>

@@ -76,7 +76,7 @@ export default function CaseStudyPage() {
                           <h3 className="text-2xl font-bold font-headline text-accent dark:text-white">Looking for OCR solutions for automated data entry?</h3>
                           <p className="mt-2 text-lg text-muted-foreground">With 20+ years of industry experience in ERP and CRM, DAX is proficient in crafting tailored solutions to meet the needs of businesses.</p>
                           <Button asChild size="lg" className="mt-6">
-                              <Link href="/contact">Contact Us</Link>
+                              <Link href="/contact-us">Contact Us</Link>
                           </Button>
                       </CardContent>
                   </Card>

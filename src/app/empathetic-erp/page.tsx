@@ -186,7 +186,7 @@ export default function EmpatheticErpPage() {
                     </div>
                     <div className="mx-auto w-full max-w-sm space-y-2">
                         <Button asChild size="lg">
-                            <Link href="/contact">CALL YOUR EMPATHETIC PARTNER</Link>
+                            <Link href="/contact-us">CALL YOUR EMPATHETIC PARTNER</Link>
                         </Button>
                     </div>
                 </div>

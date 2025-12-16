@@ -105,7 +105,7 @@ export default function QuickFixPackagesPage() {
             </div>
             <div className="mx-auto w-full max-w-sm space-y-2">
                 <Button asChild size="lg" variant="primary-outline" className="bg-transparent text-accent border-accent hover:bg-accent hover:text-white">
-                    <Link href="/contact">BUILD A CUSTOMIZED SOLUTIONS <ArrowRight /></Link>
+                    <Link href="/contact-us">BUILD A CUSTOMIZED SOLUTIONS <ArrowRight /></Link>
                 </Button>
             </div>
         </div>

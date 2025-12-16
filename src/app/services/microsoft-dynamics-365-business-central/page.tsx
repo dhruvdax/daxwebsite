@@ -134,7 +134,7 @@ export default function BusinessCentralPage() {
         <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold font-headline mb-4">Are you struggling to streamline your business operations and maximize your efficiency?</h2>
             <Button asChild size="lg">
-                <Link href="/contact">CONTACT US</Link>
+                <Link href="/contact-us">CONTACT US</Link>
             </Button>
         </div>
       </section>
@@ -166,7 +166,7 @@ export default function BusinessCentralPage() {
             <h2 className="text-3xl font-bold font-headline text-accent">Which ERP fits you best: Dynamics 365 Business Central or Finance & Supply Chain?</h2>
             <p className="mt-2 text-lg text-muted-foreground">Discover the perfect Dynamics 365 solution for your business.</p>
             <Button asChild size="lg" className="mt-6">
-                <Link href="/contact">Know More</Link>
+                <Link href="/contact-us">Know More</Link>
             </Button>
         </div>
       </section>

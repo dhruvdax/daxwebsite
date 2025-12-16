@@ -207,7 +207,7 @@ export default function PricingPage() {
                 </div>
                 <div className="mx-auto w-full max-w-sm space-y-2">
                     <Button asChild size="lg" variant="primary-outline">
-                        <Link href="/contact">Contact Us Now</Link>
+                        <Link href="/contact-us">Contact Us Now</Link>
                     </Button>
                 </div>
             </div>
