@@ -3,7 +3,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { CountUp } from '@/components/ui/count-up';
+import { CountUp } from '@/components/count-up';
 import {
   Briefcase,
   CheckCircle,
