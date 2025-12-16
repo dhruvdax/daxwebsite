@@ -141,7 +141,7 @@ export default function CareersPage() {
       <section className="pb-16 md:pb-24 -mt-16">
         <div className="container mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16 max-w-7xl mx-auto">
-                 <div className="relative h-72 w-full">
+                 <div className="relative h-72 w-full md:order-last">
                     <Image src="/career-img-1.jpg" alt="Team collaborating in an office" fill className="rounded-lg object-cover shadow-lg" data-ai-hint="team collaboration office" />
                 </div>
                 <div className="space-y-4">
@@ -226,3 +226,5 @@ export default function CareersPage() {
     </div>
   );
 }
+
+    
