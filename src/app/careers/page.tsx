@@ -140,7 +140,7 @@ export default function CareersPage() {
 
       <section className="pb-16 md:pb-24 -mt-16">
         <div className="container mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+            <div className="grid md:grid-cols-2 gap-12 items-center mb-16 max-w-7xl mx-auto">
                  <div className="relative h-72 w-full">
                     <Image src="/career-img-1.jpg" alt="Team collaborating in an office" fill className="rounded-lg object-cover shadow-lg" data-ai-hint="team collaboration office" />
                 </div>
@@ -149,7 +149,7 @@ export default function CareersPage() {
                     <p className="text-muted-foreground">At DAX, growth is not just an individual pursuit; it's a shared adventure. We're committed to providing an environment that nurtures your professional development, offering opportunities for skill enhancement, career advancement, and continuous learning.</p>
                 </div>
             </div>
-             <div className="grid md:grid-cols-2 gap-12 items-center">
+             <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
                 <div className="space-y-4">
                     <h2 className="text-3xl font-bold font-headline text-accent">We don't just want Dax to be a fantastic place for you to work.</h2>
                     <p className="text-muted-foreground">While our goal is to create an environment where your skills are valued, your contributions are recognized, and your career finds purpose. Here, you're not just an employee; you're an integral part of a collaborative and innovative team.</p>
@@ -163,7 +163,7 @@ export default function CareersPage() {
 
       <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container mx-auto">
-            <div className="grid lg:grid-cols-3 gap-12 items-start">
+            <div className="grid lg:grid-cols-3 gap-12 items-start max-w-7xl mx-auto">
                 <div className="lg:col-span-1 space-y-4">
                     <h2 className="text-3xl font-bold font-headline">Join Us and Experience the DAX Difference!</h2>
                     <p className="text-muted-foreground">We're not just building a team; we're creating a family of talented individuals who share a common goal of excellence. When you join DAX, you become a part of something extraordinary – a place where your skills are valued, your ideas are heard, and your career flourishes.</p>
