@@ -1,0 +1,108 @@
+
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import { Calendar, User, Folder } from 'lucide-react';
+
+interface Post {
+    id: number;
+    slug: string;
+    title: {
+        rendered: string;
+    };
+    content: {
+        rendered: string;
+    };
+    date: string;
+    _embedded: {
+        author: { name: string }[];
+        'wp:featuredmedia'?: { source_url: string, alt_text: string }[];
+        'wp:term'?: { name: string }[][];
+    };
+}
+
+async function getPost(slug: string): Promise<Post | null> {
+    try {
+        const res = await fetch(`https://forestgreen-squid-903456.hostingersite.com/wp-json/wp/v2/posts?slug=${slug}&_embed=1`, {
+            next: { revalidate: 3600 } // Revalidate every hour
+        });
+
+        if (!res.ok) {
+            console.error("Failed to fetch post:", res.statusText);
+            return null;
+        }
+        
+        const posts: Post[] = await res.json();
+        if (posts.length === 0) {
+            return null;
+        }
+
+        return posts[0];
+    } catch (error) {
+        console.error("Error fetching post:", error);
+        return null;
+    }
+}
+
+
+export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+    const post = await getPost(params.slug);
+
+    if (!post) {
+        notFound();
+    }
+
+    const imageUrl = post._embedded?.['wp:featuredmedia']?.[0]?.source_url;
+    const imageAlt = post._embedded?.['wp:featuredmedia']?.[0]?.alt_text || post.title.rendered;
+    const categories = post._embedded?.['wp:term']?.[0]?.map(cat => cat.name).join(', ') || 'Uncategorized';
+    const authorName = post._embedded.author[0]?.name || 'Anonymous';
+    const postDate = new Date(post.date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+  return (
+    <div className="bg-background">
+        <main className="py-16 md:py-24">
+            <div className="container mx-auto px-4 max-w-4xl">
+                <article>
+                    <header className="mb-12 text-center">
+                        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl font-headline mb-4" dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                        <div className="flex justify-center flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
+                             <div className="flex items-center gap-2">
+                                <User className="h-4 w-4" />
+                                <span>{authorName}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Calendar className="h-4 w-4" />
+                                <span>{postDate}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Folder className="h-4 w-4" />
+                                <span>{categories}</span>
+                            </div>
+                        </div>
+                    </header>
+
+                    {imageUrl && (
+                        <div className="relative h-72 md:h-96 w-full mb-12">
+                            <Image
+                                src={imageUrl}
+                                alt={imageAlt}
+                                fill
+                                priority
+                                className="object-cover rounded-lg shadow-lg"
+                            />
+                        </div>
+                    )}
+
+                    <div 
+                        className="prose dark:prose-invert max-w-none prose-lg prose-headings:font-headline prose-a:text-primary hover:prose-a:text-primary/80" 
+                        dangerouslySetInnerHTML={{ __html: post.content.rendered }} 
+                    />
+                </article>
+            </div>
+        </main>
+    </div>
+  );
+}
