@@ -2,8 +2,8 @@
 
 import { suggestConsultingServices } from '@/ai/flows/suggest-consulting-services';
 import { z } from 'zod';
-import { initializeFirebase } from '@/firebase';
-import { addDoc, collection } from 'firebase/firestore';
+import { getFirebaseAdmin } from '@/firebase/admin';
+import { addDoc, collection, getFirestore } from 'firebase/firestore';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -143,22 +143,28 @@ export async function submitJobApplication(prevState: JobApplicationState, formD
             isSuccess: false,
         };
     }
-
-    const { firebaseApp, firestore } = initializeFirebase();
-    const storage = getStorage(firebaseApp);
+    
+    const { firebaseApp, firestore, storage } = getFirebaseAdmin();
     const { jobPostingId, jobTitle, applicantName, applicantEmail, coverLetter, resume } = validatedFields.data;
 
     try {
         const fileExtension = resume.name.split('.').pop();
         const resumeFileName = `${jobPostingId}/${uuidv4()}.${fileExtension}`;
-        const storageRef = ref(storage, `resumes/${resumeFileName}`);
-
+        const bucket = storage.bucket();
+        const file = bucket.file(`resumes/${resumeFileName}`);
+        
         const fileBuffer = await resume.arrayBuffer();
-        await uploadBytes(storageRef, fileBuffer, {
-            contentType: resume.type,
-        });
 
-        const resumeUrl = await getDownloadURL(storageRef);
+        await file.save(Buffer.from(fileBuffer), {
+            metadata: {
+                contentType: resume.type,
+            },
+        });
+        
+        const [resumeUrl] = await file.getSignedUrl({
+            action: 'read',
+            expires: '03-09-2491', // Far-future expiration date
+        });
 
         const applicationData = {
             id: uuidv4(),
@@ -170,9 +176,8 @@ export async function submitJobApplication(prevState: JobApplicationState, formD
             resumeUrl,
             submissionDate: new Date().toISOString(),
         };
-
-        const applicationsCollectionRef = collection(firestore, `jobPostings/${jobPostingId}/jobApplications`);
-        await addDoc(applicationsCollectionRef, applicationData);
+        
+        await firestore.collection(`jobPostings/${jobPostingId}/jobApplications`).add(applicationData);
 
         return {
             message: "Thank you for your application! We've received it successfully and will be in touch if you're a good fit.",
