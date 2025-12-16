@@ -126,6 +126,8 @@ type JobApplicationState = {
 }
 
 export async function submitJobApplication(prevState: JobApplicationState, formData: FormData): Promise<JobApplicationState> {
+    const { firestore } = getFirebaseAdmin();
+    
     const validatedFields = jobApplicationSchema.safeParse({
         jobPostingId: formData.get('jobPostingId'),
         jobTitle: formData.get('jobTitle'),
@@ -143,7 +145,6 @@ export async function submitJobApplication(prevState: JobApplicationState, formD
         };
     }
     
-    const { firestore } = getFirebaseAdmin();
     const { jobPostingId, jobTitle, applicantName, applicantEmail, coverLetter, resume } = validatedFields.data;
 
     try {
