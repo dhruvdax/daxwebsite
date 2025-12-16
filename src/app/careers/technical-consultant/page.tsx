@@ -5,15 +5,18 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import JobApplicationForm from '@/components/job-application-form';
 import { OPENINGS } from '@/lib/content';
+import { notFound } from 'next/navigation';
 
 export default function CareerDetailPage() {
     const job = OPENINGS.find(o => o.slug === 'technical-consultant');
-    
+   
+    if (!job) {
+        notFound();
+    }
+
     const scrollToForm = () => {
         document.getElementById('apply-form')?.scrollIntoView({ behavior: 'smooth' });
     }
-
-    if (!job) return null;
 
     return (
         <div className="bg-background">
@@ -47,5 +50,3 @@ export default function CareerDetailPage() {
         </div>
     );
 }
-
-    
