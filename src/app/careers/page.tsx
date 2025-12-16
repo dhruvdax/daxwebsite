@@ -121,9 +121,9 @@ export default function CareersPage() {
 
       <section className="py-16 md:py-24 transform -translate-y-20">
         <div className="container mx-auto">
-            <Card className="shadow-xl">
+            <Card className="shadow-xl max-w-4xl mx-auto">
                 <CardContent className="p-8 md:p-12">
-                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                         {METRICS.map((metric) => (
                             <div key={metric.label}>
                                 <p className="text-5xl font-bold font-headline text-primary">
@@ -141,12 +141,12 @@ export default function CareersPage() {
       <section className="pb-16 md:pb-24 -mt-16">
         <div className="container mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+                 <div className="relative h-72 w-full">
+                    <Image src="/career-img-1.jpg" alt="Team collaborating in an office" fill className="rounded-lg object-cover shadow-lg" data-ai-hint="team collaboration office" />
+                </div>
                 <div className="space-y-4">
                     <h2 className="text-3xl font-bold font-headline text-accent">Let's grow together</h2>
                     <p className="text-muted-foreground">At DAX, growth is not just an individual pursuit; it's a shared adventure. We're committed to providing an environment that nurtures your professional development, offering opportunities for skill enhancement, career advancement, and continuous learning.</p>
-                </div>
-                <div className="relative h-72 w-full">
-                    <Image src="/career-img-1.jpg" alt="Team collaborating in an office" fill className="rounded-lg object-cover shadow-lg" data-ai-hint="team collaboration office" />
                 </div>
             </div>
              <div className="grid md:grid-cols-2 gap-12 items-center">
