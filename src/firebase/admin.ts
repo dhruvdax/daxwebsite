@@ -1,8 +1,7 @@
 'use server';
-import { initializeApp, getApps, getApp, App } from 'firebase-admin/app';
+import { initializeApp, getApps, getApp } from 'firebase-admin/app';
 import { getFirestore } from 'firebase-admin/firestore';
 import { getStorage } from 'firebase-admin/storage';
-import { firebaseConfig } from './config';
 
 function getFirebaseAdmin() {
   if (getApps().length > 0) {
@@ -14,10 +13,8 @@ function getFirebaseAdmin() {
     };
   }
 
-  const app = initializeApp({
-    credential: undefined, // Let auto-discovery handle credentials
-    storageBucket: `${firebaseConfig.projectId}.appspot.com`,
-  });
+  // Initialize without arguments to use Application Default Credentials
+  const app = initializeApp();
 
   return {
     firebaseApp: app,
