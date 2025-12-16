@@ -180,7 +180,7 @@ export default async function BlogPage({ searchParams }: { searchParams: { page?
                                             <span>{categories}</span>
                                         </div>
                                     </div>
-                                    <div className="text-muted-foreground flex-grow line-clamp-2" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
+                                    <div className="text-muted-foreground flex-grow line-clamp-4" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} />
                                 </CardContent>
                             </Card>
                         )
