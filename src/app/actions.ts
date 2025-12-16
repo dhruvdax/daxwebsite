@@ -3,6 +3,10 @@
 
 import { suggestConsultingServices } from '@/ai/flows/suggest-consulting-services';
 import { z } from 'zod';
+import { initializeFirebase } from '@/firebase';
+import { addDoc, collection } from 'firebase/firestore';
+import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { v4 as uuidv4 } from 'uuid';
 
 // AI Suggester Action
 const aiFormSchema = z.object({
@@ -80,13 +84,107 @@ export async function getM365LicensingInquiry(prevState: M365State, formData: Fo
         };
     }
     
-    // Here you would typically send an email
-    // For this example, we'll just log it and return a success message.
     console.log('New M365 Licensing Inquiry:');
     console.log(validatedFields.data);
-
-    // This is where you'd integrate with an email service like Nodemailer, SendGrid, etc.
-    // Since we can't do that in this environment, we'll simulate a success response.
     
     return { message: 'Thank you for your inquiry! We will get back to you shortly.', errors: {} };
+}
+
+
+// Job Application Action
+const jobApplicationSchema = z.object({
+  jobPostingId: z.string().min(1, 'Job ID is missing.'),
+  jobTitle: z.string().min(1, 'Job title is missing.'),
+  applicantName: z.string().min(1, 'Full name is required.'),
+  applicantEmail: z.string().email('Please enter a valid email address.'),
+  coverLetter: z.string().optional(),
+  resume: z
+    .instanceof(File)
+    .refine((file) => file.size > 0, 'Resume is required.')
+    .refine(
+      (file) => file.size <= 5 * 1024 * 1024,
+      'Resume must be less than 5MB.'
+    )
+    .refine(
+      (file) =>
+        ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'].includes(
+          file.type
+        ),
+      'Invalid file type. Please upload a PDF, DOC, or DOCX file.'
+    ),
+});
+
+type JobApplicationState = {
+    message: string | null;
+    errors: {
+        jobPostingId?: string[];
+        applicantName?: string[];
+        applicantEmail?: string[];
+        resume?: string[];
+        coverLetter?: string[];
+        form?: string[];
+    };
+    isSuccess: boolean;
+}
+
+export async function submitJobApplication(prevState: JobApplicationState, formData: FormData): Promise<JobApplicationState> {
+    const validatedFields = jobApplicationSchema.safeParse({
+        jobPostingId: formData.get('jobPostingId'),
+        jobTitle: formData.get('jobTitle'),
+        applicantName: formData.get('applicantName'),
+        applicantEmail: formData.get('applicantEmail'),
+        coverLetter: formData.get('coverLetter'),
+        resume: formData.get('resume'),
+    });
+    
+    if (!validatedFields.success) {
+        return {
+            errors: validatedFields.error.flatten().fieldErrors,
+            message: 'Please correct the errors below.',
+            isSuccess: false,
+        };
+    }
+
+    const { firebaseApp, firestore } = initializeFirebase();
+    const storage = getStorage(firebaseApp);
+    const { jobPostingId, jobTitle, applicantName, applicantEmail, coverLetter, resume } = validatedFields.data;
+
+    try {
+        const fileExtension = resume.name.split('.').pop();
+        const resumeFileName = `${jobPostingId}/${uuidv4()}.${fileExtension}`;
+        const storageRef = ref(storage, `resumes/${resumeFileName}`);
+
+        const fileBuffer = await resume.arrayBuffer();
+        await uploadBytes(storageRef, fileBuffer, {
+            contentType: resume.type,
+        });
+
+        const resumeUrl = await getDownloadURL(storageRef);
+
+        const applicationData = {
+            jobPostingId,
+            jobTitle,
+            applicantName,
+            applicantEmail,
+            coverLetter: coverLetter || '',
+            resumeUrl,
+            submissionDate: new Date().toISOString(),
+        };
+
+        const applicationsCollectionRef = collection(firestore, `jobPostings/${jobPostingId}/jobApplications`);
+        await addDoc(applicationsCollectionRef, applicationData);
+
+        return {
+            message: "Thank you for your application! We've received it successfully and will be in touch if you're a good fit.",
+            errors: {},
+            isSuccess: true,
+        };
+    } catch (error: any) {
+        console.error('Error submitting application:', error);
+        return {
+            message: error.message || 'An unexpected error occurred. Please try again later.',
+            errors: { form: [error.message || 'An unexpected error occurred.'] },
+            isSuccess: false,
+        };
+    }
 }

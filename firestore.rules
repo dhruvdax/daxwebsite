@@ -48,7 +48,12 @@ service cloud.firestore {
      * This ensures relational integrity when a new application is created.
      */
     function newApplicationIsValid(jobPostingId) {
-      return request.resource.data.jobPostingId == jobPostingId;
+      let incomingData = request.resource.data;
+      return incomingData.jobPostingId == jobPostingId &&
+             incomingData.applicantName is string && incomingData.applicantName.size() > 0 &&
+             incomingData.applicantEmail is string && incomingData.applicantEmail.matches('.+@.+\..+') &&
+             incomingData.resumeUrl is string && incomingData.resumeUrl.size() > 0 &&
+             incomingData.submissionDate is string;
     }
 
     /**
@@ -72,27 +77,27 @@ service cloud.firestore {
       allow create: if isDenied(); // TODO: Add owner validation once the schema is updated with an ownership field.
       allow update: if isDenied(); // TODO: Add owner validation once the schema is updated with an ownership field.
       allow delete: if isDenied(); // TODO: Add owner validation once the schema is updated with an ownership field.
-    }
 
-    /**
-     * @description
-     * Rules for the `jobApplications` subcollection. Allows any user to submit
-     * an application but denies all other access to protect applicant PII.
-     * @path
-     * /jobPostings/{jobPostingId}/jobApplications/{jobApplicationId}
-     * @allow
-     * (create) Any user, signed-in or anonymous, can create a new job application for a posting.
-     * @deny
-     * (get) A user attempts to read a submitted job application. This is denied to protect applicant privacy.
-     * @principle
-     * Enforces a "write-once, read-never" policy for sensitive data submitted by the public. It validates that the application is linked to the correct parent job posting upon creation.
-     */
-    match /jobPostings/{jobPostingId}/jobApplications/{jobApplicationId} {
-      allow create: if newApplicationIsValid(jobPostingId);
-      allow get: if isDenied();
-      allow list: if isDenied();
-      allow update: if isDenied();
-      allow delete: if isDenied();
+      /**
+       * @description
+       * Rules for the `jobApplications` subcollection. Allows any user to submit
+       * an application but denies all other access to protect applicant PII.
+       * @path
+       * /jobPostings/{jobPostingId}/jobApplications/{jobApplicationId}
+       * @allow
+       * (create) Any user, signed-in or anonymous, can create a new job application for a posting.
+       * @deny
+       * (get) A user attempts to read a submitted job application. This is denied to protect applicant privacy.
+       * @principle
+       * Enforces a "write-once, read-never" policy for sensitive data submitted by the public. It validates that the application is linked to the correct parent job posting upon creation.
+       */
+      match /jobApplications/{jobApplicationId} {
+        allow create: if newApplicationIsValid(jobPostingId);
+        allow get: if isDenied();
+        allow list: if isDenied();
+        allow update: if isDenied();
+        allow delete: if isDenied();
+      }
     }
   }
 }

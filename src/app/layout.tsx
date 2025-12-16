@@ -4,6 +4,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
+import { FirebaseClientProvider } from '@/firebase';
 
 export const metadata: Metadata = {
   title: 'DAX | The Empathetic ERP Partner',
@@ -27,12 +28,14 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://cxppusa1formui01cdnsa01-endpoint.azureedge.net" />
       </head>
       <body className="font-body antialiased bg-background text-foreground">
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-        <Toaster />
+        <FirebaseClientProvider>
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+          <Toaster />
+        </FirebaseClientProvider>
       </body>
     </html>
   );

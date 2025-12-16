@@ -26,13 +26,6 @@
           "type": "string",
           "description": "Date when the job posting was created.",
           "format": "date-time"
-        },
-        "applicationIds": {
-          "type": "array",
-          "description": "References to JobApplications. (Relationship: JobPosting 1:N JobApplication)",
-          "items": {
-            "type": "string"
-          }
         }
       },
       "required": [
@@ -57,6 +50,10 @@
           "type": "string",
           "description": "Reference to JobPosting. (Relationship: JobPosting 1:N JobApplication)"
         },
+        "jobTitle": {
+          "type": "string",
+          "description": "The title of the job being applied for."
+        },
         "applicantName": {
           "type": "string",
           "description": "Name of the applicant."
@@ -68,7 +65,7 @@
         },
         "resumeUrl": {
           "type": "string",
-          "description": "URL to the applicant's resume.",
+          "description": "URL to the applicant's resume in Firebase Storage.",
           "format": "uri"
         },
         "coverLetter": {
@@ -84,6 +81,7 @@
       "required": [
         "id",
         "jobPostingId",
+        "jobTitle",
         "applicantName",
         "applicantEmail",
         "resumeUrl",
