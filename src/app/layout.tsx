@@ -3,12 +3,27 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import './globals.css';
-import { Analytics } from '@vercel/analytics/react';
 import { FirebaseClientProvider } from '@/firebase';
+import { buildMetadata } from './seo';
 
-export const metadata: Metadata = {
-  title: 'DAX | The Empathetic ERP Partner',
-  description: 'Prioritizing People over Technology',
+export const metadata: Metadata = buildMetadata({
+  canonicalPath: "/",
+  ogType: "website",
+});
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "DAX Software Solutions",
+  url: "https://daxsws.com",
+  logo: "https://daxsws.com/assets/images/logo.png",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "DAX Software Solutions",
+  url: "https://daxsws.com",
 };
 
 export default function RootLayout({
@@ -17,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="">
+    <html lang="en-US" className="">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -28,6 +43,14 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://cxppusa1formui01cdnsa01-endpoint.azureedge.net" />
       </head>
       <body className="font-body antialiased bg-background text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <FirebaseClientProvider>
           <div className="flex min-h-screen flex-col">
             <Header />

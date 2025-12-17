@@ -6,6 +6,13 @@ import { Card } from '@/components/ui/card';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
+import { buildMetadata } from '../seo';
+
+export const metadata = buildMetadata({
+  title: "Empathetic ERP: The Key to Success | DAX Software Solutions",
+  description: "Learn about the Empathetic ERP approach, focusing on user needs, stakeholder engagement, and change management for successful implementations.",
+  canonicalPath: "/empathetic-erp",
+});
 
 const CHAPTERS = [
     {

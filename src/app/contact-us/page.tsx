@@ -5,6 +5,13 @@
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { useEffect } from 'react';
+import { buildMetadata } from '../seo';
+
+export const metadata = buildMetadata({
+  title: "Contact Us | DAX Software Solutions",
+  description: "Get in touch with DAX, your empathetic ERP partner. Contact us for a consultation on Microsoft Dynamics 365 and other business solutions.",
+  canonicalPath: "/contact-us",
+});
 
 const ContactInfoItem = ({ icon: Icon, title, children }: { icon: React.ElementType, title: string, children: React.ReactNode }) => (
     <div className="flex items-start space-x-4">

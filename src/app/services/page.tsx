@@ -1,5 +1,13 @@
+
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { SERVICES } from '@/lib/content';
+import { buildMetadata } from '../seo';
+
+export const metadata = buildMetadata({
+  title: "Consulting Services | DAX Software Solutions",
+  description: "Explore our comprehensive consulting services, including business strategy, market analysis, operational efficiency, and organizational development.",
+  canonicalPath: "/services",
+});
 
 export default function ServicesPage() {
   return (

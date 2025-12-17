@@ -1,6 +1,13 @@
 
 'use client';
 import Link from 'next/link';
+import { buildMetadata } from '../seo';
+
+export const metadata = buildMetadata({
+  title: "Terms of Use | DAX Software Solutions",
+  description: "Read the terms of use for the DAX Software Solutions website. Understand the conditions for using our site and its content.",
+  canonicalPath: "/terms-of-use",
+});
 
 export default function TermsOfUsePage() {
   return (

@@ -1,6 +1,13 @@
 
 'use client';
 import Link from 'next/link';
+import { buildMetadata } from '../seo';
+
+export const metadata = buildMetadata({
+  title: "Cookie Policy | DAX Software Solutions",
+  description: "Learn how DAX Software Solutions uses cookies and similar technologies on our website to improve user experience, for analytics, and marketing.",
+  canonicalPath: "/cookie-policy",
+});
 
 export default function CookiePolicyPage() {
   return (

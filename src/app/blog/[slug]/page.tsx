@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Calendar, User, Folder } from 'lucide-react';
 import type { Metadata } from 'next';
+import { buildMetadata } from "../../seo";
 
 interface Post {
     id: number;
@@ -51,24 +52,22 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const post = await getPost(params.slug);
 
   if (!post) {
-    return {
-      title: 'Post Not Found',
-      description: 'The post you are looking for does not exist.',
-    };
+    return buildMetadata({
+        title: 'Post Not Found',
+        description: 'The post you are looking for does not exist.',
+        canonicalPath: `/blog/${params.slug}`
+    });
   }
   
   // Strip HTML tags from excerpt for a clean description
   const description = post.excerpt.rendered.replace(/<[^>]*>?/gm, '');
 
-  return {
+  return buildMetadata({
     title: post.title.rendered,
     description: description,
-    openGraph: {
-      title: post.title.rendered,
-      description: description,
-      images: post._embedded?.['wp:featuredmedia']?.[0]?.source_url ? [post._embedded['wp:featuredmedia'][0].source_url] : [],
-    },
-  };
+    canonicalPath: `/blog/${post.slug}`,
+    ogType: 'article'
+  });
 }
 
 

@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { buildMetadata } from "../seo";
+
+export const metadata = buildMetadata({
+  title: "Quick-Fix ERP Packages | DAX Software Solutions",
+  description: "Address common ERP issues like data migration, integration failures, and performance bottlenecks with DAX's quick-fix packages.",
+  canonicalPath: "/quick-fix-packages",
+});
 
 const QUICK_FIX_PACKAGES = [
     {

@@ -6,6 +6,13 @@ import { Card, CardContent } from '@/components/ui/card';
 import { CountUp } from '@/components/count-up';
 import { Check, Smile, TrendingUp, Zap, ThumbsUp, ShieldCheck, TrendingDown } from 'lucide-react';
 import Link from 'next/link';
+import { buildMetadata } from '../seo';
+
+export const metadata = buildMetadata({
+  title: "Pricing & Plans | DAX Software Solutions",
+  description: "Explore flexible pricing models for Dynamics 365 services at DAX, including quick-fix packages, subscription plans, and pay-as-you-go options.",
+  canonicalPath: "/pricing",
+});
 
 const IMPACT_METRICS = [
   {

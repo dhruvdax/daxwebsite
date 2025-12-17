@@ -5,6 +5,13 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { TEAM_MEMBERS } from "@/lib/content";
+import { buildMetadata } from "../seo";
+
+export const metadata = buildMetadata({
+  title: "Our Team | DAX Software Solutions",
+  description: "Meet the global team of experienced architects, consultants, and developers at DAX who are dedicated to your success.",
+  canonicalPath: "/team",
+});
 
 export default function TeamPage() {
 

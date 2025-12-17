@@ -3,6 +3,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { HeartHandshake, Users, GitCommit, ShieldCheck, Sparkles, SlidersHorizontal, UserSearch } from 'lucide-react';
+import { buildMetadata } from "../seo";
+
+export const metadata = buildMetadata({
+  title: "Our Core Values | DAX Software Solutions",
+  description: "Discover the core values that guide DAX: Empathy, Customer-centricity, Transparency, Integrity, Diversity, Innovation, and Flexibility.",
+  canonicalPath: "/our-core-values",
+});
 
 const CORE_VALUES = [
     {

@@ -1,6 +1,14 @@
 
 import Link from 'next/link';
 import { NAV_LINKS, RESOURCE_CENTER_LINKS, CASE_STUDIES } from '@/lib/content';
+import { buildMetadata } from '../seo';
+
+export const metadata = buildMetadata({
+  title: "Sitemap | DAX Software Solutions",
+  description: "Navigate our website with the sitemap. Find links to all our main pages, services, case studies, and resources.",
+  canonicalPath: "/sitemap",
+});
+
 
 const otherMainLinks = [
     { href: '/', label: 'Home' },

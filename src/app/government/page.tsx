@@ -7,6 +7,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Check, Download } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { useState, useEffect, useRef } from "react";
+import { buildMetadata } from "../seo";
+
+export const metadata = buildMetadata({
+  title: "Government ERP Solutions | Microsoft Dynamics 365 | DAX",
+  description: "DAX provides secure, compliant, and cost-effective ERP solutions for government agencies using Microsoft Dynamics 365, Power Apps, and Azure.",
+  canonicalPath: "/government",
+});
 
 const SECTIONS = {
     'overview': 'Overview',

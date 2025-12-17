@@ -7,6 +7,14 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CASE_STUDIES, METRICS } from '@/lib/content';
 import { ArrowRight } from 'lucide-react';
 import { CountUp } from '@/components/count-up';
+import { buildMetadata } from './seo';
+
+export const metadata = buildMetadata({
+  title: "Empathetic ERP Partner | DAX Software Solutions",
+  description: "DAX is your trusted Microsoft Dynamics 365 partner, prioritizing people over technology to deliver successful ERP implementations and support.",
+  canonicalPath: "/",
+});
+
 
 export default function Home() {
   const caseStudyImages = CASE_STUDIES.map(cs => ({
@@ -134,5 +142,3 @@ export default function Home() {
     </div>
   );
 }
-
-    

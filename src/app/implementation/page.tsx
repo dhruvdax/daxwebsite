@@ -9,6 +9,14 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ArrowRight } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CASE_STUDIES } from '@/lib/content';
+import { buildMetadata } from '../seo';
+
+export const metadata = buildMetadata({
+  title: "Dynamics 365 Implementation Services | DAX Software Solutions",
+  description: "DAX offers expert Dynamics 365 implementation, greenfield projects, broken implementation rescue, and upgrades to transform your ERP and CRM systems.",
+  canonicalPath: "/implementation",
+});
+
 
 const IMPLEMENTATION_PHASES = [
   {

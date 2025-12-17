@@ -8,6 +8,13 @@ import { Check } from 'lucide-react';
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { TEAM_MEMBERS } from "@/lib/content";
 import { useState, useEffect, useRef } from "react";
+import { buildMetadata } from "../seo";
+
+export const metadata = buildMetadata({
+  title: "About Us | DAX Software Solutions",
+  description: "Learn about DAX, a Microsoft Solutions Partner with over 20 years of experience in ERP, CRM, and Power Apps, serving clients globally.",
+  canonicalPath: "/about-us",
+});
 
 const TABS = {
     'global-team': 'Global Team',

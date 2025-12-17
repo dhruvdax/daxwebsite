@@ -5,6 +5,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, Folder } from 'lucide-react';
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious, PaginationEllipsis, PaginationFirst, PaginationLast } from '@/components/ui/pagination';
 import { notFound } from "next/navigation";
+import { buildMetadata } from "../seo";
+
+export const metadata = buildMetadata({
+    title: "Blog | DAX Software Solutions",
+    description: "Read the latest articles and insights on ERP solutions, Microsoft Dynamics 365, and business process optimization from the experts at DAX.",
+    canonicalPath: "/blog",
+});
 
 interface Post {
     id: number;

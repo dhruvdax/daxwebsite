@@ -7,6 +7,13 @@ import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight, Check } from 'lucide-react';
 import { CASE_STUDIES } from '@/lib/content';
+import { buildMetadata } from '../seo';
+
+export const metadata = buildMetadata({
+  title: "Dynamics 365 Integration Services | DAX Software Solutions",
+  description: "DAX offers seamless Dynamics 365 integration with your existing applications using Power Apps, Dell Boomi, Celigo, and microservices.",
+  canonicalPath: "/integration",
+});
 
 const INTEGRATION_PLATFORMS = [
   {

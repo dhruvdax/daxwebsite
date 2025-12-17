@@ -6,6 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { CASE_STUDIES } from "@/lib/content";
+import { buildMetadata } from "../seo";
+
+export const metadata = buildMetadata({
+  title: "Case Studies | DAX Software Solutions",
+  description: "Explore case studies showcasing how DAX has helped businesses achieve success with Microsoft Dynamics 365, Power Apps, and custom ERP solutions.",
+  canonicalPath: "/case-studies",
+});
 
 export default function CaseStudiesPage() {
     const caseStudyImages = CASE_STUDIES.map(cs => ({

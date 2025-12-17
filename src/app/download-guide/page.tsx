@@ -5,6 +5,13 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { buildMetadata } from "../seo";
+
+export const metadata = buildMetadata({
+  title: "Download Empathetic ERP Guide | DAX Software Solutions",
+  description: "Download chapters of our Empathetic ERP Guide to learn about user needs, stakeholder engagement, change management, and more.",
+  canonicalPath: "/download-guide",
+});
 
 const CHAPTERS = [
     { id: 'chapter-1', title: 'Understanding User Needs' },
