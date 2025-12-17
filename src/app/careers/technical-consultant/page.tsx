@@ -6,10 +6,27 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import JobApplicationForm from '@/components/job-application-form';
 import { OPENINGS } from '@/lib/content';
 import { notFound } from 'next/navigation';
+import { buildMetadata } from '@/app/seo';
+import type { Metadata } from 'next';
+
+const job = OPENINGS.find(o => o.slug === 'technical-consultant');
+
+export function generateMetadata(): Metadata {
+    if (!job) {
+        return buildMetadata({
+            title: 'Job Not Found',
+            description: 'The job you are looking for does not exist.',
+        });
+    }
+
+    return buildMetadata({
+        title: `${job.title} | Careers at DAX`,
+        description: job.description,
+        canonicalPath: `/careers/${job.slug}`,
+    });
+}
 
 export default function CareerDetailPage() {
-    const job = OPENINGS.find(o => o.slug === 'technical-consultant');
-   
     if (!job) {
         notFound();
     }
