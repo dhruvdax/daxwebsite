@@ -68,7 +68,7 @@
     },
     {
       "id": "case-study-11",
-      "description": "A financial professional analyzing charts on a screen.",
+      "description": "Financial analysts reviewing charts in a modern office.",
       "imageUrl": "/case-studies/crm-for-finance-org.jpeg",
       "imageHint": "financial analysis"
     },
@@ -80,15 +80,15 @@
     },
     {
       "id": "case-study-13",
-      "description": "Abstract image of interconnected nodes and data streams.",
+      "description": "Abstract image representing data integration and networks.",
       "imageUrl": "/case-studies/dell-boomi-integration.jpg",
-      "imageHint": "data integration"
+      "imageHint": "data integration network"
     },
     {
       "id": "case-study-14",
-      "description": "A person touching a screen with a network of user icons.",
-      "imageUrl": "https://images.unsplash.com/photo-1758179762184-56f01a206ddc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx1c2VyJTIwbmV0d29ya3xlbnwwfHx8fDE3NjQ1NjkzNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "user network"
+      "description": "Diagram showing data migration between applications.",
+      "imageUrl": "/case-studies/data-migration-between-apps.jpeg",
+      "imageHint": "data migration"
     },
     {
       "id": "case-study-15",
@@ -227,12 +227,6 @@
       "description": "Power Apps logo on a digital background.",
       "imageUrl": "https://images.unsplash.com/photo-1650080539199-3178224097e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQb3dlciUyMEFwcHMlMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Power Apps logo"
-    },
-    {
-      "id": "dell-boomi-integration",
-      "description": "A hand holding a glowing Dell Boomi logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1700684074003-247963717282?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxEZWxsJTIwQm9vbWklMjBsb2dvfGVufDB8fHx8MTc2NTM4MTU3OHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "Dell Boomi logo"
     },
     {
       "id": "celigo-integration",
