@@ -134,22 +134,22 @@ export const CASE_STUDIES = [
     {
         title: 'CRM Upgrade for a diversified Financial Services Organization',
         slug: 'crm-upgrade-financial-services',
-        summary: 'CRM provides a wealth of customer data, enabling financial institutions to gain insights into customer behavior, preferences, and financial needs.',
+        summary: 'CRM provides a wealth of customer data, enabling financial institutions to gain insights into customer behavior, preferences, and financial needs. Learn how CRM Upgrade landed this organization ahead of its competitors.',
         details: 'We upgraded the CRM system for a diversified financial services organization, migrating them to a modern, cloud-based platform. The new system provides a 360-degree view of their clients, enabling personalized service and targeted marketing campaigns. This has led to a 15% increase in client retention.',
         imageId: 'case-study-11'
     },
     {
         title: 'CRM Implementation for a leading IT Services Company',
         slug: 'crm-implementation-it-services',
-        summary: 'CRM is proven to drive business growth, with companies that implement CRM experiencing an average sales increase of 12% and a customer retention rate increase of 27%.',
+        summary: 'CRM is proven to drive business growth, with companies that implement CRM experiencing an average sales increase of 12% and a customer retention rate increase of 27%. Learn more about how this IT Services organization improved reduced its operation costs via right CRM Implementation partner.',
         details: 'A leading IT services company partnered with us to implement a new CRM system. Our solution streamlined their sales process, from lead generation to deal closure. By automating repetitive tasks and providing better visibility into their sales pipeline, they were able to reduce their sales cycle by 10% and increase overall sales.',
         imageId: 'case-study-12'
     },
     {
         title: 'Dell Boomi Integration',
         slug: 'dell-boomi-integration',
-        summary: "Looking for integrations? This case study unravels how Dell Boomi transforms integration projects.",
-        details: 'We utilized Dell Boomi to integrate a client\'s disparate systems, including their ERP, CRM, and e-commerce platform. The Boomi platform provided a scalable and flexible solution for connecting their applications, automating data synchronization, and creating unified business processes. This resulted in a single source of truth for their data and significantly improved operational efficiency.',
+        summary: "Looking for integrations? Can I engage Dell Boomi for my integration projects? This case study unravels how Dell Boomi transforms integration projects, answering all your questions.",
+        details: "For a large multinational technology company, we replaced a legacy middleware tool with Dell Boomi. This streamlined their Salesforce integration, reduced maintenance costs, and improved performance. The drag-and-drop interface and direct Salesforce connector made development and troubleshooting significantly faster.",
         imageId: 'case-study-13'
     },
     {
