@@ -38,7 +38,7 @@ export default function CaseStudiesPage() {
           {caseStudyImages.map((study, index) => (
             <Card key={study.title} className="overflow-hidden shadow-lg transition-shadow hover:shadow-xl dark:bg-card rounded-[24px] flex flex-col md:flex-row h-full">
               {study.image && (
-                  <div className="md:w-1/3 relative h-48 md:h-auto w-full flex-shrink-0">
+                  <div className={`md:w-1/3 relative h-48 md:h-auto w-full flex-shrink-0 ${index % 2 !== 0 ? 'md:order-last' : ''}`}>
                       <Image
                           src={study.image.imageUrl}
                           alt={study.image.description}
