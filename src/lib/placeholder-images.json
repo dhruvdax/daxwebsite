@@ -68,15 +68,15 @@
     },
     {
       "id": "case-study-11",
-      "description": "An abstract image representing a CRM dashboard for a financial organization.",
+      "description": "A financial professional analyzing charts on a screen.",
       "imageUrl": "/case-studies/crm-for-finance-org.jpeg",
-      "imageHint": "CRM dashboard"
+      "imageHint": "financial analysis"
     },
     {
       "id": "case-study-12",
-      "description": "A business meeting in a modern office.",
-      "imageUrl": "https://images.unsplash.com/photo-1686771416282-3888ddaf249b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzY0NDg3Mzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business meeting"
+      "description": "A business meeting in a modern office with a focus on a CRM dashboard.",
+      "imageUrl": "/case-studies/crm-for-it-services-company.jpeg",
+      "imageHint": "CRM dashboard meeting"
     },
     {
       "id": "case-study-13",
