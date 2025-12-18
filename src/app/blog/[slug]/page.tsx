@@ -27,7 +27,7 @@ interface Post {
 
 async function getPost(slug: string): Promise<Post | null> {
     try {
-        const res = await fetch(`https://forestgreen-squid-903456.hostingersite.com/wp-json/wp/v2/posts?slug=${slug}&_embed=1`, {
+        const res = await fetch(`https://blog.daxsws.com/wp-json/wp/v2/posts?slug=${slug}&_embed=1`, {
             next: { revalidate: 3600 } // Revalidate every hour
         });
 

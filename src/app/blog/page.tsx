@@ -32,7 +32,7 @@ interface Post {
 async function getPosts(page: number = 1): Promise<{ posts: Post[], totalPages: number }> {
     const perPage = 6;
     try {
-        const res = await fetch(`https://forestgreen-squid-903456.hostingersite.com/wp-json/wp/v2/posts?per_page=${perPage}&page=${page}&orderby=date&order=desc&status=publish&_embed=1`, {
+        const res = await fetch(`https://blog.daxsws.com/wp-json/wp/v2/posts?per_page=${perPage}&page=${page}&orderby=date&order=desc&status=publish&_embed=1`, {
             next: { revalidate: 3600 } // Revalidate every hour
         });
 
