@@ -1,4 +1,3 @@
-
 'use client';
 import Link from 'next/link';
 import { buildMetadata } from '../seo';
@@ -147,3 +146,5 @@ export default function PrivacyPolicyPage() {
     </div>
   );
 }
+
+    
