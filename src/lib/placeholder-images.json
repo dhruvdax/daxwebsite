@@ -68,9 +68,9 @@
     },
     {
       "id": "case-study-11",
-      "description": "Abstract image representing finance and data with glowing lines.",
-      "imageUrl": "https://images.unsplash.com/photo-1744782211816-c5224434614f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW5hbmNlJTIwZGF0YXxlbnwwfHx8fDE3NjQ0OTAwNjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "finance data"
+      "description": "An abstract image representing a CRM dashboard for a financial organization.",
+      "imageUrl": "/case-studies/crm-for-finance-org.jpeg",
+      "imageHint": "CRM dashboard"
     },
     {
       "id": "case-study-12",
