@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "Business people collaborating around a laptop in a modern office.",
-      "imageUrl": "/home/business-people-laptop.jpeg",
-      "imageHint": "business people laptop"
+      "description": "Homepage banner image.",
+      "imageUrl": "/homepage-banner.jpg",
+      "imageHint": "business banner"
     },
     {
       "id": "case-study-1",
