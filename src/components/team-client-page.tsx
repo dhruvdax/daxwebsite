@@ -30,7 +30,7 @@ export default function TeamClientPage() {
                         width="100" 
                         height="100" 
                         className="rounded-full mb-4" 
-                        src={`/${member.imageId}.png`}
+                        src={`/team/${member.imageId}.png`}
                         alt={member.name} 
                     />
                     <h4 className="text-xl font-bold font-headline">{member.name}</h4>

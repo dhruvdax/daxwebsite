@@ -1,3 +1,4 @@
+
 'use client';
 import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -215,7 +216,7 @@ export default function AboutUsClientPage() {
                     {LEADERSHIP.map((member) => (
                         <div key={member.name} className="text-center flex flex-col items-center">
                              <Image
-                                src={`/${member.imageId}.png`}
+                                src={`/team/${member.imageId}.png`}
                                 alt={member.name}
                                 width={144}
                                 height={144}
