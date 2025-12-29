@@ -9,187 +9,187 @@
     {
       "id": "case-study-1",
       "description": "A person using a laptop with a Dynamics 365 logo visible, in an office setting.",
-      "imageUrl": "/case-studies/electronic-invoicing-case-study.png?v=5",
+      "imageUrl": "/case-studies/electronic-invoicing-case-study.png?v=6",
       "imageHint": "Dynamics 365"
     },
     {
       "id": "case-study-2",
       "description": "Coffee beans being roasted in a large machine.",
-      "imageUrl": "/case-studies/fast-food-manufacturer-and-retail-company.jpeg?v=5",
+      "imageUrl": "/case-studies/fast-food-manufacturer-and-retail-company.jpeg?v=6",
       "imageHint": "coffee roasting"
     },
     {
       "id": "case-study-3",
       "description": "A lush hydroponics setup with leafy greens growing under artificial light.",
-      "imageUrl": "/case-studies/hydroponic.jpeg?v=5",
+      "imageUrl": "/case-studies/hydroponic.jpeg?v=6",
       "imageHint": "hydroponics setup"
     },
     {
       "id": "case-study-4",
       "description": "A diverse group of business professionals shaking hands and collaborating in a meeting.",
-      "imageUrl": "/case-studies/real-estate.jpeg?v=5",
+      "imageUrl": "/case-studies/real-estate.jpeg?v=6",
       "imageHint": "business team"
     },
     {
       "id": "case-study-5",
       "description": "A systems integrator technician working on a server rack.",
-      "imageUrl": "/case-studies/us-based-integrator.jpeg?v=5",
+      "imageUrl": "/case-studies/us-based-integrator.jpeg?v=6",
       "imageHint": "systems integrator"
     },
     {
       "id": "case-study-6",
       "description": "Close-up of a hand interacting with a futuristic digital interface.",
-      "imageUrl": "/case-studies/implementation-business-central.jpeg?v=5",
+      "imageUrl": "/case-studies/implementation-business-central.jpeg?v=6",
       "imageHint": "digital interface"
     },
     {
       "id": "case-study-7",
       "description": "A person's hand drawing a business process flow chart on a glass board.",
-      "imageUrl": "/case-studies/implementation-for-security-system.jpeg?v=5",
+      "imageUrl": "/case-studies/implementation-for-security-system.jpeg?v=6",
       "imageHint": "process flowchart"
     },
     {
       "id": "case-study-8",
       "description": "A group of volunteers packing boxes with supplies.",
-      "imageUrl": "/case-studies/power-app-for-non-profit-org.jpeg?v=5",
+      "imageUrl": "/case-studies/power-app-for-non-profit-org.jpeg?v=6",
       "imageHint": "volunteers packing"
     },
     {
       "id": "case-study-9",
       "description": "A teacher helping students in a classroom with computers.",
-      "imageUrl": "/case-studies/power-app-for-education.jpeg?v=5",
+      "imageUrl": "/case-studies/power-app-for-education.jpeg?v=6",
       "imageHint": "teacher students"
     },
     {
       "id": "case-study-10",
       "description": "A factory floor with workers in the cannabis industry.",
-      "imageUrl": "/case-studies/finance-operations-for-cannabis-company.jpeg?v=5",
+      "imageUrl": "/case-studies/finance-operations-for-cannabis-company.jpeg?v=6",
       "imageHint": "cannabis factory"
     },
     {
       "id": "case-study-11",
       "description": "Financial analysts reviewing charts in a modern office.",
-      "imageUrl": "/case-studies/crm-for-finance-org.jpeg?v=5",
+      "imageUrl": "/case-studies/crm-for-finance-org.jpeg?v=6",
       "imageHint": "financial analysis"
     },
     {
       "id": "case-study-12",
       "description": "A business meeting in a modern office with a focus on a CRM dashboard.",
-      "imageUrl": "/case-studies/crm-for-it-services-company.jpeg?v=5",
+      "imageUrl": "/case-studies/crm-for-it-services-company.jpeg?v=6",
       "imageHint": "CRM dashboard meeting"
     },
     {
       "id": "case-study-13",
       "description": "Abstract image representing data integration and networks.",
-      "imageUrl": "/case-studies/dell-boomi-integration.jpg?v=5",
+      "imageUrl": "/case-studies/dell-boomi-integration.jpg?v=6",
       "imageHint": "data integration"
     },
     {
       "id": "case-study-14",
       "description": "Diagram showing data flowing between two application logos.",
-      "imageUrl": "/case-studies/data-migration-between-apps.jpeg?v=5",
+      "imageUrl": "/case-studies/data-migration-between-apps.jpeg?v=6",
       "imageHint": "data migration"
     },
     {
       "id": "case-study-15",
       "description": "An abstract representation of a streamlined PTO process for a security solutions provider.",
-      "imageUrl": "/pto-case-study.jpg?v=5",
+      "imageUrl": "/pto-case-study.jpg?v=6",
       "imageHint": "streamlined process"
     },
     {
       "id": "case-study-16",
       "description": "Security systems being monitored in a control room.",
-      "imageUrl": "/case-studies/crm-for-a-leading-security-system-management-company.jpg?v=5",
+      "imageUrl": "/case-studies/crm-for-a-leading-security-system-management-company.jpg?v=6",
       "imageHint": "security control room"
     },
     {
       "id": "case-study-19",
       "description": "E-Invoice Process Flow Diagram",
-      "imageUrl": "/case-studies/electronic-invoicing-process-flow.png?v=5",
+      "imageUrl": "/case-studies/electronic-invoicing-process-flow.png?v=6",
       "imageHint": "process flow"
     },
     {
       "id": "leadership-1",
       "description": "Portrait of Sanjeev Munjal",
-      "imageUrl": "/team/leadership-1.jpeg?v=5",
+      "imageUrl": "/team/leadership-1.jpeg?v=6",
       "imageHint": "professional man smiling"
     },
     {
       "id": "leadership-2",
       "description": "Portrait of Munish Sethi",
-      "imageUrl": "/team/leadership-2.jpeg?v=5",
+      "imageUrl": "/team/leadership-2.jpeg?v=6",
       "imageHint": "professional man glasses"
     },
     {
       "id": "leadership-3",
       "description": "Portrait of Puneet Nasa",
-      "imageUrl": "/team/leadership-3.jpeg?v=5",
+      "imageUrl": "/team/leadership-3.jpeg?v=6",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-4",
       "description": "Portrait of Puneet Nasa",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8fDE3NjQ3MjIyNDh8MA&ixlib=rb-4.1.0&q=80&w=1080?v=5",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBzbWlsaW5nfGVufDB8fHx8fDE3NjQ3MjIyNDh8MA&ixlib=rb-4.1.0&q=80&w=1080?v=6",
       "imageHint": "professional man smiling"
     },
     {
       "id": "team-member-5",
       "description": "Portrait of Anuj Rastogi",
-      "imageUrl": "/team/team-member-5.jpeg?v=5",
+      "imageUrl": "/team/team-member-5.jpeg?v=6",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-6",
       "description": "Portrait of Vijaya Bhaskar Sanyela",
-      "imageUrl": "/team/team-member-6.jpeg?v=5",
+      "imageUrl": "/team/team-member-6.jpeg?v=6",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-7",
       "description": "Portrait of Gajendiran Govindraj",
-      "imageUrl": "/team/team-member-7.jpeg?v=5",
+      "imageUrl": "/team/team-member-7.jpeg?v=6",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-8",
       "description": "Portrait of Vikas Mehta",
-      "imageUrl": "/team/team-member-8.jpeg?v=5",
+      "imageUrl": "/team/team-member-8.jpeg?v=6",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-9",
       "description": "Portrait of Mohit Khanna",
-      "imageUrl": "/team/team-member-9.jpeg?v=5",
+      "imageUrl": "/team/team-member-9.jpeg?v=6",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-10",
       "description": "Portrait of Ashish Srivastava",
-      "imageUrl": "/team/team-member-10.jpeg?v=5",
+      "imageUrl": "/team/team-member-10.jpeg?v=6",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-11",
       "description": "Portrait of Tamil Magal Radhakrishnan",
-      "imageUrl": "/team/team-member-11.jpeg?v=5",
+      "imageUrl": "/team/team-member-11.jpeg?v=6",
       "imageHint": "professional woman"
     },
     {
       "id": "team-member-12",
       "description": "Portrait of Raghu Ram",
-      "imageUrl": "/team/team-member-12.jpeg?v=5",
+      "imageUrl": "/team/team-member-12.jpeg?v=6",
       "imageHint": "professional man"
     },
     {
       "id": "team-member-13",
       "description": "Portrait of Hung Phan",
-      "imageUrl": "/team/team-member-13.jpeg?v=5",
+      "imageUrl": "/team/team-member-13.jpeg?v=6",
       "imageHint": "professional man"
     },
     {
       "id": "global-team",
       "description": "A diverse group of professionals collaborating in a modern office.",
-      "imageUrl": "/global-team.jpg?v=5",
+      "imageUrl": "/global-team.jpg?v=6",
       "imageHint": "global team office"
     },
     {
@@ -219,229 +219,229 @@
     {
       "id": "government-overview",
       "description": "An illustration of business people interacting with an ERP chart in front of a government building.",
-      "imageUrl": "/home/government-overview.jpeg?v=5",
+      "imageUrl": "/government-overview.jpeg?v=6",
       "imageHint": "ERP government"
     },
     {
       "id": "guide-download",
       "description": "Stylized image of a generic guide book.",
-      "imageUrl": "/books/common.png?v=5",
+      "imageUrl": "/books/common.png?v=6",
       "imageHint": "guide book"
     },
     {
       "id": "guide-chapter-1",
       "description": "Stylized image of a guide book for Chapter 1: Understanding User Needs.",
-      "imageUrl": "/books/chapter-1.png?v=5",
+      "imageUrl": "/books/chapter-1.png?v=6",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-2",
       "description": "Stylized image of a guide book for Chapter 2: Stakeholder Engagement.",
-      "imageUrl": "/books/chapter-2.png?v=5",
+      "imageUrl": "/books/chapter-2.png?v=6",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-3",
       "description": "Stylized image of a guide book for Chapter 3: Communication.",
-      "imageUrl": "/books/chapter-3.png?v=5",
+      "imageUrl": "/books/chapter-3.png?v=6",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-4",
       "description": "Stylized image of a guide book for Chapter 4: Change Management.",
-      "imageUrl": "/books/chapter-4.png?v=5",
+      "imageUrl": "/books/chapter-4.png?v=6",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-5",
       "description": "Stylized image of a guide book for Chapter 5: User Adoption.",
-      "imageUrl": "/books/chapter-5.png?v=5",
+      "imageUrl": "/books/chapter-5.png?v=6",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-6",
       "description": "Stylized image of a guide book for Chapter 6: Problem Solving.",
-      "imageUrl": "/books/chapter-6.png?v=5",
+      "imageUrl": "/books/chapter-6.png?v=6",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-7",
       "description": "Stylized image of a guide book for Chapter 7: Feedback and Continuous Improvement.",
-      "imageUrl": "/books/chapter-7.png?v=5",
+      "imageUrl": "/books/chapter-7.png?v=6",
       "imageHint": "guide book chapter"
     },
     {
       "id": "guide-chapter-8",
       "description": "Stylized image of a guide book for Chapter 8: Reduced Resistance.",
-      "imageUrl": "/books/chapter-8.png?v=5",
+      "imageUrl": "/books/chapter-8.png?v=6",
       "imageHint": "guide book chapter"
     },
     {
       "id": "ocr-case-study",
       "description": "Person using a phone to scan a document.",
-      "imageUrl": "/case-studies/ocr.jpeg?v=5",
+      "imageUrl": "/case-studies/ocr.jpeg?v=6",
       "imageHint": "phone scan document"
     },
     {
       "id": "ocr-solution-image",
       "description": "Diagram of the OCR solution flow.",
-      "imageUrl": "/case-studies/optical-character-recognition-flow.png?v=5",
+      "imageUrl": "/case-studies/optical-character-recognition-flow.png?v=6",
       "imageHint": "flow diagram"
     },
     {
       "id": "ocr-overview-image",
       "description": "Abstract image showing data extraction from documents.",
-      "imageUrl": "https://images.unsplash.com/photo-1620712943543-959959a2c426?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwZXh0cmFjdGlvbnxlbnwwfHx8fDE3NjU1Mzg5NTd8MA&ixlib=rb-4.1.0&q=80&w=1080?v=5",
+      "imageUrl": "https://images.unsplash.com/photo-1620712943543-959959a2c426?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwZXh0cmFjdGlvbnxlbnwwfHx8fDE3NjU1Mzg5NTd8MA&ixlib=rb-4.1.0&q=80&w=1080?v=6",
       "imageHint": "data extraction"
     },
     {
       "id": "featured-erp-cta",
       "description": "Business people in a meeting with digital overlays.",
-      "imageUrl": "/cta-home-primary.jpg?v=5",
+      "imageUrl": "/cta-home-primary.jpg?v=6",
       "imageHint": "business meeting"
     },
     {
       "id": "ams-hero",
       "description": "Application Managed Services Diagram",
-      "imageUrl": "/services/application-managed-services.png?v=5",
+      "imageUrl": "/services/application-managed-services.png?v=6",
       "imageHint": "managed services diagram"
     },
     {
       "id": "performance-tuning-system-optimization",
       "description": "Hand holding a glowing gear icon.",
-      "imageUrl": "/per-tun-1.jpg?v=5",
+      "imageUrl": "/per-tun-1.jpg?v=6",
       "imageHint": "system optimization"
     },
     {
       "id": "performance-tuning-seamless-operations",
       "description": "Man pointing at a large screen with graphs.",
-      "imageUrl": "/per-tun-2.jpg?v=5",
+      "imageUrl": "/per-tun-2.jpg?v=6",
       "imageHint": "man pointing graph"
     },
     {
       "id": "performance-tuning-system-stabilization",
       "description": "Man in a suit looking at a complex data interface.",
-      "imageUrl": "/per-tun-4.jpg?v=5",
+      "imageUrl": "/per-tun-4.jpg?v=6",
       "imageHint": "man data server"
     },
     {
       "id": "d365-upgrade-hero",
       "description": "Visual comparison between Dynamics AX and Dynamics 365 interfaces.",
-      "imageUrl": "/ax2012-to-d365-upgrade-service.png?v=5",
+      "imageUrl": "/ax2012-to-d365-upgrade-service.png?v=6",
       "imageHint": "ERP interface comparison"
     },
     {
       "id": "optimization-post-go-live",
       "description": "A man in a control room looking at multiple large screens with data and graphs.",
-      "imageUrl": "/post-go-live-stabilization.jpg?v=5",
+      "imageUrl": "/post-go-live-stabilization.jpg?v=6",
       "imageHint": "control room"
     },
     {
       "id": "optimization-assessment",
       "description": "A person's hands on a laptop keyboard, with digital chart overlays.",
-      "imageUrl": "/assessment-health-checks.jpg?v=5",
+      "imageUrl": "/assessment-health-checks.jpg?v=6",
       "imageHint": "digital chart"
     },
     {
       "id": "optimization-performance-tuning",
       "description": "A high-performance race car on a track, symbolizing speed and efficiency.",
-      "imageUrl": "/performance-tuning.jpg?v=5",
+      "imageUrl": "/performance-tuning.jpg?v=6",
       "imageHint": "race car"
     },
     {
       "id": "optimization-data-cleanup",
       "description": "A person's hands organizing files in a digital, abstract folder system.",
-      "imageUrl": "/data-cleanup-migration.jpg?v=5",
+      "imageUrl": "/data-cleanup-migration.jpg?v=6",
       "imageHint": "organizing files"
     },
     {
       "id": "optimization-legacy-code",
       "description": "A software developer looking at a computer screen with lines of code, holding a cup of coffee.",
-      "imageUrl": "/complex-legacy-code.jpg?v=5",
+      "imageUrl": "/complex-legacy-code.jpg?v=6",
       "imageHint": "code developer"
     },
     {
       "id": "optimization-erp-adoption",
       "description": "A group of professionals in a training session, listening to a speaker in front of a presentation screen.",
-      "imageUrl": "/erp-adoption-challenges.jpg?v=5",
+      "imageUrl": "/erp-adoption-challenges.jpg?v=6",
       "imageHint": "business training"
     },
     {
       "id": "performance-tuning-productivity-enhancement",
       "description": "Hand interacting with a holographic chart.",
-      "imageUrl": "/per-tun-3.jpg?v=5",
+      "imageUrl": "/per-tun-3.jpg?v=6",
       "imageHint": "hand interacting chart"
     },
     {
       "id": "enhancement-post-implementation",
       "description": "A businessman analyzing charts on a futuristic transparent screen in a modern office.",
-      "imageUrl": "/con-ech-1.jpg?v=5",
+      "imageUrl": "/con-ech-1.jpg?v=6",
       "imageHint": "business analysis"
     },
     {
       "id": "enhancement-module-expansion",
       "description": "A group of professionals collaborating around a futuristic holographic interface showing business modules.",
-      "imageUrl": "/con-ech-2.jpg?v=5",
+      "imageUrl": "/con-ech-2.jpg?v=6",
       "imageHint": "team collaboration"
     },
     {
       "id": "enhancement-custom-development",
       "description": "A female developer coding on a laptop with holographic code snippets floating around her.",
-      "imageUrl": "/con-ech-3.jpg?v=5",
+      "imageUrl": "/con-ech-3.jpg?v=6",
       "imageHint": "developer coding"
     },
     {
       "id": "enhancement-global-expansion",
       "description": "A diverse team in a conference room looking at a holographic globe with network connections.",
-      "imageUrl": "/con-ech-4.jpg?v=5",
+      "imageUrl": "/con-ech-4.jpg?v=6",
       "imageHint": "global business"
     },
     {
       "id": "enhancement-security-compliance",
       "description": "A security expert interacting with a digital interface showing a shield and checkmarks.",
-      "imageUrl": "/con-ech-5.jpg?v=5",
+      "imageUrl": "/con-ech-5.jpg?v=6",
       "imageHint": "cyber security"
     },
     {
       "id": "enhancement-performance-monitoring",
       "description": "Two professionals analyzing performance dashboards on a large screen in a modern office.",
-      "imageUrl": "/con-ech-6.jpg?v=5",
+      "imageUrl": "/con-ech-6.jpg?v=6",
       "imageHint": "performance dashboard"
     },
     {
       "id": "blog-fallback",
       "description": "An abstract image of a blog post being written on a laptop.",
-      "imageUrl": "/blog-fallback.jpg?v=5",
+      "imageUrl": "/blog-fallback.jpg?v=6",
       "imageHint": "blog writing"
     },
     {
       "id": "implementation-empathetic",
       "description": "Illustration of a diverse team collaborating on a project with empathy.",
-      "imageUrl": "/imp-sup-1.jpg?v=5",
+      "imageUrl": "/imp-sup-1.jpg?v=6",
       "imageHint": "team collaboration"
     },
     {
       "id": "implementation-greenfield",
       "description": "A fresh, green field with a digital overlay representing a new beginning.",
-      "imageUrl": "/imp-sup-2.jpg?v=5",
+      "imageUrl": "/imp-sup-2.jpg?v=6",
       "imageHint": "green field"
     },
     {
       "id": "implementation-rescue",
       "description": "A team of experts working together to fix a complex digital problem.",
-      "imageUrl": "/imp-sup-3.jpg?v=5",
+      "imageUrl": "/imp-sup-3.jpg?v=6",
       "imageHint": "problem solving"
     },
     {
       "id": "implementation-rollouts",
       "description": "A world map with connected nodes, showing a global rollout.",
-      "imageUrl": "/imp-sup-4.jpg?v=5",
+      "imageUrl": "/imp-sup-4.jpg?v=6",
       "imageHint": "global network"
     },
     {
       "id": "implementation-upgrades",
       "description": "An abstract image of a system being upgraded, with arrows pointing upwards.",
-      "imageUrl": "/imp-sup-5.jpg?v=5",
+      "imageUrl": "/imp-sup-5.jpg?v=6",
       "imageHint": "system upgrade"
     }
   ]
