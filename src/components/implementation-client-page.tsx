@@ -47,27 +47,27 @@ const IMPLEMENTATION_OPTIONS = [
   {
     title: 'Empathetic ERP Implementation',
     description: 'We prioritize user adoption and collaboration at every step, ensuring the technology serves your people, not the other way around.',
-    imageId: 'empathetic-erp',
+    imageId: 'implementation-empathetic',
   },
   {
     title: 'Greenfield Implementation',
     description: 'Perfect for businesses moving from traditional systems. We provide end-to-end documentation and knowledge transfer for a fresh start.',
-    imageId: 'greenfield-implementation',
+    imageId: 'implementation-greenfield',
   },
   {
     title: 'Broken Implementation Rescue',
     description: 'Stuck with an inefficient or failed ERP project? Our experts can rescue, restructure, and deliver a sustainable, high-performing solution.',
-    imageId: 'broken-implementation',
+    imageId: 'implementation-rescue',
   },
   {
     title: 'Rollouts',
     description: 'Leverage our globally distributed team to deploy your existing Dynamics 365 solution across multiple regions seamlessly.',
-    imageId: 'rollouts',
+    imageId: 'implementation-rollouts',
   },
   {
     title: 'Upgrades and Enhancement',
     description: 'Stay competitive by promptly upgrading your systems. We provide continuous enhancements to keep your ERP ahead of the curve.',
-    imageId: 'upgrades-enhancement',
+    imageId: 'implementation-upgrades',
   },
 ];
 

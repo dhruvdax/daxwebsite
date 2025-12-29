@@ -111,19 +111,19 @@
     {
       "id": "leadership-1",
       "description": "Portrait of Sanjeev Munjal",
-      "imageUrl": "/leadership/leadership-1.jpeg",
+      "imageUrl": "/team/leadership-1.jpeg",
       "imageHint": "professional man smiling"
     },
     {
       "id": "leadership-2",
       "description": "Portrait of Munish Sethi",
-      "imageUrl": "/leadership/leadership-2.jpeg",
+      "imageUrl": "/team/leadership-2.jpeg",
       "imageHint": "professional man glasses"
     },
     {
       "id": "leadership-3",
       "description": "Portrait of Puneet Nasa",
-      "imageUrl": "/leadership/leadership-3.jpeg",
+      "imageUrl": "/team/leadership-3.jpeg",
       "imageHint": "professional man"
     },
     {
@@ -191,36 +191,6 @@
       "description": "A diverse group of professionals collaborating in a modern office.",
       "imageUrl": "/global-team.jpg",
       "imageHint": "global team office"
-    },
-    {
-      "id": "empathetic-erp",
-      "description": "A business person holding a glowing orb of interconnected people icons.",
-      "imageUrl": "https://images.unsplash.com/photo-1707533604085-7809938a169b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZW9wbGUlMjBuZXR3b3JrJTIwZ2xvYmV8ZW58MHx8fHwxNzY1MzU5NzE5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "people network globe"
-    },
-    {
-      "id": "greenfield-implementation",
-      "description": "A person holding a tablet with a glowing ERP logo on it.",
-      "imageUrl": "https://images.unsplash.com/photo-1708920194814-de8f5b553f1911?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxFUlAlMjBsb2dvfGVufDB8fHx8MTc2NTM1OTcyMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "ERP logo"
-    },
-    {
-      "id": "broken-implementation",
-      "description": "A frustrated businessman looking at a broken computer.",
-      "imageUrl": "https://images.unsplash.com/photo-1579548122221-c61d56a33f3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicm9rZW4lMjBjb21wdXRlcnxlbnwwfHx8fDE3NjUzNTk3MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "broken computer"
-    },
-    {
-      "id": "rollouts",
-      "description": "A person interacting with a holographic world map showing connected locations.",
-      "imageUrl": "https://images.unsplash.com/photo-1639893993223-954c225023c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBuZXR3b3JrJTIwaG9sb2dyYW18ZW58MHx8fHwxNzY1MzU5NzIxZww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "global network hologram"
-    },
-    {
-      "id": "upgrades-enhancement",
-      "description": "A person drawing an upward-trending graph on a glass board.",
-      "imageUrl": "https://images.unsplash.com/photo-1543286386-713bdd548da4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm93dGglMjBjaGFydHxlbnwwfHx8fDE3NjUzNTk3MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "growth chart"
     },
     {
       "id": "power-apps-integration",
@@ -443,6 +413,36 @@
       "description": "An abstract image of a blog post being written on a laptop.",
       "imageUrl": "/blog-fallback.jpg",
       "imageHint": "blog writing"
+    },
+    {
+      "id": "implementation-empathetic",
+      "description": "Illustration of a diverse team collaborating on a project with empathy.",
+      "imageUrl": "/imp-sup-1.jpg",
+      "imageHint": "team collaboration"
+    },
+    {
+      "id": "implementation-greenfield",
+      "description": "A fresh, green field with a digital overlay representing a new beginning.",
+      "imageUrl": "/imp-sup-2.jpg",
+      "imageHint": "green field"
+    },
+    {
+      "id": "implementation-rescue",
+      "description": "A team of experts working together to fix a complex digital problem.",
+      "imageUrl": "/imp-sup-3.jpg",
+      "imageHint": "problem solving"
+    },
+    {
+      "id": "implementation-rollouts",
+      "description": "A world map with connected nodes, showing a global rollout.",
+      "imageUrl": "/imp-sup-4.jpg",
+      "imageHint": "global network"
+    },
+    {
+      "id": "implementation-upgrades",
+      "description": "An abstract image of a system being upgraded, with arrows pointing upwards.",
+      "imageUrl": "/imp-sup-5.jpg",
+      "imageHint": "system upgrade"
     }
   ]
 }
