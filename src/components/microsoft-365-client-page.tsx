@@ -224,7 +224,7 @@ const FAQS = [
     },
     {
         question: "How can I find more answers to frequent queries?",
-        answer: `For more FAQs, visit the <a href="https://www.microsoft.com/en-in/microsoft-365/business/microsoft-365-frequently-asked-questions" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">FAQ page of Microsoft 365 for business</a>.`
+        answer: `For more FAQs, visit the <a href="https://www.microsoft.com/en-in/microsoft-365/business/microsoft-365-frequently-asked-questions" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">FAQ page of Microsoft 365 for business</a>.`
     },
     {
         question: "What benefits does Microsoft Defender for Business provide?",
@@ -240,7 +240,7 @@ const FAQS = [
     },
     {
         question: "Frequent questions about Copilot for Microsoft 365",
-        answer: `Explore more FAQs about Copilot for Microsoft 365 <a href="https://www.microsoft.com/en-in/microsoft-365/business/copilot-for-microsoft-365#faqs" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">here</a>.`
+        answer: `Explore more FAQs about Copilot for Microsoft 365 <a href="https://www.microsoft.com/en-in/microsoft-365/business/copilot-for-microsoft-365#faqs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">here</a>.`
     }
 ];
 
@@ -312,7 +312,6 @@ export default function Microsoft365ClientPage() {
     
     const inquiriesCollection = collection(firestore, 'm365Inquiries');
 
-    // Non-blocking write with contextual error handling
     addDoc(inquiriesCollection, inquiryData)
         .then(() => {
             setState({
@@ -330,9 +329,8 @@ export default function Microsoft365ClientPage() {
             });
             errorEmitter.emit('permission-error', permissionError);
 
-            // Also update local state to show a generic error message
             setState({
-                message: 'A permission error occurred. Please check the console for details.',
+                message: 'A permission error occurred. Please check your console for more details.',
                 isSuccess: false,
             });
         })
@@ -557,7 +555,7 @@ export default function Microsoft365ClientPage() {
                 <div className="text-xs text-muted-foreground space-y-2 mt-8">
                     <p>[1] <strong>Cancellation Policy:</strong> Once you commence your paid subscription, cancellation policies vary based on whether you are a new customer and your specific product and domain selections on Microsoft. For detailed information, please refer to our terms. You can initiate cancellation of your Microsoft 365 subscription at any time through the Microsoft 365 admin center. Upon cancellation, all associated data will be removed. Learn more about data retention, deletion, and destruction practices within Microsoft 365.</p>
                     <p>[2] <strong>Availability of Copilot for Microsoft 365:</strong> Copilot for Microsoft 365 may not be accessible in all markets and languages. Customers must possess a qualifying enterprise or business plan to make a purchase.</p>
-                    <p>[3] <strong><a href="https://www.microsoft.com/en-us/worklab/work-trend-index/copilots-earliest-users-teach-us-about-generative-ai-at-work" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Work Trend Index Special Report | Microsoft</a></strong> <em>Limited period Offer</em></p>
+                    <p>[3] <strong><a href="https://www.microsoft.com/en-us/worklab/work-trend-index/copilots-earliest-users-teach-us-about-generative-ai-at-work" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Work Trend Index Special Report | Microsoft</a></strong> <em>Limited period Offer</em></p>
                 </div>
             </div>
         </section>
@@ -572,5 +570,3 @@ export default function Microsoft365ClientPage() {
     </div>
   );
 }
-
-    
