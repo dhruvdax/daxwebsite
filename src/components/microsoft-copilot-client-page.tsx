@@ -237,57 +237,57 @@ export default function MicrosoftCopilotClientPage() {
         </div>
       </section>
 
-      <section id="form-section" className="bg-secondary/50 text-accent-foreground py-16 md:py-24">
-        <div className="container flex justify-center">
-            <Card className="p-8 shadow-2xl bg-card text-card-foreground w-full max-w-lg">
-                <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold text-center mb-4 font-headline text-accent dark:text-white">Want to Buy Subscription? Contact Us!</h3>
-                  <form action={formAction} ref={formRef} className="space-y-4">
-                     <div className="grid grid-cols-2 gap-4">
-                        <div>
-                        <Label htmlFor="fname">First Name</Label>
-                        <Input id="fname" name="fname" required />
-                        {state?.errors?.fname && <p className="text-destructive text-sm mt-1">{state.errors.fname}</p>}
-                        </div>
-                        <div>
-                        <Label htmlFor="lname">Last Name</Label>
-                        <Input id="lname" name="lname" required />
-                        {state?.errors?.lname && <p className="text-destructive text-sm mt-1">{state.errors.lname}</p>}
-                        </div>
+      <section id="form-section" className="py-16 md:py-24 bg-secondary/50">
+        <div className="flex justify-center container">
+          <Card className="p-8 shadow-2xl bg-card text-card-foreground w-full max-w-lg container">
+            <CardContent className="p-0">
+              <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
+              <form action={formAction} ref={formRef} className="space-y-4">
+                 <div className="grid grid-cols-2 gap-4">
+                    <div>
+                    <Label htmlFor="fname">First Name</Label>
+                    <Input id="fname" name="fname" required />
+                    {state?.errors?.fname && <p className="text-destructive text-sm mt-1">{state.errors.fname}</p>}
                     </div>
                     <div>
-                      <Label htmlFor="email">Email</Label>
-                      <Input id="email" name="email" type="email" required />
-                       {state?.errors?.email && <p className="text-destructive text-sm mt-1">{state.errors.email}</p>}
+                    <Label htmlFor="lname">Last Name</Label>
+                    <Input id="lname" name="lname" required />
+                    {state?.errors?.lname && <p className="text-destructive text-sm mt-1">{state.errors.lname}</p>}
                     </div>
-                     <div>
-                        <Label htmlFor="phone">Phone</Label>
-                        <Input id="phone" name="phone" required />
-                        {state?.errors?.phone && <p className="text-destructive text-sm mt-1">{state.errors.phone}</p>}
-                    </div>
-                    <div>
-                        <Label htmlFor="company">Company</Label>
-                        <Input id="company" name="company" required />
-                        {state?.errors?.company && <p className="text-destructive text-sm mt-1">{state.errors.company}</p>}
-                    </div>
-                    <div>
-                      <Label htmlFor="requirements">Describe your requirements</Label>
-                      <Textarea id="requirements" name="requirements" required />
-                      {state?.errors?.requirements && <p className="text-destructive text-sm mt-1">{state.errors.requirements}</p>}
-                    </div>
-                    <SubmitButton />
-                     {state?.message && (
-                        <Alert variant={Object.keys(state.errors ?? {}).length > 0 ? 'destructive' : 'default'} className="mt-4">
-                            <MailCheck className="h-4 w-4" />
-                            <AlertTitle>{Object.keys(state.errors ?? {}).length > 0 ? 'Error' : 'Success'}</AlertTitle>
-                            <AlertDescription>
-                                {state.message}
-                            </AlertDescription>
-                        </Alert>
-                    )}
-                  </form>
-                </CardContent>
-            </Card>
+                </div>
+                <div>
+                  <Label htmlFor="email">Email</Label>
+                  <Input id="email" name="email" type="email" required />
+                   {state?.errors?.email && <p className="text-destructive text-sm mt-1">{state.errors.email}</p>}
+                </div>
+                 <div>
+                    <Label htmlFor="phone">Phone</Label>
+                    <Input id="phone" name="phone" required />
+                    {state?.errors?.phone && <p className="text-destructive text-sm mt-1">{state.errors.phone}</p>}
+                </div>
+                <div>
+                    <Label htmlFor="company">Company</Label>
+                    <Input id="company" name="company" required />
+                    {state?.errors?.company && <p className="text-destructive text-sm mt-1">{state.errors.company}</p>}
+                </div>
+                <div>
+                  <Label htmlFor="requirements">Describe your requirements</Label>
+                  <Textarea id="requirements" name="requirements" required />
+                  {state?.errors?.requirements && <p className="text-destructive text-sm mt-1">{state.errors.requirements}</p>}
+                </div>
+                <SubmitButton />
+                 {state?.message && (
+                    <Alert variant={Object.keys(state.errors ?? {}).length > 0 ? 'destructive' : 'default'} className="mt-4">
+                        <MailCheck className="h-4 w-4" />
+                        <AlertTitle>{Object.keys(state.errors ?? {}).length > 0 ? 'Error' : 'Success'}</AlertTitle>
+                        <AlertDescription>
+                            {state.message}
+                        </AlertDescription>
+                    </Alert>
+                )}
+              </form>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
@@ -431,4 +431,3 @@ export default function MicrosoftCopilotClientPage() {
     </div>
   );
 }
-
