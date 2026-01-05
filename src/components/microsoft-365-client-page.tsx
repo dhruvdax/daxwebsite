@@ -342,7 +342,7 @@ export default function Microsoft365ClientPage() {
 
   return (
     <div className="bg-background">
-      <section id="form-section" className="relative bg-accent text-accent-foreground py-16 md:py-24">
+      <section className="relative bg-accent text-accent-foreground py-16 md:py-24">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
@@ -358,25 +358,31 @@ export default function Microsoft365ClientPage() {
                 </Button>
               </div>
             </div>
-            <div>
-              <Card className="p-8 shadow-2xl bg-card text-card-foreground">
+            {/* The form has been moved to its own section below */}
+          </div>
+        </div>
+      </section>
+
+      <section id="form-section" className="py-16 md:py-24 bg-secondary/30">
+        <div className="container mx-auto max-w-lg">
+            <Card className="p-8 shadow-2xl bg-card text-card-foreground">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
-                  <form onSubmit={handleSubmit} ref={formRef} className="space-y-4">
+                    <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
+                    <form onSubmit={handleSubmit} ref={formRef} className="space-y-4">
                     <div>
-                      <Label htmlFor="fname">First Name</Label>
-                      <Input id="fname" name="fname" required />
-                      {state?.errors?.fname && <p className="text-destructive text-sm mt-1">{state.errors.fname}</p>}
+                        <Label htmlFor="fname">First Name</Label>
+                        <Input id="fname" name="fname" required />
+                        {state?.errors?.fname && <p className="text-destructive text-sm mt-1">{state.errors.fname}</p>}
                     </div>
                     <div>
-                      <Label htmlFor="lname">Last Name</Label>
-                      <Input id="lname" name="lname" required />
-                       {state?.errors?.lname && <p className="text-destructive text-sm mt-1">{state.errors.lname}</p>}
+                        <Label htmlFor="lname">Last Name</Label>
+                        <Input id="lname" name="lname" required />
+                        {state?.errors?.lname && <p className="text-destructive text-sm mt-1">{state.errors.lname}</p>}
                     </div>
                     <div>
-                      <Label htmlFor="email">Email</Label>
-                      <Input id="email" name="email" type="email" required />
-                       {state?.errors?.email && <p className="text-destructive text-sm mt-1">{state.errors.email}</p>}
+                        <Label htmlFor="email">Email</Label>
+                        <Input id="email" name="email" type="email" required />
+                        {state?.errors?.email && <p className="text-destructive text-sm mt-1">{state.errors.email}</p>}
                     </div>
                     <div>
                         <Label htmlFor="phone">Phone</Label>
@@ -389,14 +395,14 @@ export default function Microsoft365ClientPage() {
                         {state?.errors?.company && <p className="text-destructive text-sm mt-1">{state.errors.company}</p>}
                     </div>
                     <div>
-                      <Label htmlFor="requirements">Requirements</Label>
-                      <Textarea id="requirements" name="requirements" required />
-                      {state?.errors?.requirements && <p className="text-destructive text-sm mt-1">{state.errors.requirements}</p>}
+                        <Label htmlFor="requirements">Requirements</Label>
+                        <Textarea id="requirements" name="requirements" required />
+                        {state?.errors?.requirements && <p className="text-destructive text-sm mt-1">{state.errors.requirements}</p>}
                     </div>
                     <Button type="submit" disabled={isPending} className="w-full">
-                      {isPending ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...</> : "Let's Connect"}
+                        {isPending ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...</> : "Let's Connect"}
                     </Button>
-                     {state?.message && (
+                        {state?.message && (
                         <Alert variant={!state.isSuccess ? 'destructive' : 'default'} className="mt-4">
                             <MailCheck className="h-4 w-4" />
                             <AlertTitle>{!state.isSuccess ? 'Error' : 'Success'}</AlertTitle>
@@ -405,11 +411,9 @@ export default function Microsoft365ClientPage() {
                             </AlertDescription>
                         </Alert>
                     )}
-                  </form>
+                    </form>
                 </CardContent>
-              </Card>
-            </div>
-          </div>
+            </Card>
         </div>
       </section>
 
