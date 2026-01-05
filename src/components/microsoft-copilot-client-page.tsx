@@ -173,7 +173,7 @@ export default function MicrosoftCopilotClientPage() {
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">
                 Microsoft 365 Copilot License
               </h1>
-              <p className="mt-6 text-lg text-gray-300 max-w-lg">
+              <p className="mt-6 text-lg text-gray-300 max-w-lg mx-auto lg:mx-0">
                 Harness the power of Microsoft 365 Copilot to revolutionize your business with integrated AI, optimizing workflows and focusing on strategic priorities.
               </p>
               <div className="mt-8">
@@ -237,11 +237,11 @@ export default function MicrosoftCopilotClientPage() {
         </div>
       </section>
 
-      <section id="form-section" className="bg-accent text-accent-foreground py-16 md:py-24">
-        <div className="container mx-auto flex justify-center">
+      <section id="form-section" className="bg-secondary/50 text-accent-foreground py-16 md:py-24">
+        <div className="container flex justify-center">
             <Card className="p-8 shadow-2xl bg-card text-card-foreground w-full max-w-lg">
                 <CardContent className="p-0">
-                  <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
+                  <h3 className="text-2xl font-bold text-center mb-4 font-headline text-accent dark:text-white">Want to Buy Subscription? Contact Us!</h3>
                   <form action={formAction} ref={formRef} className="space-y-4">
                      <div className="grid grid-cols-2 gap-4">
                         <div>
@@ -431,3 +431,4 @@ export default function MicrosoftCopilotClientPage() {
     </div>
   );
 }
+
