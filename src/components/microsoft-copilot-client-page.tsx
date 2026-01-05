@@ -1,4 +1,3 @@
-
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
@@ -180,7 +179,7 @@ export default function MicrosoftCopilotClientPage() {
 
   return (
     <div className="bg-background">
-      <section id="form-section-copy" className="bg-accent text-accent-foreground py-16 md:py-24">
+      <section className="bg-accent text-accent-foreground py-16 md:py-24">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
