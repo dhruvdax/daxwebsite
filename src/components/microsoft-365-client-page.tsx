@@ -1,6 +1,6 @@
 
 'use client';
-import { useState, useRef, FormEvent } from 'react';
+import { useState, useRef, FormEvent, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -224,7 +224,7 @@ const FAQS = [
     },
     {
         question: "How can I find more answers to frequent queries?",
-        answer: `For more FAQs, visit the <a href="https://www.microsoft.com/en-in/microsoft-365/business/microsoft-365-frequently-asked-questions" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">FAQ page of Microsoft 365 for business</a>.`
+        answer: `For more FAQs, visit the <a href="https://www.microsoft.com/en-in/microsoft-365/business/microsoft-365-frequently-asked-questions" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">FAQ page of Microsoft 365 for business</a>.`
     },
     {
         question: "What benefits does Microsoft Defender for Business provide?",
@@ -240,111 +240,44 @@ const FAQS = [
     },
     {
         question: "Frequent questions about Copilot for Microsoft 365",
-        answer: `Explore more FAQs about Copilot for Microsoft 365 <a href="https://www.microsoft.com/en-in/microsoft-365/business/copilot-for-microsoft-365#faqs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">here</a>.`
+        answer: `Explore more FAQs about Copilot for Microsoft 365 <a href="https://www.microsoft.com/en-in/microsoft-365/business/copilot-for-microsoft-365#faqs" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">here</a>.`
     }
 ];
 
-const m365FormSchema = z.object({
-    fname: z.string().min(1, 'First name is required.'),
-    lname: z.string().min(1, 'Last name is required.'),
-    email: z.string().email('Please enter a valid email.'),
-    phone: z.string().min(1, 'Phone number is required.'),
-    company: z.string().min(1, 'Company name is required.'),
-    requirements: z.string().min(10, 'Please describe your requirements in at least 10 characters.'),
-});
-
-type M365State = {
-    message?: string | null;
-    isSuccess: boolean;
-    errors?: {
-        fname?: string[];
-        lname?: string[];
-        email?: string[];
-        phone?: string[];
-        company?: string[];
-        requirements?: string[];
-        form?: string[];
-    }
-}
-
 export default function Microsoft365ClientPage() {
-  const [state, setState] = useState<M365State>({ isSuccess: false });
-  const [isPending, setIsPending] = useState(false);
-  const formRef = useRef<HTMLFormElement>(null);
-  const firestore = useFirestore();
-
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setIsPending(true);
-    setState({ isSuccess: false, errors: {}, message: null });
+    useEffect(() => {
+        const scriptId = 'dynamics-form-loader';
+        let script = document.getElementById(scriptId) as HTMLScriptElement | null;
     
-    const formData = new FormData(event.currentTarget);
-    const validatedFields = m365FormSchema.safeParse({
-        fname: formData.get('fname'),
-        lname: formData.get('lname'),
-        email: formData.get('email'),
-        phone: formData.get('phone'),
-        company: formData.get('company'),
-        requirements: formData.get('requirements'),
-    });
-
-    if (!validatedFields.success) {
-        setState({
-            errors: validatedFields.error.flatten().fieldErrors,
-            message: 'Please correct the errors and try again.',
-            isSuccess: false,
-        });
-        setIsPending(false);
-        return;
-    }
-
-    if (!firestore) {
-        setState({ message: 'Database service is not available. Please try again later.', isSuccess: false });
-        setIsPending(false);
-        return;
-    }
-
-    const inquiryData = {
-        id: uuidv4(),
-        ...validatedFields.data,
-        submissionDate: new Date().toISOString(),
-    };
+        const loadForm = () => {
+           // @ts-ignore
+          if (window.MsCrmMkt && typeof window.MsCrmMkt.MsCrmFormLoader === 'object') {
+             // @ts-ignore
+            window.MsCrmMkt.MsCrmFormLoader.on('afterFormLoad', () => {
+              // Form is loaded
+            });
+          }
+        };
     
-    const inquiriesCollection = collection(firestore, 'm365Inquiries');
-
-    addDoc(inquiriesCollection, inquiryData)
-        .then(() => {
-            setState({
-                message: 'Thank you for your inquiry! We will get back to you shortly.',
-                isSuccess: true,
-                errors: {}
-            });
-            formRef.current?.reset();
-        })
-        .catch(async (serverError) => {
-            const permissionError = new FirestorePermissionError({
-                path: inquiriesCollection.path,
-                operation: 'create',
-                requestResourceData: inquiryData,
-            });
-            errorEmitter.emit('permission-error', permissionError);
-
-            setState({
-                message: 'A permission error occurred. Please check your console for more details.',
-                isSuccess: false,
-            });
-        })
-        .finally(() => {
-            setIsPending(false);
-        });
-  };
-
+        if (!script) {
+          script = document.createElement('script');
+          script.id = scriptId;
+          script.src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js';
+          script.async = true;
+          script.onload = loadForm;
+          document.body.appendChild(script);
+        } else {
+            loadForm();
+        }
+        
+        // The cleanup function is now intentionally left empty to prevent script removal
+        return () => {};
+      }, []);
 
   return (
     <div className="bg-background">
       <section className="relative bg-accent text-accent-foreground py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl font-headline">
               Microsoft 365 Subscription
             </h1>
@@ -356,62 +289,20 @@ export default function Microsoft365ClientPage() {
                 Compare plans and pricing
               </Button>
             </div>
-          </div>
         </div>
       </section>
 
       <section id="form-section" className="py-16 md:py-24 bg-secondary/30">
-        <div className="container mx-auto max-w-lg">
-            <Card className="p-8 shadow-2xl bg-card text-card-foreground">
-                <CardContent className="p-0">
-                    <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
-                    <form onSubmit={handleSubmit} ref={formRef} className="space-y-4">
-                    <div>
-                        <Label htmlFor="fname">First Name</Label>
-                        <Input id="fname" name="fname" required />
-                        {state?.errors?.fname && <p className="text-destructive text-sm mt-1">{state.errors.fname}</p>}
-                    </div>
-                    <div>
-                        <Label htmlFor="lname">Last Name</Label>
-                        <Input id="lname" name="lname" required />
-                        {state?.errors?.lname && <p className="text-destructive text-sm mt-1">{state.errors.lname}</p>}
-                    </div>
-                    <div>
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" name="email" type="email" required />
-                        {state?.errors?.email && <p className="text-destructive text-sm mt-1">{state.errors.email}</p>}
-                    </div>
-                    <div>
-                        <Label htmlFor="phone">Phone</Label>
-                        <Input id="phone" name="phone" required />
-                        {state?.errors?.phone && <p className="text-destructive text-sm mt-1">{state.errors.phone}</p>}
-                    </div>
-                    <div>
-                        <Label htmlFor="company">Company</Label>
-                        <Input id="company" name="company" required />
-                        {state?.errors?.company && <p className="text-destructive text-sm mt-1">{state.errors.company}</p>}
-                    </div>
-                    <div>
-                        <Label htmlFor="requirements">Requirements</Label>
-                        <Textarea id="requirements" name="requirements" required />
-                        {state?.errors?.requirements && <p className="text-destructive text-sm mt-1">{state.errors.requirements}</p>}
-                    </div>
-                    <Button type="submit" disabled={isPending} className="w-full">
-                        {isPending ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...</> : "Let's Connect"}
-                    </Button>
-                        {state?.message && (
-                        <Alert variant={!state.isSuccess ? 'destructive' : 'default'} className="mt-4">
-                            <MailCheck className="h-4 w-4" />
-                            <AlertTitle>{!state.isSuccess ? 'Error' : 'Success'}</AlertTitle>
-                            <AlertDescription>
-                                {state.message}
-                            </AlertDescription>
-                        </Alert>
-                    )}
-                    </form>
-                </CardContent>
-            </Card>
-        </div>
+        <Card className="container p-8 shadow-2xl bg-card text-card-foreground">
+            <CardContent className="p-0">
+                <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
+                 <div
+                    data-form-id='2dda0781-9fc6-f011-bbd3-6045bd020834'
+                    data-form-api-url='https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms'
+                    data-cached-form-url='https://assets1-usa.mkt.dynamics.com/0f5b728c-83ca-ed11-aece-000d3a323719/digitalassets/forms/2dda0781-9fc6-f011-bbd3-6045bd020834'
+                ></div>
+            </CardContent>
+        </Card>
       </section>
 
       <section id="plans" className="py-16 md:py-24">
