@@ -293,16 +293,18 @@ export default function Microsoft365ClientPage() {
       </section>
 
       <section id="form-section" className="py-16 md:py-24 bg-secondary/30">
-        <Card className="container p-8 shadow-2xl bg-card text-card-foreground">
-            <CardContent className="p-0">
-                <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
-                 <div
-                    data-form-id='2dda0781-9fc6-f011-bbd3-6045bd020834'
-                    data-form-api-url='https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms'
-                    data-cached-form-url='https://assets1-usa.mkt.dynamics.com/0f5b728c-83ca-ed11-aece-000d3a323719/digitalassets/forms/2dda0781-9fc6-f011-bbd3-6045bd020834'
-                ></div>
-            </CardContent>
-        </Card>
+        <div className="container">
+            <Card className="p-8 shadow-2xl bg-card text-card-foreground">
+                <CardContent className="p-0">
+                    <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
+                    <div
+                        data-form-id='2dda0781-9fc6-f011-bbd3-6045bd020834'
+                        data-form-api-url='https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms'
+                        data-cached-form-url='https://assets1-usa.mkt.dynamics.com/0f5b728c-83ca-ed11-aece-000d3a323719/digitalassets/forms/2dda0781-9fc6-f011-bbd3-6045bd020834'
+                    ></div>
+                </CardContent>
+            </Card>
+        </div>
       </section>
 
       <section id="plans" className="py-16 md:py-24">
@@ -439,7 +441,7 @@ export default function Microsoft365ClientPage() {
                         <AccordionItem value={`item-${index}`} key={index}>
                             <AccordionTrigger className="text-left">{faq.question}</AccordionTrigger>
                             <AccordionContent>
-                                <div className="prose prose-sm max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                                <div className="prose prose-sm max-w-none text-muted-foreground" dangerouslySetInnerHTML={{ __html: faq.answer.replace(/class=/g, "className=") }} />
                             </AccordionContent>
                         </AccordionItem>
                     ))}
