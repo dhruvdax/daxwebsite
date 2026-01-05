@@ -3,26 +3,26 @@
  * @author service-llm
  *
  * @description
- * This ruleset governs access to the job postings and applications data for the ConsultFast application.
+ * This ruleset governs access to the job postings, applications, and M365 inquiry data for the ConsultFast application.
  *
  * @philosophy
- * Core Philosophy: The security model prioritizes public visibility for job postings while ensuring the privacy and integrity of job application data. Job postings are publicly readable by anyone. Job applications, which contain sensitive Personal Identifiable Information (PII), follow a "write-once, read-never" pattern from the client-side. This means anyone can submit an application, but once submitted, it cannot be viewed, listed, or modified by any client, protecting applicant privacy. Management of job postings is currently disabled pending schema updates.
+ * Core Philosophy: The security model prioritizes public visibility for job postings while ensuring the privacy and integrity of submitted data like job applications and M365 inquiries. Job postings are publicly readable. Submissions from the public (applications, inquiries) follow a "write-once, read-never" pattern from the client-side. This means anyone can submit data, but once submitted, it cannot be viewed, listed, or modified by any client, protecting submitter privacy. Management of job postings is currently disabled pending schema updates.
  *
  * @structure
- * Data Structure: The data is organized around a top-level `jobPostings` collection. Each document in this collection represents a single job and contains a nested `jobApplications` subcollection to store all applications for that specific job.
+ * Data Structure: The data is organized around top-level collections. `jobPostings` holds job details, with nested `jobApplications` for applications. `m365Inquiries` is a separate top-level collection for M365 licensing contact submissions.
  *
  * @decisions
  * Key Security Decisions:
- * 1. Public Job Postings: The `jobPostings` collection is publicly readable to allow any visitor to browse job opportunities.
- * 2. Write-Restricted Postings: Creating, updating, or deleting job postings is disabled by default because the 'JobPosting' entity lacks an 'ownerId' field. This prevents unauthorized modifications. This functionality must be enabled by updating the schema and rules.
- * 3. Secure Application Submissions: Anyone (including anonymous users) can create a document in the `jobApplications` subcollection, enabling a public application form.
- * 4. Private Application Data: To protect sensitive applicant information (name, email, resume), all read and modification access (`get`, `list`, `update`, `delete`) to the `jobApplications` collection is strictly denied from the client-side. It is assumed this data is processed by a trusted server environment.
+ * 1. Public Job Postings: `jobPostings` is publicly readable to allow any visitor to browse opportunities.
+ * 2. Write-Restricted Postings: Creating, updating, or deleting job postings is disabled by default because the 'JobPosting' entity lacks an 'ownerId' field.
+ * 3. Secure Submissions: Anyone can create documents in `jobApplications` and `m365Inquiries`, enabling public forms.
+ * 4. Private Submitted Data: To protect sensitive information, all read and modification access (`get`, `list`, `update`, `delete`) to `jobApplications` and `m365Inquiries` is strictly denied from the client-side. Data is assumed to be processed by a trusted server environment.
  *
  * @denormalization
- * Denormalization for Authorization: This ruleset is simple and does not require complex denormalization. The hierarchical structure (`/jobPostings/{jobPostingId}/jobApplications/{...}`) inherently links an application to its posting, simplifying path-based security checks.
+ * Denormalization for Authorization: This ruleset is simple. The hierarchical structure for jobs/applications simplifies path-based security. The standalone `m365Inquiries` collection keeps contact data isolated.
  *
  * @segregation
- * Structural Segregation: The use of a nested subcollection for `jobApplications` naturally segregates private application data from the public job posting data, which is a secure and performant pattern.
+ * Structural Segregation: Using a nested subcollection for `jobApplications` and a separate top-level collection for `m365Inquiries` naturally segregates private data from public data, which is a secure and performant pattern.
  */
 rules_version = '2';
 service cloud.firestore {
@@ -45,7 +45,7 @@ service cloud.firestore {
 
     /**
      * Checks if the incoming job application data is valid.
-     * This ensures relational integrity and that all required fields are present and correctly formatted.
+     * Ensures relational integrity and required fields are present.
      */
     function newApplicationIsValid(jobPostingId) {
       let incomingData = request.resource.data;
@@ -56,49 +56,53 @@ service cloud.firestore {
              incomingData.resumeUrl is string && incomingData.resumeUrl.size() > 0 &&
              incomingData.submissionDate is string;
     }
+    
+    /**
+     * Checks if the incoming M365 inquiry data is valid.
+     */
+    function newM365InquiryIsValid() {
+      let d = request.resource.data;
+      return d.fname is string && d.fname.size() > 0 &&
+             d.lname is string && d.lname.size() > 0 &&
+             d.email is string && d.email.matches('.+@.+\..+') &&
+             d.phone is string && d.phone.size() > 0 &&
+             d.company is string && d.company.size() > 0 &&
+             d.requirements is string && d.requirements.size() > 0 &&
+             d.submissionDate is string;
+    }
 
     /**
      * @description
-     * Rules for the `jobPostings` collection. This collection is public for reading
-     * but locked down for all write operations.
-     * @path
-     * /jobPostings/{jobPostingId}
-     * @allow
-     * (get) Any user, signed-in or anonymous, can read a specific job posting.
-     * @deny
-     * (create) A user attempts to create a new job posting. This is denied because there is no ownership model defined.
-     * @principle
-     * Implements a "Public Read, Restricted Write" pattern. Writes are disabled until an ownership field (e.g., 'ownerId') is added to the JobPosting schema to identify who is authorized to make changes.
+     * Rules for the `jobPostings` collection.
+     * @path /jobPostings/{jobPostingId}
      */
     match /jobPostings/{jobPostingId} {
       allow get: if isPublic();
       allow list: if isPublic();
 
       // CRITICAL: Cannot implement owner-only writes. The 'JobPosting' entity is missing an 'ownerId' or 'authorId' field.
-      allow create: if isDenied(); // TODO: Add owner validation once the schema is updated with an ownership field.
-      allow update: if isDenied(); // TODO: Add owner validation once the schema is updated with an ownership field.
-      allow delete: if isDenied(); // TODO: Add owner validation once the schema is updated with an ownership field.
+      allow create, update, delete: if isDenied();
 
       /**
        * @description
-       * Rules for the `jobApplications` subcollection. Allows any user to submit
-       * an application but denies all other access to protect applicant PII.
-       * @path
-       * /jobPostings/{jobPostingId}/jobApplications/{jobApplicationId}
-       * @allow
-       * (create) Any user, signed-in or anonymous, can create a new job application for a posting.
-       * @deny
-       * (get) A user attempts to read a submitted job application. This is denied to protect applicant privacy.
-       * @principle
-       * Enforces a "write-once, read-never" policy for sensitive data submitted by the public. It validates that the application is linked to the correct parent job posting upon creation.
+       * Rules for the `jobApplications` subcollection. Allows public submission, denies all other access.
+       * @path /jobPostings/{jobPostingId}/jobApplications/{jobApplicationId}
        */
       match /jobApplications/{jobApplicationId} {
         allow create: if newApplicationIsValid(jobPostingId);
-        allow get: if isDenied();
-        allow list: if isDenied();
-        allow update: if isDenied();
-        allow delete: if isDenied();
+        allow get, list, update, delete: if isDenied();
       }
+    }
+    
+    /**
+     * @description
+     * Rules for the `m365Inquiries` collection. Allows anyone to submit an inquiry,
+     * but denies all read and modification access to protect PII.
+     * @path /m365Inquiries/{inquiryId}
+     */
+    match /m365Inquiries/{inquiryId} {
+        allow create: if newM365InquiryIsValid();
+        allow get, list, update, delete: if isDenied();
     }
   }
 }

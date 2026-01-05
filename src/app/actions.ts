@@ -1,3 +1,4 @@
+
 'use server';
 
 import { suggestConsultingServices } from '@/ai/flows/suggest-consulting-services';
@@ -41,51 +42,6 @@ export async function getConsultingSuggestions(prevState: AiState, formData: For
     console.error(error);
     return { message: 'An error occurred while generating suggestions. Please try again.', suggestions: null, errors: {} };
   }
-}
-
-// M365 Licensing Inquiry Action
-const m365FormSchema = z.object({
-    fname: z.string().min(1, 'First name is required.'),
-    lname: z.string().min(1, 'Last name is required.'),
-    email: z.string().email('Please enter a valid email.'),
-    phone: z.string().min(1, 'Phone number is required.'),
-    company: z.string().min(1, 'Company name is required.'),
-    requirements: z.string().min(10, 'Please describe your requirements in at least 10 characters.'),
-});
-
-type M365State = {
-    message?: string | null;
-    errors?: {
-        fname?: string[];
-        lname?: string[];
-        email?: string[];
-        phone?: string[];
-        company?: string[];
-        requirements?: string[];
-    }
-}
-
-export async function getM365LicensingInquiry(prevState: M365State, formData: FormData): Promise<M365State> {
-    const validatedFields = m365FormSchema.safeParse({
-        fname: formData.get('fname'),
-        lname: formData.get('lname'),
-        email: formData.get('email'),
-        phone: formData.get('phone'),
-        company: formData.get('company'),
-        requirements: formData.get('requirements'),
-    });
-
-    if (!validatedFields.success) {
-        return {
-            errors: validatedFields.error.flatten().fieldErrors,
-            message: 'Please correct the errors and try again.',
-        };
-    }
-    
-    console.log('New M365 Licensing Inquiry:');
-    console.log(validatedFields.data);
-    
-    return { message: 'Thank you for your inquiry! We will get back to you shortly.', errors: {} };
 }
 
 
@@ -179,4 +135,69 @@ export async function submitJobApplication(prevState: JobApplicationState, formD
             isSuccess: false,
         };
     }
+}
+
+
+// M365 Licensing Inquiry Action
+const m365InquirySchema = z.object({
+  fname: z.string().min(1, 'First name is required.'),
+  lname: z.string().min(1, 'Last name is required.'),
+  email: z.string().email('Please enter a valid email address.'),
+  phone: z.string().min(1, 'Phone number is required.'),
+  company: z.string().min(1, 'Company name is required.'),
+  requirements: z.string().min(1, 'Please describe your requirements.'),
+});
+
+type M365InquiryState = {
+    message: string | null;
+    errors?: {
+        fname?: string[];
+        lname?: string[];
+        email?: string[];
+        phone?: string[];
+        company?: string[];
+        requirements?: string[];
+        form?: string[];
+    };
+}
+
+export async function getM365LicensingInquiry(prevState: M365InquiryState, formData: FormData): Promise<M365InquiryState> {
+  const validatedFields = m365InquirySchema.safeParse({
+    fname: formData.get('fname'),
+    lname: formData.get('lname'),
+    email: formData.get('email'),
+    phone: formData.get('phone'),
+    company: formData.get('company'),
+    requirements: formData.get('requirements'),
+  });
+
+  if (!validatedFields.success) {
+    return {
+      errors: validatedFields.error.flatten().fieldErrors,
+      message: 'Invalid input. Please correct the errors.',
+    };
+  }
+
+  const { firestore } = getFirebaseAdmin();
+
+  try {
+    const inquiryData = {
+      id: uuidv4(),
+      ...validatedFields.data,
+      submissionDate: new Date().toISOString(),
+    };
+
+    await firestore.collection('m365Inquiries').add(inquiryData);
+
+    return {
+      message: "Thank you for your inquiry! We've received it successfully and will be in touch shortly.",
+      errors: {},
+    };
+  } catch (error: any) {
+    console.error('Error submitting M365 inquiry:', error);
+    return {
+      message: 'An unexpected error occurred on the server. Please try again later.',
+      errors: { form: ['Server error.'] },
+    };
+  }
 }

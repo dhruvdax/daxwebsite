@@ -1,5 +1,57 @@
 {
   "entities": {
+    "M365Inquiry": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "M365Inquiry",
+      "type": "object",
+      "description": "Represents a Microsoft 365 licensing inquiry submitted through the website.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the inquiry."
+        },
+        "fname": {
+          "type": "string",
+          "description": "First name of the person inquiring."
+        },
+        "lname": {
+          "type": "string",
+          "description": "Last name of the person inquiring."
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the person inquiring.",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number of the person inquiring."
+        },
+        "company": {
+          "type": "string",
+          "description": "Company name of the person inquiring."
+        },
+        "requirements": {
+          "type": "string",
+          "description": "The described requirements for M365 licensing."
+        },
+        "submissionDate": {
+          "type": "string",
+          "description": "Date when the inquiry was submitted.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "fname",
+        "lname",
+        "email",
+        "phone",
+        "company",
+        "requirements",
+        "submissionDate"
+      ]
+    },
     "JobPosting": {
       "$schema": "http://json-schema.org/draft-07/schema#",
       "title": "JobPosting",
@@ -132,8 +184,24 @@
             }
           ]
         }
+      },
+      {
+        "path": "/m365Inquiries/{inquiryId}",
+        "definition": {
+          "entityName": "M365Inquiry",
+          "schema": {
+            "$ref": "#/backend/entities/M365Inquiry"
+          },
+          "description": "Stores Microsoft 365 licensing inquiries submitted through the website. The `inquiryId` is the unique identifier for each inquiry.",
+          "params": [
+            {
+              "name": "inquiryId",
+              "description": "Unique identifier for the M365 inquiry."
+            }
+          ]
+        }
       }
     ],
-    "reasoning": "The Firestore structure is designed to manage job postings and applications. The top-level collection `jobPostings` stores the details of each job. Each job application is stored in a subcollection named `jobApplications` under its respective job posting. This design enforces Authorization Independence by keeping applications directly associated with their parent job postings and avoids the need for authorization `get()` calls. The `jobPostingId` field within `JobApplication` further strengthens this relationship. This structure supports efficient `list` operations (QAPs) since all applications associated with a job posting are easily accessible within the subcollection.  Path-based ownership is used to ensure that the applications can only exist within the scope of the parent job posting. No role-based access control is needed since the applications are all public and can be viewed by anyone."
+    "reasoning": "The Firestore structure is designed to manage job postings and applications. The top-level collection `jobPostings` stores the details of each job. Each job application is stored in a subcollection named `jobApplications` under its respective job posting. This design enforces Authorization Independence by keeping applications directly associated with their parent job postings and avoids the need for authorization `get()` calls. The `jobPostingId` field within `JobApplication` further strengthens this relationship. A new top-level collection `m365Inquiries` is added to store contact form submissions for M365 licensing. This isolates sensitive contact data into its own collection, which will have strict security rules to allow public writes but deny all reads, protecting user privacy."
   }
 }
