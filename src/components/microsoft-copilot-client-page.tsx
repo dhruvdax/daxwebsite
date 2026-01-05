@@ -1,33 +1,14 @@
 
 'use client';
-import { useActionState, useEffect, useRef } from 'react';
-import { useFormStatus } from 'react-dom';
+import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { getM365LicensingInquiry } from '@/app/actions';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MailCheck, Target, BarChart, ShieldCheck, User, Bot, Sparkles, Wand2, Eye, HandHelping, Handshake, BrainCircuit, Check } from 'lucide-react';
+import { Target, BarChart, ShieldCheck, Bot, Sparkles, Wand2, Eye, HandHelping, Handshake, BrainCircuit, Check } from 'lucide-react';
 import { CountUp } from '@/components/count-up';
-
-const initialState = {
-  message: null,
-  errors: {},
-};
-
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  return (
-    <Button type="submit" disabled={pending} className="w-full">
-      {pending ? 'Submitting...' : 'Submit Details'}
-    </Button>
-  );
-}
+import { Skeleton } from '@/components/ui/skeleton';
 
 const AI_FEATURES = [
     {
@@ -152,17 +133,50 @@ const scrollToSection = (id: string) => {
 };
 
 export default function MicrosoftCopilotClientPage() {
-    const [state, formAction] = useActionState(
-        getM365LicensingInquiry,
-        initialState
-    );
-    const formRef = useRef<HTMLFormElement>(null);
+    const [isFormLoading, setIsFormLoading] = useState(true);
 
     useEffect(() => {
-        if (state?.message && Object.keys(state.errors ?? {}).length === 0) {
-            formRef.current?.reset();
+        const formId = '2dda0781-9fc6-f011-bbd3-6045bd020834';
+        const scriptId = 'dynamics-form-loader';
+        
+        const setupFormListener = () => {
+            const msCrm = (window as any).MsCrmMkt;
+            if (msCrm && typeof msCrm.MsCrmFormLoader === 'object') {
+                const formLoader = msCrm.MsCrmFormLoader;
+                
+                if (formLoader.isFormLoaded(formId)) {
+                    setIsFormLoading(false);
+                    return;
+                }
+
+                formLoader.on('afterFormLoad', () => {
+                    setIsFormLoading(false);
+                });
+            } else {
+                setTimeout(setupFormListener, 100);
+            }
+        };
+    
+        if (!document.getElementById(scriptId)) {
+            const script = document.createElement('script');
+            script.id = scriptId;
+            script.src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js';
+            script.async = true;
+            script.defer = true;
+            script.onload = setupFormListener;
+            document.body.appendChild(script);
+        } else {
+            setupFormListener();
         }
-    }, [state]);
+
+        const safetyTimeout = setTimeout(() => {
+          setIsFormLoading(false);
+        }, 8000); 
+
+        return () => {
+            clearTimeout(safetyTimeout);
+        };
+      }, []);
 
   return (
     <div className="bg-background">
@@ -186,106 +200,58 @@ export default function MicrosoftCopilotClientPage() {
               <Card className="p-8 shadow-2xl bg-card text-card-foreground">
                 <CardContent className="p-0">
                   <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
-                  <form action={formAction} ref={formRef} className="space-y-4">
-                     <div className="grid grid-cols-2 gap-4">
-                        <div>
-                        <Label htmlFor="fname-2">First Name</Label>
-                        <Input id="fname-2" name="fname" required />
-                        {state?.errors?.fname && <p className="text-destructive text-sm mt-1">{state.errors.fname}</p>}
-                        </div>
-                        <div>
-                        <Label htmlFor="lname-2">Last Name</Label>
-                        <Input id="lname-2" name="lname" required />
-                        {state?.errors?.lname && <p className="text-destructive text-sm mt-1">{state.errors.lname}</p>}
-                        </div>
-                    </div>
-                    <div>
-                      <Label htmlFor="email-2">Email</Label>
-                      <Input id="email-2" name="email" type="email" required />
-                       {state?.errors?.email && <p className="text-destructive text-sm mt-1">{state.errors.email}</p>}
-                    </div>
-                     <div>
-                        <Label htmlFor="phone-2">Phone</Label>
-                        <Input id="phone-2" name="phone" required />
-                        {state?.errors?.phone && <p className="text-destructive text-sm mt-1">{state.errors.phone}</p>}
-                    </div>
-                    <div>
-                        <Label htmlFor="company-2">Company</Label>
-                        <Input id="company-2" name="company" required />
-                        {state?.errors?.company && <p className="text-destructive text-sm mt-1">{state.errors.company}</p>}
-                    </div>
-                    <div>
-                      <Label htmlFor="requirements-2">Describe your requirements</Label>
-                      <Textarea id="requirements-2" name="requirements" required />
-                      {state?.errors?.requirements && <p className="text-destructive text-sm mt-1">{state.errors.requirements}</p>}
-                    </div>
-                    <SubmitButton />
-                     {state?.message && (
-                        <Alert variant={Object.keys(state.errors ?? {}).length > 0 ? 'destructive' : 'default'} className="mt-4">
-                            <MailCheck className="h-4 w-4" />
-                            <AlertTitle>{Object.keys(state.errors ?? {}).length > 0 ? 'Error' : 'Success'}</AlertTitle>
-                            <AlertDescription>
-                                {state.message}
-                            </AlertDescription>
-                        </Alert>
-                    )}
-                  </form>
+                  {isFormLoading && (
+                      <div className="space-y-4">
+                          <div className="grid grid-cols-2 gap-4">
+                            <Skeleton className="h-10 w-full" />
+                            <Skeleton className="h-10 w-full" />
+                          </div>
+                          <Skeleton className="h-10 w-full" />
+                          <Skeleton className="h-10 w-full" />
+                          <Skeleton className="h-10 w-full" />
+                          <Skeleton className="h-20 w-full" />
+                          <Skeleton className="h-10 w-full" />
+                      </div>
+                  )}
+                  <div style={{ display: isFormLoading ? 'none' : 'block' }}>
+                    <div
+                        data-form-id='2dda0781-9fc6-f011-bbd3-6045bd020834'
+                        data-form-api-url='https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms'
+                        data-cached-form-url='https://assets1-usa.mkt.dynamics.com/0f5b728c-83ca-ed11-aece-000d3a323719/digitalassets/forms/2dda0781-9fc6-f011-bbd3-6045bd020834'
+                    ></div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
           </div>
         </div>
       </section>
-
+      
       <section id="form-section" className="py-16 md:py-24 bg-secondary/50">
         <div className="flex justify-center container">
           <Card className="p-8 shadow-2xl bg-card text-card-foreground w-full max-w-lg container">
             <CardContent className="p-0">
               <h3 className="text-2xl font-bold text-center mb-4 font-headline">Want to Buy Subscription? Contact Us!</h3>
-              <form action={formAction} ref={formRef} className="space-y-4">
-                 <div className="grid grid-cols-2 gap-4">
-                    <div>
-                    <Label htmlFor="fname">First Name</Label>
-                    <Input id="fname" name="fname" required />
-                    {state?.errors?.fname && <p className="text-destructive text-sm mt-1">{state.errors.fname}</p>}
-                    </div>
-                    <div>
-                    <Label htmlFor="lname">Last Name</Label>
-                    <Input id="lname" name="lname" required />
-                    {state?.errors?.lname && <p className="text-destructive text-sm mt-1">{state.errors.lname}</p>}
-                    </div>
-                </div>
-                <div>
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" name="email" type="email" required />
-                   {state?.errors?.email && <p className="text-destructive text-sm mt-1">{state.errors.email}</p>}
-                </div>
-                 <div>
-                    <Label htmlFor="phone">Phone</Label>
-                    <Input id="phone" name="phone" required />
-                    {state?.errors?.phone && <p className="text-destructive text-sm mt-1">{state.errors.phone}</p>}
-                </div>
-                <div>
-                    <Label htmlFor="company">Company</Label>
-                    <Input id="company" name="company" required />
-                    {state?.errors?.company && <p className="text-destructive text-sm mt-1">{state.errors.company}</p>}
-                </div>
-                <div>
-                  <Label htmlFor="requirements">Describe your requirements</Label>
-                  <Textarea id="requirements" name="requirements" required />
-                  {state?.errors?.requirements && <p className="text-destructive text-sm mt-1">{state.errors.requirements}</p>}
-                </div>
-                <SubmitButton />
-                 {state?.message && (
-                    <Alert variant={Object.keys(state.errors ?? {}).length > 0 ? 'destructive' : 'default'} className="mt-4">
-                        <MailCheck className="h-4 w-4" />
-                        <AlertTitle>{Object.keys(state.errors ?? {}).length > 0 ? 'Error' : 'Success'}</AlertTitle>
-                        <AlertDescription>
-                            {state.message}
-                        </AlertDescription>
-                    </Alert>
-                )}
-              </form>
+                 {isFormLoading && (
+                      <div className="space-y-4">
+                          <div className="grid grid-cols-2 gap-4">
+                            <Skeleton className="h-10 w-full" />
+                            <Skeleton className="h-10 w-full" />
+                          </div>
+                          <Skeleton className="h-10 w-full" />
+                          <Skeleton className="h-10 w-full" />
+                          <Skeleton className="h-10 w-full" />
+                          <Skeleton className="h-20 w-full" />
+                          <Skeleton className="h-10 w-full" />
+                      </div>
+                  )}
+                  <div style={{ display: isFormLoading ? 'none' : 'block' }}>
+                    <div
+                        data-form-id='2dda0781-9fc6-f011-bbd3-6045bd020834'
+                        data-form-api-url='https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms'
+                        data-cached-form-url='https://assets1-usa.mkt.dynamics.com/0f5b728c-83ca-ed11-aece-000d3a323719/digitalassets/forms/2dda0781-9fc6-f011-bbd3-6045bd020834'
+                    ></div>
+                  </div>
             </CardContent>
           </Card>
         </div>
