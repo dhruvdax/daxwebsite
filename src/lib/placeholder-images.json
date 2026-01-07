@@ -105,7 +105,7 @@
     {
       "id": "case-study-autodesk-vault",
       "description": "An engineer working on a design with an overlay of a secure vault, representing Autodesk Vault.",
-      "imageUrl": "https://images.unsplash.com/photo-1766042494020-2570196e6f8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxlbmVyZ3klMjBlbmdpbmVlcmluZ3xlbnwwfHx8fDE3Njc3NjkxMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1676909205848-80de650f3055?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxlbmVyZ3klMjBlbmdpbmVlcmluZ3xlbnwwfHx8fDE3Njc3NjkxMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "energy engineering"
     },
     {
@@ -453,7 +453,7 @@
     {
       "id": "case-study-auto-vendor-payment",
       "description": "An abstract image showing an email icon with a dollar sign, representing automated payment notifications.",
-      "imageUrl": "https://images.unsplash.com/photo-1599587123522-d7a858547271?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhdXRvbWF0ZWQlMjBwYXltZW50fGVufDB8fHx8fDE3NjgzMDk5ODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1742241107816-349e7f7c0f50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhdXRvbWF0ZWQlMjBwYXltZW50fGVufDB8fHx8MTc2Nzc3MTYyMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "automated payment"
     }
   ]
