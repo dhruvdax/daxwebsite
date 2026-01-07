@@ -69,10 +69,10 @@ export const CASE_STUDIES = [
         imageId: 'ocr-case-study'
     },
     {
-        title: 'D365 F&O Implementation/Managed Support for a leading Fast Food Manufacturer and Retail Company',
+        title: 'Dynamics 365 F&O Implementation/Managed Support for a leading Fast Food Manufacturer and Retail Company',
         slug: 'd365-fo-fast-food',
-        summary: 'D365 F&O offers a comprehensive suite of features for managing all aspects of a retail business, including finance, supply chain management, and more.',
-        details: 'We partnered with a major fast-food chain to implement and support their D365 F&O system. Our solution streamlined their global franchise operations, improved financial reporting, and provided real-time visibility into their supply chain.',
+        summary: 'Dynamics 365 F&O offers a comprehensive suite of features for managing all aspects of a retail business, including finance, supply chain management, and more.',
+        details: 'We partnered with a major fast-food chain to implement and support their Dynamics 365 F&O system. Our solution streamlined their global franchise operations, improved financial reporting, and provided real-time visibility into their supply chain.',
         imageId: 'case-study-2'
     },
     {
@@ -83,17 +83,17 @@ export const CASE_STUDIES = [
         imageId: 'case-study-3'
     },
     {
-        title: 'D365 F&O Managed Support Service for a Leading Real Estate Company',
+        title: 'Dynamics 365 F&O Managed Support Service for a Leading Real Estate Company',
         slug: 'd365-fo-real-estate',
         summary: "By leveraging DAX's AMS, real estate companies can gain a competitive advantage by reducing IT costs and improving application performance.",
-        details: 'We provide ongoing Application Managed Services (AMS) for a leading real estate firm. Our services ensure their D365 F&O platform runs smoothly, with proactive monitoring, performance tuning, and continuous enhancements. This partnership has allowed them to focus on their core business while we handle the complexities of their ERP system.',
+        details: 'We provide ongoing Application Managed Services (AMS) for a leading real estate firm. Our services ensure their Dynamics 365 F&O platform runs smoothly, with proactive monitoring, performance tuning, and continuous enhancements. This partnership has allowed them to focus on their core business while we handle the complexities of their ERP system.',
         imageId: 'case-study-4'
     },
     {
-        title: 'D365 Field Service integrated with F&O Implementation for a US Based Systems Integrator',
+        title: 'Dynamics 365 Field Service integrated with F&O Implementation for a US Based Systems Integrator',
         slug: 'd365-field-service-integrator',
         summary: 'Dynamics 365 Field Service is a leading cloud-based field service management (FSM) solution, with over 200,000 organizations using it worldwide.',
-        details: 'We implemented D365 Field Service integrated with F&O for a US-based systems integrator. This solution provides real-time scheduling, dispatch, and mobile capabilities for their field technicians. The integration ensures that work orders, inventory, and billing are seamlessly connected, improving efficiency and customer satisfaction.',
+        details: 'We implemented Dynamics 365 Field Service integrated with F&O for a US-based systems integrator. This solution provides real-time scheduling, dispatch, and mobile capabilities for their field technicians. The integration ensures that work orders, inventory, and billing are seamlessly connected, improving efficiency and customer satisfaction.',
         imageId: 'case-study-5'
     },
     {
@@ -104,10 +104,10 @@ export const CASE_STUDIES = [
         imageId: 'case-study-6'
     },
     {
-        title: 'D365 Field Service integrated with F&O Implementation for a Security System Service Provider',
+        title: 'Dynamics 365 Field Service integrated with F&O Implementation for a Security System Service Provider',
         slug: 'd365-field-service-security',
         summary: 'Dynamics 365 Field Service empowers field technicians to be more efficient. Learn how a security system provider improved its field operations with this module.',
-        details: 'A security system service provider needed to improve the efficiency of their field technicians. We implemented D365 Field Service, which provided them with optimized scheduling, mobile access to work orders, and real-time inventory management. As a result, they reduced travel time by 15% and improved first-time fix rates by 20%.',
+        details: 'A security system service provider needed to improve the efficiency of their field technicians. We implemented Dynamics 365 Field Service, which provided them with optimized scheduling, mobile access to work orders, and real-time inventory management. As a result, they reduced travel time by 15% and improved first-time fix rates by 20%.',
         imageId: 'case-study-7'
     },
     {
@@ -125,10 +125,10 @@ export const CASE_STUDIES = [
         imageId: 'case-study-9'
     },
     {
-        title: 'D365 F&O Implementation for the largest Cannabis Company in Medical Usage',
+        title: 'Dynamics 365 F&O Implementation for the largest Cannabis Company in Medical Usage',
         slug: 'd365-fo-cannabis',
-        summary: 'D365 F&O helps cannabis businesses comply with complex track-and-trace regulations.',
-        details: "We implemented D365 Finance & Operations for the largest medical cannabis company, navigating the industry's strict regulatory requirements. The solution includes seed-to-sale tracking, compliance reporting, and quality control, ensuring they meet all legal obligations while optimizing their supply chain.",
+        summary: 'Dynamics 365 F&O helps cannabis businesses comply with complex track-and-trace regulations.',
+        details: "We implemented Dynamics 365 Finance & Operations for the largest medical cannabis company, navigating the industry's strict regulatory requirements. The solution includes seed-to-sale tracking, compliance reporting, and quality control, ensuring they meet all legal obligations while optimizing their supply chain.",
         imageId: 'case-study-10'
     },
     {
@@ -163,7 +163,7 @@ export const CASE_STUDIES = [
         title: 'Implementation of PTO Functionality for one of the major security solutions providers',
         slug: 'pto-functionality-security',
         summary: 'Know how the implementation of PTO functionality streamlined processes, reduced administrative workload by 40%.',
-        details: 'We developed and implemented a custom Paid Time Off (PTO) management module within D365 for a major security solutions provider. This automated the entire process, from requests and approvals to accrual calculations and payroll integration. The solution reduced administrative overhead by 40% and improved employee satisfaction.',
+        details: 'We developed and implemented a custom Paid Time Off (PTO) management module within Dynamics 365 for a major security solutions provider. This automated the entire process, from requests and approvals to accrual calculations and payroll integration. The solution reduced administrative overhead by 40% and improved employee satisfaction.',
         imageId: 'case-study-15'
     },
     {
@@ -176,8 +176,8 @@ export const CASE_STUDIES = [
     {
         title: 'Electronic Invoicing using Dynamics 365 Finance and Operations',
         slug: 'electronic-invoicing-d365',
-        summary: 'Optimize your billing process with Electronic Invoicing in D365 Finance and Operations, ensuring automation, compliance, and efficiency.',
-        details: `We implemented an end-to-end electronic invoicing solution within D365 F&O for a large enterprise, ensuring compliance with government mandates. The solution automated the generation, submission, and monitoring of e-invoices, drastically reducing manual effort and eliminating penalties for non-compliance.`,
+        summary: 'Optimize your billing process with Electronic Invoicing in Dynamics 365 Finance and Operations, ensuring automation, compliance, and efficiency.',
+        details: `We implemented an end-to-end electronic invoicing solution within Dynamics 365 F&O for a large enterprise, ensuring compliance with government mandates. The solution automated the generation, submission, and monitoring of e-invoices, drastically reducing manual effort and eliminating penalties for non-compliance.`,
         imageId: 'case-study-1'
     },
     {
@@ -348,7 +348,7 @@ export const OPENINGS = [
         description: "We're looking for a Applications Consultant to join our team.",
         location: 'Woodland Hills, CA',
         type: 'Full-time',
-        fullDescription: `<p>DAX Software Solutions, Inc. is seeking a Software Developers with BFSI, Supply Chain domain experience, Legacy Data Migration and ETL tools knowledge. Dynamics 365 F&O, Integration, Technical Architect, Code migration, go live management, AX2012 R3, D365 F&O, SSRS, and the upgrade, data management.</p>
+        fullDescription: `<p>DAX Software Solutions, Inc. is seeking a Software Developers with BFSI, Supply Chain domain experience, Legacy Data Migration and ETL tools knowledge. Dynamics 365 F&O, Integration, Technical Architect, Code migration, go live management, AX2012 R3, Dynamics 365 F&O, SSRS, and the upgrade, data management.</p>
 <p>The position will primarily be responsible interface with key stakeholders and apply your technical proficiency across different stages of the Software Development Life Cycle including Data Migration & Requirements Elicitation, Application Architecture definition and Design. You will play an important role in creating the high-level design artifacts. You will also deliver high quality code deliverables for a module, lead validation for all types of testing and support activities related to implementation, transition, and warranty. You will be part of a learning culture, where teamwork and collaboration are encouraged, excellence is rewarded, and diversity is respected and valued.</p>
 <p><strong>Key Responsibilities (Essential Duties and Functions)</strong></p>
 <ul>
@@ -357,7 +357,7 @@ export const OPENINGS = [
     <li>Participate in creating application architecture document to provide deliverables in line with architectural requirements.</li>
     <li>Assist in the Design and implement system configurations, customizations, and extensions using C# and X++ / JavaScript programming languages.</li>
     <li>Create design artifacts and support prototyping through creation of POCs.</li>
-    <li>Access the legacy ERP systems to: 1. Understand the data structure 2. Define the migration scope 3. Select appropriate ETL (extract – transform – load) tools 4. Develop a strategy to import relevant and updated data from historical records. Then, drive the data migration process from legacy ERP systems to Microsoft D365 F&O</li>
+    <li>Access the legacy ERP systems to: 1. Understand the data structure 2. Define the migration scope 3. Select appropriate ETL (extract – transform – load) tools 4. Develop a strategy to import relevant and updated data from historical records. Then, drive the data migration process from legacy ERP systems to Microsoft Dynamics 365 F&O</li>
     <li>Develops Informatica Cloud IDMC/IICS mappings and mapping tasks using ODBC and API based data integration and design task flows.</li>
     <li>Deliver high quality code deliverables and support peers in quality checks such that design requirements are met. Create user documentation for the assigned modules, Lead validation activities for the assigned modules for all types of testing e.g., Functional, Integration, System, User Experience etc.</li>
     <li>Support the creation of “Go Live” plan (change management request) and manage assigned activities in the plan.</li>
@@ -471,3 +471,4 @@ export const OPENINGS = [
     
 
     
+
