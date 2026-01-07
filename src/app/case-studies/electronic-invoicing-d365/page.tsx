@@ -35,6 +35,7 @@ export default function CaseStudyPage() {
   }
   
   const image = PlaceHolderImages.find(p => p.id === 'e-invoice-process');
+  const overviewImage = PlaceHolderImages.find(p => p.id === 'case-study-1');
 
   return (
      <div className="bg-background">
@@ -53,17 +54,28 @@ export default function CaseStudyPage() {
           <div className="container mx-auto px-4 max-w-5xl">
             <div className="prose prose-lg max-w-none dark:prose-invert prose-headings:font-headline prose-h2:text-accent dark:prose-h2:text-white prose-h3:text-accent dark:prose-h3:text-white prose-h3:text-2xl prose-h3:mb-4 space-y-6">
                 
-                <Card>
-                    <CardContent className="p-6">
-                        <h2 className="not-prose">Overview</h2>
+                 <div className="grid md:grid-cols-2 gap-12 items-center not-prose">
+                    <div className="space-y-4">
+                        <h2 className="text-3xl font-bold font-headline text-accent dark:text-white">Overview</h2>
                         <ul className="space-y-2 mt-4 text-muted-foreground">
                             <li className="flex items-start gap-3"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span>IRB has mandated the electronic transmission of sales data</span></li>
                             <li className="flex items-start gap-3"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span>Memorandum consisting of rules governing issue of E-Invoice released in Sept 2023</span></li>
                             <li className="flex items-start gap-3"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span>Deadline for full compliance is 01 August 2024</span></li>
                             <li className="flex items-start gap-3"><Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" /><span>Imposition of penalties for non-compliance</span></li>
                         </ul>
-                    </CardContent>
-                </Card>
+                    </div>
+                    {overviewImage && (
+                        <div className="relative h-64 w-full">
+                            <Image
+                                src={overviewImage.imageUrl}
+                                alt={overviewImage.description}
+                                data-ai-hint={overviewImage.imageHint}
+                                fill
+                                className="rounded-lg shadow-lg object-cover"
+                            />
+                        </div>
+                    )}
+                </div>
 
                 <h2>Business Requirements</h2>
                 <p>Based on the IRB, the requirements, seller to send sales data via E-invoice and buyer to secure copy through IRB’s portal</p>
@@ -183,5 +195,3 @@ export default function CaseStudyPage() {
     </div>
   );
 }
-
-    
