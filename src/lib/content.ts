@@ -174,7 +174,7 @@ export const CASE_STUDIES = [
         imageId: 'case-study-16'
     },
     {
-        title: 'Electronic Invoicing using D365 Finance and Operations',
+        title: 'Electronic Invoicing using Dynamics 365 Finance and Operations',
         slug: 'electronic-invoicing-d365',
         summary: 'Optimize your billing process with Electronic Invoicing in D365 Finance and Operations, ensuring automation, compliance, and efficiency.',
         details: `We implemented an end-to-end electronic invoicing solution within D365 F&O for a large enterprise, ensuring compliance with government mandates. The solution automated the generation, submission, and monitoring of e-invoices, drastically reducing manual effort and eliminating penalties for non-compliance.`,
@@ -188,10 +188,10 @@ export const CASE_STUDIES = [
         imageId: 'case-study-autodesk-vault'
     },
     {
-        title: 'Automated Vendor Payment Communication in D365FO',
+        title: 'Automated Vendor Payment Communication in Dynamics 365 FO',
         slug: 'auto-vendor-payment-communication-d365fo',
-        summary: 'DAX developed a custom auto-email functionality in D365FO to automate vendor communication after payment processing, reducing manual effort and improving transparency.',
-        details: 'DAX Software Solutions developed a custom auto-email functionality in Microsoft Dynamics 365 Finance & Operations (D365FO) for a global coffee and tea retailer to automate vendor communication after payment processing.',
+        summary: 'DAX developed a custom auto-email functionality in Dynamics 365 FO to automate vendor communication after payment processing, reducing manual effort and improving transparency.',
+        details: 'DAX Software Solutions developed a custom auto-email functionality in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO) for a global coffee and tea retailer to automate vendor communication after payment processing.',
         imageId: 'case-study-auto-vendor-payment'
     }
 ];

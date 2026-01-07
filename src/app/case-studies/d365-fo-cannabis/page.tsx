@@ -47,7 +47,7 @@ export default function CaseStudyPage() {
             {study.title}
           </h1>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-300">
-            The cannabis industry is subject to a complex and ever-evolving regulatory landscape. D365 F&amp;O helps cannabis businesses to comply with these regulations by providing features for track-and-trace, labeling, and reporting.
+            The cannabis industry is subject to a complex and ever-evolving regulatory landscape. Dynamics 365 F&O helps cannabis businesses to comply with these regulations by providing features for track-and-trace, labeling, and reporting.
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function CaseStudyPage() {
                 </li>
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base">Need to fully implement Dynamics 365 F&amp;O for growing needs of business.</span>
+                    <span className="text-muted-foreground text-base">Need to fully implement Dynamics 365 F&O for growing needs of business.</span>
                 </li>
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -111,7 +111,7 @@ export default function CaseStudyPage() {
              <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base">Integrated D365FO with Leaf logix for STS tagging as well as Inventory transactions.</span>
+                    <span className="text-muted-foreground text-base">Integrated Dynamics 365 FO with Leaf logix for STS tagging as well as Inventory transactions.</span>
                 </li>
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -123,7 +123,7 @@ export default function CaseStudyPage() {
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base">Implemented D365FO for 6 companies containing all modules like:</span>
+                    <span className="text-muted-foreground text-base">Implemented Dynamics 365 FO for 6 companies containing all modules like:</span>
                 </li>
             </ul>
             
@@ -144,7 +144,7 @@ export default function CaseStudyPage() {
                 </li>
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base">Integration between Leaf logix and D365FO creates seamlessly process to tag STS number with Items.</span>
+                    <span className="text-muted-foreground text-base">Integration between Leaf logix and Dynamics 365 FO creates seamlessly process to tag STS number with Items.</span>
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />

@@ -72,8 +72,8 @@ const CASE_STUDIES = [
         ]
     },
     {
-        title: 'Hydroponics Leader – AX 2012 R3 → D365 F&O Upgrade',
-        description: 'Resolved WMS/costing issues, corrected parameters, and stabilized operations in preparation for D365 F&O.',
+        title: 'Hydroponics Leader – AX 2012 R3 → Dynamics 365 F&O Upgrade',
+        description: 'Resolved WMS/costing issues, corrected parameters, and stabilized operations in preparation for Dynamics 365 F&O.',
         points: [
             'Accurate inventory valuation & closes',
             'Operational stability and upgrade readiness'
@@ -81,7 +81,7 @@ const CASE_STUDIES = [
     },
     {
         title: 'Real Estate – Project Management & Accounting Automation',
-        description: 'Enhanced D365 F&O PMA, integrated payroll & timesheets, and deployed Power BI dashboards.',
+        description: 'Enhanced Dynamics 365 F&O PMA, integrated payroll & timesheets, and deployed Power BI dashboards.',
         points: [
             'Reduced manual work & faster payroll',
             'Significant hours saved; better cost control'
@@ -89,14 +89,14 @@ const CASE_STUDIES = [
     },
     {
         title: 'Public Safety Systems Integrator – F&O + Field Service',
-        description: 'Integrated CE Field Service with D365 F&O for real-time work orders, inventory, and fiscal reporting.',
+        description: 'Integrated CE Field Service with Dynamics 365 F&O for real-time work orders, inventory, and fiscal reporting.',
         points: [
             'Mobile visibility & SLA adherence',
             'Consolidated operational & finance data'
         ]
     },
     {
-        title: 'Retail – OCR AP Invoice Automation in D365 F&O',
+        title: 'Retail – OCR AP Invoice Automation in Dynamics 365 F&O',
         description: 'Automated PO & non-PO invoice capture and approvals; reduced backlog and errors with real-time AP analytics.',
         points: [
             'Faster processing & lower cost-to-serve',
@@ -105,7 +105,7 @@ const CASE_STUDIES = [
     },
     {
         title: 'Cannabis Manufacturing – Compliance-Ready F&O',
-        description: 'Implemented D365 F&O integrated with Leaf Logix for STS tagging and regulatory reporting.',
+        description: 'Implemented Dynamics 365 F&O integrated with Leaf Logix for STS tagging and regulatory reporting.',
         points: [
             'Automated production & inventory tracking',
             'Seamless STS compliance & reporting'
@@ -249,7 +249,7 @@ export default function GovernmentClientPage() {
                             <div className="space-y-6">
                                 <h2 className="text-3xl font-bold font-headline text-accent dark:text-white">Overview</h2>
                                 <p className="text-muted-foreground">
-                                    DAX Software Solutions, Inc. is a Microsoft Solutions Partner and SAM-registered small business delivering ERP implementation, optimization, and managed services for federal, state, and local agencies. The company specializes in Microsoft Dynamics 365 Finance & Operations (D365 F&O) and related ERP capabilities to streamline finance, procurement, project accounting, asset management, supply chain, logistics, and compliance workflows. DAX designs ERP solutions with federal-grade security, data governance, audit-readiness, and automation & AI built in—whether clients are replacing a legacy system, fixing a broken implementation, or scaling operations across departments.
+                                    DAX Software Solutions, Inc. is a Microsoft Solutions Partner and SAM-registered small business delivering ERP implementation, optimization, and managed services for federal, state, and local agencies. The company specializes in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 F&O) and related ERP capabilities to streamline finance, procurement, project accounting, asset management, supply chain, logistics, and compliance workflows. DAX designs ERP solutions with federal-grade security, data governance, audit-readiness, and automation & AI built in—whether clients are replacing a legacy system, fixing a broken implementation, or scaling operations across departments.
                                 </p>
                             </div>
                             <div className="relative h-64 w-full">
@@ -272,7 +272,7 @@ export default function GovernmentClientPage() {
         <section id="competencies" className="py-16 md:py-24">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Core Competencies in ERP & D365 F&O</h2>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl font-headline">Core Competencies in ERP & Dynamics 365 F&O</h2>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     <Card className="p-8">
