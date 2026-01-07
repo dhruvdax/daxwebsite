@@ -110,7 +110,7 @@ export default function BusinessCentralClientPage() {
 
       <section className="pb-16 md:pb-24 -mt-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold font-headline mb-2">Microsoft D365 Business Central Solutions Partner | DAX</h2>
+          <h2 className="text-center text-3xl font-bold font-headline mb-2">Microsoft Dynamics 365 Business Central Solutions Partner | DAX</h2>
           <div className="flex justify-center mb-12">
             <div className="w-24 h-1 bg-primary rounded-full"></div>
           </div>

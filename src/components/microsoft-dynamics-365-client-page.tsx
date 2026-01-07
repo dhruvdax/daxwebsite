@@ -180,7 +180,7 @@ export default function MicrosoftDynamics365ClientPage() {
       <section className="py-16 md:py-24 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold font-headline">Looking for AX 2012 to Dynamics 365 upgrade services?</h2>
-            <p className="mt-4 text-lg text-gray-300">Experience expert-led AX2012 to D365 migration with minimal disruption.</p>
+            <p className="mt-4 text-lg text-gray-300">Experience expert-led AX2012 to Dynamics 365 migration with minimal disruption.</p>
             <Button asChild size="lg" className="mt-6" variant="primary-outline">
                 <Link href="/services/ax-2012-to-d365-upgrade">Know More</Link>
             </Button>

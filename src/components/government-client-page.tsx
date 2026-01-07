@@ -57,15 +57,15 @@ const DIFFERENTIATORS = [
 const CASE_STUDIES = [
     {
         title: 'State Health Agency – Case Management ERP Integration',
-        description: 'Deployed D365 CE integrated with F&O for grants, case tracking, and program budgets; automated ERP workflows improved compliance and audit readiness.',
+        description: 'Deployed Dynamics 365 CE integrated with F&O for grants, case tracking, and program budgets; automated ERP workflows improved compliance and audit readiness.',
         points: [
             'Grants & case workflows tied to Finance',
             'Audit-ready reporting and controls'
         ]
     },
     {
-        title: 'Not-for-Profit – Power Apps Portal + D365 Finance',
-        description: 'Portal onboarding for agencies and beneficiaries integrated with D365 finance processes; reduced onboarding time and increased transparency.',
+        title: 'Not-for-Profit – Power Apps Portal + Dynamics 365 Finance',
+        description: 'Portal onboarding for agencies and beneficiaries integrated with Dynamics 365 finance processes; reduced onboarding time and increased transparency.',
         points: [
             'External portal & CRM with ERP backbone',
             'Centralized data for funding & disbursements'
@@ -215,7 +215,7 @@ export default function GovernmentClientPage() {
                 Government ERP Solutions with Microsoft Dynamics 365 F&O
             </h1>
             <p className="mt-6 max-w-4xl mx-auto text-sm text-gray-300">
-                Microsoft Dynamics F&O · Business Central · CE · Power Apps · Azure · Microsoft Licensing · Salesforce · Autodesk · Implementation · Managed Services · Fix Broken Implementations · Automation · AI · Finance · Supply Chain · Logistics · Retail · Manufacturing · Advanced Warehouse · Bank Integration
+                Microsoft Dynamics 365 F&O · Business Central · CE · Power Apps · Azure · Microsoft Licensing · Salesforce · Autodesk · Implementation · Managed Services · Fix Broken Implementations · Automation · AI · Finance · Supply Chain · Logistics · Retail · Manufacturing · Advanced Warehouse · Bank Integration
             </p>
         </div>
       </section>

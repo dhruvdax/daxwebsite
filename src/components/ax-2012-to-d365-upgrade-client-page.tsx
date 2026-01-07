@@ -70,7 +70,7 @@ export default function AX2012ToD365UpgradeClientPage() {
                         AX 2012 to Dynamics 365 Upgrade Services
                     </h1>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
-                        Experience expert-led AX2012 to D365 migration with minimal disruption.
+                        Experience expert-led AX2012 to Dynamics 365 migration with minimal disruption.
                     </p>
                 </div>
             </section>
@@ -101,7 +101,7 @@ export default function AX2012ToD365UpgradeClientPage() {
             
             <section className="py-16 md:py-24 bg-accent text-accent-foreground">
                 <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-2xl font-bold font-headline">Looking for experts to help you with AX 2012 to D365 upgrade?</h2>
+                    <h2 className="text-2xl font-bold font-headline">Looking for experts to help you with AX 2012 to Dynamics 365 upgrade?</h2>
                     <p className="mt-2 text-lg text-gray-300">With 20+ years of industry experience in ERP and CRM, DAX is proficient in crafting tailored solutions to meet the needs of businesses.</p>
                     <Button asChild size="lg" variant="primary-outline" className="mt-6">
                         <Link href="/contact-us">CONTACT US</Link>
