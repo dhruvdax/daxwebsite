@@ -186,6 +186,13 @@ export const CASE_STUDIES = [
         summary: 'DAX implemented Autodesk Vault Professional for a leading energy sector company, delivering a scalable document management solution with improved collaboration, security, and data integrity.',
         details: `DAX Software Solutions implemented Autodesk Vault Professional for a leading energy sector company in the United States, replacing the limitations of Autodesk Vault Basic with a scalable, enterprise-ready document management solution. The project scope included installation of Vault Professional in a secure environment (on-premises and Azure VM), deployment of a remote SQL Server database, and complete migration of the client’s existing file store and database.`,
         imageId: 'case-study-autodesk-vault'
+    },
+    {
+        title: 'Automated Vendor Payment Communication in D365FO',
+        slug: 'auto-vendor-payment-communication-d365fo',
+        summary: 'DAX developed a custom auto-email functionality in D365FO to automate vendor communication after payment processing, reducing manual effort and improving transparency.',
+        details: 'DAX Software Solutions developed a custom auto-email functionality in Microsoft Dynamics 365 Finance & Operations (D365FO) for a global coffee and tea retailer to automate vendor communication after payment processing.',
+        imageId: 'case-study-auto-vendor-payment'
     }
 ];
 
@@ -292,8 +299,8 @@ export const OPENINGS = [
 </ul>
 <p><strong>Requirements:</strong></p>
 <ul>
-    <li>The position requires a Master’s degree in Computer Science, Computer Engineering, or a related field and two years of experience in the job offered or a related position. The requirement may be substituted with a Bachelor’s degree in Computer Science, Computer Engineering, or a related field and five years of experience in the job offered or a related position.</li>
-    <li>The position requires skills and knowledge in Microsoft Dynamics 365/AX, SQL, C#, and PowerBI.</li>
+    <li>The position requires a Master’s degree in Computer Science, Computer Engineering, or a related field and two years of experience in the job offered or a related position. This may be substituted with a Bachelor’s degree in Computer Science, Computer Engineering, or a related field and five years of experience in the job offered or a related position.</li>
+    <li>It requires skills and knowledge in Microsoft Dynamics 365/AX, SQL, C#, and PowerBI.</li>
 </ul>
 <p><strong>Working hours:</strong> 40 hours/week</p>
 <p><strong>Job Site:</strong> Woodland Hills, CA</p>
