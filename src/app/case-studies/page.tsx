@@ -51,7 +51,7 @@ export default function CaseStudiesPage() {
               <div className="md:w-2/3 p-12 flex flex-col">
                 <h2 className="text-xl font-bold font-headline">{study.title}</h2>
                  <p className="mt-4 text-muted-foreground flex-grow">{study.summary}</p>
-                 <Button asChild className="mt-6 self-start">
+                 <Button asChild variant="primary-outline" className="mt-6 self-start">
                       <Link href={`/case-studies/${study.slug}`}>LEARN MORE<ArrowRight /></Link>
                   </Button>
               </div>
