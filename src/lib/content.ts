@@ -214,7 +214,7 @@ export const OPENINGS = [
         type: 'Full-time',
         fullDescription: `<p><strong>Job Duties:</strong></p>
 <ul>
-    <li>Experienced D365 Advanced Warehouse Consultant with Supply chain to join our team for an overseas project. The ideal candidate will have a deep understanding of the Dynamics 365 Supply Chain Management suite, including Advanced Warehouse Management and Inventory Management.</li>
+    <li>Experienced Dynamics 365 Advanced Warehouse Consultant with Supply chain to join our team for an overseas project. The ideal candidate will have a deep understanding of the Dynamics 365 Supply Chain Management suite, including Advanced Warehouse Management and Inventory Management.</li>
     <li>Provide ongoing solutions to DAX customers to support their Dynamics 365 Supply Chain and Warehouse Management implementations.</li>
     <li>Identify and analyze client requirements and recommend solutions that align with their business objectives.</li>
     <li>Configure and customize Dynamics 365 Supply Chain and Warehouse Management modules to meet client requirements.</li>
@@ -231,7 +231,7 @@ export const OPENINGS = [
     <li>Experience in Dynamics 365 Supply Chain and Warehouse Management implementations.</li>
     <li>Strong understanding of advanced warehouse management concepts, including pick/pack/ship processes, barcoding, and RFID.</li>
     <li>Proven experience in customizing and configuring Dynamics 365 Supply Chain and Warehouse Management modules.</li>
-    <li>D365 certification in Supply Chain Management or related areas.</li>
+    <li>Dynamics 365 certification in Supply Chain Management or related areas.</li>
     <li>Excellent problem-solving skills and ability to analyze complex business requirements.</li>
     <li>Excellent communication and interpersonal skills.</li>
     <li>Ability to travel as required to support client implementations.</li>
@@ -263,13 +263,13 @@ export const OPENINGS = [
 <p><strong>Requirements:</strong></p>
 <ul>
     <li>Master’s degree in Computer Science, Computer Engineering, or a related field and four years of experience in the job offered or a related IT position designing and developing Microsoft Dynamics AX solutions. This may be substituted with a Bachelor’s degree in Computer Science, Computer Engineering, or a related field and six years of experience in the job offered or a related IT position designing and implementing Microsoft Dynamics AX solutions.</li>
-    <li>Minimum of 5 plus years Dynamics AX/D365 Finance implementation experience.</li>
+    <li>Minimum of 5 plus years Dynamics AX/Dynamics 365 Finance implementation experience.</li>
     <li>Proven and verifiable implementations of 2 full lifecycle Dynamics AX (from analysis to deployment)</li>
     <li>Minimum 10 years of industry and/or consulting experience.</li>
     <li>Extensive experience working in core Manufacturing Procurement, Warehouse and Inventory Management.</li>
     <li>Knowledge and/or experience servicing or designing solutions for Manufacturing vertical industries.</li>
-    <li>Experience working with and/or implementing complimentary third party solutions to D365/AX.</li>
-    <li>D365 F&O certification in manufacturing and Warehouse and/or related areas.</li>
+    <li>Experience working with and/or implementing complimentary third party solutions to Dynamics 365/AX.</li>
+    <li>Dynamics 365 F&O certification in manufacturing and Warehouse and/or related areas.</li>
     <li>Extensive Experience with the Microsoft Dynamics 365 Manufacturing module.</li>
     <li>Lean Manufacturing Module experience is good to have.</li>
     <li>Understands the key activities and deliverables for the client engagement and internal projects, reuses all standard templates and project artifacts and improves quality of DAX Software documentation assets.</li>
@@ -318,8 +318,8 @@ export const OPENINGS = [
     <li>Lead the requirement gathering process by meeting with business process leaders to determine business requirements.</li>
     <li>Work with Customers on Implementation and Managed service side of business.</li>
     <li>Help junior resources during solution process with understanding the problem and towards right resources to research, solutions based on customer needs.</li>
-    <li>Write the code in D365 F&O/Dynamics AX to achieve the user requirements.</li>
-    <li>Worked in writing interfaces to integrate D365 F&O/Dynamics AX with different third-party systems.</li>
+    <li>Write the code in Dynamics 365 F&O/Dynamics AX to achieve the user requirements.</li>
+    <li>Worked in writing interfaces to integrate Dynamics 365 F&O/Dynamics AX with different third-party systems.</li>
     <li>Utilizing Manufacturing, Supply Chain, Warehouse, Finance modules process knowledge to understand the new system’s impact on Trade and Logistics, HR and Finance management.</li>
     <li>Perform Gap analysis between AX functionality and end user requirement.</li>
     <li>Train/Write design documentation and corresponding technical specifications.</li>
@@ -334,9 +334,9 @@ export const OPENINGS = [
 <ul>
     <li>Specify job requirements (experience, technologies, certificates, etc).</li>
     <li>Bachelor’s degree in Computer Science, Computer Engineering, or a related field and minimum two years of experience in the job offered or a related IT position designing and developing Microsoft Dynamics AX solutions. The position requires the ability to use Microsoft Dynamics AX, SQL Server, Visual Studio, X++, C#, .Net, PowerBI, Azure, ASP.Net, Trace Parser, SQL Profiler, API developer, and Interface development.</li>
-    <li>Hands-on experience on Microsoft’s Dynamics AX/D365 F&O ERP suite.</li>
+    <li>Hands-on experience on Microsoft’s Dynamics AX/Dynamics 365 F&O ERP suite.</li>
     <li>Extensive programming experience in different MS programming languages.</li>
-    <li>Certifications in Dynamics AX/D365 Finance and Operations.</li>
+    <li>Certifications in Dynamics AX/Dynamics 365 Finance and Operations.</li>
     <li>In-depth experience integrating with 3rd party applications.</li>
 </ul>
 <p><strong>Job Site:</strong> Woodland Hills, CA</p>
@@ -378,7 +378,7 @@ export const OPENINGS = [
 <ul>
     <li>Good understanding of data architecture, data integration, data quality and data architecture.</li>
     <li>Experience in Relational Modeling, Dimensional Modeling and Modeling of Unstructured Data.</li>
-    <li>Proven experience as a Dynamics AX or D365 Consultant, with a focus on migration and upgrade projects.</li>
+    <li>Proven experience as a Dynamics AX or Dynamics 365 Consultant, with a focus on migration and upgrade projects.</li>
     <li>Strong expertise in Informatica PowerCenter and Informatica Cloud IDMC/IICS, specifically pertaining on API data integration and Cloud-Based ODBC data integration.</li>
     <li>Strong expertise in designing and developing data integration / migration solutions.</li>
     <li>Experience working with data in multiple ERP and data movement technologies.</li>
@@ -413,8 +413,8 @@ export const OPENINGS = [
     <li><strong>Continuous Improvement:</strong> Identify opportunities for continuous improvement in software systems and processes, and implement best practices.</li>
     <li><strong>Stakeholder Communication:</strong> Communicate effectively with all stakeholders to ensure alignment and understanding of project objectives and progress.</li>
     <li><strong>Data Visualization:</strong> Microsoft Azure Power BI, Tableau.</li>
-    <li><strong>D365:</strong> Lead the implementation of D365 F&O modules, ensuring alignment with business needs.</li>
-    <li><strong>Solution Design:</strong> Design and configure D365 F&O solutions to meet business requirements.</li>
+    <li><strong>Dynamics 365:</strong> Lead the implementation of Dynamics 365 F&O modules, ensuring alignment with business needs.</li>
+    <li><strong>Solution Design:</strong> Design and configure Dynamics 365 F&O solutions to meet business requirements.</li>
 </ul>
 <p><strong>Requirements:</strong></p>
 <p><strong>Qualifications</strong></p>
@@ -452,7 +452,7 @@ export const OPENINGS = [
     <li>Perform unit testing NUnit & supporting frameworks (moq, Microsoft Fakes) and integration testing of the new supply chain.</li>
     <li>Determine performance and operational-based indicators to track inventory information and back-end processes.</li>
     <li>Consult with clients on business optimization and reporting requirements best practices with the use of Power BI and Apps analytics.</li>
-    <li>Facilitate user success by writing D365 code, developing methods to integrate D365 with third party platforms, and performing gap analysis between AX/D365 F&O functionality and end user requirements.</li>
+    <li>Facilitate user success by writing Dynamics 365 code, developing methods to integrate Dynamics 365 with third party platforms, and performing gap analysis between AX/Dynamics 365 F&O functionality and end user requirements.</li>
     <li>Analyze the migration of the client's data to be utilized by the ERP post development.</li>
     <li>Stay abreast of the latest technological advances and industry trends in ERP to ensure optimal performance and effective software development.</li>
 </ul>
@@ -471,4 +471,5 @@ export const OPENINGS = [
     
 
     
+
 
