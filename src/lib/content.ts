@@ -193,6 +193,13 @@ export const CASE_STUDIES = [
         summary: 'DAX developed a custom auto-email functionality in Dynamics 365 FO to automate vendor communication after payment processing, reducing manual effort and improving transparency.',
         details: 'DAX Software Solutions developed a custom auto-email functionality in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO) for a global coffee and tea retailer to automate vendor communication after payment processing.',
         imageId: 'case-study-auto-vendor-payment'
+    },
+    {
+        title: 'Custom Bank Payment Templates in Dynamics 365 FO',
+        slug: 'custom-bank-payment-templates-d365fo',
+        summary: 'DAX developed custom bank payment templates in Dynamics 365 FO to streamline vendor payment processing for multiple banks.',
+        details: 'Implemented custom bank payment templates in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO) for a Global Coffee and Tea Retailer to streamline vendor payment processing. Since each bank follows its own file format specifications, the Client required a solution that would generate compliant payment files directly from Dynamics 365 FO for upload to their respective bank portals.',
+        imageId: 'case-study-custom-bank-payment'
     }
 ];
 
@@ -471,5 +478,6 @@ export const OPENINGS = [
     
 
     
+
 
 
