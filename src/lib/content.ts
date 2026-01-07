@@ -179,6 +179,13 @@ export const CASE_STUDIES = [
         summary: 'Optimize your billing process with Electronic Invoicing in D365 Finance and Operations, ensuring automation, compliance, and efficiency.',
         details: `We implemented an end-to-end electronic invoicing solution within D365 F&O for a large enterprise, ensuring compliance with government mandates. The solution automated the generation, submission, and monitoring of e-invoices, drastically reducing manual effort and eliminating penalties for non-compliance.`,
         imageId: 'case-study-1'
+    },
+    {
+        title: 'Autodesk Vault Implementation for a Leading Energy Sector Company',
+        slug: 'autodesk-vault-implementation-energy-sector',
+        summary: 'DAX implemented Autodesk Vault Professional for a leading energy sector company, delivering a scalable document management solution with improved collaboration, security, and data integrity.',
+        details: `DAX Software Solutions implemented Autodesk Vault Professional for a leading energy sector company in the United States, replacing the limitations of Autodesk Vault Basic with a scalable, enterprise-ready document management solution. The project scope included installation of Vault Professional in a secure environment (on-premises and Azure VM), deployment of a remote SQL Server database, and complete migration of the client’s existing file store and database.`,
+        imageId: 'case-study-autodesk-vault'
     }
 ];
 
