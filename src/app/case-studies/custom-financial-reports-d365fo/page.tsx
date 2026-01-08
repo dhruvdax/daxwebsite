@@ -57,7 +57,7 @@ export default function CaseStudyPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center not-prose">
                 <div className="space-y-4">
                     <h3 className="text-2xl font-bold font-headline mt-8 mb-4 prose">Overview</h3>
-                    <p className="text-muted-foreground">Developed and delivered a suite of custom financial reports in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO) for a Global Coffee and Tea Retailer. The standard out-of-the-box reports in Dynamics 365 FO did not fully meet the client’s business and statutory reporting needs, particularly for consolidated and region-specific financial analysis across multiple entities.</p>
+                    <p className="text-muted-foreground">Developed and delivered a suite of custom financial reports in Microsoft Dynamics 365 Finance & Operations for a Global Coffee and Tea Retailer. The standard out-of-the-box reports in Dynamics 365 FO did not fully meet the client’s business and statutory reporting needs, particularly for consolidated and region-specific financial analysis across multiple entities.</p>
                 </div>
                 {image && (
                     <div className="relative h-64 w-full">
@@ -138,11 +138,7 @@ export default function CaseStudyPage() {
 
             <div className="not-prose mt-12">
                 <h3 className="text-2xl font-bold font-headline mt-8 mb-4">Technology Stack</h3>
-                <Card>
-                    <CardContent className="p-6">
-                        <p className="text-muted-foreground">Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO), Management Reporter, Finance Module</p>
-                    </CardContent>
-                </Card>
+                <p className="text-muted-foreground">Microsoft Dynamics 365 Finance & Operations, Management Reporter, Finance Module</p>
             </div>
           </div>
           <CaseStudyCTA />
@@ -151,3 +147,4 @@ export default function CaseStudyPage() {
     </div>
   );
 }
+
