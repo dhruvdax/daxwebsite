@@ -459,13 +459,13 @@
     {
       "id": "case-study-custom-bank-payment",
       "description": "An abstract image showing a bank payment file being generated from a computer.",
-      "imageUrl": "https://images.unsplash.com/photo-1607697987724-fc9f8b225223?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiYW5rJTIwcGF5bWVudHxlbnwwfHx8fDE3Njc3OTc0MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/case-studies/custom-bank-payment-templates-in-dynamics-365-fo.jpeg",
       "imageHint": "bank payment"
     },
     {
       "id": "case-study-custom-financial-reports",
       "description": "An abstract image showing financial reports and charts on a screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1758518729593-275baa967f78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaW5hbmNpYWwlMjByZXBvcnRzfGVufDB8fHx8MTc2Nzg0MDgzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/case-studies/custom-financial-reports-in-dynamics-365-fo.png",
       "imageHint": "financial reports"
     }
   ]
