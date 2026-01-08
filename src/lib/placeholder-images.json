@@ -467,6 +467,12 @@
       "description": "An abstract image showing financial reports and charts on a screen.",
       "imageUrl": "/case-studies/custom-financial-reports-in-dynamics-365-fo.png",
       "imageHint": "financial reports"
+    },
+    {
+      "id": "case-study-custom-fixed-assets",
+      "description": "An abstract image showing fixed assets like computers and machinery being tracked on a digital interface.",
+      "imageUrl": "/case-studies/custom-fixed-assets-d365fo.jpg",
+      "imageHint": "fixed assets tracking"
     }
   ]
 }
