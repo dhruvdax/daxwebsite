@@ -459,7 +459,7 @@
     {
       "id": "case-study-custom-bank-payment",
       "description": "An abstract image showing a bank payment file being generated from a computer.",
-      "imageUrl": "/case-studies/custom-bank-payment-templates-in-dynamics-365-fo.jpeg",
+      "imageUrl": "public/case-studies/custom-bank-payment-templates-in-dynamics-365-fo.jpeg",
       "imageHint": "bank payment"
     },
     {
@@ -471,14 +471,20 @@
     {
       "id": "case-study-custom-fixed-assets",
       "description": "An abstract image showing fixed assets like computers and machinery being tracked on a digital interface.",
-      "imageUrl": "/case-studies/custom-fixed-assets-solution-in-dynamics-365-fo.jpeg",
+      "imageUrl": "public/case-studies/custom-fixed-assets-solution-in-dynamics-365-fo.jpeg",
       "imageHint": "fixed assets tracking"
     },
     {
       "id": "case-study-multiple-legal-entities",
       "description": "A world map with highlighted countries and legal document icons, representing international compliance.",
-      "imageUrl": "/case-studies/multiple-legal-entities-implementation-in-dynamics-365-fo.jpeg",
+      "imageUrl": "public/case-studies/multiple-legal-entities-implementation-in-dynamics-365-fo.jpeg",
       "imageHint": "global compliance"
+    },
+    {
+      "id": "case-study-cannabis-dispensary",
+      "description": "A modern, clean cannabis dispensary interior with products on display.",
+      "imageUrl": "https://images.unsplash.com/photo-1649424219416-15e139f13cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYW5uYWJpcyUyMGRpc3BlbnNhcnl8ZW58MHx8fHwxNzY3ODUyNTQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cannabis dispensary"
     }
   ]
 }

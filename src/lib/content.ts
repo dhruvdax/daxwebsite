@@ -221,6 +221,13 @@ export const CASE_STUDIES = [
         summary: 'DAX implemented multiple legal entities in D365FO to support a global retailer’s expansion, ensuring local compliance and streamlined intercompany transactions.',
         details: 'Implemented multiple legal entities in Microsoft Dynamics 365 Finance & Operations (D365FO) for a Global Coffee and Tea Retailer to support expanding international operations. As the client entered new markets, additional legal entities were required to manage statutory compliance, financial reporting, and intercompany transactions across regions.',
         imageId: 'case-study-multiple-legal-entities'
+    },
+    {
+        title: 'D365FO Implementation for a Cannabis Dispensary',
+        slug: 'd365fo-cannabis-dispensary',
+        summary: 'Implemented Microsoft Dynamics 365 Finance & Operations (D365FO) for a leading medical and recreational cannabis dispensary across six legal entities.',
+        details: 'Implemented Microsoft Dynamics 365 Finance & Operations (D365FO) for a leading medical and recreational cannabis dispensary across six legal entities. The project required addressing complex inventory combinations involving item variants and ensuring manufacturing processes complied with strict government statutory regulations.',
+        imageId: 'case-study-cannabis-dispensary'
     }
 ];
 
@@ -499,6 +506,7 @@ export const OPENINGS = [
     
 
     
+
 
 
 
