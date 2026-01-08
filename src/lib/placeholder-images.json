@@ -105,7 +105,7 @@
     {
       "id": "case-study-autodesk-vault",
       "description": "Solar panels on a roof, representing renewable energy.",
-      "imageUrl": "/case-studies/autodesk-vault-implementation-for-a-leading-energy-sector-company.jpg",
+      "imageUrl": "public/case-studies/autodesk-vault-implementation-for-a-leading-energy-sector-company.jpg",
       "imageHint": "solar panels"
     },
     {
@@ -453,26 +453,32 @@
     {
       "id": "case-study-auto-vendor-payment",
       "description": "An abstract image showing an email icon with a dollar sign, representing automated payment notifications.",
-      "imageUrl": "/case-studies/automated-vendor-payment-communication-in-dynamics-365-fo.jpeg",
+      "imageUrl": "public/case-studies/automated-vendor-payment-communication-in-dynamics-365-fo.jpeg",
       "imageHint": "automated payment"
     },
     {
       "id": "case-study-custom-bank-payment",
       "description": "An abstract image showing a bank payment file being generated from a computer.",
-      "imageUrl": "/case-studies/custom-bank-payment-templates-in-dynamics-365-fo.jpeg",
+      "imageUrl": "public/case-studies/custom-bank-payment-templates-in-dynamics-365-fo.jpeg",
       "imageHint": "bank payment"
     },
     {
       "id": "case-study-custom-financial-reports",
       "description": "An abstract image showing financial reports and charts on a screen.",
-      "imageUrl": "/case-studies/custom-financial-reports-in-dynamics-365-fo.png",
+      "imageUrl": "public/case-studies/custom-financial-reports-in-dynamics-365-fo.png",
       "imageHint": "financial reports"
     },
     {
       "id": "case-study-custom-fixed-assets",
       "description": "An abstract image showing fixed assets like computers and machinery being tracked on a digital interface.",
-      "imageUrl": "/case-studies/custom-fixed-assets-solution-in-dynamics-365-fo.jpeg",
+      "imageUrl": "public/case-studies/custom-fixed-assets-solution-in-dynamics-365-fo.jpeg",
       "imageHint": "fixed assets tracking"
+    },
+    {
+      "id": "case-study-multiple-legal-entities",
+      "description": "A world map with highlighted countries and legal document icons, representing international compliance.",
+      "imageUrl": "/case-studies/multiple-legal-entities.jpeg",
+      "imageHint": "global compliance"
     }
   ]
 }

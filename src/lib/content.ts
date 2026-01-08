@@ -69,10 +69,10 @@ export const CASE_STUDIES = [
         imageId: 'ocr-case-study'
     },
     {
-        title: 'Dynamics 365 F&O Implementation/Managed Support for a leading Fast Food Manufacturer and Retail Company',
+        title: 'Dynamics 365 Finance & Operations Implementation/Managed Support for a leading Fast Food Manufacturer and Retail Company',
         slug: 'd365-fo-fast-food',
-        summary: 'Dynamics 365 F&O offers a comprehensive suite of features for managing all aspects of a retail business, including finance, supply chain management, and more.',
-        details: 'We partnered with a major fast-food chain to implement and support their Dynamics 365 F&O system. Our solution streamlined their global franchise operations, improved financial reporting, and provided real-time visibility into their supply chain.',
+        summary: 'Dynamics 365 Finance & Operations offers a comprehensive suite of features for managing all aspects of a retail business, including finance, supply chain management, and more.',
+        details: 'We partnered with a major fast-food chain to implement and support their Dynamics 365 Finance & Operations system. Our solution streamlined their global franchise operations, improved financial reporting, and provided real-time visibility into their supply chain.',
         imageId: 'case-study-2'
     },
     {
@@ -83,17 +83,17 @@ export const CASE_STUDIES = [
         imageId: 'case-study-3'
     },
     {
-        title: 'Dynamics 365 F&O Managed Support Service for a Leading Real Estate Company',
+        title: 'Dynamics 365 Finance & Operations Managed Support Service for a Leading Real Estate Company',
         slug: 'd365-fo-real-estate',
         summary: "By leveraging DAX's AMS, real estate companies can gain a competitive advantage by reducing IT costs and improving application performance.",
-        details: 'We provide ongoing Application Managed Services (AMS) for a leading real estate firm. Our services ensure their Dynamics 365 F&O platform runs smoothly, with proactive monitoring, performance tuning, and continuous enhancements. This partnership has allowed them to focus on their core business while we handle the complexities of their ERP system.',
+        details: 'We provide ongoing Application Managed Services (AMS) for a leading real estate firm. Our services ensure their Dynamics 365 Finance & Operations platform runs smoothly, with proactive monitoring, performance tuning, and continuous enhancements. This partnership has allowed them to focus on their core business while we handle the complexities of their ERP system.',
         imageId: 'case-study-4'
     },
     {
-        title: 'Dynamics 365 Field Service integrated with F&O Implementation for a US Based Systems Integrator',
+        title: 'Dynamics 365 Field Service integrated with Finance & Operations Implementation for a US Based Systems Integrator',
         slug: 'd365-field-service-integrator',
         summary: 'Dynamics 365 Field Service is a leading cloud-based field service management (FSM) solution, with over 200,000 organizations using it worldwide.',
-        details: 'We implemented Dynamics 365 Field Service integrated with F&O for a US-based systems integrator. This solution provides real-time scheduling, dispatch, and mobile capabilities for their field technicians. The integration ensures that work orders, inventory, and billing are seamlessly connected, improving efficiency and customer satisfaction.',
+        details: 'We implemented Dynamics 365 Field Service integrated with Finance & Operations for a US-based systems integrator. This solution provides real-time scheduling, dispatch, and mobile capabilities for their field technicians. The integration ensures that work orders, inventory, and billing are seamlessly connected, improving efficiency and customer satisfaction.',
         imageId: 'case-study-5'
     },
     {
@@ -104,7 +104,7 @@ export const CASE_STUDIES = [
         imageId: 'case-study-6'
     },
     {
-        title: 'Dynamics 365 Field Service integrated with F&O Implementation for a Security System Service Provider',
+        title: 'Dynamics 365 Field Service integrated with Finance & Operations Implementation for a Security System Service Provider',
         slug: 'd365-field-service-security',
         summary: 'Dynamics 365 Field Service empowers field technicians to be more efficient. Learn how a security system provider improved its field operations with this module.',
         details: 'A security system service provider needed to improve the efficiency of their field technicians. We implemented Dynamics 365 Field Service, which provided them with optimized scheduling, mobile access to work orders, and real-time inventory management. As a result, they reduced travel time by 15% and improved first-time fix rates by 20%.',
@@ -125,9 +125,9 @@ export const CASE_STUDIES = [
         imageId: 'case-study-9'
     },
     {
-        title: 'Dynamics 365 F&O Implementation for the largest Cannabis Company in Medical Usage',
+        title: 'Dynamics 365 Finance & Operations Implementation for the largest Cannabis Company in Medical Usage',
         slug: 'd365-fo-cannabis',
-        summary: 'Dynamics 365 F&O helps cannabis businesses comply with complex track-and-trace regulations.',
+        summary: 'Dynamics 365 Finance & Operations helps cannabis businesses comply with complex track-and-trace regulations.',
         details: "We implemented Dynamics 365 Finance & Operations for the largest medical cannabis company, navigating the industry's strict regulatory requirements. The solution includes seed-to-sale tracking, compliance reporting, and quality control, ensuring they meet all legal obligations while optimizing their supply chain.",
         imageId: 'case-study-10'
     },
@@ -177,7 +177,7 @@ export const CASE_STUDIES = [
         title: 'Electronic Invoicing using Dynamics 365 Finance and Operations',
         slug: 'electronic-invoicing-d365',
         summary: 'Optimize your billing process with Electronic Invoicing in Dynamics 365 Finance and Operations, ensuring automation, compliance, and efficiency.',
-        details: `We implemented an end-to-end electronic invoicing solution within Dynamics 365 F&O for a large enterprise, ensuring compliance with government mandates. The solution automated the generation, submission, and monitoring of e-invoices, drastically reducing manual effort and eliminating penalties for non-compliance.`,
+        details: `We implemented an end-to-end electronic invoicing solution within Dynamics 365 Finance & Operations for a large enterprise, ensuring compliance with government mandates. The solution automated the generation, submission, and monitoring of e-invoices, drastically reducing manual effort and eliminating penalties for non-compliance.`,
         imageId: 'case-study-1'
     },
     {
@@ -214,6 +214,13 @@ export const CASE_STUDIES = [
         summary: 'DAX developed a custom Fixed Assets solution to manage assets by quantity, enhancing control and accuracy for a global retailer with numerous stores.',
         details: 'Developed a custom Fixed Assets solution in Microsoft Dynamics 365 Finance & Operations for a Global Coffee and Tea Retailer to manage assets on a quantity basis rather than relying solely on value-based tracking. Given the client’s franchise and company-owned store model with a large number of retail locations, the standard fixed asset functionality was insufficient. The client required depreciation, transfers, and disposals to be managed per quantity and per location to accurately reflect asset usage across stores.',
         imageId: 'case-study-custom-fixed-assets'
+    },
+    {
+        title: 'Multiple Legal Entities Implementation in Dynamics 365 FO',
+        slug: 'multiple-legal-entities-d365fo',
+        summary: 'DAX implemented multiple legal entities in Dynamics 365 FO to support a global retailer’s expansion, ensuring local compliance and streamlined intercompany transactions.',
+        details: 'Implemented multiple legal entities in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO) for a Global Coffee and Tea Retailer to support expanding international operations. As the client entered new markets, additional legal entities were required to manage statutory compliance, financial reporting, and intercompany transactions across regions.',
+        imageId: 'case-study-multiple-legal-entities'
     }
 ];
 
@@ -290,7 +297,7 @@ export const OPENINGS = [
     <li>Extensive experience working in core Manufacturing Procurement, Warehouse and Inventory Management.</li>
     <li>Knowledge and/or experience servicing or designing solutions for Manufacturing vertical industries.</li>
     <li>Experience working with and/or implementing complimentary third party solutions to Dynamics 365/AX.</li>
-    <li>Dynamics 365 F&O certification in manufacturing and Warehouse and/or related areas.</li>
+    <li>Dynamics 365 Finance & Operations certification in manufacturing and Warehouse and/or related areas.</li>
     <li>Extensive Experience with the Microsoft Dynamics 365 Manufacturing module.</li>
     <li>Lean Manufacturing Module experience is good to have.</li>
     <li>Understands the key activities and deliverables for the client engagement and internal projects, reuses all standard templates and project artifacts and improves quality of DAX Software documentation assets.</li>
@@ -339,8 +346,8 @@ export const OPENINGS = [
     <li>Lead the requirement gathering process by meeting with business process leaders to determine business requirements.</li>
     <li>Work with Customers on Implementation and Managed service side of business.</li>
     <li>Help junior resources during solution process with understanding the problem and towards right resources to research, solutions based on customer needs.</li>
-    <li>Write the code in Dynamics 365 F&O/Dynamics AX to achieve the user requirements.</li>
-    <li>Worked in writing interfaces to integrate Dynamics 365 F&O/Dynamics AX with different third-party systems.</li>
+    <li>Write the code in Dynamics 365 Finance & Operations/Dynamics AX to achieve the user requirements.</li>
+    <li>Worked in writing interfaces to integrate Dynamics 365 Finance & Operations/Dynamics AX with different third-party systems.</li>
     <li>Utilizing Manufacturing, Supply Chain, Warehouse, Finance modules process knowledge to understand the new system’s impact on Trade and Logistics, HR and Finance management.</li>
     <li>Perform Gap analysis between AX functionality and end user requirement.</li>
     <li>Train/Write design documentation and corresponding technical specifications.</li>
@@ -355,7 +362,7 @@ export const OPENINGS = [
 <ul>
     <li>Specify job requirements (experience, technologies, certificates, etc).</li>
     <li>Bachelor’s degree in Computer Science, Computer Engineering, or a related field and minimum two years of experience in the job offered or a related IT position designing and developing Microsoft Dynamics AX solutions. The position requires the ability to use Microsoft Dynamics AX, SQL Server, Visual Studio, X++, C#, .Net, PowerBI, Azure, ASP.Net, Trace Parser, SQL Profiler, API developer, and Interface development.</li>
-    <li>Hands-on experience on Microsoft’s Dynamics AX/Dynamics 365 F&O ERP suite.</li>
+    <li>Hands-on experience on Microsoft’s Dynamics AX/Dynamics 365 Finance & Operations ERP suite.</li>
     <li>Extensive programming experience in different MS programming languages.</li>
     <li>Certifications in Dynamics AX/Dynamics 365 Finance and Operations.</li>
     <li>In-depth experience integrating with 3rd party applications.</li>
@@ -369,7 +376,7 @@ export const OPENINGS = [
         description: "We're looking for a Applications Consultant to join our team.",
         location: 'Woodland Hills, CA',
         type: 'Full-time',
-        fullDescription: `<p>DAX Software Solutions, Inc. is seeking a Software Developers with BFSI, Supply Chain domain experience, Legacy Data Migration and ETL tools knowledge. Dynamics 365 F&O, Integration, Technical Architect, Code migration, go live management, AX2012 R3, Dynamics 365 F&O, SSRS, and the upgrade, data management.</p>
+        fullDescription: `<p>DAX Software Solutions, Inc. is seeking a Software Developers with BFSI, Supply Chain domain experience, Legacy Data Migration and ETL tools knowledge. Dynamics 365 Finance & Operations, Integration, Technical Architect, Code migration, go live management, AX2012 R3, Dynamics 365 Finance & Operations, SSRS, and the upgrade, data management.</p>
 <p>The position will primarily be responsible interface with key stakeholders and apply your technical proficiency across different stages of the Software Development Life Cycle including Data Migration & Requirements Elicitation, Application Architecture definition and Design. You will play an important role in creating the high-level design artifacts. You will also deliver high quality code deliverables for a module, lead validation for all types of testing and support activities related to implementation, transition, and warranty. You will be part of a learning culture, where teamwork and collaboration are encouraged, excellence is rewarded, and diversity is respected and valued.</p>
 <p><strong>Key Responsibilities (Essential Duties and Functions)</strong></p>
 <ul>
@@ -378,7 +385,7 @@ export const OPENINGS = [
     <li>Participate in creating application architecture document to provide deliverables in line with architectural requirements.</li>
     <li>Assist in the Design and implement system configurations, customizations, and extensions using C# and X++ / JavaScript programming languages.</li>
     <li>Create design artifacts and support prototyping through creation of POCs.</li>
-    <li>Access the legacy ERP systems to: 1. Understand the data structure 2. Define the migration scope 3. Select appropriate ETL (extract – transform – load) tools 4. Develop a strategy to import relevant and updated data from historical records. Then, drive the data migration process from legacy ERP systems to Microsoft Dynamics 365 F&O</li>
+    <li>Access the legacy ERP systems to: 1. Understand the data structure 2. Define the migration scope 3. Select appropriate ETL (extract – transform – load) tools 4. Develop a strategy to import relevant and updated data from historical records. Then, drive the data migration process from legacy ERP systems to Microsoft Dynamics 365 Finance & Operations</li>
     <li>Develops Informatica Cloud IDMC/IICS mappings and mapping tasks using ODBC and API based data integration and design task flows.</li>
     <li>Deliver high quality code deliverables and support peers in quality checks such that design requirements are met. Create user documentation for the assigned modules, Lead validation activities for the assigned modules for all types of testing e.g., Functional, Integration, System, User Experience etc.</li>
     <li>Support the creation of “Go Live” plan (change management request) and manage assigned activities in the plan.</li>
@@ -390,7 +397,7 @@ export const OPENINGS = [
 <ul>
     <li>Bachelor’s degree in engineering/computer-related discipline, or equivalent experience required.</li>
     <li>At least 2 years of experience in end-to-end implementation of projects in data migrations, Integration using etl tools -Informatica.</li>
-    <li>Dynamics 365 F&O ERP knowledge.</li>
+    <li>Dynamics 365 Finance & Operations ERP knowledge.</li>
     <li>2+ years of Cloud (AWS / Azure) experience.</li>
     <li>Leadership/Management skill.</li>
     <li>Excellent communication skills – will be working with Sr Leadership and entire implementation team.</li>
@@ -434,8 +441,8 @@ export const OPENINGS = [
     <li><strong>Continuous Improvement:</strong> Identify opportunities for continuous improvement in software systems and processes, and implement best practices.</li>
     <li><strong>Stakeholder Communication:</strong> Communicate effectively with all stakeholders to ensure alignment and understanding of project objectives and progress.</li>
     <li><strong>Data Visualization:</strong> Microsoft Azure Power BI, Tableau.</li>
-    <li><strong>Dynamics 365:</strong> Lead the implementation of Dynamics 365 F&O modules, ensuring alignment with business needs.</li>
-    <li><strong>Solution Design:</strong> Design and configure Dynamics 365 F&O solutions to meet business requirements.</li>
+    <li><strong>Dynamics 365:</strong> Lead the implementation of Dynamics 365 Finance & Operations modules, ensuring alignment with business needs.</li>
+    <li><strong>Solution Design:</strong> Design and configure Dynamics 365 Finance & Operations solutions to meet business requirements.</li>
 </ul>
 <p><strong>Requirements:</strong></p>
 <p><strong>Qualifications</strong></p>
@@ -473,7 +480,7 @@ export const OPENINGS = [
     <li>Perform unit testing NUnit & supporting frameworks (moq, Microsoft Fakes) and integration testing of the new supply chain.</li>
     <li>Determine performance and operational-based indicators to track inventory information and back-end processes.</li>
     <li>Consult with clients on business optimization and reporting requirements best practices with the use of Power BI and Apps analytics.</li>
-    <li>Facilitate user success by writing Dynamics 365 code, developing methods to integrate Dynamics 365 with third party platforms, and performing gap analysis between AX/Dynamics 365 F&O functionality and end user requirements.</li>
+    <li>Facilitate user success by writing Dynamics 365 code, developing methods to integrate Dynamics 365 with third party platforms, and performing gap analysis between AX/Dynamics 365 Finance & Operations functionality and end user requirements.</li>
     <li>Analyze the migration of the client's data to be utilized by the ERP post development.</li>
     <li>Stay abreast of the latest technological advances and industry trends in ERP to ensure optimal performance and effective software development.</li>
 </ul>
@@ -492,6 +499,7 @@ export const OPENINGS = [
     
 
     
+
 
 
 
