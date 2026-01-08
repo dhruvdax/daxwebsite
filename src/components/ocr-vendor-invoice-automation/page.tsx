@@ -115,7 +115,7 @@ export default function CaseStudyPage() {
                       </li>
                       <li className="flex items-start gap-3">
                           <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                          <span className="text-muted-foreground text-base"><b>Seamless Integration:</b> OCR technology can be seamlessly integrated with various ERP (Enterprise Resource Planning) software, including SAP, Oracle, and Dynamics 365 FO (Dynamics 365 Finance and Operations). If there is no inbuilt connector, a custom connector can be added on demand.</span>
+                          <span className="text-muted-foreground text-base"><b>Seamless Integration:</b> OCR technology can be seamlessly integrated with various ERP (Enterprise Resource Planning) software, including SAP, Oracle, and Dynamics 365 FO (D365FO). If there is no inbuilt connector, a custom connector can be added on demand.</span>
                       </li>
                        <li className="flex items-start gap-3">
                           <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />

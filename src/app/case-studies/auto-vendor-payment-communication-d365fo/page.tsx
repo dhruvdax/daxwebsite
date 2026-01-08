@@ -57,7 +57,7 @@ export default function CaseStudyPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center not-prose">
                 <div className="space-y-4">
                     <h3 className="text-2xl font-bold font-headline mt-8 mb-4 prose">Overview</h3>
-                    <p className="text-muted-foreground">DAX Software Solutions developed a custom auto-email functionality in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO) for a global coffee and tea retailer to automate vendor communication after payment processing. By default, Dynamics 365 FO requires manual effort to notify vendors and share payment advice. The client required an automated solution to ensure vendor emails were sent immediately after payment journals were posted.</p>
+                    <p className="text-muted-foreground">DAX Software Solutions developed a custom auto-email functionality in Microsoft Dynamics 365 Finance & Operations (D365FO) for a global coffee and tea retailer to automate vendor communication after payment processing. By default, Dynamics 365 FO requires manual effort to notify vendors and share payment advice. The client required an automated solution to ensure vendor emails were sent immediately after payment journals were posted.</p>
                 </div>
                 {image && (
                     <div className="relative h-64 w-full">
@@ -104,7 +104,7 @@ export default function CaseStudyPage() {
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base"><strong>Testing & Validation:</strong> Conducted functional and UAT testing to validate email triggers, content accuracy, and attachment delivery.</span>
+                    <span className="text-muted-foreground text-base"><strong>Testing &amp; Validation:</strong> Conducted functional and UAT testing to validate email triggers, content accuracy, and attachment delivery.</span>
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -140,7 +140,7 @@ export default function CaseStudyPage() {
                 <h3 className="text-2xl font-bold font-headline mt-8 mb-4">Technology Stack</h3>
                 <Card>
                     <CardContent className="p-6">
-                        <p className="text-muted-foreground">Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO), X++, SMTP / Email Integration, Finance Module, SSRS Payment Advice Reports</p>
+                        <p className="text-muted-foreground">Microsoft Dynamics 365 Finance &amp; Operations (D365FO), X++, SMTP / Email Integration, Finance Module, SSRS Payment Advice Reports</p>
                     </CardContent>
                 </Card>
             </div>

@@ -100,7 +100,7 @@ export default function CaseStudyPage() {
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base"><strong>Development:</strong> Built custom extensions to enable quantity tracking within the Fixed Assets module, ensuring seamless alignment with standard Dynamics 365 FO processes.</span>
+                    <span className="text-muted-foreground text-base"><strong>Development:</strong> Built custom extensions to enable quantity tracking within the Fixed Assets module, ensuring seamless alignment with standard D365FO processes.</span>
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -112,7 +112,7 @@ export default function CaseStudyPage() {
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base"><strong>Testing & Validation:</strong> Conducted functional testing and user acceptance testing (UAT) to validate end-to-end asset lifecycle scenarios.</span>
+                    <span className="text-muted-foreground text-base"><strong>Testing &amp; Validation:</strong> Conducted functional testing and user acceptance testing (UAT) to validate end-to-end asset lifecycle scenarios.</span>
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -142,7 +142,7 @@ export default function CaseStudyPage() {
 
             <div className="not-prose mt-12">
                 <h3 className="text-2xl font-bold font-headline mt-8 mb-4">Technology Stack</h3>
-                <p className="text-muted-foreground">Microsoft Dynamics 365 Finance & Operations, X++, Custom Extensions, Fixed Assets Module, SQL Server Reporting Services (SSRS)</p>
+                <p className="text-muted-foreground">Microsoft Dynamics 365 Finance &amp; Operations (D365FO), X++, Custom Extensions, Fixed Assets Module, SQL Server Reporting Services (SSRS)</p>
             </div>
           </div>
           <CaseStudyCTA />

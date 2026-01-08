@@ -57,7 +57,7 @@ export default function CaseStudyPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center not-prose">
                 <div className="space-y-4">
                     <h3 className="text-2xl font-bold font-headline mt-8 mb-4 prose">Overview</h3>
-                    <p className="text-muted-foreground">Implemented multiple legal entities in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO) for a Global Coffee and Tea Retailer to support expanding international operations. As the client entered new markets, additional legal entities were required to manage statutory compliance, financial reporting, and intercompany transactions across regions.</p>
+                    <p className="text-muted-foreground">Implemented multiple legal entities in Microsoft Dynamics 365 Finance & Operations (D365FO) for a Global Coffee and Tea Retailer to support expanding international operations. As the client entered new markets, additional legal entities were required to manage statutory compliance, financial reporting, and intercompany transactions across regions.</p>
                 </div>
                 {image && (
                     <div className="relative h-64 w-full">
@@ -76,7 +76,7 @@ export default function CaseStudyPage() {
             <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base">Configured new legal entities in Dynamics 365 FO to support operations in Singapore and Malaysia.</span>
+                    <span className="text-muted-foreground text-base">Configured new legal entities in D365FO to support operations in Singapore and Malaysia.</span>
                 </li>
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -96,7 +96,7 @@ export default function CaseStudyPage() {
                 </li>
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base"><strong>Entity Setup:</strong> Configured new legal entities in Dynamics 365 FO with appropriate fiscal calendars, base currencies, and tax structures.</span>
+                    <span className="text-muted-foreground text-base"><strong>Entity Setup:</strong> Configured new legal entities in D365FO with appropriate fiscal calendars, base currencies, and tax structures.</span>
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -108,7 +108,7 @@ export default function CaseStudyPage() {
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base"><strong>Testing & Validation:</strong> Conducted end-to-end and integration testing to validate financial postings and intercompany workflows.</span>
+                    <span className="text-muted-foreground text-base"><strong>Testing &amp; Validation:</strong> Conducted end-to-end and integration testing to validate financial postings and intercompany workflows.</span>
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -132,7 +132,7 @@ export default function CaseStudyPage() {
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base">Delivered a scalable Dynamics 365 FO environment to support the client’s ongoing regional and global expansion.</span>
+                    <span className="text-muted-foreground text-base">Delivered a scalable D365FO environment to support the client’s ongoing regional and global expansion.</span>
                 </li>
             </ul>
 
@@ -140,7 +140,7 @@ export default function CaseStudyPage() {
                 <h3 className="text-2xl font-bold font-headline mt-8 mb-4">Technology Stack</h3>
                 <Card>
                     <CardContent className="p-6">
-                        <p className="text-muted-foreground">Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO), Localization Configurations (Singapore & Malayasia), X++, Finance and Intercompany Modules.</p>
+                        <p className="text-muted-foreground">Microsoft Dynamics 365 Finance &amp; Operations (D365FO), Localization Configurations (Singapore &amp; Malayasia), X++, Finance and Intercompany Modules.</p>
                     </CardContent>
                 </Card>
             </div>

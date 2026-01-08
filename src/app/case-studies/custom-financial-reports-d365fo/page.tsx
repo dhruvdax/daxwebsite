@@ -57,7 +57,7 @@ export default function CaseStudyPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center not-prose">
                 <div className="space-y-4">
                     <h3 className="text-2xl font-bold font-headline mt-8 mb-4 prose">Overview</h3>
-                    <p className="text-muted-foreground">Developed and delivered a suite of custom financial reports in Microsoft Dynamics 365 Finance & Operations for a Global Coffee and Tea Retailer. The standard out-of-the-box reports in Dynamics 365 FO did not fully meet the client’s business and statutory reporting needs, particularly for consolidated and region-specific financial analysis across multiple entities.</p>
+                    <p className="text-muted-foreground">Developed and delivered a suite of custom financial reports in Microsoft Dynamics 365 Finance & Operations for a Global Coffee and Tea Retailer. The standard out-of-the-box reports in D365FO did not fully meet the client’s business and statutory reporting needs, particularly for consolidated and region-specific financial analysis across multiple entities.</p>
                 </div>
                 {image && (
                     <div className="relative h-64 w-full">
@@ -76,7 +76,7 @@ export default function CaseStudyPage() {
             <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base">Analyzed gaps in standard Dynamics 365 FO financial reporting capabilities.</span>
+                    <span className="text-muted-foreground text-base">Analyzed gaps in standard D365FO financial reporting capabilities.</span>
                 </li>
                 <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -100,11 +100,11 @@ export default function CaseStudyPage() {
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base"><strong>Development:</strong> Built custom financial reports using the Management Reporter framework within Dynamics 365 FO.</span>
+                    <span className="text-muted-foreground text-base"><strong>Development:</strong> Built custom financial reports using the Management Reporter framework within D365FO.</span>
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
-                    <span className="text-muted-foreground text-base"><strong>Testing & Validation:</strong> Conducted functional testing and user acceptance testing (UAT) to ensure data accuracy, compliance, and reconciliation with statutory financial statements.</span>
+                    <span className="text-muted-foreground text-base"><strong>Testing &amp; Validation:</strong> Conducted functional testing and user acceptance testing (UAT) to ensure data accuracy, compliance, and reconciliation with statutory financial statements.</span>
                 </li>
                  <li className="flex items-start gap-3">
                     <Check className="h-5 w-5 mt-1 text-primary flex-shrink-0" />
@@ -138,7 +138,7 @@ export default function CaseStudyPage() {
 
             <div className="not-prose mt-12">
                 <h3 className="text-2xl font-bold font-headline mt-8 mb-4">Technology Stack</h3>
-                <p className="text-muted-foreground">Microsoft Dynamics 365 Finance & Operations, Management Reporter, Finance Module</p>
+                <p className="text-muted-foreground">Microsoft Dynamics 365 Finance &amp; Operations (D365FO), Management Reporter, Finance Module</p>
             </div>
           </div>
           <CaseStudyCTA />
