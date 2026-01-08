@@ -200,6 +200,13 @@ export const CASE_STUDIES = [
         summary: 'DAX developed custom bank payment templates in Dynamics 365 FO to streamline vendor payment processing for multiple banks.',
         details: 'Implemented custom bank payment templates in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO) for a Global Coffee and Tea Retailer to streamline vendor payment processing. Since each bank follows its own file format specifications, the Client required a solution that would generate compliant payment files directly from Dynamics 365 FO for upload to their respective bank portals.',
         imageId: 'case-study-custom-bank-payment'
+    },
+    {
+        title: 'Custom Financial Reports in Dynamics 365 FO',
+        slug: 'custom-financial-reports-d365fo',
+        summary: 'DAX developed a suite of custom financial reports in Dynamics 365 FO, enhancing visibility and supporting informed decision-making across entities.',
+        details: 'Developed and delivered a suite of custom financial reports in Microsoft Dynamics 365 Finance & Operations (Dynamics 365 FO) for a Global Coffee and Tea Retailer. The standard out-of-the-box reports in Dynamics 365 FO did not fully meet the client’s business and statutory reporting needs, particularly for consolidated and region-specific financial analysis across multiple entities.',
+        imageId: 'case-study-custom-financial-reports'
     }
 ];
 
@@ -478,6 +485,7 @@ export const OPENINGS = [
     
 
     
+
 
 
 
