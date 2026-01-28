@@ -62,27 +62,6 @@ export const TEAM_MEMBERS = [
 
 export const CASE_STUDIES = [
     {
-        title: 'ERP–CRM Integration and FedEx API Modernization',
-        slug: 'erp-crm-fedex-api-integration',
-        summary: 'Delivered multiple integration initiatives for a leading agricultural supplies manufacturer, including ERP-CRM synchronization and a critical migration of FedEx integrations from SOAP to REST APIs.',
-        details: 'Delivered multiple integration initiatives for a leading agricultural supplies manufacturer to improve order management, customer visibility, and logistics reliability. The engagement included ERP–CRM synchronization between Microsoft Dynamics AX and Salesforce, along with a critical migration of FedEx integrations from legacy SOAP services to REST APIs ahead of mandated deprecation timelines.',
-        imageId: 'case-study-erp-crm-fedex'
-    },
-    {
-        title: 'AP Automation Integration with Medius and Microsoft Dynamics AX',
-        slug: 'ap-automation-medius-ax-integration',
-        summary: 'Migrated Accounts Payable automation from a legacy TAP solution to Medius, with a secure, bidirectional integration with Microsoft Dynamics AX 2012.',
-        details: 'Migrated Accounts Payable automation from a legacy TAP solution to Medius for a leading agricultural supplies manufacturer. The project required a secure, bidirectional integration between Medius AP and Microsoft Dynamics AX 2012 to support end-to-end AP processing.',
-        imageId: 'case-study-ap-automation-medius'
-    },
-    {
-        title: '3PL Warehouse Integration with Microsoft Dynamics AX',
-        slug: '3pl-warehouse-ax-integration',
-        summary: 'Integrated Microsoft Dynamics AX 2012 with a third-party logistics (3PL) managed Warehouse Management System for a key distribution center.',
-        details: 'Integrated Microsoft Dynamics AX 2012 with a third-party logistics (3PL) managed Warehouse Management System for a key distribution center in Cambridge. Although operated by a 3PL partner, the warehouse remained an active fulfillment hub requiring tight ERP integration.',
-        imageId: 'case-study-3pl-warehouse-ax'
-    },
-    {
         title: 'OCR (Optical Character Recognition) for Vendor Invoice Automation',
         slug: 'ocr-vendor-invoice-automation',
         summary: 'Research shows that companies using OCR for automated data entry from invoices process 25-60% more invoices than companies using manual data entry.',
@@ -270,6 +249,27 @@ export const CASE_STUDIES = [
         summary: 'DAX implemented multiple legal entities in AX 2012 to support a global manufacturer’s expansion, ensuring local compliance and streamlined intercompany transactions.',
         details: 'Implemented multiple legal entities in Microsoft Dynamics AX 2012 for a leading agricultural supplies manufacturer to support expanding business operations. As the organization grew into new markets, additional entities were required to manage statutory compliance, financial reporting, and intercompany transactions.',
         imageId: 'case-study-multiple-legal-entities-ax-2012'
+    },
+    {
+        title: 'ERP–CRM Integration and FedEx API Modernization',
+        slug: 'erp-crm-fedex-api-integration',
+        summary: 'Delivered multiple integration initiatives for a leading agricultural supplies manufacturer, including ERP-CRM synchronization and a critical migration of FedEx integrations from SOAP to REST APIs.',
+        details: 'Delivered multiple integration initiatives for a leading agricultural supplies manufacturer to improve order management, customer visibility, and logistics reliability. The engagement included ERP–CRM synchronization between Microsoft Dynamics AX and Salesforce, along with a critical migration of FedEx integrations from legacy SOAP services to REST APIs ahead of mandated deprecation timelines.',
+        imageId: 'case-study-erp-crm-fedex'
+    },
+    {
+        title: 'AP Automation Integration with Medius and Microsoft Dynamics AX',
+        slug: 'ap-automation-medius-ax-integration',
+        summary: 'Migrated Accounts Payable automation from a legacy TAP solution to Medius, with a secure, bidirectional integration with Microsoft Dynamics AX 2012.',
+        details: 'Migrated Accounts Payable automation from a legacy TAP solution to Medius for a leading agricultural supplies manufacturer. The project required a secure, bidirectional integration between Medius AP and Microsoft Dynamics AX 2012 to support end-to-end AP processing.',
+        imageId: 'case-study-ap-automation-medius'
+    },
+    {
+        title: '3PL Warehouse Integration with Microsoft Dynamics AX',
+        slug: '3pl-warehouse-ax-integration',
+        summary: 'Integrated Microsoft Dynamics AX 2012 with a third-party logistics (3PL) managed Warehouse Management System for a key distribution center.',
+        details: 'Integrated Microsoft Dynamics AX 2012 with a third-party logistics (3PL) managed Warehouse Management System for a key distribution center in Cambridge. Although operated by a 3PL partner, the warehouse remained an active fulfillment hub requiring tight ERP integration.',
+        imageId: 'case-study-3pl-warehouse-ax'
     }
 ];
 
@@ -548,6 +548,7 @@ export const OPENINGS = [
     
 
     
+
 
 
 
