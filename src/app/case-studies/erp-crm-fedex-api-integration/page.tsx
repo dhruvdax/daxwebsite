@@ -157,11 +157,7 @@ export default function CaseStudyPage() {
 
             <div className="not-prose mt-12">
                 <h3 className="text-2xl font-bold font-headline mt-8 mb-4">Technology Stack</h3>
-                <Card>
-                    <CardContent className="p-6">
-                        <p className="text-muted-foreground">Microsoft Dynamics AX 2012, Salesforce, FedEx REST APIs, JSON, HTTP(S), FedEx Developer Portal, Postman, Custom Integration Modules.</p>
-                    </CardContent>
-                </Card>
+                <p className="text-muted-foreground">Microsoft Dynamics AX 2012, Salesforce, FedEx REST APIs, JSON, HTTP(S), FedEx Developer Portal, Postman, Custom Integration Modules.</p>
             </div>
           </div>
           <CaseStudyCTA />
@@ -170,3 +166,5 @@ export default function CaseStudyPage() {
     </div>
   );
 }
+
+    
