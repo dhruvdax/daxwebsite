@@ -235,6 +235,13 @@ export const CASE_STUDIES = [
         summary: 'Developed and delivered a suite of custom financial reports in Microsoft Dynamics AX 2012 for a leading Agricultural supplies manufacturer, addressing gaps in standard reporting capabilities.',
         details: 'Developed and delivered a suite of custom financial reports in Microsoft Dynamics AX 2012 for a leading Agricultural supplies manufacturer. The standard out-of-the-box reports in AX 2012 did not fully meet the organization’s business and statutory reporting needs, especially for consolidated and region-specific financial analysis.',
         imageId: 'case-study-ax-2012-reports'
+    },
+    {
+        title: 'Resolved Inventory Costing Inaccuracies in Microsoft Dynamics AX 2012',
+        slug: 'inventory-costing-inaccuracies-ax-2012',
+        summary: 'Resolved inventory costing inaccuracies in Microsoft Dynamics AX 2012 for a leading agricultural supplies manufacturer, addressing data integrity issues and enabling accurate warehouse-level cost tracking.',
+        details: 'Resolved inventory costing inaccuracies in Microsoft Dynamics AX 2012 for a leading Agricultural supplies manufacturer. The organization faced significant challenges due to historical data fixes made directly in SQL, which caused discrepancies in cost valuation. Additionally, costs were not being tracked at the warehouse level, delaying month-end close and preventing accurate item cost reporting.',
+        imageId: 'case-study-inventory-costing-ax-2012'
     }
 ];
 
@@ -513,6 +520,7 @@ export const OPENINGS = [
     
 
     
+
 
 
 
