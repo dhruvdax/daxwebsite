@@ -549,7 +549,7 @@
     {
       "id": "case-study-paid-to-date",
       "description": "An abstract image representing payment tracking and financial visibility.",
-      "imageUrl": "https://images.unsplash.com/photo-1647891952732-7691f3b61394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYXltZW50JTIwdmlzaWJpbGl0eXxlbnwwfHx8fDE3Njk1OTIxMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/case-studies/paid-to-date-project-level-payment-visibility.jpeg",
       "imageHint": "payment visibility"
     }
   ]
