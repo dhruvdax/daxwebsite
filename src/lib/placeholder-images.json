@@ -521,6 +521,30 @@
       "description": "Abstract image representing API integration and data synchronization between systems.",
       "imageUrl": "/case-studies/erp–crm-integration-and-fedex-api-modernization.jpeg",
       "imageHint": "API integration"
+    },
+    {
+      "id": "case-study-hr-erp-payroll",
+      "description": "An abstract image representing HR and Payroll integration.",
+      "imageUrl": "https://picsum.photos/seed/hrpayroll/600/400",
+      "imageHint": "HR payroll"
+    },
+    {
+      "id": "case-study-funding-control",
+      "description": "An abstract image representing financial control and funding.",
+      "imageUrl": "https://images.unsplash.com/photo-1723705027411-9bfc3c99c2e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaW5hbmNpYWwlMjBjb250cm9sfGVufDB8fHx8MTc2OTU5MTM3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial control"
+    },
+    {
+      "id": "case-study-pto-automation",
+      "description": "An abstract image representing PTO automation and calendar management.",
+      "imageUrl": "https://picsum.photos/seed/pto/600/400",
+      "imageHint": "PTO automation"
+    },
+    {
+      "id": "case-study-payment-visibility",
+      "description": "An abstract image representing payment tracking and financial visibility.",
+      "imageUrl": "https://images.unsplash.com/photo-1757301714935-c8127a21abc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXltZW50JTIwdHJhY2tpbmd8ZW58MHx8fHwxNzY5NTkxMzc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "payment tracking"
     }
   ]
 }

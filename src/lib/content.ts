@@ -260,7 +260,7 @@ export const CASE_STUDIES = [
     {
         title: 'AP Automation Integration with Medius and Microsoft Dynamics AX',
         slug: 'ap-automation-medius-ax-integration',
-        summary: 'Migrated Accounts Payable automation from a legacy TAP solution to Medius, with a secure, bidirectional integration with Microsoft Dynamics AX 2012.',
+        summary: 'Implemented a secure, scalable AP automation integration with Medius and Microsoft Dynamics AX 2012, improving efficiency, accuracy, and processing speed while supporting high-volume monthly AP operations.',
         details: 'Migrated Accounts Payable automation from a legacy TAP solution to Medius for a leading agricultural supplies manufacturer. The project required a secure, bidirectional integration between Medius AP and Microsoft Dynamics AX 2012 to support end-to-end AP processing.',
         imageId: 'case-study-ap-automation-medius'
     },
@@ -270,6 +270,34 @@ export const CASE_STUDIES = [
         summary: 'Integrated Microsoft Dynamics AX 2012 with a third-party logistics (3PL) managed Warehouse Management System for a key distribution center.',
         details: 'Integrated Microsoft Dynamics AX 2012 with a third-party logistics (3PL) managed Warehouse Management System for a key distribution center in Cambridge. Although operated by a 3PL partner, the warehouse remained an active fulfillment hub requiring tight ERP integration.',
         imageId: 'case-study-3pl-warehouse-ax'
+    },
+    {
+        title: 'HR–ERP Payroll Integration',
+        slug: 'hr-erp-payroll-integration',
+        summary: 'DAX implemented a seamless integration between BambooHR and D365FO, enabling payroll calculations to be handled externally while maintaining accurate financial postings within the ERP.',
+        details: 'A leading technology services company required a reliable payroll solution after Microsoft discontinued native payroll functionality in Dynamics 365 Finance & Operations (D365FO). The organization needed to continue payroll processing without disrupting financial postings, compliance, or reporting workflows. DAX Software Solutions implemented a seamless integration between BambooHR and D365FO, enabling payroll calculations to be handled externally while maintaining accurate financial postings within the ERP.',
+        imageId: 'case-study-hr-erp-payroll'
+    },
+    {
+        title: 'Contract-Level Funding Control Enhancement',
+        slug: 'contract-level-funding-control-enhancement',
+        summary: 'DAX delivered a custom enhancement to D365FO to enable funding limit tracking at the Project Contract level, improving financial visibility and control.',
+        details: 'The client managed complex project portfolios funded at the contract level but faced limitations in standard D365FO, which only supports budget tracking at the individual project level. This reduced financial visibility and increased the risk of budget overruns. DAX delivered a custom enhancement to enable funding limit tracking at the Project Contract level.',
+        imageId: 'case-study-funding-control'
+    },
+    {
+        title: 'Paid Time Off (PTO) Automation and Payroll Integration',
+        slug: 'pto-automation-payroll-integration',
+        summary: 'DAX designed and implemented a fully integrated PTO management solution within D365FO, from request and approval to automated timesheet and payroll integration.',
+        details: 'The organization required an automated PTO solution tightly integrated with project approvals, timesheets, and payroll. Standard D365FO capabilities did not support end-to-end PTO workflows with automated reversals and payroll alignment. DAX designed and implemented a fully integrated PTO management solution within D365FO.',
+        imageId: 'case-study-pto-automation'
+    },
+    {
+        title: 'Project-Level Payment Visibility Enhancement',
+        slug: 'project-level-payment-visibility-enhancement',
+        summary: 'DAX developed a custom enhancement in D365FO enabling customer payments to be applied directly at the project level, improving cash flow tracking.',
+        details: 'The client required greater visibility into project-level cash flow. Standard D365FO functionality applied payments only to invoices, limiting insight into which projects were fully or partially settled. DAX developed a custom enhancement enabling customer payments to be applied directly at the project level.',
+        imageId: 'case-study-payment-visibility'
     }
 ];
 
@@ -548,6 +576,7 @@ export const OPENINGS = [
     
 
     
+
 
 
 
