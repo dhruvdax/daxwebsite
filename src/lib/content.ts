@@ -242,6 +242,13 @@ export const CASE_STUDIES = [
         summary: 'Resolved inventory costing inaccuracies in Microsoft Dynamics AX 2012 for a leading agricultural supplies manufacturer, addressing data integrity issues and enabling accurate warehouse-level cost tracking.',
         details: 'Resolved inventory costing inaccuracies in Microsoft Dynamics AX 2012 for a leading Agricultural supplies manufacturer. The organization faced significant challenges due to historical data fixes made directly in SQL, which caused discrepancies in cost valuation. Additionally, costs were not being tracked at the warehouse level, delaying month-end close and preventing accurate item cost reporting.',
         imageId: 'case-study-inventory-costing-ax-2012'
+    },
+    {
+        title: 'Multiple Legal Entities Implementation in AX 2012',
+        slug: 'multiple-legal-entities-ax-2012',
+        summary: 'DAX implemented multiple legal entities in AX 2012 to support a global manufacturer’s expansion, ensuring local compliance and streamlined intercompany transactions.',
+        details: 'Implemented multiple legal entities in Microsoft Dynamics AX 2012 for a leading agricultural supplies manufacturer to support expanding business operations. As the organization grew into new markets, additional entities were required to manage statutory compliance, financial reporting, and intercompany transactions.',
+        imageId: 'case-study-multiple-legal-entities-ax-2012'
     }
 ];
 
@@ -520,6 +527,7 @@ export const OPENINGS = [
     
 
     
+
 
 
 
