@@ -228,6 +228,13 @@ export const CASE_STUDIES = [
         summary: 'Implemented Microsoft Dynamics 365 Finance & Operations (D365FO) for a leading medical and recreational cannabis dispensary across six legal entities.',
         details: 'Implemented Microsoft Dynamics 365 Finance & Operations (D365FO) for a leading medical and recreational cannabis dispensary across six legal entities. The project required addressing complex inventory combinations involving item variants and ensuring manufacturing processes complied with strict government statutory regulations.',
         imageId: 'case-study-cannabis-dispensary'
+    },
+    {
+        title: 'Custom Financial Reports in Dynamics AX 2012',
+        slug: 'custom-financial-reports-ax-2012',
+        summary: 'Developed and delivered a suite of custom financial reports in Microsoft Dynamics AX 2012 for a leading Agricultural supplies manufacturer, addressing gaps in standard reporting capabilities.',
+        details: 'Developed and delivered a suite of custom financial reports in Microsoft Dynamics AX 2012 for a leading Agricultural supplies manufacturer. The standard out-of-the-box reports in AX 2012 did not fully meet the organization’s business and statutory reporting needs, especially for consolidated and region-specific financial analysis.',
+        imageId: 'case-study-ax-2012-reports'
     }
 ];
 
@@ -506,6 +513,7 @@ export const OPENINGS = [
     
 
     
+
 
 
 

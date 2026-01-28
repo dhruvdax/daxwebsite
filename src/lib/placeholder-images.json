@@ -459,32 +459,38 @@
     {
       "id": "case-study-custom-bank-payment",
       "description": "An abstract image showing a bank payment file being generated from a computer.",
-      "imageUrl": "/case-studies/custom-bank-payment-templates-in-dynamics-365-fo.jpeg",
+      "imageUrl": "public/case-studies/custom-bank-payment-templates-in-dynamics-365-fo.jpeg",
       "imageHint": "bank payment"
     },
     {
       "id": "case-study-custom-financial-reports",
       "description": "An abstract image showing financial reports and charts on a screen.",
-      "imageUrl": "/case-studies/custom-financial-reports-in-dynamics-365-fo.png",
+      "imageUrl": "public/case-studies/custom-financial-reports-in-dynamics-365-fo.png",
       "imageHint": "financial reports"
     },
     {
       "id": "case-study-custom-fixed-assets",
       "description": "An abstract image showing fixed assets like computers and machinery being tracked on a digital interface.",
-      "imageUrl": "/case-studies/custom-fixed-assets-solution-in-dynamics-365-fo.jpeg",
+      "imageUrl": "public/case-studies/custom-fixed-assets-solution-in-dynamics-365-fo.jpeg",
       "imageHint": "fixed assets tracking"
     },
     {
       "id": "case-study-multiple-legal-entities",
       "description": "A world map with highlighted countries and legal document icons, representing international compliance.",
-      "imageUrl": "/case-studies/multiple-legal-entities-implementation-in-dynamics-365-fo.jpeg",
+      "imageUrl": "public/case-studies/multiple-legal-entities-implementation-in-dynamics-365-fo.jpeg",
       "imageHint": "global compliance"
     },
     {
       "id": "case-study-cannabis-dispensary",
       "description": "A modern, clean cannabis dispensary interior with products on display.",
-      "imageUrl": "/case-studies/curaleaf-implementation-case-study.jpeg",
+      "imageUrl": "public/case-studies/curaleaf-implementation-case-study.jpeg",
       "imageHint": "cannabis dispensary"
+    },
+    {
+      "id": "case-study-ax-2012-reports",
+      "description": "An abstract image showing financial reports and charts on a screen for AX 2012.",
+      "imageUrl": "https://images.unsplash.com/photo-1758518729759-f580dc06770f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNpYWwlMjByZXBvcnRzfGVufDB8fHx8MTc2OTU3MjE4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial reports"
     }
   ]
 }
