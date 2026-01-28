@@ -42,7 +42,7 @@ export default function CaseStudyPage() {
       <section className="w-full py-12 md:py-20 lg:py-24 bg-accent text-accent-foreground">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <p className="font-semibold text-primary">Case Study</p>
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline mt-2 max-w-4xl mx-auto">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline mt-2 max-w-4xl mx-auto leading-snug">
             {study.title}
           </h1>
           <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-300">
