@@ -202,38 +202,10 @@ export const CASE_STUDIES = [
         imageId: 'case-study-custom-bank-payment'
     },
     {
-        title: 'Custom Financial Reports in D365FO',
-        slug: 'custom-financial-reports-d365fo',
-        summary: 'DAX developed a suite of custom financial reports in D365FO, enhancing visibility and supporting informed decision-making across entities.',
-        details: 'Developed and delivered a suite of custom financial reports in Microsoft D365FO for a Global Coffee and Tea Retailer. The standard out-of-the-box reports in D365FO did not fully meet the client’s business and statutory reporting needs, particularly for consolidated and region-specific financial analysis across multiple entities.',
-        imageId: 'case-study-custom-financial-reports'
-    },
-    {
-        title: 'Custom Fixed Assets Solution in D365FO',
-        slug: 'custom-fixed-assets-d365fo',
-        summary: 'DAX developed a custom Fixed Assets solution to manage assets by quantity, enhancing control and accuracy for a global retailer with numerous stores.',
-        details: 'Developed a custom Fixed Assets solution in Microsoft D365FO for a Global Coffee and Tea Retailer to manage assets on a quantity basis rather than relying solely on value-based tracking. Given the client’s franchise and company-owned store model with a large number of retail locations, the standard fixed asset functionality was insufficient. The client required depreciation, transfers, and disposals to be managed per quantity and per location to accurately reflect asset usage across stores.',
-        imageId: 'case-study-custom-fixed-assets'
-    },
-    {
-        title: 'Multiple Legal Entities Implementation in D365FO',
-        slug: 'multiple-legal-entities-d365fo',
-        summary: 'DAX implemented multiple legal entities in D365FO to support a global retailer’s expansion, ensuring local compliance and streamlined intercompany transactions.',
-        details: 'Implemented multiple legal entities in Microsoft D365FO for a Global Coffee and Tea Retailer to support expanding international operations. As the client entered new markets, additional legal entities were required to manage statutory compliance, financial reporting, and intercompany transactions across regions.',
-        imageId: 'case-study-multiple-legal-entities'
-    },
-    {
-        title: 'D365FO Implementation for a Cannabis Dispensary',
-        slug: 'd365fo-cannabis-dispensary',
-        summary: 'Implemented Microsoft D365FO for a leading medical and recreational cannabis dispensary across six legal entities.',
-        details: 'Implemented Microsoft D365FO for a leading medical and recreational cannabis dispensary across six legal entities. The project required addressing complex inventory combinations involving item variants and ensuring manufacturing processes complied with strict government statutory regulations.',
-        imageId: 'case-study-cannabis-dispensary'
-    },
-    {
         title: 'Custom financial reports in Microsoft Dynamics AX 2012 for a leading Agricultural Supplies Manufacturer',
         slug: 'custom-financial-reports-ax-2012',
-        summary: 'Developed and delivered a suite of custom financial reports in Microsoft Dynamics AX 2012 for a leading Agricultural supplies manufacturer, addressing gaps in standard reporting capabilities.',
-        details: 'Developed and delivered a suite of custom financial reports in Microsoft Dynamics AX 2012 for a leading Agricultural supplies manufacturer. The standard out-of-the-box reports in AX 2012 did not fully meet the organization’s business and statutory reporting needs, especially for consolidated and region-specific financial analysis.',
+        summary: 'Developed and delivered a suite of custom financial reports in Microsoft Dynamics AX 2012 for a leading agricultural supplies manufacturer, addressing gaps in standard reporting capabilities.',
+        details: 'Developed and delivered a suite of custom financial reports in Microsoft Dynamics AX 2012 for a leading agricultural supplies manufacturer. The standard out-of-the-box reports in AX 2012 did not fully meet the organization’s business and statutory reporting needs, especially for consolidated and region-specific financial analysis.',
         imageId: 'case-study-ax-2012-reports'
     },
     {
@@ -286,19 +258,26 @@ export const CASE_STUDIES = [
         imageId: 'case-study-funding-control'
     },
     {
-        title: 'Paid Time Off (PTO) Automation and Payroll Integration',
-        slug: 'pto-automation-payroll-integration',
-        summary: 'DAX designed and implemented a fully integrated PTO management solution within D365FO, from request and approval to automated timesheet and payroll integration.',
-        details: 'The organization required an automated PTO solution tightly integrated with project approvals, timesheets, and payroll. Standard D365FO capabilities did not support end-to-end PTO workflows with automated reversals and payroll alignment. DAX designed and implemented a fully integrated PTO management solution within D365FO.',
-        imageId: 'case-study-pto-automation'
-    },
-    {
         title: 'Project-Level Payment Visibility Enhancement',
         slug: 'project-level-payment-visibility-enhancement',
         summary: 'DAX developed a custom enhancement in D365FO enabling customer payments to be applied directly at the project level, improving cash flow tracking.',
         details: 'The client required greater visibility into project-level cash flow. Standard D365FO functionality applied payments only to invoices, limiting insight into which projects were fully or partially settled. DAX developed a custom enhancement enabling customer payments to be applied directly at the project level.',
         imageId: 'case-study-payment-visibility'
-    }
+    },
+    {
+        title: 'Paid Time Off (PTO) Management Automation',
+        slug: 'pto-management-automation',
+        summary: 'DAX designed and implemented a custom PTO management solution to streamline leave requests, approvals, and payroll impact while maintaining data accuracy and auditability.',
+        details: 'The organization required a structured and automated Paid Time Off (PTO) process integrated with project approvals, timesheets, and payroll. Standard Microsoft Dynamics 365 Finance & Operations (D365FO) functionality did not support project-manager-driven PTO approvals, automated timesheet generation, or direct payroll alignment. DAX Software Solutions designed and implemented a custom PTO management solution to streamline leave requests, approvals, and payroll impact while maintaining data accuracy and auditability.',
+        imageId: 'case-study-pto-management'
+    },
+    {
+        title: 'Paid-to-Date (Project-Level Payment Visibility)',
+        slug: 'paid-to-date-payment-visibility',
+        summary: 'DAX developed a custom enhancement allowing customer payments to be directly associated with projects referenced in invoices.',
+        details: 'The organization required improved visibility into project-level cash flow. Standard D365FO functionality applies customer payments only at the invoice level, making it difficult for finance teams to understand which projects were fully or partially settled. DAX Software Solutions developed a custom enhancement allowing customer payments to be directly associated with projects referenced in invoices.',
+        imageId: 'case-study-paid-to-date'
+    },
 ];
 
 export const METRICS = [
@@ -576,6 +555,7 @@ export const OPENINGS = [
     
 
     
+
 
 
 

@@ -535,16 +535,22 @@
       "imageHint": "financial control"
     },
     {
-      "id": "case-study-pto-automation",
-      "description": "An abstract image representing PTO automation and calendar management.",
-      "imageUrl": "https://picsum.photos/seed/pto/600/400",
-      "imageHint": "PTO automation"
-    },
-    {
       "id": "case-study-payment-visibility",
       "description": "An abstract image representing payment tracking and financial visibility.",
       "imageUrl": "https://images.unsplash.com/photo-1757301714935-c8127a21abc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXltZW50JTIwdHJhY2tpbmd8ZW58MHx8fHwxNzY5NTkxMzc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "payment tracking"
+    },
+    {
+      "id": "case-study-pto-management",
+      "description": "An abstract image representing PTO Management automation and calendar management.",
+      "imageUrl": "https://picsum.photos/seed/ptomanagement/600/400",
+      "imageHint": "PTO management"
+    },
+    {
+      "id": "case-study-paid-to-date",
+      "description": "An abstract image representing payment tracking and financial visibility.",
+      "imageUrl": "https://images.unsplash.com/photo-1647891952732-7691f3b61394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYXltZW50JTIwdmlzaWJpbGl0eXxlbnwwfHx8fDE3Njk1OTIxMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "payment visibility"
     }
   ]
 }
