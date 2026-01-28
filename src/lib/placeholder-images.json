@@ -488,37 +488,37 @@
     },
     {
       "id": "case-study-ax-2012-reports",
-      "description": "An abstract image showing financial reports and charts on a screen for AX 2012.",
+      "description": "Custom financial reports in Microsoft Dynamics AX 2012.",
       "imageUrl": "/case-studies/custom-financial-reports-in-microsoft-dynamics-ax-2012-for-leading-agricultural-supplies-manufacturer.jpeg",
       "imageHint": "financial reports"
     },
     {
       "id": "case-study-inventory-costing-ax-2012",
-      "description": "An abstract image showing inventory and costing analysis on a screen for AX 2012.",
+      "description": "Inventory costing inaccuracies resolved in Microsoft Dynamics AX 2012.",
       "imageUrl": "/case-studies/resolved-inventory-costing-inaccuracies-in-microsoft-dynamics-ax-2012-for-a-leading-agricultural-supplies-manufacturer.jpeg",
       "imageHint": "warehouse inventory"
     },
     {
       "id": "case-study-multiple-legal-entities-ax-2012",
-      "description": "An abstract image showing a world map with different legal entities connected.",
+      "description": "Multiple legal entities implemented in Microsoft Dynamics AX 2012.",
       "imageUrl": "/case-studies/implemented-multiple-legal-entities-in-microsoft-dynamics-ax-2012-for-a-leading-agricultural-supplies-manufacturer.jpeg",
       "imageHint": "global business"
     },
     {
       "id": "case-study-ap-automation-medius",
-      "description": "An automated workflow diagram for Accounts Payable.",
+      "description": "AP automation integration with Medius and Microsoft Dynamics AX.",
       "imageUrl": "/case-studies/ap-automation-integration-with-medius-and-microsoft-dynamics-ax.jpeg",
       "imageHint": "automation workflow"
     },
     {
       "id": "case-study-3pl-warehouse-ax",
-      "description": "A modern warehouse with workers and conveyor belts.",
+      "description": "3PL warehouse integration with Microsoft Dynamics AX.",
       "imageUrl": "/case-studies/3pl-warehouse-integration-with-microsoft-dynamics-ax.jpeg",
       "imageHint": "warehouse logistics"
     },
     {
       "id": "case-study-erp-crm-fedex",
-      "description": "Abstract image representing API integration and data synchronization between systems.",
+      "description": "ERP–CRM integration and FedEx API modernization.",
       "imageUrl": "/case-studies/erp–crm-integration-and-fedex-api-modernization.jpeg",
       "imageHint": "API integration"
     },
@@ -536,8 +536,8 @@
     },
     {
       "id": "case-study-payment-visibility",
-      "description": "An abstract image representing payment tracking and financial visibility.",
-      "imageUrl": "https://images.unsplash.com/photo-1757301714935-c8127a21abc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXltZW50JTIwdHJhY2tpbmd8ZW58MHx8fHwxNzY5NTkxMzc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Project-Level Payment Visibility Enhancement.",
+      "imageUrl": "/case-studies/project-level-payment-visibility-enhancement.jpeg",
       "imageHint": "payment tracking"
     },
     {
