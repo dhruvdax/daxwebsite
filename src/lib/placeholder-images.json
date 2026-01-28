@@ -63,7 +63,7 @@
     {
       "id": "case-study-10",
       "description": "A factory floor with workers in the cannabis industry.",
-      "imageUrl": "/case-studies/finance-operations-for-cannabis-company.jpeg?v=6",
+      "imageUrl": "/case-studies/curaleaf-implementation-case-study.jpeg",
       "imageHint": "cannabis factory"
     },
     {
@@ -513,7 +513,7 @@
     {
       "id": "case-study-3pl-warehouse-ax",
       "description": "A modern warehouse with workers and conveyor belts.",
-      "imageUrl": "https://images.unsplash.com/photo-1619070284836-e850273d69ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3YXJlaG91c2UlMjBsb2dpc3RpY3N8ZW58MHx8fHwxNzY5NTIzNTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/case-studies/3pl-warehouse-integration-with-microsoft-dynamics-ax.jpeg",
       "imageHint": "warehouse logistics"
     },
     {
