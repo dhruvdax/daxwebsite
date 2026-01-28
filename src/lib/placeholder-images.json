@@ -507,7 +507,7 @@
     {
       "id": "case-study-ap-automation-medius",
       "description": "An automated workflow diagram for Accounts Payable.",
-      "imageUrl": "https://images.unsplash.com/photo-1759752393975-7ca7b302fcc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhdXRvbWF0aW9uJTIwd29ya2Zsb3d8ZW58MHx8fHwxNzY5NTg3NTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/case-studies/ap-automation-integration-with-medius-and-microsoft-dynamics-ax.jpeg",
       "imageHint": "automation workflow"
     },
     {
