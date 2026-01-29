@@ -494,7 +494,7 @@
     },
     {
       "id": "case-study-inventory-costing-ax-2012",
-      "description": "Inventory costing inaccuracies resolved in Microsoft Dynamics AX 2012.",
+      "description": "Resolved inventory costing inaccuracies in Microsoft Dynamics AX 2012.",
       "imageUrl": "/case-studies/resolved-inventory-costing-inaccuracies-in-microsoft-dynamics-ax-2012-for-a-leading-agricultural-supplies-manufacturer.jpeg",
       "imageHint": "warehouse inventory"
     },
@@ -551,6 +551,12 @@
       "description": "An abstract image representing payment tracking and financial visibility.",
       "imageUrl": "/case-studies/paid-to-date-project-level-payment-visibility.jpeg",
       "imageHint": "payment visibility"
+    },
+    {
+      "id": "thank-you",
+      "description": "Illustration for the thank you page.",
+      "imageUrl": "https://images.unsplash.com/photo-1758810741680-c79f3ee96ad0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0aGFuayUyMHlvdSUyMG1lc3NhZ2V8ZW58MHx8fHwxNzY5NzA0NjEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "thank you message"
     }
   ]
 }
