@@ -2,7 +2,6 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { buildMetadata } from '../seo';
 
 export const metadata = buildMetadata({
@@ -16,7 +15,10 @@ export const metadata = buildMetadata({
 });
 
 export default function ThankYouPage() {
-    const thankYouImage = PlaceHolderImages.find(img => img.id === 'thank-you');
+    const thankYouImage = {
+        imageUrl: "/thank-you.svg",
+        description: "Thank you illustration"
+    };
 
     return (
         <div className="bg-accent text-accent-foreground flex-grow flex flex-col items-center justify-center text-center p-4 py-24">
@@ -29,7 +31,6 @@ export default function ThankYouPage() {
                             width={350}
                             height={250}
                             className="mx-auto"
-                            data-ai-hint={thankYouImage.imageHint}
                         />
                     </div>
                 ) : (
