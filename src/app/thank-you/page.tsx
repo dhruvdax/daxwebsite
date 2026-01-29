@@ -17,7 +17,7 @@ export const metadata = buildMetadata({
 export default function ThankYouPage() {
     const thankYouImage = {
         imageUrl: "/thank-you.svg",
-        description: "Thank you illustration"
+        description: "Thank you"
     };
 
     return (
