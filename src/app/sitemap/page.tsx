@@ -14,7 +14,7 @@ const otherMainLinks = [
     { href: '/', label: 'Home' },
     { href: '/about-us', label: 'About Us' },
     { href: '/team', label: 'Our Team' },
-    { href: '/contact', label: 'Contact Us' },
+    { href: '/contact-us', label: 'Contact Us' },
 ];
 
 export default function SitemapPage() {

@@ -401,7 +401,7 @@ export default function GovernmentClientPage() {
                 </div>
                 <div className="mx-auto w-full max-w-sm space-y-2">
                     <Button asChild size="lg" className="w-full">
-                        <Link href="/contact">TALK TO OUR GOVERNMENT TEAM</Link>
+                        <Link href="/contact-us">TALK TO OUR GOVERNMENT TEAM</Link>
                     </Button>
                 </div>
             </div>

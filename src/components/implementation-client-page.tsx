@@ -168,7 +168,7 @@ export default function ImplementationClientPage() {
                 Looking for support with ERP Implementation?
             </h2>
             <Button asChild size="lg" className="mt-6">
-                <Link href="/contact">TALK TO US <ArrowRight /></Link>
+                <Link href="/contact-us">TALK TO US <ArrowRight /></Link>
             </Button>
         </div>
        </section>

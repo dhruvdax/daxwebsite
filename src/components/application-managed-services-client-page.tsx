@@ -122,7 +122,7 @@ export default function ApplicationManagedServicesClientPage() {
         <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold font-headline">Looking for some help on existing Dynamics 365 Solution?</h2>
             <Button asChild size="lg" className="mt-6">
-                <Link href="/contact">SCHEDULE AN ASSESSMENT CALL</Link>
+                <Link href="/contact-us">SCHEDULE AN ASSESSMENT CALL</Link>
             </Button>
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function ApplicationManagedServicesClientPage() {
         <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold font-headline text-accent">Ready for choosing us as your application managed support partner?</h2>
             <Button asChild size="lg" className="mt-6">
-                <Link href="/contact">Let's Connect</Link>
+                <Link href="/contact-us">Let's Connect</Link>
             </Button>
         </div>
       </section>
