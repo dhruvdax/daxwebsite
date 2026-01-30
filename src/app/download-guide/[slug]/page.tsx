@@ -1,9 +1,8 @@
 
-'use client';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
-import { useParams, notFound } from 'next/navigation';
-import React, { useEffect, use } from 'react';
+import { notFound } from 'next/navigation';
+import DownloadGuideForm from '@/components/download-guide-form';
 
 const CHAPTER_DATA = [
     { 
@@ -64,44 +63,19 @@ const CHAPTER_DATA = [
     },
 ];
 
-export default function DownloadGuidePage() {
-  const params = useParams();
-  const slug = params.slug as string;
-  const chapter = CHAPTER_DATA.find((c) => c.id === slug);
-  const image = PlaceHolderImages.find(img => img.id === chapter?.imageId);
+type PageProps = {
+  params: { slug: string };
+};
 
-  useEffect(() => {
-    const scriptId = 'dynamics-form-loader';
-    let script = document.getElementById(scriptId) as HTMLScriptElement | null;
-  
-    const loadForm = () => {
-       // @ts-ignore
-      if (window.MsCrmMkt && typeof window.MsCrmMkt.MsCrmFormLoader === 'object') {
-         // @ts-ignore
-        window.MsCrmMkt.MsCrmFormLoader.on('afterFormLoad', () => {
-          // Form is loaded
-        });
-      }
-    };
-  
-    if (!script) {
-      script = document.createElement('script');
-      script.id = scriptId;
-      script.src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js';
-      script.async = true;
-      script.onload = loadForm;
-      document.body.appendChild(script);
-    } else {
-        loadForm();
-    }
-    
-    // The cleanup function is now intentionally left empty to prevent script removal
-    return () => {};
-  }, [slug]);
+export default function DownloadGuidePage({ params }: PageProps) {
+  const slug = params.slug;
+  const chapter = CHAPTER_DATA.find((c) => c.id === slug);
 
   if (!chapter) {
     notFound();
   }
+
+  const image = PlaceHolderImages.find(img => img.id === chapter.imageId);
 
   return (
     <div className="bg-background">
@@ -113,11 +87,7 @@ export default function DownloadGuidePage() {
               <span className="text-primary">{chapter.title}</span>
             </h1>
             <div id="dax-form-wrapper">
-              <div
-                data-form-id={chapter.formId}
-                data-form-api-url="https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms"
-                data-cached-form-url={chapter.cachedFormUrl}
-              ></div>
+              <DownloadGuideForm chapter={chapter} />
             </div>
           </div>
           <div className="md:col-span-4 flex items-center justify-center">

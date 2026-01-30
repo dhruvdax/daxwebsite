@@ -1,7 +1,6 @@
 
 'use client';
 
-import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { CASE_STUDIES } from '@/lib/content';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -20,7 +19,9 @@ export default function CaseStudySlugClientPage({ slug }: { slug: string }) {
   const study = CASE_STUDIES.find((cs) => cs.slug === slug);
 
   if (!study) {
-    notFound();
+    // The parent Server Component handles the notFound case.
+    // This return is a safeguard.
+    return null;
   }
 
   // Find the master image from the placeholder list

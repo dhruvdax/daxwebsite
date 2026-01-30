@@ -3,8 +3,13 @@ import { CASE_STUDIES } from '@/lib/content';
 import { buildMetadata } from '@/app/seo';
 import type { Metadata } from 'next';
 import CaseStudySlugClientPage from '@/components/case-study-slug-client-page';
+import { notFound } from 'next/navigation';
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+type PageProps = {
+  params: { slug: string };
+};
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const study = CASE_STUDIES.find((cs) => cs.slug === params.slug);
 
   if (!study) {
@@ -22,6 +27,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   });
 }
 
-export default function CaseStudyPage({ params }: { params: { slug: string } }) {
+export default function CaseStudyPage({ params }: PageProps) {
+    const study = CASE_STUDIES.find((cs) => cs.slug === params.slug);
+
+    if (!study) {
+        notFound();
+    }
+    
     return <CaseStudySlugClientPage slug={params.slug} />;
 }

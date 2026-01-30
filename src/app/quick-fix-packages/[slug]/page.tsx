@@ -1,9 +1,7 @@
 
-'use client';
+import { notFound } from 'next/navigation';
+import QuickFixPackageForm from '@/components/quick-fix-package-form';
 
-import { useParams, notFound } from 'next/navigation';
-import { useEffect } from 'react';
-import Image from 'next/image';
 
 const PACKAGE_DATA = [
     { 
@@ -56,38 +54,13 @@ const PACKAGE_DATA = [
     },
 ];
 
-export default function QuickFixPackageRequestPage() {
-    const params = useParams();
-    const slug = params.slug as string;
-    const pkg = PACKAGE_DATA.find((p) => p.id === slug);
+type PageProps = {
+  params: { slug: string };
+};
 
-    useEffect(() => {
-        const scriptId = 'dynamics-form-loader';
-        let script = document.getElementById(scriptId) as HTMLScriptElement | null;
-    
-        const loadForm = () => {
-           // @ts-ignore
-          if (window.MsCrmMkt && typeof window.MsCrmMkt.MsCrmFormLoader === 'object') {
-             // @ts-ignore
-            window.MsCrmMkt.MsCrmFormLoader.on('afterFormLoad', () => {
-              // Form is loaded
-            });
-          }
-        };
-    
-        if (!script) {
-          script = document.createElement('script');
-          script.id = scriptId;
-          script.src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/usa/FormLoader/FormLoader.bundle.js';
-          script.async = true;
-          script.onload = loadForm;
-          document.body.appendChild(script);
-        } else {
-            loadForm();
-        }
-        
-        return () => {};
-      }, [slug]);
+export default function QuickFixPackageRequestPage({ params }: PageProps) {
+    const slug = params.slug;
+    const pkg = PACKAGE_DATA.find((p) => p.id === slug);
 
     if (!pkg) {
         notFound();
@@ -102,11 +75,7 @@ export default function QuickFixPackageRequestPage() {
                         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline mb-8 text-primary">
                             {pkg.title}
                         </h1>
-                        <div
-                            data-form-id={pkg.formId}
-                            data-form-api-url='https://public-usa.mkt.dynamics.com/api/v1.0/orgs/0f5b728c-83ca-ed11-aece-000d3a323719/landingpageforms'
-                            data-cached-form-url={pkg.cachedFormUrl}
-                        ></div>
+                        <QuickFixPackageForm pkg={pkg} />
                     </div>
                 </div>
             </section>
