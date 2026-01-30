@@ -1,7 +1,5 @@
-
 import { notFound } from 'next/navigation';
 import QuickFixPackageForm from '@/components/quick-fix-package-form';
-
 
 const PACKAGE_DATA = [
     { 
@@ -54,12 +52,16 @@ const PACKAGE_DATA = [
     },
 ];
 
+// FIX: Change params to a Promise for Next.js 15
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function QuickFixPackageRequestPage({ params }: PageProps) {
-    const slug = params.slug;
+// FIX: Make the component async
+export default async function QuickFixPackageRequestPage(props: PageProps) {
+    // FIX: Await the params
+    const { slug } = await props.params;
+    
     const pkg = PACKAGE_DATA.find((p) => p.id === slug);
 
     if (!pkg) {

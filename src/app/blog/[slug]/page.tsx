@@ -1,4 +1,3 @@
-
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -7,30 +6,32 @@ interface Post {
   slug: string;
   title: { rendered: string };
   content: { rendered: string };
-  // Add other fields as necessary from your API response
 }
 
+// FIX: params must be a Promise in Next.js 15
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 async function getPost(slug: string): Promise<Post | null> {
   try {
     const res = await fetch(
       `https://blog.daxsws.com/wp-json/wp/v2/posts?slug=${encodeURIComponent(slug)}&_embed=1`,
-      { next: { revalidate: 600 } } // Revalidate every 10 minutes
+      { next: { revalidate: 600 } } 
     );
 
     if (!res.ok) return null;
     const posts = await res.json();
-    return posts[0] || null; // The endpoint returns an array
+    return posts[0] || null;
   } catch (error) {
     console.error("Failed to fetch post:", error);
     return null;
   }
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+// FIX: Destructure props and await params
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const params = await props.params;
   const post = await getPost(params.slug);
 
   if (!post) {
@@ -41,11 +42,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: post.title.rendered,
-    // You can add more metadata here, like a description from an excerpt if available
   };
 }
 
-export default async function BlogPostPage({ params }: PageProps) {
+// FIX: Destructure props and await params
+export default async function BlogPostPage(props: PageProps) {
+  const params = await props.params;
   const post = await getPost(params.slug);
 
   if (!post) {

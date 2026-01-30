@@ -1,18 +1,19 @@
-
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 import { buildMetadata } from '../seo';
 
-export const metadata = buildMetadata({
-  title: "Thank You | DAX Software Solutions",
-  description: "Thank you for contacting us. We have received your message and will be in touch shortly.",
-  canonicalPath: "/thank-you",
+export const metadata = {
+  ...buildMetadata({
+    title: "Thank You | DAX Software Solutions",
+    description: "Thank you for contacting us. We have received your message and will be in touch shortly.",
+    canonicalPath: "/thank-you",
+  }),
   robots: {
     index: false,
     follow: false,
   }
-});
+};
 
 export default function ThankYouPage() {
     const thankYouImage = {

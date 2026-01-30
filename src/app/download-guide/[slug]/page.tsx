@@ -1,4 +1,3 @@
-
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -63,12 +62,16 @@ const CHAPTER_DATA = [
     },
 ];
 
+// FIX: Change to Promise for Next.js 15
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function DownloadGuidePage({ params }: PageProps) {
-  const slug = params.slug;
+// FIX: Change to async function
+export default async function DownloadGuidePage(props: PageProps) {
+  // FIX: Await the params
+  const { slug } = await props.params;
+  
   const chapter = CHAPTER_DATA.find((c) => c.id === slug);
 
   if (!chapter) {
