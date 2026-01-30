@@ -1,6 +1,6 @@
 'use client';
 
-import { useParams, notFound } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { CASE_STUDIES } from '@/lib/content';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -16,8 +16,7 @@ const CaseStudyContent = ({ details }: { details: string }) => (
 
 
 export default function CaseStudyPage() {
-  const params = useParams();
-  const slug = params.slug as string;
+  const slug = 'stabilization-hydroponics';
   const study = CASE_STUDIES.find((cs) => cs.slug === slug);
 
   if (!study) {

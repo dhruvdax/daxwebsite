@@ -25,6 +25,12 @@ interface Post {
     };
 }
 
+interface BlogPostPageProps {
+  params: {
+    slug: string;
+  };
+}
+
 async function getPost(slug: string): Promise<Post | null> {
     try {
         const res = await fetch(`https://blog.daxsws.com/wp-json/wp/v2/posts?slug=${slug}&_embed=1`, {
@@ -48,7 +54,7 @@ async function getPost(slug: string): Promise<Post | null> {
     }
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const post = await getPost(params.slug);
 
   if (!post) {
@@ -71,7 +77,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
     const post = await getPost(params.slug);
 
     if (!post) {
