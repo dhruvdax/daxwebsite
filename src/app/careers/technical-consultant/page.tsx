@@ -3,6 +3,7 @@ import CareerDetailPageClient from '@/components/career-detail-page-client';
 import { OPENINGS } from '@/lib/content';
 import { buildMetadata } from '@/app/seo';
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 const job = OPENINGS.find(o => o.slug === 'technical-consultant');
 
@@ -22,5 +23,8 @@ export function generateMetadata(): Metadata {
 }
 
 export default function CareerDetailPage() {
-    return <CareerDetailPageClient slug="technical-consultant" />;
+    if (!job) {
+        notFound();
+    }
+    return <CareerDetailPageClient job={job} />;
 }

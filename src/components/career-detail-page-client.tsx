@@ -3,16 +3,17 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import JobApplicationForm from '@/components/job-application-form';
-import { OPENINGS } from '@/lib/content';
-import { notFound } from 'next/navigation';
 
-export default function CareerDetailPageClient({ slug }: { slug: string }) {
-    const job = OPENINGS.find(o => o.slug === slug);
+interface JobOpening {
+    title: string;
+    slug: string;
+    description: string;
+    location: string;
+    type: string;
+    fullDescription: string;
+}
 
-    if (!job) {
-        notFound();
-    }
-
+export default function CareerDetailPageClient({ job }: { job: JobOpening }) {
     const scrollToForm = () => {
         document.getElementById('apply-form')?.scrollIntoView({ behavior: 'smooth' });
     }
