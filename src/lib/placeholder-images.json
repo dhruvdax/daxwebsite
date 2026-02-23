@@ -551,6 +551,12 @@
       "description": "An abstract image representing payment tracking and financial visibility.",
       "imageUrl": "public/case-studies/paid-to-date-project-level-payment-visibility.jpeg",
       "imageHint": "payment visibility"
+    },
+    {
+      "id": "aonflow-integration",
+      "description": "AonFlow logo on a digital background.",
+      "imageUrl": "https://picsum.photos/seed/aonflow/550/350",
+      "imageHint": "AonFlow logo"
     }
   ]
 }

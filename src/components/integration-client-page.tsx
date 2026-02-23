@@ -1,4 +1,3 @@
-
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -41,6 +40,18 @@ const INTEGRATION_PLATFORMS = [
       'Automated workflows and business process orchestration.',
       'Real-time data synchronization and updates.',
       'Built-in error handling and exception management.',
+    ],
+  },
+  {
+    title: 'Aonflow',
+    imageId: 'aonflow-integration',
+    features: [
+      'No-code/low-code integration and automation platform designed for modern ERP, CRM, and cloud ecosystems.',
+      'Pre-built connectors and integration templates for Dynamics 365, Salesforce, QuickBooks, HubSpot, WooCommerce, and other business applications.',
+      'Visual workflow builder for fast configuration of data mappings and business logic without custom code.',
+      'Near real-time data synchronization across systems with configurable validation rules.',
+      'Centralized monitoring dashboard with alerts, logging, and exception handling.',
+      'Scalable architecture supporting growing transaction volumes and evolving business processes.',
     ],
   },
   {
