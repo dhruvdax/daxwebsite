@@ -501,43 +501,43 @@
     {
       "id": "case-study-multiple-legal-entities-ax-2012",
       "description": "Multiple legal entities implemented in Microsoft Dynamics AX 2012.",
-      "imageUrl": "public/case-studies/implemented-multiple-legal-entities-in-microsoft-dynamics-ax-2012-for-a-leading-agricultural-supplies-manufacturer.jpeg",
+      "imageUrl": "/case-studies/implemented-multiple-legal-entities-in-microsoft-dynamics-ax-2012-for-a-leading-agricultural-supplies-manufacturer.jpeg",
       "imageHint": "global business"
     },
     {
       "id": "case-study-ap-automation-medius",
       "description": "AP automation integration with Medius and Microsoft Dynamics AX.",
-      "imageUrl": "public/case-studies/ap-automation-integration-with-medius-and-microsoft-dynamics-ax.jpeg",
+      "imageUrl": "/case-studies/ap-automation-integration-with-medius-and-microsoft-dynamics-ax.jpeg",
       "imageHint": "automation workflow"
     },
     {
       "id": "case-study-3pl-warehouse-ax",
       "description": "3PL warehouse integration with Microsoft Dynamics AX.",
-      "imageUrl": "public/case-studies/3pl-warehouse-integration-with-microsoft-dynamics-ax.jpeg",
+      "imageUrl": "/case-studies/3pl-warehouse-integration-with-microsoft-dynamics-ax.jpeg",
       "imageHint": "warehouse logistics"
     },
     {
       "id": "case-study-erp-crm-fedex",
       "description": "ERP–CRM integration and FedEx API modernization.",
-      "imageUrl": "public/case-studies/erp–crm-integration-and-fedex-api-modernization.jpeg",
+      "imageUrl": "/case-studies/erp–crm-integration-and-fedex-api-modernization.jpeg",
       "imageHint": "API integration"
     },
     {
       "id": "case-study-hr-erp-payroll",
       "description": "An abstract image representing HR and Payroll integration.",
-      "imageUrl": "public/case-studies/hr-erp-payroll-integration.jpg",
+      "imageUrl": "/case-studies/hr-erp-payroll-integration.jpg",
       "imageHint": "HR payroll"
     },
     {
       "id": "case-study-funding-control",
       "description": "An abstract image representing financial control and funding.",
-      "imageUrl": "public/case-studies/contract-level-funding-control-enhancement.jpeg",
+      "imageUrl": "/case-studies/contract-level-funding-control-enhancement.jpeg",
       "imageHint": "financial control"
     },
     {
       "id": "case-study-payment-visibility",
       "description": "Project-Level Payment Visibility Enhancement.",
-      "imageUrl": "public/case-studies/project-level-payment-visibility-enhancement.jpeg",
+      "imageUrl": "/case-studies/project-level-payment-visibility-enhancement.jpeg",
       "imageHint": "payment tracking"
     },
     {
@@ -549,13 +549,13 @@
     {
       "id": "case-study-paid-to-date",
       "description": "An abstract image representing payment tracking and financial visibility.",
-      "imageUrl": "public/case-studies/paid-to-date-project-level-payment-visibility.jpeg",
+      "imageUrl": "/case-studies/paid-to-date-project-level-payment-visibility.jpeg",
       "imageHint": "payment visibility"
     },
     {
       "id": "aonflow-integration",
       "description": "AonFlow logo on a digital background.",
-      "imageUrl": "https://picsum.photos/seed/aonflow/550/350",
+      "imageUrl": "/aonflow.jpg",
       "imageHint": "AonFlow logo"
     }
   ]
